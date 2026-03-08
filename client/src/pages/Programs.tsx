@@ -118,7 +118,7 @@ export default function Programs() {
                   <ShieldCheck className="h-6 w-6 text-green-600 mt-1" />
                   <div>
                     <h4 className="text-lg font-semibold text-[#1e1b4b]">The EduMeUp guarantee</h4>
-                    <p className="text-sm text-[#1e1b4b]/70 font-bold">Try any program for 14 days. If you don't see a measurable shift in retention, we'll provide a 100% refund. No questions asked.</p>
+                    <p className="text-sm text-[#1e1b4b]/70 ">Try any program for 14 days. If you don't see a measurable shift in retention, we'll provide a 100% refund. No questions asked.</p>
                   </div>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function Programs() {
             {[
               {
                 id: "p1",
-                title: "Pathway 1: Foundation & Bridge",
+                title: "Pathway 1: Foundation & IGCSE / O-Level Bridge Programs",
                 subtitle: "Build Strong Basics → Transition to O-Level",
                 for: "Grade 5-8 students, foundation gaps, curriculum transitions",
                 priorities: [
@@ -180,7 +180,7 @@ export default function Programs() {
                   },
                   { 
                     title: "Pre-O-Level Victory Program", 
-                    details: "9-month comprehensive system covering Grade 6-8 repair + Bridge + 30% O-Level syllabus. Available in Self-Learning ($199) or Teacher-Led ($360).",
+                    details: "9-month comprehensive system covering Grade 6-8 repair + IGCSE / O-Level Bridge Programs + 30% O-Level syllabus. Available in Self-Learning ($199) or Teacher-Led ($360).",
                     guarantee: "60% performance guarantee"
                   }
                 ]
@@ -228,8 +228,8 @@ export default function Programs() {
                 for: "Students needing 1-on-1 guidance, accountability, human interaction",
                 priorities: [
                   { 
-                    title: "Certified Tutor Network", 
-                    details: "Vetted, SMK-trained teachers matched to student needs. Includes 2 FREE trial lectures and full platform resource access ($360 value free).",
+                    title: "SMK Certified (Subject Master Knowledge Certified) Network", 
+                    details: "Vetted, SMK-trained teachers matched to student needs. Includes 2 FREE sample lectures and full platform resource access ($360 value free).",
                     availability: "Online & Physical (Selected cities)"
                   }
                 ]
@@ -259,7 +259,7 @@ export default function Programs() {
                             <p className="text-sm text-[#1e1b4b]/70 font-medium leading-relaxed">{item.details}</p>
                             {('cost' in item || 'pricing' in item || 'value' in item) && (
                               <div className="text-[10px] font-semibold text-[#2366c9] bg-white/50 inline-block px-3 py-1 rounded-full">
-                                {('cost' in item ? item.cost : 'pricing' in item ? item.pricing : item.value)}
+                                {('cost' in item ? item.cost : 'pricing' in item ? item.pricing : 'value' in item ? item.value : '')}
                               </div>
                             )}
                           </div>
@@ -305,7 +305,7 @@ export default function Programs() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pb-8 pl-[4.5rem] pr-6">
-                  <p className="text-white/50 text-sm font-bold leading-relaxed">{f.desc}</p>
+                  <p className="text-white/50 text-sm  leading-relaxed">{f.desc}</p>
                 </AccordionContent>
               </AccordionItem>
             ))}
@@ -326,8 +326,8 @@ export default function Programs() {
               <h3 className="text-2xl font-bold text-blue-600 px-4 border-l-8 border-blue-600">1. Where are you now?</h3>
               <div className="grid gap-4">
                 {[
-                  { q: "GRADE 7-8", path: "Foundation & Bridge", start: "Pre-O-Level Victory" },
-                  { q: "O-LEVEL YEAR 1", path: "Bridge & Mastery", start: "Complete O-Level Subjects" },
+                  { q: "GRADE 7-8", path: "Foundation & IGCSE / O-Level Bridge Programs", start: "Pre-O-Level Victory" },
+                  { q: "O-LEVEL YEAR 1", path: "IGCSE / O-Level Bridge Programs & Mastery", start: "Complete O-Level Subjects" },
                   { q: "O-LEVEL YEAR 2-3", path: "O-Level Mastery", start: "Complete O-Level Subjects" },
                   { q: "EXAM PREP", path: "Exam Specialization", start: "Real-Time Exam Prep" },
                 ].map((item, i) => (
@@ -344,7 +344,7 @@ export default function Programs() {
               <h3 className="text-2xl font-bold text-blue-600 px-4 border-l-8 border-blue-600">2. Biggest challenge?</h3>
               <div className="grid gap-4">
                 {[
-                  { q: "Foundation Gaps", path: "Diagnostic + Remedial + Bridge" },
+                  { q: "Foundation Gaps", path: "Diagnostic + Remedial + IGCSE / O-Level Bridge Programs" },
                   { q: "Complete Prep", path: "Pre-O-Level Victory" },
                   { q: "Exam Technique", path: "Real-Time Exam Prep (Mock Series)" },
                   { q: "English Weakness", path: "English Paper 1 & 2 Skill Dev" },
@@ -454,8 +454,8 @@ export default function Programs() {
                 {pkg.popular && <span className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2366c9] text-white px-6 py-2 rounded-full text-xs font-semibold">Most popular</span>}
                 <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-2">{pkg.title}</h3>
                 <div className="flex items-end gap-2 mb-8">
-                  <span className="text-5xl font-bold text-[#2366c9]">{pkg.price}</span>
-                  <span className="text-sm font-bold text-[#1e1b4b]/40 uppercase mb-2">/ year</span>
+                  <span className="text-5xl font-semibold text-[#2366c9]">{pkg.price}</span>
+                  <span className="text-sm font-semibold text-[#1e1b4b]/40 uppercase mb-2">/ year</span>
                 </div>
                 <ul className="space-y-4 mb-10">
                   {pkg.features.map((f, j) => (
@@ -464,7 +464,7 @@ export default function Programs() {
                     </li>
                   ))}
                 </ul>
-                <div className="text-[10px] font-semibold text-green-600 mb-8">Save {pkg.save} vs individual</div>
+                <div className="text-[10px] font-medium text-emerald-500 bg-emerald-50/70 inline-block px-3 py-1 rounded-full mb-8">Save {pkg.save} vs individual</div>
                 <Button className={`w-full h-16 rounded-2xl font-bold ${pkg.popular ? 'bg-[#2366c9] hover:bg-blue-600 shadow-lg shadow-blue-200' : 'bg-[#1e1b4b] hover:bg-black'}`}>Select package</Button>
               </div>
             ))}

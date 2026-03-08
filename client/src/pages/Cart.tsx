@@ -92,8 +92,8 @@ export default function Cart() {
                   <Card key={item.programId}>
                     <CardContent className="p-6 flex justify-between items-center">
                       <div>
-                        <h3 className="font-bold text-lg">{item.title}</h3>
-                        <p className="text-emerald-600 font-bold">
+                        <h3 className="font-semibold text-lg">{item.title}</h3>
+                        <p className="text-emerald-600 font-semibold">
                           ${(item.price / 100).toFixed(2)}
                         </p>
                       </div>
@@ -125,9 +125,9 @@ export default function Cart() {
                     <span>Tax</span>
                     <span>$0.00</span>
                   </div>
-                  <div className="border-t pt-4 flex justify-between font-bold text-xl">
+                  <div className="border-t pt-4 flex justify-between font-semibold text-xl">
                     <span>Total</span>
-                    <span className="text-emerald-700">${(total / 100).toFixed(2)}</span>
+                    <span className="text-emerald-600">${(total / 100).toFixed(2)}</span>
                   </div>
                 </CardContent>
                 <CardFooter>

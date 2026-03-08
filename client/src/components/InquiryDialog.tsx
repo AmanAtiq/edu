@@ -17,7 +17,7 @@ interface InquiryDialogProps {
   trigger?: React.ReactNode;
   defaultType?: string;
   title?: string;
-description?: string | React.ReactNode;
+  description?: string | React.ReactNode;
 }
 
 export function InquiryDialog({ 
@@ -40,10 +40,35 @@ export function InquiryDialog({
       message: "",
       subjectInterest: "",
       gradeLevel: "",
+      learningMode: "",
     },
   });
 
+  const selectedRole = form.watch("role");
+  const requiresStudentAcademicFields = defaultType === "enrollment" || selectedRole === "student";
+
   function onSubmit(data: z.infer<typeof insertInquirySchema>) {
+    if (requiresStudentAcademicFields) {
+      let hasStudentFieldError = false;
+
+      if (!data.gradeLevel?.trim()) {
+        form.setError("gradeLevel", { message: "Student class / grade is required." });
+        hasStudentFieldError = true;
+      }
+
+      if (!data.subjectInterest?.trim()) {
+        form.setError("subjectInterest", { message: "Subject is required." });
+        hasStudentFieldError = true;
+      }
+
+      if (!data.learningMode?.trim()) {
+        form.setError("learningMode", { message: "Learning mode is required." });
+        hasStudentFieldError = true;
+      }
+
+      if (hasStudentFieldError) return;
+    }
+
     mutation.mutate(data, {
       onSuccess: () => {
         setOpen(false);
@@ -132,14 +157,14 @@ export function InquiryDialog({
               )}
             />
 
-            {defaultType === 'enrollment' && (
-              <div className="grid grid-cols-2 gap-4">
+            {requiresStudentAcademicFields && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                  <FormField
                   control={form.control}
                   name="gradeLevel"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Grade Level</FormLabel>
+                      <FormLabel>Student Class / Grade</FormLabel>
                       <FormControl>
                         <Input placeholder="e.g. Grade 8" {...field} value={field.value || ''} />
                       </FormControl>
@@ -152,10 +177,31 @@ export function InquiryDialog({
                   name="subjectInterest"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Subject Interest</FormLabel>
+                      <FormLabel>Subject</FormLabel>
                       <FormControl>
                         <Input placeholder="e.g. Math, Physics" {...field} value={field.value || ''} />
                       </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="learningMode"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Learning Mode</FormLabel>
+                      <Select onValueChange={field.onChange} value={field.value || ""}>
+                        <FormControl>
+                          <SelectTrigger>
+                            <SelectValue placeholder="Select mode" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="online">Online</SelectItem>
+                          <SelectItem value="physical">Physical</SelectItem>
+                        </SelectContent>
+                      </Select>
                       <FormMessage />
                     </FormItem>
                   )}

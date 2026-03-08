@@ -121,14 +121,14 @@ export default function HowItWorks() {
                     { trad: "Forget 95% in 30 days", edu: "Maintain 70-80% long-term ✓" },
                   ].map((row, i) => (
                     <tr key={i} className="group hover:bg-white transition-colors">
-                      <td className="p-8 text-[#1e1b4b]/50 font-bold uppercase text-sm line-through decoration-red-400 decoration-2">{row.trad}</td>
+                      <td className="p-8 text-[#1e1b4b]/50 font-medium uppercase text-sm line-through decoration-red-400 decoration-2">{row.trad}</td>
                       <td className="p-8 text-[#1e1b4b] font-semibold text-lg">{row.edu}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="mt-8 text-center text-[10px] text-[#1e1b4b]/40 font-bold uppercase tracking-widest">
+            <p className="mt-8 text-center text-[10px] text-[#1e1b4b]/40 font-medium uppercase tracking-widest">
               Research: Active learning reduces failure rates by 55% in STEM subjects (Freeman et al., 2014)
             </p>
           </div>
@@ -170,7 +170,7 @@ export default function HowItWorks() {
                       <div className="w-12 text-xs font-semibold text-[#2366c9]">80%</div>
                     </div>
                   </div>
-                  <p className="mt-4 text-[#1e1b4b]/60 font-bold">Without active review, students forget 70% of new information within 24 hours.</p>
+                  <p className="mt-4 text-[#1e1b4b]/60 font-medium">Without active review, students forget 70% of new information within 24 hours.</p>
                 </div>
 
                 <div>
@@ -178,14 +178,14 @@ export default function HowItWorks() {
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white p-6 rounded-3xl border-2 border-blue-100">
                       <p className="text-[10px] font-semibold text-red-400 mb-2">Passive (low retention)</p>
-                      <ul className="space-y-2 text-xs font-bold text-[#1e1b4b]/70">
+                      <ul className="space-y-2 text-xs font-medium text-[#1e1b4b]/70">
                         <li>Reading Textbooks: 10%</li>
                         <li>Watching Videos: 20%</li>
                       </ul>
                     </div>
                     <div className="bg-white p-6 rounded-3xl border-2 border-blue-600 shadow-xl">
                       <p className="text-[10px] font-semibold text-blue-600 mb-2">Active (high retention)</p>
-                      <ul className="space-y-2 text-xs font-bold text-[#1e1b4b]">
+                      <ul className="space-y-2 text-xs font-medium text-[#1e1b4b]">
                         <li>Practice by Doing: 75%</li>
                         <li>Teaching Others: 90%</li>
                       </ul>
@@ -197,7 +197,7 @@ export default function HowItWorks() {
             <div className="bg-[#1e1b4b] p-16 rounded-[4rem] text-white shadow-2xl relative overflow-hidden group">
                <div className="absolute top-0 right-0 w-64 h-64 bg-[#2366c9]/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                <h3 className="text-3xl text-white font-semibold mb-8">10X learning leap model™</h3>
-               <p className="text-xl text-blue-200 font-bold mb-12 uppercase tracking-wide leading-relaxed">Not magic. Science applied consistently. Every student completes all 8 steps.</p>
+               <p className="text-xl text-blue-200 font-medium mb-12 uppercase tracking-wide leading-relaxed">Not magic. Science applied consistently. Every student completes all 8 steps.</p>
                <Button className="w-full h-20 bg-[#2366c9] hover:bg-blue-600 rounded-2xl text-xl font-bold shadow-xl">
                  View Full Research
                </Button>
@@ -231,7 +231,7 @@ export default function HowItWorks() {
                     </div>
                     <span className="text-[10px] font-semibold text-[#2366c9] mb-2">{s.phase}</span>
                     <h3 className="text-xl font-semibold text-[#1e1b4b] mb-4 leading-tight">{s.title}</h3>
-                    <p className="text-[#1e1b4b]/60 font-bold mb-8 flex-1">{s.desc}</p>
+                    <p className="text-[#1e1b4b]/60 font-medium mb-8 flex-1">{s.desc}</p>
                     <div className={`px-4 py-2 rounded-full text-[10px] font-semibold text-center ${s.status.includes('Now') ? 'bg-blue-600 text-white' : 'bg-slate-100 text-slate-400'}`}>
                       {s.status}
                     </div>
@@ -248,7 +248,7 @@ export default function HowItWorks() {
         <div className="container-custom">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-5xl font-semibold mb-6 text-[#1e1b4b]">Real success stories</h2>
-            <p className="text-xl text-[#1e1b4b]/40 font-bold uppercase tracking-widest">Experience the 10X Learning Leap Model™ in Action</p>
+            <p className="text-xl text-[#1e1b4b]/40 font-medium uppercase tracking-widest">Experience the 10X Learning Leap Model™ in Action</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-10">
@@ -279,12 +279,12 @@ export default function HowItWorks() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-[#1e1b4b]">{story.name}</h4>
-                    <p className="text-xs font-bold text-[#1e1b4b]/40 uppercase tracking-widest">{story.role}</p>
+                    <p className="text-xs font-medium text-[#1e1b4b]/40 uppercase tracking-widest">{story.role}</p>
                   </div>
                 </div>
                 <p className="text-[#1e1b4b]/70 font-medium mb-8 italic">"{story.story}"</p>
                 <div className="pt-6 border-t border-blue-50">
-                  <p className="text-sm font-bold text-[#2366c9]">{story.stat}</p>
+                  <p className="text-sm font-medium text-[#2366c9]">{story.stat}</p>
                 </div>
               </div>
             ))}
@@ -311,7 +311,7 @@ export default function HowItWorks() {
               <div key={i} className="p-10 bg-white/5 rounded-[2.5rem] border border-white/10">
                 <span className="text-[10px] font-semibold text-blue-400 mb-4 block">{item.date}</span>
                 <h4 className="text-xl font-semibold mb-4 text-white leading-tight">{item.title}</h4>
-                <p className="text-white/50 text-sm font-bold">{item.desc}</p>
+                <p className="text-white/50 text-sm font-medium">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -322,7 +322,7 @@ export default function HowItWorks() {
       <section className="py-24 bg-white border-t-4 border-blue-50">
         <div className="container-custom text-center">
           <h2 className="text-xs font-semibold text-[#1e1b4b]/30 mb-12">Research Foundation</h2>
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[10px] font-bold text-[#1e1b4b]/40 uppercase">
+          <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[10px] font-medium text-[#1e1b4b]/40 uppercase">
             <span>Ebbinghaus (1885)</span>
             <span>Dale (1969)</span>
             <span>Bloom (1984)</span>
@@ -351,7 +351,7 @@ export default function HowItWorks() {
                     "Schools wanting data-driven results",
                     "Independent learners seeking mastery"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-blue-100/80 font-bold uppercase text-sm tracking-widest">
+                    <li key={i} className="flex items-center gap-4 text-blue-100/80 font-medium uppercase text-sm tracking-widest">
                       <div className="w-1.5 h-1.5 bg-blue-400 rounded-full" /> {item}
                     </li>
                   ))}
@@ -365,7 +365,7 @@ export default function HowItWorks() {
                       "Students who prefer passive video watching over active practice",
                       "Anyone seeking a 'magic pill' rather than a scientific system"
                     ].map((item, i) => (
-                      <li key={i} className="text-xs font-bold uppercase tracking-widest flex items-start gap-3">
+                      <li key={i} className="text-xs font-medium uppercase tracking-widest flex items-start gap-3">
                         <span className="text-red-500">✕</span> {item}
                       </li>
                     ))}
@@ -380,7 +380,7 @@ export default function HowItWorks() {
               <div className="grid grid-cols-2 gap-8 flex-1">
                 <div>
                   <h4 className="text-sm font-semibold text-blue-600 mb-6">What it is</h4>
-                  <ul className="space-y-4 text-xs font-bold text-[#1e1b4b] uppercase">
+                  <ul className="space-y-4 text-xs font-medium text-[#1e1b4b] uppercase">
                     <li>✓ A Science-Backed Engine</li>
                     <li>✓ A Complete Mastery System</li>
                     <li>✓ Data-Driven Remediation</li>
@@ -389,7 +389,7 @@ export default function HowItWorks() {
                 </div>
                 <div>
                   <h4 className="text-sm font-semibold text-red-400 mb-6">What it isn't</h4>
-                  <ul className="space-y-4 text-xs font-bold text-[#1e1b4b]/40 uppercase">
+                  <ul className="space-y-4 text-xs font-medium text-[#1e1b4b]/40 uppercase">
                     <li>✕ Just another PDF library</li>
                     <li>✕ Random practice papers</li>
                     <li>✕ Passive video lectures</li>
@@ -424,7 +424,7 @@ export default function HowItWorks() {
                       <span className="text-3xl font-bold text-blue-800 group-hover:text-blue-400 transition-colors">{s.step}</span>
                       <div>
                         <h4 className="text-xl text-white font-semibold mb-1">{s.title}</h4>
-                        <p className="text-blue-100/50 font-bold text-sm">{s.desc}</p>
+                        <p className="text-blue-100/50 font-medium text-sm">{s.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -438,7 +438,7 @@ export default function HowItWorks() {
                   </div>
                   <div className="px-6 py-3 bg-green-500/10 rounded-full border border-green-500/20 flex items-center gap-2">
                     <Zap className="h-4 w-4 text-green-400" />
-                    <span className="text-[10px] font-semibold">Zero risk trial</span>
+                    <span className="text-[10px] font-semibold">Permanent Free Library access</span>
                   </div>
                 </div>
               </div>
@@ -447,7 +447,7 @@ export default function HowItWorks() {
                 <div className="text-center mb-10">
                   <p className="text-[10px] font-semibold text-blue-600 mb-4">Limited enrollment</p>
                   <h4 className="text-3xl font-semibold text-[#1e1b4b] mb-2">Secure your spot</h4>
-                  <p className="text-[#1e1b4b]/40 font-bold uppercase text-[10px] tracking-widest">Next cohort starts in <span className="text-red-500">4 days, 12 hours</span></p>
+                  <p className="text-[#1e1b4b]/40 font-medium uppercase text-[10px] tracking-widest">Next cohort starts in <span className="text-red-500">4 days, 12 hours</span></p>
                 </div>
                 
                 <div className="space-y-6 mb-10">
@@ -457,11 +457,11 @@ export default function HowItWorks() {
                       <p className="text-2xl font-bold text-[#1e1b4b]">PKR 36,000</p>
                     </div>
                     <div className="text-right">
-                      <p className="text-[10px] font-bold text-[#1e1b4b]/40 uppercase line-through">PKR 45,000</p>
+                      <p className="text-[10px] font-medium text-[#1e1b4b]/40 uppercase line-through">PKR 45,000</p>
                       <p className="text-[10px] font-semibold text-green-600">Save 20%</p>
                     </div>
                   </div>
-                  <p className="text-center text-[10px] text-[#1e1b4b]/40 font-bold uppercase">All taxes included • No hidden fees</p>
+                  <p className="text-center text-[10px] text-[#1e1b4b]/40 font-medium uppercase">All taxes included • No hidden fees</p>
                 </div>
 
                 <Button className="w-full h-24 bg-[#2366c9] hover:bg-blue-600 rounded-3xl text-2xl font-bold shadow-xl group transition-all">

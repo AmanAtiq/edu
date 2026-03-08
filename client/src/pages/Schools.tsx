@@ -31,7 +31,7 @@ export default function Schools() {
               </p>
               
               <div className="grid gap-4 mb-16">
-                <p className="text-lg font-bold text-red-400 mb-2">Is your school facing these challenges?</p>
+                <p className="text-lg font-semibold text-red-400 mb-2">Is your school facing these challenges?</p>
                 <ul className="grid sm:grid-cols-2 gap-4">
                   {[
                     "Pass rates below 60% (national 35%)",
@@ -42,7 +42,7 @@ export default function Schools() {
                     "Difficulty competing with academies",
                     "No data-driven insights"
                   ].map((text, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm font-bold text-white/70">
+                    <li key={i} className="flex items-center gap-3 text-sm font-semibold text-white/70">
                       <span className="text-red-500">❌</span> {text}
                     </li>
                   ))}
@@ -77,7 +77,7 @@ export default function Schools() {
                     { val: "5-6h", label: "Saved Per Teacher", sub: "Weekly automation" }
                   ].map((stat, i) => (
                     <li key={i} className="flex items-center gap-6 group">
-                      <div className="text-3xl font-bold text-white w-24">{stat.val}</div>
+                      <div className="text-3xl font-semibold text-white w-24">{stat.val}</div>
                       <div>
                         <p className="text-xs font-semibold text-blue-400">{stat.label}</p>
                         <p className="text-xs font-medium text-white/40">{stat.sub}</p>
@@ -103,7 +103,7 @@ export default function Schools() {
             {[
               {
                 title: "Academic Content",
-                desc: "1000+ H5P interactive activities covering all subjects. Bridge programs, ATP courses, and English skill development included.",
+                desc: "1000+ H5P interactive activities covering all subjects. IGCSE / O-Level Bridge Programs, ATP courses, and English skill development included.",
                 icon: BookOpen,
                 value: "$678 Value/Student"
               },
@@ -218,7 +218,7 @@ export default function Schools() {
                   </div>
                 </div>
                 <div className="pt-12 border-t border-white/10">
-                  <p className="text-lg font-bold mb-4">15× better retention</p>
+                  <p className="text-lg font-semibold mb-4">15× better retention</p>
                   <p className="text-white/60 font-medium text-sm leading-relaxed">
                     Traditional methods see students forget 95% within 6 months. EduMeUp students retain 75% due to active learning and spaced retrieval.
                   </p>
@@ -285,12 +285,12 @@ export default function Schools() {
                       <p className="text-lg text-[#1e1b4b]/70 font-medium leading-relaxed">{model.details}</p>
                       <div className="bg-white p-6 rounded-2xl border-2 border-blue-50">
                         <p className="text-xs font-semibold text-blue-600 mb-2">Projected impact</p>
-                        <p className="text-sm font-bold text-[#1e1b4b]">{model.impact}</p>
+                        <p className="text-sm font-semibold text-[#1e1b4b]">{model.impact}</p>
                       </div>
                     </div>
                     <div className="bg-[#1e1b4b] text-white p-10 rounded-[2.5rem] shadow-xl">
-                      <h4 className="text-xl font-bold text-blue-400 mb-6">Financial structure</h4>
-                      <p className="text-sm font-bold leading-relaxed text-blue-100">{model.revenue}</p>
+                      <h4 className="text-xl font-semibold text-blue-400 mb-6">Financial structure</h4>
+                      <p className="text-sm font-semibold leading-relaxed text-blue-100">{model.revenue}</p>
                       <div className="mt-8 pt-8 border-t border-white/10">
                         <InquiryDialog 
                           defaultType="school_charter"
@@ -388,7 +388,7 @@ export default function Schools() {
             defaultType="school_charter"
             title="School Partnership Inquiry"
             trigger={
-            <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-bold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
+              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
                    Apply for charter
               </Button>
             }

@@ -13,6 +13,7 @@ export const inquiries = pgTable("inquiries", {
   role: text("role"), // 'parent', 'student', 'school_admin', 'tutor'
   gradeLevel: text("grade_level"), // For students
   subjectInterest: text("subject_interest"),
+  learningMode: text("learning_mode"), // 'online' | 'physical' for student enrollment
   message: text("message"),
   status: text("status").default("new"), // 'new', 'contacted', 'resolved'
   createdAt: timestamp("created_at").defaultNow(),

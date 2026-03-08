@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import {
   Menu,
   X,
+  House,
   BookOpen,
   GraduationCap,
   School,
   Users,
   FileText,
-  Settings,
   ShoppingCart,
   Beaker,
   ChevronDown,
@@ -30,24 +30,13 @@ export function Navbar() {
   const [location] = useLocation();
   const { items } = useCart();
 
-  const links = [
-    { href: "/", label: "Home", icon: null },
-    {
-      href: "/programs",
-      label: "Exam Path",
-      icon: BookOpen,
-      fullLabel: "Exam Mastery Path",
-    },
-    {
-      href: "/pricing",
-      label: "Pricing",
-      icon: ShoppingCart,
-    },
-    {
-      href: "/research",
-      label: "Research",
-      icon: Beaker,
-    },
+  const primaryLinks = [
+    { href: "/", label: "Home", icon: House },
+    { href: "/programs", label: "Mastery Path", icon: BookOpen },
+    { href: "/pricing", label: "Pricing", icon: ShoppingCart },
+  ];
+
+  const groupedLinks = [
     {
       label: "Portals",
       icon: Users,
@@ -56,29 +45,29 @@ export function Navbar() {
         { href: "/students", label: "Students", icon: GraduationCap },
         { href: "/tutors", label: "Tutors", icon: GraduationCap },
         { href: "/schools", label: "Schools", icon: School },
-      ]
+      ],
     },
     {
-      href: "/blog",
-      label: "Blog",
-      icon: FileText,
+      label: "Resources & Research",
+      icon: Beaker,
+      children: [
+        { href: "/resources", label: "Freebies / Resources", icon: FileText },
+        { href: "/research", label: "Research", icon: Beaker },
+        { href: "/blog", label: "Blog", icon: FileText },
+      ],
     },
     {
-      href: "/how-it-works",
-      label: "Process",
-      icon: Settings,
-      fullLabel: "How It Works",
+      label: "About & Process",
+      icon: Users,
+      children: [
+        { href: "/about", label: "About", icon: Users },
+        { href: "/how-it-works", label: "How It Works", icon: BookOpen },
+      ],
     },
-    {
-      href: "/resources",
-      label: "Library",
-      icon: FileText,
-      fullLabel: "Free Resource",
-    },
-    { href: "/about", label: "About", icon: Users },
   ];
 
   const isActive = (path: string) => location === path;
+  const isGroupActive = (children: Array<{ href: string }>) => children.some((child) => isActive(child.href));
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/95 backdrop-blur-sm supports-[backdrop-filter]:bg-white/80">
@@ -88,53 +77,57 @@ export function Navbar() {
           <img
             src={logoImage}
             alt="Edumeup Logo"
-            className="h-8 sm:h-9 w-auto flex-shrink-0 mix-blend-multiply"
+            className="h-7 sm:h-8 lg:h-9 w-auto flex-shrink-0 mix-blend-multiply"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center justify-end flex-1 px-6 lg:px-8">
+        <div className="hidden md:flex items-center justify-end flex-1 px-3 lg:px-6">
           <div className="flex items-center space-x-1">
-            {links.map((link) => (
-              link.children ? (
-                <DropdownMenu key={link.label}>
-                  <DropdownMenuTrigger asChild>
-                    <div
-                      className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-lg whitespace-nowrap text-slate-600 hover:text-slate-900 cursor-pointer"
-                    >
-                      {link.icon && <link.icon className="h-4 w-4 shrink-0" />}
-                      <span>{link.label}</span>
-                      <ChevronDown className="h-4 w-4 opacity-50" />
-                    </div>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-48">
-                    {link.children.map((child) => (
-                      <DropdownMenuItem key={child.href} asChild>
-                        <Link href={child.href} className="flex items-center gap-2 w-full cursor-pointer">
-                          {child.icon && <child.icon className="h-4 w-4" />}
-                          <span>{child.label}</span>
-                        </Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              ) : (
-                <Link key={link.href} href={link.href!}>
-                  <div
+            {primaryLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                <div
+                  title={link.label}
+                  className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-lg whitespace-nowrap ${
+                    isActive(link.href)
+                      ? "bg-blue-50 text-[#2366c9]"
+                      : "text-slate-600 hover:text-slate-900"
+                  }`}
+                >
+                  <link.icon className="h-4 w-4 shrink-0" />
+                  <span className="hidden lg:inline">{link.label}</span>
+                </div>
+              </Link>
+            ))}
+
+            {groupedLinks.map((group) => (
+              <DropdownMenu key={group.label}>
+                <DropdownMenuTrigger asChild>
+                  <button
+                    type="button"
+                    title={group.label}
                     className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors rounded-lg whitespace-nowrap ${
-                      isActive(link.href!)
+                      isGroupActive(group.children)
                         ? "bg-blue-50 text-[#2366c9]"
                         : "text-slate-600 hover:text-slate-900"
                     }`}
                   >
-                    {link.icon && <link.icon className="h-4 w-4 shrink-0" />}
-                    <span className="hidden xl:inline">
-                      {link.fullLabel || link.label}
-                    </span>
-                    <span className="xl:hidden">{link.label}</span>
-                  </div>
-                </Link>
-              )
+                    <group.icon className="h-4 w-4 shrink-0" />
+                    <span className="hidden lg:inline">{group.label}</span>
+                    <ChevronDown className="h-4 w-4 opacity-50" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  {group.children.map((child) => (
+                    <DropdownMenuItem key={child.href} asChild>
+                      <Link href={child.href} className="flex items-center gap-2 w-full cursor-pointer">
+                        <child.icon className="h-4 w-4" />
+                        <span>{child.label}</span>
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
             ))}
           </div>
         </div>
@@ -180,45 +173,45 @@ export function Navbar() {
             className="border-b bg-background md:hidden overflow-hidden"
           >
             <div className="space-y-1 p-4">
-              {links.map((link) => (
-                link.children ? (
-                  <div key={link.label} className="space-y-1">
-                    <div className="px-4 py-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
-                      {link.label}
-                    </div>
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        <div
-                          className={`flex items-center gap-2 rounded-lg px-8 py-3 text-sm font-medium transition-colors hover:bg-muted ${
-                            isActive(child.href) ? "bg-primary/10 text-primary" : ""
-                          }`}
-                        >
-                          {child.icon && <child.icon className="h-4 w-4" />}
-                          {child.label}
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                ) : (
-                  <Link
-                    key={link.href}
-                    href={link.href!}
-                    onClick={() => setIsOpen(false)}
+              {primaryLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                >
+                  <div
+                    className={`flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-muted ${
+                      isActive(link.href) ? "bg-primary/10 text-primary" : ""
+                    }`}
                   >
-                    <div
-                      className={`flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-muted ${
-                        isActive(link.href!) ? "bg-primary/10 text-primary" : ""
-                      }`}
+                    <link.icon className="h-4 w-4" />
+                    {link.label}
+                  </div>
+                </Link>
+              ))}
+
+              {groupedLinks.map((group) => (
+                <div key={group.label} className="space-y-1">
+                  <div className="px-4 py-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                    {group.label}
+                  </div>
+                  {group.children.map((child) => (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      onClick={() => setIsOpen(false)}
                     >
-                      {link.icon && <link.icon className="h-4 w-4" />}
-                      {link.label}
-                    </div>
-                  </Link>
-                )
+                      <div
+                        className={`flex items-center gap-2 rounded-lg px-8 py-3 text-sm font-medium transition-colors hover:bg-muted ${
+                          isActive(child.href) ? "bg-primary/10 text-primary" : ""
+                        }`}
+                      >
+                        <child.icon className="h-4 w-4" />
+                        {child.label}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               ))}
               <Link href="/cart" onClick={() => setIsOpen(false)}>
                 <div className="flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-muted">

@@ -28,6 +28,7 @@ export function StudentApplicationForm() {
     country: "",
     timezone: "",
     curriculum: "", // ✅ MISSING
+    primarySubject: "",
     subjects: [] as string[],
     mode: "", // ✅ MISSING (online/physical)
     sessionDuration: "", // ✅ MISSING (30/45/60 min)
@@ -52,6 +53,10 @@ export function StudentApplicationForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (formData.subjects.length === 0) {
+      alert("Please select at least one subject.");
+      return;
+    }
     console.log("Student Application:", formData);
     alert("Application submitted! Diagnostic link will be sent within 24 hrs.");
   };
@@ -103,8 +108,8 @@ export function StudentApplicationForm() {
         </div>
 
         <div>
-      <label htmlFor="currentGrade" className="block font-medium">
-  Current Grade/Level
+        <label htmlFor="currentGrade" className="block font-medium">
+      Student Class / Grade
 </label>
 <select
   id="currentGrade"
@@ -168,6 +173,27 @@ export function StudentApplicationForm() {
       {/* PART 2 — SUBJECTS NEEDED */}
       <section className="border rounded-2xl p-6 space-y-4">
         <h3 className="font-bold text-lg">Part 2 — Subjects Needed</h3>
+        <div>
+          <label htmlFor="primarySubject" className="block font-medium">Subject</label>
+          <select
+            id="primarySubject"
+            className="w-full border rounded-lg p-2"
+            value={formData.primarySubject}
+            onChange={(e) => handleChange("primarySubject", e.target.value)}
+            required
+          >
+            <option value="">Select primary subject</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+            <option value="English Language">English Language</option>
+            <option value="Economics">Economics</option>
+            <option value="Business Studies">Business Studies</option>
+            <option value="Pakistan Studies">Pakistan Studies</option>
+            <option value="Computer Science">Computer Science</option>
+          </select>
+        </div>
         <div className="grid grid-cols-2 gap-2">
           {["Mathematics", "Physics", "Chemistry", "Biology", "English Language", "Economics", "Business Studies", "Pakistan Studies", "Computer Science"].map((subject) => (
             <label key={subject} className="flex items-center gap-2">
@@ -186,13 +212,13 @@ export function StudentApplicationForm() {
         <h3 className="font-bold text-lg">Part 3 — Tutoring Preference</h3>
 
         <div className="space-y-2">
-          <label className="block font-medium">Mode</label>
+          <label className="block font-medium">Learning Mode</label>
           <label className="flex gap-2">
-            <input type="radio" name="mode" value="Online" onChange={(e) => handleChange("mode", e.target.value)} />
+            <input type="radio" name="mode" value="Online" checked={formData.mode === "Online"} onChange={(e) => handleChange("mode", e.target.value)} required />
             Online (Global)
           </label>
           <label className="flex gap-2">
-            <input type="radio" name="mode" value="Physical" onChange={(e) => handleChange("mode", e.target.value)} />
+            <input type="radio" name="mode" value="Physical" checked={formData.mode === "Physical"} onChange={(e) => handleChange("mode", e.target.value)} required />
             Physical (Pakistan only)
           </label>
         </div>
@@ -385,6 +411,7 @@ export function TutorApplicationForm() {
     phone: "",
     city: "",
     country: "",
+    educationQualification: "",
     degree: "",
     degreeField: "",
     certifications: "",
@@ -392,7 +419,8 @@ export function TutorApplicationForm() {
     hourlyRate: "",
     subjects: [] as string[],
     grades: [] as string[],
-    teachingMode: [] as string[],
+    teachingLevel: "",
+    teachingMode: "",
     languages: [] as string[],
     availability: "",
     timezone: "",
@@ -434,6 +462,26 @@ export function TutorApplicationForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.educationQualification.trim()) {
+      alert("Please enter your Education / Qualification.");
+      return;
+    }
+
+    if (formData.subjects.length === 0) {
+      alert("Please select at least one subject you can teach.");
+      return;
+    }
+
+    if (!formData.teachingLevel) {
+      alert("Please select a Teaching Level (O-Level or IGCSE).");
+      return;
+    }
+
+    if (!formData.teachingMode) {
+      alert("Please select a Teaching Mode (Online or Physical).");
+      return;
+    }
+
     console.log("Submitting tutor application", formData);
     alert("Application submitted! We will review it in 48 hrs.");
   };
@@ -541,6 +589,19 @@ export function TutorApplicationForm() {
 
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
+            <label htmlFor="educationQualification" className="text-sm font-semibold text-gray-700">Education / Qualification</label>
+            <input
+              id="educationQualification"
+              type="text"
+              placeholder="e.g., B.Ed, M.Sc Mathematics"
+              className="p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+              value={formData.educationQualification}
+              onChange={e => handleChange("educationQualification", e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="flex flex-col gap-1">
             <label htmlFor="degree" className="text-sm font-semibold text-gray-700">Bachelor's Degree</label>
             <input 
               id="degree" 
@@ -611,7 +672,7 @@ export function TutorApplicationForm() {
         <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 3 — Subjects & Grade Levels</h3>
 
         <div>
-          <label className="text-sm font-semibold text-gray-700 mb-2 block">Subjects You Teach</label>
+          <label className="text-sm font-semibold text-gray-700 mb-2 block">Subject(s) They Can Teach</label>
           <div className="grid grid-cols-2 gap-2">
             {["Mathematics", "Physics", "Chemistry", "Biology", "English Language", "Economics", "Business Studies", "Computer Science"].map((subject) => (
               <label key={subject} className="flex items-center gap-2">
@@ -653,6 +714,25 @@ export function TutorApplicationForm() {
             ))}
           </div>
         </div>
+
+        <div>
+          <label className="text-sm font-semibold text-gray-700 mb-2 block">Teaching Level</label>
+          <div className="space-y-2">
+            {["O-Level", "IGCSE"].map((level) => (
+              <label key={level} className="flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="teachingLevel"
+                  value={level}
+                  checked={formData.teachingLevel === level}
+                  onChange={(e) => handleChange("teachingLevel", e.target.value)}
+                  required
+                />
+                {level}
+              </label>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Part 4 — Teaching Mode & Languages */}
@@ -662,18 +742,15 @@ export function TutorApplicationForm() {
         <div>
           <label className="text-sm font-semibold text-gray-700 mb-2 block">Teaching Mode</label>
           <div className="space-y-2">
-            {["Online", "Physical (In-Person)", "Both"].map((mode) => (
+            {["Online", "Physical"].map((mode) => (
               <label key={mode} className="flex items-center gap-2">
                 <input 
-                  type="checkbox" 
-                  checked={formData.teachingMode.includes(mode)}
-                  onChange={(e) => {
-                    if (e.target.checked) {
-                      setFormData({ ...formData, teachingMode: [...formData.teachingMode, mode] });
-                    } else {
-                      setFormData({ ...formData, teachingMode: formData.teachingMode.filter(m => m !== mode) });
-                    }
-                  }}
+                  type="radio"
+                  name="teachingMode"
+                  value={mode}
+                  checked={formData.teachingMode === mode}
+                  onChange={(e) => handleChange("teachingMode", e.target.value)}
+                  required
                 />
                 {mode}
               </label>
@@ -980,7 +1057,7 @@ export default function Tutors() {
                     "Transparent dashboards",
                     "Phase out tutor support"
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 text-sm font-bold text-white/80 border-b border-white/5 pb-2">
+                    <div key={i} className="flex items-center gap-4 text-sm font-semibold text-white/80 border-b border-white/5 pb-2">
                        <CheckCircle2 className="h-4 w-4 text-blue-400 flex-shrink-0" />
                        <span>{item}</span>
                     </div>
@@ -991,9 +1068,9 @@ export default function Tutors() {
                 <div className="bg-blue-600/20 p-8 rounded-3xl border-2 border-blue-500/30">
                   <p className="text-blue-400 font-semibold text-xs mb-4">For specific learning needs:</p>
                   <ul className="space-y-3">
-                    <li className="text-white font-bold text-sm"> Late Starters</li>
-                    <li className="text-white font-bold text-sm"> Advanced Learners</li>
-                    <li className="text-white font-bold text-sm"> Slow Learners</li>
+                    <li className="text-white font-semibold text-sm"> Late Starters</li>
+                    <li className="text-white font-semibold text-sm"> Advanced Learners</li>
+                    <li className="text-white font-semibold text-sm"> Slow Learners</li>
                   </ul>
                 </div>
                 <div className="flex flex-col gap-4">
@@ -1008,7 +1085,7 @@ export default function Tutors() {
                     defaultType="tutor_application"
                     title="Tutor Application"
                     trigger={
-                      <Button size="lg" className="w-full bg-white text-[#1e1b4b] hover:bg-blue-50 h-10 rounded-lg font-semibold shadow-md">Become a certified tutor</Button>
+                      <Button size="lg" className="w-full bg-white text-[#1e1b4b] hover:bg-blue-50 h-10 rounded-lg font-semibold shadow-md">Become an SMK Certified (Subject Master Knowledge Certified) tutor</Button>
                     }
                   />
                   <Link href="/programs">
@@ -1057,26 +1134,26 @@ export default function Tutors() {
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-semibold mb-10 text-red-600">Traditional tutoring trap</h3>
                   <div className="flex items-center justify-between text-center gap-4">
-                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-bold text-xs">Student</div>
+                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-semibold text-xs">Student</div>
                      <ArrowRight className="text-red-400" />
-                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-bold text-xs">Tutor</div>
+                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-semibold text-xs">Tutor</div>
                      <ArrowRight className="text-red-400" />
-                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-bold text-xs text-red-600">Dependency</div>
+                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-semibold text-xs text-red-600">Dependency</div>
                   </div>
-                  <p className="mt-12 text-red-900/60 font-bold leading-relaxed">Students become helpless without tutor guidance. You pay forever. We call this the business of dependency.</p>
+                  <p className="mt-12 text-red-900/60 font-semibold leading-relaxed">Students become helpless without tutor guidance. You pay forever. We call this the business of dependency.</p>
                 </CardContent>
              </Card>
              <Card className="bg-green-50 p-16 rounded-[3rem] border-4 border-green-100 shadow-xl hover:shadow-2xl transition-all">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-semibold mb-10 text-green-600">EduMeUp independence model</h3>
                   <div className="flex items-center justify-between text-center gap-4">
-                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-bold text-xs">Platform</div>
+                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-semibold text-xs">Platform</div>
                      <ArrowRight className="text-green-400" />
-                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-bold text-xs">Tutor</div>
+                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-semibold text-xs">Tutor</div>
                      <ArrowRight className="text-green-400" />
-                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-bold text-xs text-green-600">Independence</div>
+                     <div className="flex-1 bg-white p-6 rounded-2xl shadow-sm font-semibold text-xs text-green-600">Independence</div>
                   </div>
-                  <p className="mt-12 text-green-900/60 font-bold leading-relaxed">Tutoring is TEMPORARY. Our goal is to gain self-learning capabilities and phase the tutor out entirely.</p>
+                  <p className="mt-12 text-green-900/60 font-semibold leading-relaxed">Tutoring is TEMPORARY. Our goal is to gain self-learning capabilities and phase the tutor out entirely.</p>
                 </CardContent>
              </Card>
           </div>
@@ -1091,14 +1168,14 @@ export default function Tutors() {
                   <div key={i} className="space-y-6">
                     <div className="h-16 w-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-xl">{i+1}</div>
                     <h4 className="text-2xl font-semibold text-blue-400">{item.t}</h4>
-                    <p className="text-blue-100/60 font-bold leading-relaxed">{item.d}</p>
+                    <p className="text-blue-100/60 font-medium leading-relaxed">{item.d}</p>
                   </div>
                 ))}
              </div>
-             <p className="mt-8 text-white/90 font-bold">
+             <p className="mt-8 text-white/90 font-semibold">
                Every session integrates Moodle 4.5.1, H5P interactive activities, and our AI chatbot — so learning never stops between sessions.
              </p>
-             <p className="mt-6 font-bold text-blue-200">
+             <p className="mt-6 font-semibold text-blue-200">
                THE 3‑STAGE SCAFFOLDING PROCESS:
              </p>
              <div className="mt-4 grid md:grid-cols-3 gap-6 text-white">
@@ -1109,13 +1186,13 @@ export default function Tutors() {
                ].map((item,i)=>(
                  <div key={i} className="bg-white/20 p-6 rounded-2xl">
                    <h4 className="font-semibold mb-2 text-lg text-white">{item.stage}</h4>
-                   <p className="text-sm text-white"><span className="font-bold">Timeline:</span> {item.timeline}</p>
-                   <p className="text-sm text-white"><span className="font-bold">Tutor hours:</span> {item.hours}</p>
-                   <p className="text-sm text-white"><span className="font-bold">Platform role:</span> {item.role}</p>
+                   <p className="text-sm text-white"><span className="font-semibold">Timeline:</span> {item.timeline}</p>
+                   <p className="text-sm text-white"><span className="font-semibold">Tutor hours:</span> {item.hours}</p>
+                   <p className="text-sm text-white"><span className="font-semibold">Platform role:</span> {item.role}</p>
                  </div>
                ))}
              </div>
-             <p className="mt-6 font-bold text-blue-200">
+             <p className="mt-6 font-semibold text-blue-200">
                SMK Framework: Subject Matter Knowledge · Metacognitive Skills · Platform Integration · Independence Building
              </p>
           </div>
@@ -1137,7 +1214,7 @@ export default function Tutors() {
                 id: "A",
                 title: "LATE STARTERS",
                 sub: "Catch-Up Support",
-                for: "Missed Bridge Programs / weak O-Level foundation",
+                for: "Missed IGCSE / O-Level Bridge Programs / weak O-Level foundation",
                 role: "Intensive remedial instruction targeting exact foundational gaps.",
                 goal: "Platform independence in 3–6 months."
               },
@@ -1166,15 +1243,15 @@ export default function Tutors() {
                     <div className="space-y-8 flex-1">
                        <div>
                           <p className="text-[10px] font-semibold text-[#1e1b4b]/40 mb-2">Ideal for</p>
-                          <p className="text-sm font-bold text-[#1e1b4b]">{scen.for}</p>
+                          <p className="text-sm font-semibold text-[#1e1b4b]">{scen.for}</p>
                        </div>
                        <div>
                           <p className="text-[10px] font-semibold text-[#1e1b4b]/40 mb-2">Tutor's role</p>
-                          <p className="text-sm font-bold text-[#1e1b4b]">{scen.role}</p>
+                          <p className="text-sm font-semibold text-[#1e1b4b]">{scen.role}</p>
                        </div>
                        <div className="pt-8 border-t border-blue-50">
                           <p className="text-green-600 font-semibold text-xs mb-2">Outcome goal</p>
-                          <p className="text-sm font-bold text-[#1e1b4b]">{scen.goal}</p>
+                          <p className="text-sm font-semibold text-[#1e1b4b]">{scen.goal}</p>
                        </div>
                     </div>
                  </CardContent>
@@ -1185,7 +1262,7 @@ export default function Tutors() {
 
           <div className="mt-32 p-16 bg-red-50 rounded-[3rem] border-4 border-red-100 text-center max-w-4xl mx-auto">
              <h3 className="text-2xl font-bold text-red-600 mb-4">Who doesn't need tutors?</h3>
-             <p className="text-[#1e1b4b] font-bold">Students scoring 50%+, with a solid foundation and completed diagnostics/Bridge programs – platform alone is sufficient. Save money, build independence immediately.</p>
+             <p className="text-[#1e1b4b] font-semibold">Students scoring 50%+, with a solid foundation and completed diagnostics/IGCSE / O-Level Bridge Programs – platform alone is sufficient. Save money, build independence immediately.</p>
           </div>
         </div>
       </section>
@@ -1376,12 +1453,12 @@ export default function Tutors() {
     </div>
   </div>
 </section>
-{/* SECTION 7: JOIN AS A CERTIFIED TUTOR */}
+{/* SECTION 7: JOIN AS AN SMK CERTIFIED TUTOR */}
 <section className="py-32 bg-blue-50">
   <div className="container-custom max-w-6xl mx-auto text-center">
     {/* Heading */}
     <h2 className="text-4xl md:text-5xl font-display font-semibold text-[#1e1b4b] mb-4">
-      Join as a <span className="text-[#2366c9]">Certified Tutor</span>
+      Join as an <span className="text-[#2366c9]">SMK Certified (Subject Master Knowledge Certified) Tutor</span>
     </h2>
     <p className="text-lg md:text-xl text-[#1e1b4b]/70 mb-12">
       Empower students worldwide while growing your career with EduMeUp.
@@ -1390,7 +1467,7 @@ export default function Tutors() {
     {/* Benefits Cards */}
     <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-12">
       {[
-        { icon: <UserCheck className="h-12 w-12 text-white" />, title: "Higher Earnings", desc: "Competitive pay rates for certified tutors." },
+        { icon: <UserCheck className="h-12 w-12 text-white" />, title: "Higher Earnings", desc: "Competitive pay rates for SMK certified tutors." },
         { icon: <Users className="h-12 w-12 text-white" />, title: "Ready-Matched Students", desc: "Students matched to your skills instantly." },
         { icon: <BookOpen className="h-12 w-12 text-white" />, title: "Monthly PD", desc: "Professional development to enhance your teaching." },
         { icon: <Cpu className="h-12 w-12 text-white" />, title: "Full Platform Tools", desc: "All-in-one platform: Moodle, H5P & AI for smooth teaching." },
@@ -1421,7 +1498,7 @@ export default function Tutors() {
     <Button
       size="lg"
       className="bg-[#2366c9] hover:bg-blue-500 active:scale-95 text-white font-bold h-14 px-12 rounded-3xl shadow-lg transition-transform duration-200"
-      aria-label="Apply to become a certified tutor at EduMeUp"
+      aria-label="Apply to become an SMK Certified (Subject Master Knowledge Certified) tutor at EduMeUp"
     >
       Apply as tutor
     </Button>
@@ -1531,7 +1608,7 @@ export default function Tutors() {
           </h3>
 
           <div className="mb-6">
-            <span className="text-4xl font-bold text-[#1e1b4b]">
+            <span className="text-4xl font-medium text-[#1e1b4b]">
               {plan.price}
             </span>
             <span className="text-gray-400 text-sm"> / hour</span>
@@ -1724,7 +1801,7 @@ export default function Tutors() {
       {/* Path 4 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
         <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
-          Path 4 — Become a Certified Tutor
+          Path 4 — Become an SMK Certified (Subject Master Knowledge Certified) Tutor
         </h3>
         <p className="text-gray-500 mb-6">
           For qualified educators ready to join EduMeUp.

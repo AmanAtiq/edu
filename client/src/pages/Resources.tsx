@@ -45,7 +45,7 @@ export default function Resources() {
             <h1 className="text-5xl md:text-6xl text-white font-bold font-display mb-8 leading-tight">
               Experience <span className="text-blue-400">$698</span> worth of resources free
             </h1>
-            <p className="text-2xl text-blue-100 max-w-3xl mx-auto mb-16 font-bold">
+            <p className="text-2xl text-blue-100 max-w-3xl mx-auto mb-16 font-medium">
               Everything here is free. Forever. No credit card. No hidden costs. 
               Just research-backed learning resources to help you succeed.
             </p>
@@ -63,14 +63,14 @@ export default function Resources() {
                     "Expert Roadmaps",
                     "Diagnostic Test Samples"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-sm font-bold text-white/80">
+                    <li key={i} className="flex items-center gap-4 text-sm font-medium text-white/80">
                       <CheckCircle2 className="h-5 w-5 text-green-400" /> {item}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold mb-4 text-white">$698</div>
+                <div className="text-5xl font-semibold mb-4 text-white">$698</div>
                 <div className="text-blue-400 font-semibold text-xs mb-10">Total sample value free</div>
                 <Button size="lg" className="w-full bg-[#2366c9] hover:bg-blue-500 h-20 rounded-2xl font-bold shadow-2xl">
                    Take free diagnostic test
@@ -100,7 +100,7 @@ export default function Resources() {
               <div>
                 <h3 className="text-2xl font-semibold mb-6 text-[#1e1b4b]">2. Support those who cannot afford</h3>
                 <p className="text-lg text-[#1e1b4b]/60 font-medium leading-relaxed">
-                  Education is a right, not a privilege. Even if you never purchase our programs, these resources are yours to keep. Supplement school learning, prepare for exams independently, and improve grades without expensive tutoring.
+                  Education is a right, not a privilege. Even if you never purchase our Exam Mastery Path programs, these resources are yours to keep. Supplement school learning, prepare for exams independently, and improve grades without expensive tutoring.
                 </p>
               </div>
             </div>
@@ -109,20 +109,20 @@ export default function Resources() {
                <h3 className="text-2xl font-semibold mb-10 text-blue-400">What makes this different</h3>
                <div className="space-y-6">
                  <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-6">
-                   <div className="text-red-400 font-bold text-xs">Traditional freebies</div>
-                   <div className="text-green-400 font-bold text-xs">EduMeUp free resources</div>
+                   <div className="text-red-400 font-semibold text-xs">Traditional freebies</div>
+                   <div className="text-green-400 font-semibold text-xs">EduMeUp free resources</div>
                  </div>
                  <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-6">
-                   <div className="text-white/40 font-bold italic">Low-quality upsell</div>
-                   <div className="text-white font-bold">Premium course samples ✓</div>
+                   <div className="text-white/40 font-semibold italic">Low-quality upsell</div>
+                   <div className="text-white font-semibold">Premium course samples ✓</div>
                  </div>
                  <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-6">
-                   <div className="text-white/40 font-bold italic">Generic textbook copy</div>
-                   <div className="text-white font-bold">Purpose-built, tested ✓</div>
+                   <div className="text-white/40 font-semibold italic">Generic textbook copy</div>
+                   <div className="text-white font-semibold">Purpose-built, tested ✓</div>
                  </div>
                  <div className="grid grid-cols-2 gap-4">
-                   <div className="text-white/40 font-bold italic">Expires after trial</div>
-                   <div className="text-white font-bold">Free forever, unlimited ✓</div>
+                   <div className="text-white/40 font-semibold italic">Time-limited access</div>
+                   <div className="text-white font-semibold">Free forever, unlimited ✓</div>
                  </div>
                </div>
                <Link href="/programs">
@@ -139,7 +139,7 @@ export default function Resources() {
           <div className="grid lg:grid-cols-2 gap-24 items-center">
              <div>
                <h2 className="text-4xl md:text-5xl font-semibold mb-10 text-[#1e1b4b] leading-tight">Evidence-based <span className="text-[#2366c9]">design</span></h2>
-               <p className="text-xl text-[#1e1b4b]/60 font-bold mb-12">We don't create resources based on guesswork. Every resource follows a rigorous 5-step process.</p>
+               <p className="text-xl text-[#1e1b4b]/60 font-medium mb-12">We don't create resources based on guesswork. Every resource follows a rigorous 5-step process.</p>
                <div className="space-y-6">
                  {[
                    "Research Analysis - 50+ studies per type",
@@ -159,11 +159,11 @@ export default function Resources() {
                 <Microscope className="absolute -top-10 -right-10 h-60 w-60 text-blue-500 opacity-10" />
                 <h3 className="text-2xl font-semibold mb-8 text-blue-400">Quality threshold</h3>
                 <div className="text-5xl font-bold text-white mb-4">85%</div>
-                <p className="text-blue-100/60 font-bold uppercase tracking-widest text-xs mb-10">Minimum student satisfaction rate</p>
+                <p className="text-blue-100/60 font-medium uppercase tracking-widest text-xs mb-10">Minimum student satisfaction rate</p>
                 <div className="text-5xl font-bold text-white mb-4">70%</div>
-                <p className="text-blue-100/60 font-bold uppercase tracking-widest text-xs mb-10">Minimum improvement on topic assessments</p>
+                <p className="text-blue-100/60 font-medium uppercase tracking-widest text-xs mb-10">Minimum improvement on topic assessments</p>
                 <div className="pt-10 border-t border-white/10">
-                  <p className="text-xs font-bold text-blue-200 italic">"Active learning produces 6% higher scores and 55% reduction in failures." (Freeman et al., 2014)</p>
+                  <p className="text-xs font-medium text-blue-200 italic">"Active learning produces 6% higher scores and 55% reduction in failures." (Freeman et al., 2014)</p>
                 </div>
              </div>
           </div>
@@ -175,7 +175,7 @@ export default function Resources() {
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
              <h2 className="text-4xl md:text-5xl font-semibold mb-8 text-[#1e1b4b] leading-tight">Experience <span className="text-[#2366c9]">interactive</span> courses</h2>
-             <p className="text-lg text-[#1e1b4b]/40 font-semibold">Free access to 15 selected modules</p>
+             <p className="text-lg text-[#1e1b4b]/40 font-medium">Free access to 15 selected modules</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -193,7 +193,7 @@ export default function Resources() {
                     <h4 className="text-2xl font-semibold text-[#1e1b4b] group-hover:text-white leading-none">{mod.t}</h4>
                  </CardHeader>
                  <CardContent className="p-10">
-                    <p className="text-xs font-semibold text-[#1e1b4b]/40 mb-10 flex items-center gap-2">
+                    <p className="text-xs font-medium text-[#1e1b4b]/40 mb-10 flex items-center gap-2">
                        <Clock className="h-4 w-4" /> {mod.time}
                     </p>
                     <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-bold" onClick={() => window.open(mod.link, '_blank')}>
@@ -207,9 +207,9 @@ export default function Resources() {
           <div className="mt-32 p-16 bg-[#1e1b4b] rounded-[4rem] text-white text-center shadow-2xl relative overflow-hidden">
             <Zap className="absolute -top-10 -left-10 h-40 w-40 text-blue-500 opacity-10" />
             <h3 className="text-3xl text-white font-semibold mb-8">Ready for the full structured course?</h3>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-16 font-bold">1000+ interactive modules, automated spaced repetition, adaptive difficulty, and 24/7 AI support.</p>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-16 font-medium">1000+ interactive modules, automated spaced repetition, adaptive difficulty, and 24/7 AI support.</p>
             <div className="flex flex-wrap justify-center gap-8">
-              <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 h-20 px-12 rounded-2xl font-bold">Start 7-day free trial</Button>
+              <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 h-20 px-12 rounded-2xl font-bold">Explore Free Library</Button>
               <Link href="/programs">
                 <Button size="lg" variant="outline" className="border-4 border-white text-white hover:bg-white/10 h-20 px-12 rounded-2xl font-bold">Explore full programs</Button>
               </Link>
@@ -223,7 +223,7 @@ export default function Resources() {
         <div className="container-custom">
            <div className="text-center max-w-4xl mx-auto mb-32">
              <h2 className="text-4xl md:text-5xl font-semibold mb-8 text-[#1e1b4b] leading-tight">Revision <span className="text-[#2366c9]">& practice</span> tools</h2>
-             <p className="text-lg text-[#1e1b4b]/40 font-semibold">Download premium magic sheets and workbooks</p>
+             <p className="text-lg text-[#1e1b4b]/40 font-medium">Download premium magic sheets and workbooks</p>
           </div>
 
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-6 mb-20 bg-white p-6 rounded-[3rem] shadow-xl border-4 border-blue-900/10">
@@ -275,7 +275,7 @@ export default function Resources() {
            <div className="grid lg:grid-cols-2 gap-24 items-center">
               <div className="bg-white/5 p-16 rounded-[4rem] border-4 border-white/10 backdrop-blur-sm shadow-2xl">
                  <h2 className="text-4xl md:text-5xl font-semibold mb-10 text-blue-400 leading-none">Parent <br/>support</h2>
-                 <p className="text-xl text-blue-100/60 font-bold mb-12">Supporting your child's O-Level journey with research-backed guides.</p>
+                 <p className="text-xl text-blue-100/60 font-medium mb-12">Supporting your child's O-Level journey with research-backed guides.</p>
                  <div className="space-y-6">
                     {[
                       "O-Level Survival Guide (20 pages)",
@@ -284,7 +284,7 @@ export default function Resources() {
                       "Understanding Cambridge Reports"
                     ].map((guide, i) => (
                       <div key={i} className="flex items-center justify-between p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all group">
-                         <span className="font-semibold text-sm">{guide}</span>
+                         <span className="font-medium text-sm">{guide}</span>
                          <Button variant="ghost" className="text-blue-400 hover:text-white p-0 h-auto">
                             <Download className="h-6 w-6" />
                          </Button>
@@ -294,7 +294,7 @@ export default function Resources() {
               </div>
               <div className="space-y-12">
                  <h2 className="text-4xl md:text-5xl text-white font-semibold leading-none">Schools use <span className="text-blue-400">these</span></h2>
-                 <p className="text-2xl text-blue-100/60 font-bold leading-relaxed">Many partner schools distribute our parent guides during O-Level orientation programs to help families understand the system.</p>
+                 <p className="text-2xl text-blue-100/60 font-medium leading-relaxed">Many partner schools distribute our parent guides during O-Level orientation programs to help families understand the system.</p>
                  <Link href="/schools">
                     <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-24 px-16 rounded-3xl font-bold text-xl shadow-2xl">Explore schools</Button>
                  </Link>
@@ -308,11 +308,11 @@ export default function Resources() {
         <div className="container-custom">
            <div className="text-center max-w-4xl mx-auto mb-32">
               <h2 className="text-4xl md:text-5xl font-semibold mb-8 text-[#1e1b4b] leading-tight">Value <span className="text-[#2366c9]">comparison</span></h2>
-              <p className="text-lg text-[#1e1b4b]/40 font-semibold">Free resources vs full programs</p>
+              <p className="text-lg text-[#1e1b4b]/40 font-medium">Free resources vs full programs</p>
            </div>
            
            <div className="max-w-5xl mx-auto border-8 border-blue-50 rounded-[4rem] overflow-hidden shadow-2xl">
-              <div className="grid grid-cols-3 bg-[#1e1b4b] text-white p-10 font-bold text-xs">
+              <div className="grid grid-cols-3 bg-[#1e1b4b] text-white p-10 font-semibold text-xs">
                  <div>Feature</div>
                  <div className="text-center">Free Resources</div>
                  <div className="text-center text-blue-400">Paid Programs</div>
@@ -325,10 +325,10 @@ export default function Resources() {
                 { f: "Spaced Repetition", free: "✕", paid: "Automated System" },
                 { f: "Adaptive Difficulty", free: "✕", paid: "AI-Driven" }
               ].map((row, i) => (
-                <div key={i} className={`grid grid-cols-3 p-10 border-b-2 border-blue-50 font-bold uppercase text-sm ${i % 2 === 0 ? 'bg-white' : 'bg-blue-50/20'}`}>
+                <div key={i} className={`grid grid-cols-3 p-10 border-b-2 border-blue-50 font-semibold uppercase text-sm ${i % 2 === 0 ? 'bg-white' : 'bg-blue-50/20'}`}>
                    <div className="text-[#1e1b4b]">{row.f}</div>
                    <div className="text-center text-[#1e1b4b]/40">{row.free}</div>
-                   <div className="text-center text-[#2366c9] font-bold">{row.paid}</div>
+                   <div className="text-center text-[#2366c9] font-semibold">{row.paid}</div>
                 </div>
               ))}
            </div>
