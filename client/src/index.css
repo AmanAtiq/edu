@@ -57,11 +57,11 @@
 
   /* Typography Hierarchy */
   h1 {
-    @apply text-5xl md:text-7xl font-bold tracking-tight text-slate-950 leading-tight;
+    @apply text-5xl md:text-7xl font-semibold tracking-tight text-slate-950 leading-tight;
   }
 
   h2 {
-    @apply text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight;
+    @apply text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 leading-tight;
   }
 
   h3 {
@@ -82,11 +82,11 @@
 
   /* Utility classes for text styles */
   .text-display-lg {
-    @apply text-6xl md:text-7xl font-bold tracking-tighter text-slate-950 leading-[1.1];
+    @apply text-6xl md:text-7xl font-semibold tracking-tighter text-slate-950 leading-[1.1];
   }
 
   .text-display-sm {
-    @apply text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-snug;
+    @apply text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 leading-snug;
   }
 
   .text-headline {

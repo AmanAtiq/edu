@@ -40,12 +40,12 @@ export default function Programs() {
             className="space-y-8"
           >
             <span className="text-blue-400 font-semibold text-sm">Exam Mastery pathways</span>
-            <h1 className="text-5xl md:text-6xl font-bold mb-8 font-display leading-tight text-white">
+            <h1 className="text-5xl md:text-6xl font-semibold mb-8 font-display leading-tight text-white">
               STOP THE <span className="text-blue-400">STUDY STRUGGLE</span>
             </h1>
             
             <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-2xl md:text-3xl text-blue-100 font-bold leading-tight">
+              <p className="text-2xl md:text-3xl text-blue-100 font-semibold leading-tight">
                 Most students struggle because they forget 80% of what they learn within 48 hours.
               </p>
               <p className="text-lg text-blue-200/60 font-medium italic">
@@ -63,7 +63,7 @@ export default function Programs() {
               </div>
             </div>
 
-            <div className="inline-block bg-white text-[#1e1b4b] px-10 py-4 rounded-2xl font-bold text-sm shadow-2xl mt-8">
+            <div className="inline-block bg-white text-[#1e1b4b] px-10 py-4 rounded-2xl font-semibold text-sm shadow-2xl mt-8">
               Proven science. Guaranteed results.
             </div>
           </motion.div>
@@ -107,9 +107,9 @@ export default function Programs() {
                   { label: "Students Served", val: "5k+", sub: "Since 2021" }
                 ].map((stat, i) => (
                   <div key={i} className="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100">
-                    <p className="text-4xl font-bold text-[#1e1b4b] mb-1">{stat.val}</p>
+                    <p className="text-4xl font-semibold text-[#1e1b4b] mb-1">{stat.val}</p>
                     <p className="text-[10px] font-semibold text-blue-600 mb-1">{stat.label}</p>
-                    <p className="text-[10px] font-bold text-[#1e1b4b]/40 uppercase">{stat.sub}</p>
+                    <p className="text-[10px] font-semibold text-[#1e1b4b]/40 uppercase">{stat.sub}</p>
                   </div>
                 ))}
               </div>
@@ -127,7 +127,7 @@ export default function Programs() {
             <div className="space-y-8">
               <div className="bg-[#1e1b4b] p-12 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
-                <h3 className="text-2xl font-bold mb-8 text-red-400">Who it's not for</h3>
+                <h3 className="text-2xl font-semibold mb-8 text-red-400">Who it's not for</h3>
                 <ul className="space-y-6">
                   {[
                     "Lazy students looking for shortcuts",
@@ -135,18 +135,18 @@ export default function Programs() {
                     "Anyone unwilling to follow a systematic roadmap",
                     "Passive learners who only want to watch videos"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-white/60 font-bold uppercase text-xs tracking-widest">
+                    <li key={i} className="flex items-center gap-4 text-white/60 font-semibold uppercase text-xs tracking-widest">
                       <span className="text-red-500 text-lg">✕</span> {item}
                     </li>
                   ))}
                 </ul>
                 <div className="mt-12 pt-8 border-t border-white/10">
-                  <p className="text-xs font-bold text-blue-200 uppercase tracking-[0.2em]">"We build serious scholars, not just exam takers."</p>
+                  <p className="text-xs font-semibold text-blue-200 uppercase tracking-[0.2em]">"We build serious scholars, not just exam takers."</p>
                 </div>
               </div>
 
               <div className="bg-blue-50 p-12 rounded-[4rem] border-4 border-blue-100">
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-8">Success stories</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-8">Success stories</h3>
                 <div className="space-y-6">
                   <p className="text-[#1e1b4b]/70 font-medium italic">"Ahmed went from a 'D' in Physics to an 'A*' in just 4 months. The diagnostic revealed he was missing Grade 7 fundamentals."</p>
                   <p className="text-sm font-semibold text-blue-600">— O-Level parent</p>
@@ -240,14 +240,14 @@ export default function Programs() {
                   <AccordionTrigger className="px-10 py-8 hover:no-underline group">
                     <div className="text-left">
                       <h3 className="text-2xl font-semibold text-[#1e1b4b] group-hover:text-[#2366c9] transition-colors">{path.title}</h3>
-                      <p className="text-blue-600 font-bold uppercase text-xs tracking-widest mt-1">{path.subtitle}</p>
+                      <p className="text-blue-600 font-semibold uppercase text-xs tracking-widest mt-1">{path.subtitle}</p>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-10 pb-10">
                     <div className="pt-6 border-t border-white/50">
                       <div className="mb-8 p-6 bg-white/50 rounded-2xl border border-white">
                         <span className="text-[10px] font-semibold text-[#1e1b4b]/40">Ideal for</span>
-                        <p className="text-[#1e1b4b] font-bold mt-1">{path.for}</p>
+                        <p className="text-[#1e1b4b] font-semibold mt-1">{path.for}</p>
                       </div>
                       <div className="grid md:grid-cols-2 gap-8">
                         {path.priorities.map((item, j) => (
@@ -266,7 +266,7 @@ export default function Programs() {
                         ))}
                       </div>
                       <div className="mt-10">
-                        <Button className="bg-[#2366c9] hover:bg-blue-600 h-14 px-8 rounded-xl font-bold">Explore this pathway</Button>
+                        <Button className="bg-[#2366c9] hover:bg-blue-600 h-14 px-8 rounded-xl font-semibold">Explore this pathway</Button>
                       </div>
                     </div>
                   </AccordionContent>
@@ -282,7 +282,7 @@ export default function Programs() {
         <div className="container-custom">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-5xl text-white font-semibold">System capabilities</h2>
-            <p className="text-xl text-blue-400 font-bold uppercase tracking-widest mt-4">The Engine Powering Your 10X Learning Leap</p>
+            <p className="text-xl text-blue-400 font-semibold uppercase tracking-widest mt-4">The Engine Powering Your 10X Learning Leap</p>
           </div>
           
           <Accordion type="multiple" className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -318,12 +318,12 @@ export default function Programs() {
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b]">Choose your path</h2>
-            <p className="text-xl text-[#1e1b4b]/40 font-bold uppercase tracking-wide">Quick Decision Framework</p>
+            <p className="text-xl text-[#1e1b4b]/40 font-semibold uppercase tracking-wide">Quick Decision Framework</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-blue-600 px-4 border-l-8 border-blue-600">1. Where are you now?</h3>
+              <h3 className="text-2xl font-semibold text-blue-600 px-4 border-l-8 border-blue-600">1. Where are you now?</h3>
               <div className="grid gap-4">
                 {[
                   { q: "GRADE 7-8", path: "Foundation & IGCSE / O-Level Bridge Programs", start: "Pre-O-Level Victory" },
@@ -334,14 +334,14 @@ export default function Programs() {
                   <div key={i} className="p-8 bg-blue-50 rounded-3xl border-2 border-white hover:border-blue-100 transition-all">
                     <span className="text-[10px] font-semibold text-[#2366c9]">{item.q}</span>
                     <h4 className="text-xl font-semibold text-[#1e1b4b] mt-2 mb-1">{item.path}</h4>
-                    <p className="text-xs text-[#1e1b4b]/40 font-bold uppercase">Start With: {item.start}</p>
+                    <p className="text-xs text-[#1e1b4b]/40 font-semibold uppercase">Start With: {item.start}</p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="space-y-8">
-              <h3 className="text-2xl font-bold text-blue-600 px-4 border-l-8 border-blue-600">2. Biggest challenge?</h3>
+              <h3 className="text-2xl font-semibold text-blue-600 px-4 border-l-8 border-blue-600">2. Biggest challenge?</h3>
               <div className="grid gap-4">
                 {[
                   { q: "Foundation Gaps", path: "Diagnostic + Remedial + IGCSE / O-Level Bridge Programs" },
@@ -352,7 +352,7 @@ export default function Programs() {
                   <div key={i} className="p-8 bg-blue-50 rounded-3xl border-2 border-white hover:border-blue-100 transition-all flex items-center justify-between">
                     <div>
                       <h4 className="text-xl font-semibold text-[#1e1b4b]">{item.q}</h4>
-                      <p className="text-xs text-[#1e1b4b]/40 font-bold uppercase mt-1">Recommended: {item.path}</p>
+                      <p className="text-xs text-[#1e1b4b]/40 font-semibold uppercase mt-1">Recommended: {item.path}</p>
                     </div>
                     <ArrowRight className="text-blue-600" />
                   </div>
@@ -441,7 +441,7 @@ export default function Programs() {
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Flexible bundles</h2>
-            <p className="text-xl text-[#1e1b4b]/40 font-bold uppercase tracking-wide">Save Up to 40% with Subject Packages</p>
+            <p className="text-xl text-[#1e1b4b]/40 font-semibold uppercase tracking-wide">Save Up to 40% with Subject Packages</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -459,13 +459,13 @@ export default function Programs() {
                 </div>
                 <ul className="space-y-4 mb-10">
                   {pkg.features.map((f, j) => (
-                    <li key={j} className="text-sm font-bold text-[#1e1b4b]/70 flex items-center gap-3">
+                    <li key={j} className="text-sm font-semibold text-[#1e1b4b]/70 flex items-center gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#2366c9]" /> {f}
                     </li>
                   ))}
                 </ul>
                 <div className="text-[10px] font-medium text-emerald-500 bg-emerald-50/70 inline-block px-3 py-1 rounded-full mb-8">Save {pkg.save} vs individual</div>
-                <Button className={`w-full h-16 rounded-2xl font-bold ${pkg.popular ? 'bg-[#2366c9] hover:bg-blue-600 shadow-lg shadow-blue-200' : 'bg-[#1e1b4b] hover:bg-black'}`}>Select package</Button>
+                <Button className={`w-full h-16 rounded-2xl font-semibold ${pkg.popular ? 'bg-[#2366c9] hover:bg-blue-600 shadow-lg shadow-blue-200' : 'bg-[#1e1b4b] hover:bg-black'}`}>Select package</Button>
               </div>
             ))}
           </div>
@@ -478,10 +478,10 @@ export default function Programs() {
         <div className="container-custom relative z-10">
           <h2 className="text-4xl md:text-6xl text-white font-semibold mb-12 leading-none">Not sure which path <span className="text-blue-400">to take?</span></h2>
           <div className="flex flex-col md:flex-row justify-center gap-8">
-            <Button size="lg" className="h-20 px-12 bg-[#2366c9] hover:bg-blue-600 rounded-2xl text-xl font-bold shadow-xl">
+            <Button size="lg" className="h-20 px-12 bg-[#2366c9] hover:bg-blue-600 rounded-2xl text-xl font-semibold shadow-xl">
               Take Free Diagnostic (90 Min)
             </Button>
-            <Button size="lg" variant="outline" className="h-20 px-12 border-4 border-white/10 bg-white/5 hover:bg-white/10 rounded-2xl text-xl font-bold shadow-lg">
+            <Button size="lg" variant="outline" className="h-20 px-12 border-4 border-white/10 bg-white/5 hover:bg-white/10 rounded-2xl text-xl font-semibold shadow-lg">
               Talk to Education Expert
             </Button>
           </div>

@@ -45,7 +45,7 @@ Problem: Too much uppercase, inconsistent sizes, no breathing room
 #### After
 ```
 H1:
-  text-5xl md:text-6xl font-bold text-slate-950
+  text-5xl md:text-6xl font-semibold text-slate-950
   "The Most Comprehensive IGCSE & O-Level Learning System"
   max-w-4xl mx-auto (readable constraint)
   
@@ -85,7 +85,7 @@ Issues: Oversized, too many borders, scattered sizes
 Layout: grid-cols-2 lg:grid-cols-4 gap-4
 Size:   p-6 rounded-xl
 Border: border border-blue-100 (subtle)
-Title:  text-4xl md:text-5xl font-bold
+Title:  text-4xl md:text-5xl font-semibold
 Label:  text-xs font-semibold (not full caps)
 Sub:    text-xs text-slate-500
 Shadow: shadow-sm hover:shadow-md
@@ -121,7 +121,7 @@ Border:    border border-slate-200 (clean line)
 Radius:    rounded-xl (modern, minimal)
 Padding:   p-8
 Space:     gap-6 (breathable)
-Title:     text-2xl font-bold (sentence case)
+Title:     text-2xl font-semibold (sentence case)
 Label:     text-xs font-medium (minimal caps)
 Shadow:    shadow-sm hover:shadow-lg (subtle, responsive)
 Badge:     rounded-lg, fits naturally
@@ -185,7 +185,7 @@ Issues: Harsh contrast, hard to read, overwhelming styling
 #### After
 ```
 Background: bg-slate-900 (softer dark)
-Text:       font-bold, sentence case
+Text:       font-semibold, sentence case
 Labels:     text-xs font-medium tracking-wide (light)
 Borders:    border border-blue-800/50 (subtle)
 Shadow:     None or shadow-sm (minimal)

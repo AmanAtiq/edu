@@ -112,7 +112,7 @@ export default function ForParents() {
             <Badge className="bg-blue-500/20 text-blue-200 mb-6 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-blue-500/30">
               For Parents
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-5">
+            <h1 className="text-5xl md:text-6xl font-semibold text-white leading-tight mb-5">
               Your Child Deserves a <span className="text-blue-400">Structured Path</span> to O-Level Success
             </h1>
             <p className="text-2xl md:text-3xl font-black text-blue-300 uppercase tracking-wide mb-6">Beyond Tutoring.</p>
@@ -137,17 +137,17 @@ export default function ForParents() {
 
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/resources">
-                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-bold">
+                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-semibold">
                   Explore Free Library <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
               </Link>
               <InquiryDialog
                 defaultType="diagnostic"
                 title="Take Free Diagnostic"
-                trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">Take Free Diagnostic</Button>}
+                trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">Take Free Diagnostic</Button>}
               />
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">
+                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
                   Speak With Our Team
                 </Button>
               </Link>
@@ -159,14 +159,14 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Why O-Level Demands a Different Approach</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Why O-Level Demands a Different Approach</h2>
             <p className="text-xl text-[#1e1b4b]/60 ">The O-Level challenge most families underestimate</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6 items-start">
             <Card className="lg:col-span-2 border-2 border-blue-100 rounded-[2rem] shadow-sm">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-4">Cambridge examinations test thinking — not memorization</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-4">Cambridge examinations test thinking — not memorization</h3>
                 <p className="text-[#1e1b4b]/70 mb-5">
                   O-Level differs fundamentally from national-curriculum exam habits and from what most private tutoring emphasizes.
                 </p>
@@ -183,17 +183,17 @@ export default function ForParents() {
                       <tr className="border-b border-blue-50">
                         <td className="p-4 text-sm font-semibold text-[#1e1b4b]">AO1 — Knowledge</td>
                         <td className="p-4 text-sm font-semibold text-[#1e1b4b]/80">Recall of concepts and facts</td>
-                        <td className="p-4 text-sm font-bold text-green-700"> Usually covered</td>
+                        <td className="p-4 text-sm font-semibold text-green-700"> Usually covered</td>
                       </tr>
                       <tr className="border-b border-blue-50">
                         <td className="p-4 text-sm font-semibold text-[#1e1b4b]">AO2 — Application</td>
                         <td className="p-4 text-sm font-semibold text-[#1e1b4b]/80">Applying knowledge in new contexts</td>
-                        <td className="p-4 text-sm font-bold text-amber-700"> Partially covered</td>
+                        <td className="p-4 text-sm font-semibold text-amber-700"> Partially covered</td>
                       </tr>
                       <tr>
                         <td className="p-4 text-sm font-semibold text-[#1e1b4b]">AO3 — Analysis</td>
                         <td className="p-4 text-sm font-semibold text-[#1e1b4b]/80">Evaluating, interpreting, synthesizing</td>
-                        <td className="p-4 text-sm font-bold text-red-700"> Rarely taught explicitly</td>
+                        <td className="p-4 text-sm font-semibold text-red-700"> Rarely taught explicitly</td>
                       </tr>
                     </tbody>
                   </table>
@@ -207,7 +207,7 @@ export default function ForParents() {
             <div className="space-y-4">
               <Card className="border-2 border-blue-100 rounded-[2rem] bg-blue-50/50">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-[#1e1b4b] mb-3">Built for this exact reality</h3>
+                  <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">Built for this exact reality</h3>
                   <p className="text-sm text-[#1e1b4b]/70">
                     EduMeUp is designed around the thinking Cambridge rewards, not just the content it tests.
                   </p>
@@ -239,8 +239,8 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">The EduMeUp Approach</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-bold">Built with O-Level specialists and decades of learning science</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">The EduMeUp Approach</h2>
+            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Built with O-Level specialists and decades of learning science</p>
           </div>
 
           <p className="text-center text-[#1e1b4b]/70 font-semibold max-w-4xl mx-auto mb-8">
@@ -274,7 +274,7 @@ export default function ForParents() {
         <div className="container-custom max-w-6xl">
           <div className="bg-[#1e1b4b] rounded-[2.5rem] p-8 md:p-12 text-white">
             <p className="text-xs font-black uppercase tracking-widest text-blue-300 mb-2">Key Differentiator</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">Parent Partnership Model</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">Parent Partnership Model</h2>
             <p className="text-blue-100 text-lg  max-w-4xl mb-8">
               Most educational platforms treat parents as billing contacts. EduMeUp treats parents as meaningful partners in the learning process, with explicit guidance on when to intervene and when to allow productive struggle.
             </p>
@@ -298,8 +298,8 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">What’s Covered</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-bold">Comprehensive O-Level subject coverage</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">What’s Covered</h2>
+            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Comprehensive O-Level subject coverage</p>
           </div>
 
           <p className="text-center text-[#1e1b4b]/70 max-w-4xl mx-auto mb-8">
@@ -309,25 +309,25 @@ export default function ForParents() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             <Card className="bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-[#1e1b4b] mb-2">Core Subjects</h3>
+                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">Core Subjects</h3>
                 <p className="text-sm text-[#1e1b4b]/70 ">Mathematics, Physics, Chemistry, Biology, English Language, Economics, Business Studies, Pakistan Studies, Computer Science.</p>
               </CardContent>
             </Card>
             <Card className="bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-[#1e1b4b] mb-2">ATP Courses</h3>
+                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">ATP Courses</h3>
                 <p className="text-sm text-[#1e1b4b]/70 ">Physics, Chemistry, Biology ATP with experimental design, variables, data interpretation, and conclusion writing.</p>
               </CardContent>
             </Card>
             <Card className="bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-[#1e1b4b] mb-2">English Frameworks</h3>
+                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">English Frameworks</h3>
                 <p className="text-sm text-[#1e1b4b]/70 ">Structured Paper 1 summary and Paper 2 essay systems for repeatable high-quality writing.</p>
               </CardContent>
             </Card>
             <Card className="bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-bold text-[#1e1b4b] mb-2">IGCSE / O-Level Bridge Programs + Past Papers</h3>
+                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">IGCSE / O-Level Bridge Programs + Past Papers</h3>
                 <p className="text-sm text-[#1e1b4b]/70">IGCSE / O-Level Bridge Programs (Grades 6–8) and past paper coverage from 2010–2025.</p>
               </CardContent>
             </Card>
@@ -338,8 +338,8 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Human Support — On Your Terms</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-bold">Platform-first. Human help available when needed.</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Human Support — On Your Terms</h2>
+            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Platform-first. Human help available when needed.</p>
           </div>
 
           <p className="text-center text-[#1e1b4b]/70  max-w-4xl mx-auto mb-8">
@@ -350,7 +350,7 @@ export default function ForParents() {
             <Card className="border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
                 <FlaskConical className="h-6 w-6 text-[#2366c9] mb-3" />
-                <h3 className="text-xl font-bold text-[#1e1b4b] mb-2">Online Tutoring</h3>
+                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">Online Tutoring</h3>
                 <p className="text-sm text-[#1e1b4b]/70  mb-3">One-on-one live sessions, booked only when needed, informed by platform data.</p>
                 <p className="text-sm font-semibold text-[#2366c9]">From $15/hour</p>
               </CardContent>
@@ -358,7 +358,7 @@ export default function ForParents() {
             <Card className="border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
                 <MessageCircle className="h-6 w-6 text-[#2366c9] mb-3" />
-                <h3 className="text-xl font-bold text-[#1e1b4b] mb-2">SMK Certified (Subject Master Knowledge Certified) Network</h3>
+                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">SMK Certified (Subject Master Knowledge Certified) Network</h3>
                 <p className="text-sm text-[#1e1b4b]/70 mb-3">In-person support in Lahore, Karachi, Islamabad, and Rawalpindi.</p>
                 <p className="text-sm font-semibold text-[#2366c9]">From $20/hour</p>
               </CardContent>
@@ -366,7 +366,7 @@ export default function ForParents() {
             <Card className="border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
                 <ShieldCheck className="h-6 w-6 text-[#2366c9] mb-3" />
-                <h3 className="text-xl font-bold text-[#1e1b4b] mb-2">Teacher-Guided Programme</h3>
+                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">Teacher-Guided Programme</h3>
                 <p className="text-sm text-[#1e1b4b]/70  mb-3">Structured oversight, homework review, and consistent guidance.</p>
                 <p className="text-sm font-semibold text-[#2366c9]">From $40/month</p>
               </CardContent>
@@ -378,8 +378,8 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Investment and Value</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-bold">Transparent, measurable, and controllable</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Investment and Value</h2>
+            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Transparent, measurable, and controllable</p>
           </div>
 
           <Card className="bg-white border-2 border-blue-100 rounded-[2rem]">
@@ -412,8 +412,8 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Parent Experiences</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-bold">Composite journeys based on common patterns</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Parent Experiences</h2>
+            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Composite journeys based on common patterns</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -438,7 +438,7 @@ export default function ForParents() {
                 <CardContent className="p-6">
                   <h3 className="text-lg  text-[#1e1b4b] mb-2">{story.title}</h3>
                   <p className="text-sm text-[#1e1b4b]/75  mb-3">{story.body}</p>
-                  <p className="text-sm font-bold text-[#2366c9] italic">{story.value}</p>
+                  <p className="text-sm font-semibold text-[#2366c9] italic">{story.value}</p>
                 </CardContent>
               </Card>
             ))}
@@ -449,14 +449,14 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Frequently Asked Questions</h2>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-5">
             {faqs.map((faq, i) => (
               <Card key={i} className="bg-white border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
-                  <h3 className="text-base font-bold text-[#1e1b4b] mb-2">{faq.q}</h3>
+                  <h3 className="text-base font-semibold text-[#1e1b4b] mb-2">{faq.q}</h3>
                   <p className="text-sm text-[#1e1b4b]/70 font-semibold">{faq.a}</p>
                 </CardContent>
               </Card>
@@ -468,19 +468,19 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Start With Confidence</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-bold">Three low-risk ways to begin</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Start With Confidence</h2>
+            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Three low-risk ways to begin</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6 mb-10">
             <Card className="border-2 border-blue-200 rounded-[2rem] bg-white">
               <CardContent className="p-7">
                 <p className="text-xs font-black uppercase tracking-widest text-blue-600 mb-2">Option 1</p>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-3">Explore Free Library</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Explore Free Library</h3>
                 <p className="text-sm text-[#1e1b4b]/70  mb-4">Permanent access to real sample resources: H5P activities, ATP samples, essay frameworks, worked examples, and walkthroughs.</p>
-                <p className="text-[11px] text-[#1e1b4b]/50 font-bold mb-4">No account needed for browsing.</p>
+                <p className="text-[11px] text-[#1e1b4b]/50 font-semibold mb-4">No account needed for browsing.</p>
                 <Link href="/resources">
-                  <Button className="w-full bg-[#2366c9] hover:bg-blue-500 font-bold">Explore Free Library</Button>
+                  <Button className="w-full bg-[#2366c9] hover:bg-blue-500 font-semibold">Explore Free Library</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -488,10 +488,10 @@ export default function ForParents() {
             <Card className="border-2 border-blue-100 rounded-[2rem] bg-white">
               <CardContent className="p-7">
                 <p className="text-xs font-black uppercase tracking-widest text-blue-600 mb-2">Option 2</p>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
                 <p className="text-sm text-[#1e1b4b]/70  mb-4">30–40 minute assessment with topic-level gap report and personalized plan.</p>
                 <Link href="/contact?type=diagnostic">
-                  <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] font-bold">Take Free Diagnostic</Button>
+                  <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -499,11 +499,11 @@ export default function ForParents() {
             <Card className="border-2 border-blue-100 rounded-[2rem] bg-white">
               <CardContent className="p-7">
                 <p className="text-xs font-black uppercase tracking-widest text-blue-600 mb-2">Option 3</p>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-3">Speak With Our Education Team</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Speak With Our Education Team</h3>
                 <p className="text-sm text-[#1e1b4b]/70 mb-4">Discuss your child’s subjects, timeline, and concerns with honest recommendations.</p>
-                <p className="text-sm font-bold text-[#1e1b4b] mb-4">9 AM – 9 PM Pakistan Time • International families supported</p>
+                <p className="text-sm font-semibold text-[#1e1b4b] mb-4">9 AM – 9 PM Pakistan Time • International families supported</p>
                 <Link href="/contact">
-                  <Button variant="outline" className="w-full border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-bold">WhatsApp / Call</Button>
+                  <Button variant="outline" className="w-full border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-semibold">WhatsApp / Call</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -521,35 +521,35 @@ export default function ForParents() {
       </p>
     </div>
 
-    <h3 className="text-3xl md:text-4xl font-bold text-white mb-8 tracking-tight">
+    <h3 className="text-3xl md:text-4xl font-semibold text-white mb-8 tracking-tight">
       Families enrolling within 30 days receive
     </h3>
 
     <div className="grid md:grid-cols-2 gap-y-6 gap-x-12">
       <div className="flex items-center gap-4 group">
         <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
-          <span className="text-sm font-bold">01</span>
+          <span className="text-sm font-semibold">01</span>
         </div>
         <p className="text-lg  text-white">25% off all programmes</p>
       </div>
 
       <div className="flex items-center gap-4 group">
         <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
-          <span className="text-sm font-bold">02</span>
+          <span className="text-sm font-semibold">02</span>
         </div>
         <p className="text-lg  text-white">Free diagnostic assessment</p>
       </div>
 
       <div className="flex items-center gap-4 group">
         <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
-          <span className="text-sm font-bold">03</span>
+          <span className="text-sm font-semibold">03</span>
         </div>
         <p className="text-lg  text-white">Parent Orientation Programme</p>
       </div>
 
       <div className="flex items-center gap-4 group">
         <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
-          <span className="text-sm font-bold">04</span>
+          <span className="text-sm font-semibold">04</span>
         </div>
         <p className="text-lg  text-white">Permanent Library access</p>
       </div>
@@ -559,7 +559,7 @@ export default function ForParents() {
       <p className="text-[11px] font-medium text-blue-200/60 uppercase tracking-widest">
         All pricing in USD • Local currency shown at checkout
       </p>
-      <button className="bg-white text-[#1e1b4b] px-8 py-3 rounded-xl font-bold text-sm hover:bg-blue-50 transition-colors shadow-lg">
+      <button className="bg-white text-[#1e1b4b] px-8 py-3 rounded-xl font-semibold text-sm hover:bg-blue-50 transition-colors shadow-lg">
         Claim Enrollment Offer
       </button>
     </div>
@@ -573,19 +573,19 @@ export default function ForParents() {
 
       <section className="py-20 bg-[#1e1b4b] text-white text-center">
         <div className="container-custom max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">Begin Your Child’s Structured Preparation</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">Begin Your Child’s Structured Preparation</h2>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto mb-8 font-medium">
             See the methodology first. Then decide with confidence.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/resources">
-              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white h-14 px-8 font-bold">Explore Free Library</Button>
+              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white h-14 px-8 font-semibold">Explore Free Library</Button>
             </Link>
             <InquiryDialog
               defaultType="diagnostic"
               title="Free Diagnostic"
               trigger={
-                <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">
+                <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
                   Take Free Diagnostic
                 </Button>
               }
@@ -594,7 +594,7 @@ export default function ForParents() {
               defaultType="general"
               title="Speak With Our Team"
               trigger={
-                <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">
+                <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
                   Speak With Our Team
                 </Button>
               }

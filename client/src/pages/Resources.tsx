@@ -42,7 +42,7 @@ export default function Resources() {
             <Badge className="bg-[#2366c9] text-white border-none px-6 py-2 mb-10 font-semibold text-xs rounded-full">
               Try before you subscribe
             </Badge>
-            <h1 className="text-5xl md:text-6xl text-white font-bold font-display mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl text-white font-semibold font-display mb-8 leading-tight">
               Experience <span className="text-blue-400">$698</span> worth of resources free
             </h1>
             <p className="text-2xl text-blue-100 max-w-3xl mx-auto mb-16 font-medium">
@@ -72,7 +72,7 @@ export default function Resources() {
               <div className="text-center">
                 <div className="text-5xl font-semibold mb-4 text-white">$698</div>
                 <div className="text-blue-400 font-semibold text-xs mb-10">Total sample value free</div>
-                <Button size="lg" className="w-full bg-[#2366c9] hover:bg-blue-500 h-20 rounded-2xl font-bold shadow-2xl">
+                <Button size="lg" className="w-full bg-[#2366c9] hover:bg-blue-500 h-20 rounded-2xl font-semibold shadow-2xl">
                    Take free diagnostic test
                 </Button>
               </div>
@@ -126,7 +126,7 @@ export default function Resources() {
                  </div>
                </div>
                <Link href="/programs">
-                 <Button className="w-full mt-12 h-20 bg-[#2366c9] hover:bg-blue-500 rounded-2xl font-bold">Explore full programs</Button>
+                 <Button className="w-full mt-12 h-20 bg-[#2366c9] hover:bg-blue-500 rounded-2xl font-semibold">Explore full programs</Button>
                </Link>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function Resources() {
                    "Continuous Improvement - Annual updates"
                  ].map((step, i) => (
                    <div key={i} className="flex items-center gap-4 p-6 bg-white rounded-2xl border-2 border-blue-100 shadow-sm">
-                     <div className="h-10 w-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">{i+1}</div>
+                     <div className="h-10 w-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">{i+1}</div>
                      <span className="font-semibold text-[#1e1b4b] text-sm">{step}</span>
                    </div>
                  ))}
@@ -158,9 +158,9 @@ export default function Resources() {
              <div className="bg-[#1e1b4b] p-16 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
                 <Microscope className="absolute -top-10 -right-10 h-60 w-60 text-blue-500 opacity-10" />
                 <h3 className="text-2xl font-semibold mb-8 text-blue-400">Quality threshold</h3>
-                <div className="text-5xl font-bold text-white mb-4">85%</div>
+                <div className="text-5xl font-semibold text-white mb-4">85%</div>
                 <p className="text-blue-100/60 font-medium uppercase tracking-widest text-xs mb-10">Minimum student satisfaction rate</p>
-                <div className="text-5xl font-bold text-white mb-4">70%</div>
+                <div className="text-5xl font-semibold text-white mb-4">70%</div>
                 <p className="text-blue-100/60 font-medium uppercase tracking-widest text-xs mb-10">Minimum improvement on topic assessments</p>
                 <div className="pt-10 border-t border-white/10">
                   <p className="text-xs font-medium text-blue-200 italic">"Active learning produces 6% higher scores and 55% reduction in failures." (Freeman et al., 2014)</p>
@@ -196,7 +196,7 @@ export default function Resources() {
                     <p className="text-xs font-medium text-[#1e1b4b]/40 mb-10 flex items-center gap-2">
                        <Clock className="h-4 w-4" /> {mod.time}
                     </p>
-                    <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-bold" onClick={() => window.open(mod.link, '_blank')}>
+                    <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-semibold" onClick={() => window.open(mod.link, '_blank')}>
                       START MODULE
                     </Button>
                  </CardContent>
@@ -209,9 +209,9 @@ export default function Resources() {
             <h3 className="text-3xl text-white font-semibold mb-8">Ready for the full structured course?</h3>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-16 font-medium">1000+ interactive modules, automated spaced repetition, adaptive difficulty, and 24/7 AI support.</p>
             <div className="flex flex-wrap justify-center gap-8">
-              <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 h-20 px-12 rounded-2xl font-bold">Explore Free Library</Button>
+              <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 h-20 px-12 rounded-2xl font-semibold">Explore Free Library</Button>
               <Link href="/programs">
-                <Button size="lg" variant="outline" className="border-4 border-white text-white hover:bg-white/10 h-20 px-12 rounded-2xl font-bold">Explore full programs</Button>
+                <Button size="lg" variant="outline" className="border-4 border-white text-white hover:bg-white/10 h-20 px-12 rounded-2xl font-semibold">Explore full programs</Button>
               </Link>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function Resources() {
                      </div>
                      <Badge className="bg-blue-100 text-[#2366c9] mb-4 border-none">{res.type}</Badge>
                      <h4 className="text-2xl font-semibold text-[#1e1b4b] leading-tight mb-8">{res.title}</h4>
-                     <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-bold gap-2">
+                     <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-semibold gap-2">
                         <Download className="h-5 w-5" /> DOWNLOAD PDF
                      </Button>
                   </CardContent>
@@ -296,7 +296,7 @@ export default function Resources() {
                  <h2 className="text-4xl md:text-5xl text-white font-semibold leading-none">Schools use <span className="text-blue-400">these</span></h2>
                  <p className="text-2xl text-blue-100/60 font-medium leading-relaxed">Many partner schools distribute our parent guides during O-Level orientation programs to help families understand the system.</p>
                  <Link href="/schools">
-                    <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-24 px-16 rounded-3xl font-bold text-xl shadow-2xl">Explore schools</Button>
+                    <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-24 px-16 rounded-3xl font-semibold text-xl shadow-2xl">Explore schools</Button>
                  </Link>
               </div>
            </div>
@@ -334,7 +334,7 @@ export default function Resources() {
            </div>
            <div className="text-center mt-20">
               <Link href="/programs">
-                <Button size="lg" className="bg-[#1e1b4b] hover:bg-black text-white h-24 px-20 rounded-3xl font-bold text-2xl shadow-2xl border-b-8 border-blue-900">Upgrade to full access</Button>
+                <Button size="lg" className="bg-[#1e1b4b] hover:bg-black text-white h-24 px-20 rounded-3xl font-semibold text-2xl shadow-2xl border-b-8 border-blue-900">Upgrade to full access</Button>
               </Link>
            </div>
         </div>

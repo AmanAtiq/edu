@@ -90,11 +90,11 @@ xl:   20px/32px   - Subheadings
 
 ### Hero Section
 ```
-H1: text-5xl md:text-7xl font-bold text-slate-950
+H1: text-5xl md:text-7xl font-semibold text-slate-950
 Subtitle: text-2xl font-semibold text-slate-700
 Description: text-lg text-slate-600
 
-Key Metric: text-4xl md:text-5xl font-bold text-[#2366c9]
+Key Metric: text-4xl md:text-5xl font-semibold text-[#2366c9]
 Label: text-xs font-medium text-slate-600
 ```
 
@@ -102,7 +102,7 @@ Label: text-xs font-medium text-slate-600
 ```
 Card Header: p-8 pb-6
 Icon: h-12 w-12
-Title: text-2xl font-bold
+Title: text-2xl font-semibold
 Description: text-base text-slate-600
 Features: text-sm font-medium with CheckCircle2 icons
 ```
@@ -154,7 +154,7 @@ xl (1280px): Max container width engagement
 
 ### Text Scaling Example
 ```tsx
-<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+<h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold">
   Heading that scales responsively
 </h1>
 ```
@@ -191,7 +191,7 @@ xl (1280px): Max container width engagement
 ```tsx
 <section className="py-16 md:py-24">
   <div className="container-custom">
-    <h1 className="text-5xl md:text-6xl font-bold text-slate-950 mb-6">
+    <h1 className="text-5xl md:text-6xl font-semibold text-slate-950 mb-6">
       Main heading
     </h1>
     <p className="text-lg text-slate-600 max-w-2xl mb-12">
@@ -205,7 +205,7 @@ xl (1280px): Max container width engagement
 ```tsx
 <Card className="border border-slate-200 p-8 rounded-xl">
   <div className="h-12 w-12 bg-blue-100 rounded-lg mb-6" />
-  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+  <h3 className="text-2xl font-semibold text-slate-900 mb-4">
     Card title
   </h3>
   <p className="text-slate-600 text-base leading-relaxed">

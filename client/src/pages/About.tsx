@@ -22,11 +22,11 @@ export default function About() {
             className="space-y-6"
           >
             <span className="text-blue-400 font-semibold text-sm">About EduMeUp</span>
-            <h1 className="text-5xl md:text-6xl font-bold mb-8 font-display leading-none text-white">
+            <h1 className="text-5xl md:text-6xl font-semibold mb-8 font-display leading-none text-white">
               Transforming Education Through <span className="text-blue-400">Science and Personalization</span>
             </h1>
             <div className="max-w-2xl mx-auto">
-              <h3 className="text-xl font-bold text-blue-200 mb-4">Our Mission:</h3>
+              <h3 className="text-xl font-semibold text-blue-200 mb-4">Our Mission:</h3>
               <p className="text-xl text-blue-100 font-medium leading-relaxed">
                 End the global learning crisis by replacing passive instruction and rapid forgetting with research-validated active learning and systematic retention strategies.
               </p>
@@ -39,7 +39,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-6">
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-6">
               Why Traditional Education Struggles
             </h2>
             <p className="text-xl text-[#1e1b4b]/60 font-medium">The Science of Learning and Forgetting</p>
@@ -48,7 +48,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-16">
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-[#2366c9] mb-4">Challenge #1: The Forgetting Curve</h3>
+                <h3 className="text-2xl font-semibold text-[#2366c9] mb-4">Challenge #1: The Forgetting Curve</h3>
                 <p className="text-[#1e1b4b]/70 leading-relaxed mb-6">
                   Your brain is naturally wired to forget information rapidly without systematic review.
                 </p>
@@ -80,7 +80,7 @@ export default function About() {
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-[#2366c9] mb-4">Challenge #2: Passive vs Active Learning</h3>
+                <h3 className="text-2xl font-semibold text-[#2366c9] mb-4">Challenge #2: Passive vs Active Learning</h3>
                 <p className="text-[#1e1b4b]/70 leading-relaxed mb-6">
                   Research shows dramatic differences in retention based on learning method.
                 </p>
@@ -112,17 +112,17 @@ export default function About() {
           <div className="mt-20 p-12 bg-[#1e1b4b] rounded-[3rem] text-white">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <h4 className="text-3xl font-bold text-blue-400 mb-2">91%</h4>
+                <h4 className="text-3xl font-semibold text-blue-400 mb-2">91%</h4>
                 <p className="text-xs font-semibold text-blue-200">Pass rate</p>
                 <p className="text-[10px] text-white/40 mt-2">vs 35% National</p>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-blue-400 mb-2">47%</h4>
+                <h4 className="text-3xl font-semibold text-blue-400 mb-2">47%</h4>
                 <p className="text-xs font-semibold text-blue-200">A/A* grades</p>
                 <p className="text-[10px] text-white/40 mt-2">vs 18% Traditional</p>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-blue-400 mb-2">75%+</h4>
+                <h4 className="text-3xl font-semibold text-blue-400 mb-2">75%+</h4>
                 <p className="text-xs font-semibold text-blue-200">Retention</p>
                 <p className="text-[10px] text-white/40 mt-2">vs 5-10% Traditional</p>
               </div>
@@ -135,7 +135,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">
               The 10X Learning Leap Model™
             </h2>
             <p className="text-xl text-blue-700 font-medium">A systematic, research-validated process</p>
@@ -143,7 +143,7 @@ export default function About() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-[#1e1b4b] px-8">Phase 1: Foundation Building</h3>
+              <h3 className="text-2xl font-semibold text-[#1e1b4b] px-8">Phase 1: Foundation Building</h3>
               {[
                 { step: 1, title: "AI-Powered Comprehensive Diagnostic", desc: "Identifies exact gaps at sub-skill level in 90 minutes", res: "VanLehn, 2011" },
                 { step: 2, title: "Personalized Remedial Pathway", desc: "Custom plan targeting only identified weak areas", res: "Bloom, 1984" },
@@ -152,7 +152,7 @@ export default function About() {
                 <Card key={i} className="border border-white rounded-xl shadow-sm hover:shadow-xl transition-all">
                   <CardContent className="p-6">
                     <span className="text-[10px] font-semibold text-[#2366c9]">Step {item.step}</span>
-                    <h4 className="text-xl font-bold text-[#1e1b4b] mt-1 mb-2">{item.title}</h4>
+                    <h4 className="text-xl font-semibold text-[#1e1b4b] mt-1 mb-2">{item.title}</h4>
                     <p className="text-[#1e1b4b]/70 font-medium mb-4">{item.desc}</p>
                     <p className="text-[10px] text-[#1e1b4b]/30 font-medium">Research: {item.res}</p>
                   </CardContent>
@@ -161,7 +161,7 @@ export default function About() {
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-[#1e1b4b] px-8">Phase 2: Mastery Building</h3>
+              <h3 className="text-2xl font-semibold text-[#1e1b4b] px-8">Phase 2: Mastery Building</h3>
               {[
                 { step: 4, title: "Dual-Coding Instruction", desc: "Text + visuals + interactives = 2× memory strength", res: "Paivio, 1971; Mayer, 2009" },
                 { step: 5, title: "Mastery Progression Gates", desc: "80% mastery required before advancing", res: "Bloom, 1984" },
@@ -172,7 +172,7 @@ export default function About() {
                 <Card key={i} className="border border-white rounded-xl shadow-sm hover:shadow-xl transition-all">
                   <CardContent className="p-6">
                     <span className="text-[10px] font-semibold text-[#2366c9]">Step {item.step}</span>
-                    <h4 className="text-xl font-bold text-[#1e1b4b] mt-1 mb-2">{item.title}</h4>
+                    <h4 className="text-xl font-semibold text-[#1e1b4b] mt-1 mb-2">{item.title}</h4>
                     <p className="text-[#1e1b4b]/70 font-medium mb-4">{item.desc}</p>
                     <p className="text-[10px] text-[#1e1b4b]/30 font-medium">Research: {item.res}</p>
                   </CardContent>
@@ -187,7 +187,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">
               Three foundational pillars
             </h2>
             <p className="text-xl text-[#1e1b4b]/40 font-medium">What makes EduMeUp different at the core</p>
@@ -221,7 +221,7 @@ export default function About() {
                 <div className="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-lg">
                   <pillar.icon className="h-10 w-10 text-[#2366c9]" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-6">
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-6">
                   {pillar.title}
                 </h3>
                 <p className="text-[#1e1b4b]/70 font-medium mb-6 leading-relaxed">{pillar.text}</p>
@@ -236,7 +236,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">
               University-validated results
             </h2>
             <p className="text-xl text-blue-700 font-medium">Proven through rigorous research (2021-2024)</p>
@@ -247,7 +247,7 @@ export default function About() {
               <div className="space-y-4">
                 <div className="flex justify-between items-end">
                   <span className="text-sm font-semibold text-[#1e1b4b]">Pass rate</span>
-                  <span className="text-2xl font-bold text-[#2366c9]">91% vs 35%</span>
+                  <span className="text-2xl font-semibold text-[#2366c9]">91% vs 35%</span>
                 </div>
                 <div className="h-4 bg-white rounded-full overflow-hidden border-2 border-white">
                   <div className="h-full bg-[#2366c9] rounded-full" style={{ width: "91%" }}></div>
@@ -258,7 +258,7 @@ export default function About() {
               <div className="space-y-4">
                 <div className="flex justify-between items-end">
                   <span className="text-sm font-semibold text-[#1e1b4b]">A/A* achievement</span>
-                  <span className="text-2xl font-bold text-[#2366c9]">47% vs 18%</span>
+                  <span className="text-2xl font-semibold text-[#2366c9]">47% vs 18%</span>
                 </div>
                 <div className="h-4 bg-white rounded-full overflow-hidden border-2 border-white">
                   <div className="h-full bg-[#2366c9] rounded-full" style={{ width: "47%" }}></div>
@@ -269,7 +269,7 @@ export default function About() {
               <div className="space-y-4">
                 <div className="flex justify-between items-end">
                   <span className="text-sm font-semibold text-[#1e1b4b]">Long-term retention</span>
-                  <span className="text-2xl font-bold text-[#2366c9]">75% vs 10%</span>
+                  <span className="text-2xl font-semibold text-[#2366c9]">75% vs 10%</span>
                 </div>
                 <div className="h-4 bg-white rounded-full overflow-hidden border-2 border-white">
                   <div className="h-full bg-[#2366c9] rounded-full" style={{ width: "75%" }}></div>
@@ -287,7 +287,7 @@ export default function About() {
     </svg>
   </div>
 
-  <h3 className="text-3xl font-bold mb-8 text-white tracking-tight">Research Partnership</h3>
+  <h3 className="text-3xl font-semibold mb-8 text-white tracking-tight">Research Partnership</h3>
   
   <div className="space-y-6 relative z-10">
     {/* Institution */}
@@ -331,7 +331,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">
               Supporting every stakeholder
             </h2>
             <p className="text-xl text-[#1e1b4b]/40 font-medium">Education requires all parts working together</p>
@@ -361,7 +361,7 @@ export default function About() {
               }
             ].map((box, i) => (
               <div key={i} className="bg-blue-50 p-6 rounded-xl border border-white hover:border-blue-100 transition-all">
-                <h3 className="text-xl font-bold text-[#1e1b4b] mb-6">{box.title}</h3>
+                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-6">{box.title}</h3>
                 <ul className="space-y-4 mb-8">
                   {box.items.map((item, j) => (
                     <li key={j} className="flex items-start gap-3 text-sm font-medium text-[#1e1b4b]/60">
@@ -420,7 +420,7 @@ export default function About() {
               <h2 className="text-4xl md:text-5xl font-black text-[#1e1b4b] mb-4 uppercase tracking-tight">
                 How EduMeUp Was Born
               </h2>
-              <p className="text-xl text-blue-600 font-bold uppercase tracking-wide">From Frustration to Mission</p>
+              <p className="text-xl text-blue-600 font-semibold uppercase tracking-wide">From Frustration to Mission</p>
             </div>
 
             <div className="prose prose-lg max-w-none text-[#1e1b4b]/80 font-medium leading-relaxed space-y-8">
@@ -566,17 +566,17 @@ export default function About() {
       <section className="py-16 md:py-24 bg-[#1e1b4b] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)] pointer-events-none"></div>
         <div className="container-custom relative z-10 max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h2 className="text-5xl md:text-6xl font-semibold text-white mb-4 leading-tight">
             Ready to transform <span className="text-blue-400">learning?</span>
           </h2>
           <p className="text-lg text-blue-200 mb-8 font-semibold">
             Experience the science of success
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-6">
-           <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-bold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
+           <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
                   Start free diagnostic
             </Button>
-   <Button size="lg" variant="outline" className="h-28 px-20 border-4 border-white/10 bg-white/5 hover:bg-white/10 rounded-3xl text-2xl font-bold shadow-lg">
+   <Button size="lg" variant="outline" className="h-28 px-20 border-4 border-white/10 bg-white/5 hover:bg-white/10 rounded-3xl text-2xl font-semibold shadow-lg">
              Talk to expert
             </Button>
           </div>

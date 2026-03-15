@@ -214,7 +214,7 @@ export default function Blog() {
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#2366c9]" />
         <div className="container-custom relative z-10 text-center max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">O-Level & IGCSE Learning Hub</h1>
+            <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4">O-Level & IGCSE Learning Hub</h1>
             <p className="text-lg text-blue-200 font-medium mb-8 max-w-3xl mx-auto">
               Research-backed articles, exam strategies, and study guides for Cambridge preparation.
             </p>
@@ -270,7 +270,7 @@ export default function Blog() {
                 </div>
                 <div className="p-7 lg:p-8 border-l-4 border-[#2366c9] flex flex-col justify-center">
                   <Badge className="w-fit mb-3 bg-[#EFF6FF] text-[#1e1b4b] border border-slate-200">{featured.category}</Badge>
-                  <h2 className="text-2xl md:text-3xl font-bold text-[#1e1b4b] leading-tight mb-3 line-clamp-2">{featured.title}</h2>
+                  <h2 className="text-2xl md:text-3xl font-semibold text-[#1e1b4b] leading-tight mb-3 line-clamp-2">{featured.title}</h2>
                   <p className="text-sm text-slate-600 font-medium leading-relaxed mb-4 line-clamp-3">{featured.excerpt}</p>
                   <p className="text-xs text-slate-500 font-medium mb-5">
                     {featured.author} · {featured.date} · {featured.readTime} read
@@ -299,7 +299,7 @@ export default function Blog() {
                   <span className={`inline-flex w-fit px-2.5 py-1 rounded-full text-[11px] font-medium ${pillClass[article.category] ?? "bg-[#1e1b4b]/10 text-[#1e1b4b]"}`}>
                     {article.category}
                   </span>
-                  <h3 className="text-[17px] font-bold text-[#1e1b4b] leading-snug mt-2 mb-2 line-clamp-3">{article.title}</h3>
+                  <h3 className="text-[17px] font-semibold text-[#1e1b4b] leading-snug mt-2 mb-2 line-clamp-3">{article.title}</h3>
                   <p className="text-sm text-slate-500 line-clamp-2 mb-3">{article.excerpt}</p>
                   <p className="text-xs text-slate-500 mt-auto mb-3">
                     {article.author} · {article.date} · {article.readTime} read
@@ -316,7 +316,7 @@ export default function Blog() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <p className="text-xs font-medium uppercase tracking-widest text-blue-300 mb-2">{inlineCta.eyebrow}</p>
-                <h3 className="text-2xl font-bold text-white mb-2">{inlineCta.heading}</h3>
+                <h3 className="text-2xl font-semibold text-white mb-2">{inlineCta.heading}</h3>
                 <p className="text-sm text-blue-200 font-medium">{inlineCta.sub}</p>
               </div>
               <div className="flex flex-col items-start md:items-end gap-3 min-w-[220px]">
@@ -353,7 +353,7 @@ export default function Blog() {
           <div className="bg-blue-50 border-l-4 border-[#2366c9] rounded-xl p-6 md:p-8 grid md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Not sure where to start?</p>
-              <h3 className="text-xl font-bold text-[#1e1b4b]">Find Your Starting Point</h3>
+              <h3 className="text-xl font-semibold text-[#1e1b4b]">Find Your Starting Point</h3>
               <p className="text-sm text-slate-700">Sample lessons, essay frameworks, and diagnostic pathways in one place.</p>
               <Link href="/parents">
                 <Button className="bg-[#2366c9] hover:bg-blue-500 text-white font-medium">Take Diagnostic</Button>
@@ -361,7 +361,7 @@ export default function Blog() {
             </div>
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Free resources, no login</p>
-              <h3 className="text-xl font-bold text-[#1e1b4b]">Explore Free Learning Materials</h3>
+              <h3 className="text-xl font-semibold text-[#1e1b4b]">Explore Free Learning Materials</h3>
               <p className="text-sm text-slate-700">No account needed to browse core samples and frameworks.</p>
               <Link href="/resources">
                 <Button variant="outline" className="border-2 border-[#1e1b4b] text-[#1e1b4b] hover:bg-[#1e1b4b] hover:text-white font-medium">Visit Library</Button>
@@ -369,7 +369,7 @@ export default function Blog() {
             </div>
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Talk to a real person</p>
-              <h3 className="text-xl font-bold text-[#1e1b4b]">Speak With Our Education Team</h3>
+              <h3 className="text-xl font-semibold text-[#1e1b4b]">Speak With Our Education Team</h3>
               <p className="text-sm text-slate-700">9AM–9PM PKT. Guidance call, not a pressure sales call.</p>
               <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] hover:bg-[#2366c9] hover:text-white font-medium">WhatsApp Us</Button>
             </div>

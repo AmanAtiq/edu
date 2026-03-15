@@ -17,7 +17,7 @@ export default function Contact() {
           >
             CONTACT <span className="text-blue-400">US</span>
           </motion.h1>
-          <p className="text-2xl text-blue-100 font-bold mb-10  max-w-2xl mx-auto uppercase tracking-wide">We're here to help you navigate your journey.</p>
+          <p className="text-2xl text-blue-100 font-semibold mb-10  max-w-2xl mx-auto uppercase tracking-wide">We're here to help you navigate your journey.</p>
         </div>
       </section>
 
@@ -58,7 +58,7 @@ export default function Contact() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2366c9]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
               <h2 className="text-4xl font-black mb-8 text-[#1e1b4b] uppercase tracking-tighter leading-none">Send us a <span className="text-[#2366c9]">message</span></h2>
-              <p className="mb-12 text-[#1e1b4b]/60 font-bold text-lg leading-relaxed">
+              <p className="mb-12 text-[#1e1b4b]/60 font-semibold text-lg leading-relaxed">
                 Whether you're a parent, student, or school administrator, fill out our quick form and our academic team will reach out.
               </p>
               <InquiryDialog 

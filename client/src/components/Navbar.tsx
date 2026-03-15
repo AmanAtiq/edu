@@ -138,7 +138,7 @@ export function Navbar() {
             <Button variant="ghost" size="icon" className="relative">
               <ShoppingCart className="h-5 w-5" />
               {items.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">
                   {items.length}
                 </span>
               )}
@@ -192,7 +192,7 @@ export function Navbar() {
 
               {groupedLinks.map((group) => (
                 <div key={group.label} className="space-y-1">
-                  <div className="px-4 py-2 text-xs font-bold text-slate-500 uppercase tracking-wider">
+                  <div className="px-4 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">
                     {group.label}
                   </div>
                   {group.children.map((child) => (

@@ -248,7 +248,7 @@ export default function ForStudents() {
             <Badge className="bg-blue-500/20 text-blue-200 mb-6 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest border border-blue-500/30">
               For Students
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
+            <h1 className="text-5xl md:text-6xl font-semibold leading-tight text-white mb-6">
               Stop Studying Hard. <span className="text-blue-400">Start Studying Smart.</span>
             </h1>
             <p className="text-lg md:text-xl text-blue-100 font-medium leading-relaxed max-w-4xl mx-auto mb-4">
@@ -287,7 +287,7 @@ export default function ForStudents() {
             </div>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/resources">
-                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-bold">
+                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-semibold">
                   Explore Free Library <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
               </Link>
@@ -295,13 +295,13 @@ export default function ForStudents() {
                 defaultType="diagnostic"
                 title="Take Free Diagnostic"
                 trigger={
-                  <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">
+                  <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
                     Take Free Diagnostic
                   </Button>
                 }
               />
               <Link href="/how-it-works">
-                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">
+                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
                   See How The Platform Works
                 </Button>
               </Link>
@@ -313,7 +313,7 @@ export default function ForStudents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">We Understand Your Struggles</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">We Understand Your Struggles</h2>
             <p className="text-xl text-[#1e1b4b]/60 font-semibold">Because each struggle below has a systematic solution</p>
           </div>
 
@@ -327,7 +327,7 @@ export default function ForStudents() {
                     </div>
                     <div>
                       <p className="text-[10px] font-semibold uppercase tracking-widest text-blue-600 mb-1">Struggle #{index + 1}</p>
-                      <h3 className="text-2xl font-bold text-[#1e1b4b]">{item.title}</h3>
+                      <h3 className="text-2xl font-semibold text-[#1e1b4b]">{item.title}</h3>
                     </div>
                   </div>
 
@@ -342,7 +342,7 @@ export default function ForStudents() {
                     ))}
                   </div>
                   <p className="text-[#2366c9] font-semibold mb-5">The result: {item.result}</p>
-                  <Button variant="outline" className="border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-bold">
+                  <Button variant="outline" className="border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-semibold">
                     {item.cta}
                   </Button>
                 </CardContent>
@@ -351,7 +351,7 @@ export default function ForStudents() {
           </div>
 
           <div className="mt-16 bg-[#1e1b4b] rounded-[2.5rem] p-8 md:p-12 text-white overflow-x-auto">
-            <h3 className="text-2xl font-bold text-white mb-6">What happens when students follow the system</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6">What happens when students follow the system</h3>
             <table className="w-full min-w-[680px]">
               <thead>
                 <tr className="border-b border-white/10">
@@ -369,8 +369,8 @@ export default function ForStudents() {
                 ].map((row, i) => (
                   <tr key={i} className="border-b border-white/5 last:border-0">
                     <td className="py-3 text-sm font-semibold text-blue-100">{row[0]}</td>
-                    <td className="py-3 text-sm font-bold text-blue-200/80">{row[1]}</td>
-                    <td className="py-3 text-sm font-bold text-white">{row[2]}</td>
+                    <td className="py-3 text-sm font-semibold text-blue-200/80">{row[1]}</td>
+                    <td className="py-3 text-sm font-semibold text-white">{row[2]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -383,7 +383,7 @@ export default function ForStudents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Beyond Content — We Teach How to Learn</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Beyond Content — We Teach How to Learn</h2>
             <p className="text-xl text-[#1e1b4b]/60 font-semibold">7 skills that improve exam outcomes and last for life</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -391,7 +391,7 @@ export default function ForStudents() {
               <Card key={i} className="bg-white border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
                   <p className="text-[10px] font-semibold uppercase text-blue-600 tracking-widest mb-2">Skill {i + 1}</p>
-                  <h3 className="text-lg font-bold text-[#1e1b4b] mb-2">{skill.title}</h3>
+                  <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">{skill.title}</h3>
                   <p className="text-xs text-[#1e1b4b]/70 font-medium mb-2"><span className="text-[#1e1b4b] font-semibold">Why it matters:</span> {skill.why}</p>
                   <p className="text-xs text-[#2366c9] font-medium"><span className="font-semibold">How EduMeUp builds it:</span> {skill.how}</p>
                 </CardContent>
@@ -400,7 +400,7 @@ export default function ForStudents() {
           </div>
           <div className="text-center mt-10">
             <Link href="/resources">
-              <Button className="bg-[#2366c9] hover:bg-blue-500 rounded-xl font-bold">
+              <Button className="bg-[#2366c9] hover:bg-blue-500 rounded-xl font-semibold">
                 Explore Skill-Building Free Library Samples <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -411,14 +411,14 @@ export default function ForStudents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Your Personalized Learning Path</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Your Personalized Learning Path</h2>
             <p className="text-xl text-[#1e1b4b]/60 font-semibold">Four pathways, one platform</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-8">
             {pathways.map((path, i) => (
               <Card key={i} className="border-2 border-blue-50 rounded-[2rem]">
                 <CardHeader className="pb-2">
-                  <h3 className="text-xl font-bold text-[#1e1b4b]">{path.title}</h3>
+                  <h3 className="text-xl font-semibold text-[#1e1b4b]">{path.title}</h3>
                   <p className="text-sm text-[#1e1b4b]/60 font-semibold">{path.profile}</p>
                 </CardHeader>
                 <CardContent>
@@ -438,7 +438,7 @@ export default function ForStudents() {
             <InquiryDialog
               defaultType="diagnostic"
               title="Diagnostic Test"
-              trigger={<Button className="bg-[#1e1b4b] hover:bg-[#2366c9] rounded-xl font-bold">Diagnostic Test Recommends Your Best Pathway →</Button>}
+              trigger={<Button className="bg-[#1e1b4b] hover:bg-[#2366c9] rounded-xl font-semibold">Diagnostic Test Recommends Your Best Pathway →</Button>}
             />
           </div>
         </div>
@@ -447,7 +447,7 @@ export default function ForStudents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Your Transformation Timeline</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Your Transformation Timeline</h2>
             <p className="text-xl text-[#1e1b4b]/60 font-semibold">What progress looks like month by month</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
@@ -455,7 +455,7 @@ export default function ForStudents() {
               <Card key={i} className="bg-white border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
                   <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-1">{month.phase}</p>
-                  <h3 className="text-xl font-bold text-[#1e1b4b] mb-2">{month.title}</h3>
+                  <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">{month.title}</h3>
                   <p className="text-[#1e1b4b]/70 font-medium text-sm mb-2"><span className="font-semibold text-[#1e1b4b]">What you'll feel:</span> {month.feel}</p>
                   <p className="text-[#2366c9] font-semibold text-sm">{month.measurable}</p>
                 </CardContent>
@@ -464,7 +464,7 @@ export default function ForStudents() {
           </div>
 
           <div className="mt-12 bg-white border-2 border-blue-100 rounded-[2rem] p-8">
-            <h3 className="text-2xl font-bold text-[#1e1b4b] mb-4">Composite student journeys</h3>
+            <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-4">Composite student journeys</h3>
             <div className="space-y-4 text-sm text-[#1e1b4b]/80 font-semibold">
               <p><span className="text-[#2366c9] font-semibold">ATP improvement case:</span> A student starting near 22/40 in ATP Chemistry moved to 35–38/40 in mock conditions through structured ATP training and past-paper strategy.</p>
               <p><span className="text-[#2366c9] font-semibold">English structure case:</span> A student struggling with essay structure reached A-grade performance after framework-driven writing practice and feedback cycles.</p>
@@ -477,12 +477,12 @@ export default function ForStudents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Is EduMeUp Right for You?</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Is EduMeUp Right for You?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="border-2 border-green-100 rounded-2xl bg-green-50/40">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center gap-2"><CheckCircle2 className="h-5 w-5" />EduMeUp works best if you</h3>
+                <h3 className="text-xl font-semibold text-green-700 mb-4 flex items-center gap-2"><CheckCircle2 className="h-5 w-5" />EduMeUp works best if you</h3>
                 <ul className="space-y-2 text-sm font-semibold text-[#1e1b4b]/80">
                   <li>• Are willing to practice actively</li>
                   <li>• Want conceptual understanding, not memorization only</li>
@@ -494,7 +494,7 @@ export default function ForStudents() {
             </Card>
             <Card className="border-2 border-red-100 rounded-2xl bg-red-50/40">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2"><AlertTriangle className="h-5 w-5" />Not ideal if you</h3>
+                <h3 className="text-xl font-semibold text-red-700 mb-4 flex items-center gap-2"><AlertTriangle className="h-5 w-5" />Not ideal if you</h3>
                 <ul className="space-y-2 text-sm font-semibold text-[#1e1b4b]/80">
                   <li>• Want shortcuts without effort</li>
                   <li>• Prefer direct answers without thinking</li>
@@ -510,7 +510,7 @@ export default function ForStudents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">Three Ways to Start</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Three Ways to Start</h2>
             <p className="text-xl text-[#1e1b4b]/60 font-semibold">The earlier you start, the stronger your foundation</p>
           </div>
 
@@ -518,11 +518,11 @@ export default function ForStudents() {
             <Card className="border-2 border-blue-200 rounded-[2rem] bg-white shadow-sm">
               <CardContent className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">Recommended</p>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-3">Explore Free Library</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Explore Free Library</h3>
                 <p className="text-sm text-[#1e1b4b]/70 font-semibold mb-4">Permanent free access to sample lessons, ATP previews, essay frameworks, worked examples, and platform walkthroughs.</p>
                 <p className="text-[11px] text-[#1e1b4b]/50 font-semibold mb-4">No time limit • Free account to save progress</p>
                 <Link href="/resources">
-                  <Button className="w-full bg-[#2366c9] hover:bg-blue-500 font-bold">
+                  <Button className="w-full bg-[#2366c9] hover:bg-blue-500 font-semibold">
                     <Library className="h-4 w-4 mr-2" /> Explore Free Library Now
                   </Button>
                 </Link>
@@ -532,12 +532,12 @@ export default function ForStudents() {
             <Card className="border-2 border-blue-100 rounded-[2rem] bg-white shadow-sm">
               <CardContent className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">Option 2</p>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
                 <p className="text-sm text-[#1e1b4b]/70 font-semibold mb-4">30–40 minute test with topic-level gap analysis and personalized roadmap.</p>
                 <InquiryDialog
                   defaultType="diagnostic"
                   title="Take Free Diagnostic Assessment"
-                  trigger={<Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] font-bold">Take Free Diagnostic</Button>}
+                  trigger={<Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>}
                 />
               </CardContent>
             </Card>
@@ -545,10 +545,10 @@ export default function ForStudents() {
             <Card className="border-2 border-blue-100 rounded-[2rem] bg-white shadow-sm">
               <CardContent className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">Option 3</p>
-                <h3 className="text-2xl font-bold text-[#1e1b4b] mb-3">Speak With Our Team</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Speak With Our Team</h3>
                 <p className="text-sm text-[#1e1b4b]/70 font-semibold mb-4">Discuss your subjects, timeline, and concerns with zero pressure.</p>
                 <p className="text-sm font-semibold text-[#1e1b4b] mb-4">Available 9 AM – 9 PM Pakistan Time</p>
-                <Button variant="outline" className="w-full border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-bold">
+                <Button variant="outline" className="w-full border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-semibold">
                   <MessageCircle className="h-4 w-4 mr-2" /> Contact Support Team
                 </Button>
               </CardContent>
@@ -557,7 +557,7 @@ export default function ForStudents() {
 
           <div className="bg-[#1e1b4b] rounded-[2rem] p-8 text-white">
             <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-2">March 2026 launch offer</p>
-            <h3 className="text-2xl font-bold text-white mb-4">Enroll within 30 days and receive</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">Enroll within 30 days and receive</h3>
             <div className="grid md:grid-cols-2 gap-3 text-sm font-semibold text-blue-100">
               <p>• 25% off all programmes</p>
               <p>• Free diagnostic assessment included</p>
@@ -576,7 +576,7 @@ export default function ForStudents() {
             ].map((faq, i) => (
               <Card key={i} className="bg-white border border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
-                  <h4 className="text-base font-bold text-[#1e1b4b] mb-2">{faq[0]}</h4>
+                  <h4 className="text-base font-semibold text-[#1e1b4b] mb-2">{faq[0]}</h4>
                   <p className="text-sm text-[#1e1b4b]/70 font-semibold">{faq[1]}</p>
                 </CardContent>
               </Card>
@@ -587,21 +587,21 @@ export default function ForStudents() {
 
       <section className="py-20 bg-[#1e1b4b] text-white text-center">
         <div className="container-custom max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">The opportunity is yours.</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">The opportunity is yours.</h2>
           <p className="text-lg text-blue-100 font-medium max-w-3xl mx-auto mb-8">
             Every activity, feedback loop, and progression gate is built around how learning actually works.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/resources">
-              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-bold h-14 px-8">Explore Free Library</Button>
+              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-14 px-8">Explore Free Library</Button>
             </Link>
             <InquiryDialog
               defaultType="diagnostic"
               title="Take Free Diagnostic"
-              trigger={<Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">Take Free Diagnostic</Button>}
+              trigger={<Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">Take Free Diagnostic</Button>}
             />
             <Link href="/how-it-works">
-              <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-bold">See Inside The Platform</Button>
+              <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">See Inside The Platform</Button>
             </Link>
           </div>
         </div>

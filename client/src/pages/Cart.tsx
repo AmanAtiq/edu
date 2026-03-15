@@ -54,7 +54,7 @@ export default function Cart() {
             <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle2 className="h-10 w-10 text-emerald-600" />
             </div>
-            <h1 className="text-3xl font-bold mb-4">Enrollment Confirmed!</h1>
+            <h1 className="text-3xl font-semibold mb-4">Enrollment Confirmed!</h1>
             <p className="text-slate-600 mb-8">
               Welcome to EduMeUp! Your order has been processed and you now have full access to your selected programs.
             </p>
@@ -73,7 +73,7 @@ export default function Cart() {
     <Layout>
       <div className="bg-slate-50 py-16">
         <div className="container-custom">
-          <h1 className="text-4xl font-bold mb-8">Your Shopping Cart</h1>
+          <h1 className="text-4xl font-semibold mb-8">Your Shopping Cart</h1>
           
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2 space-y-4">

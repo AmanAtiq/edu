@@ -65,7 +65,7 @@ export function StudentApplicationForm() {
     <form onSubmit={handleSubmit} className="space-y-8 max-h-[80vh] overflow-y-auto pr-2">
       {/* PART 1 — STUDENT INFORMATION */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 1 — Student Information</h3>
+        <h3 className="font-semibold text-lg">Part 1 — Student Information</h3>
 
         <div>
           <label className="block font-medium">Student Full Name</label>
@@ -172,7 +172,7 @@ export function StudentApplicationForm() {
 
       {/* PART 2 — SUBJECTS NEEDED */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 2 — Subjects Needed</h3>
+        <h3 className="font-semibold text-lg">Part 2 — Subjects Needed</h3>
         <div>
           <label htmlFor="primarySubject" className="block font-medium">Subject</label>
           <select
@@ -209,7 +209,7 @@ export function StudentApplicationForm() {
 
       {/* PART 3 — TUTORING PREFERENCE */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 3 — Tutoring Preference</h3>
+        <h3 className="font-semibold text-lg">Part 3 — Tutoring Preference</h3>
 
         <div className="space-y-2">
           <label className="block font-medium">Learning Mode</label>
@@ -252,7 +252,7 @@ export function StudentApplicationForm() {
 
       {/* PART 4 — LEARNING SCENARIO */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 4 — Learning Scenario</h3>
+        <h3 className="font-semibold text-lg">Part 4 — Learning Scenario</h3>
         <div className="space-y-2">
           {["Late Starter", "Advanced Learner", "Slow Learner", "Not Sure"].map((type) => (
             <label key={type} className="flex gap-2">
@@ -265,7 +265,7 @@ export function StudentApplicationForm() {
 
       {/* PART 5 — CURRENT PERFORMANCE */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 5 — Current Performance</h3>
+        <h3 className="font-semibold text-lg">Part 5 — Current Performance</h3>
 
         <div>
           <label className="block font-medium">Current Average % or Grade</label>
@@ -292,7 +292,7 @@ export function StudentApplicationForm() {
 
       {/* PART 6 — SCHEDULE PREFERENCES */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 6 — Schedule Preferences</h3>
+        <h3 className="font-semibold text-lg">Part 6 — Schedule Preferences</h3>
 
         <div>
           <label className="block font-medium">Availability</label>
@@ -388,7 +388,7 @@ export function StudentApplicationForm() {
 
       {/* PART 8 — CONSENT */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-bold text-lg">Part 8 — Parent Consent</h3>
+        <h3 className="font-semibold text-lg">Part 8 — Parent Consent</h3>
         <label className="flex gap-2">
           <input type="checkbox" checked={formData.parentConsent} onChange={(e) => handleChange("parentConsent", e.target.checked)} required />
           I authorize this application and agree to EduMeUp's terms
@@ -396,7 +396,7 @@ export function StudentApplicationForm() {
       </section>
 
       <div className="flex justify-center pt-4">
-        <button type="submit" className="bg-[#2366c9] hover:bg-blue-500 text-white font-bold px-10 py-3 rounded-2xl shadow-lg transition">
+        <button type="submit" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold px-10 py-3 rounded-2xl shadow-lg transition">
           Submit Student Application
         </button>
       </div>
@@ -491,7 +491,7 @@ export function TutorApplicationForm() {
       
       {/* Part 1 — Personal Information */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 1 — Personal Information</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 1 — Personal Information</h3>
         
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
@@ -585,7 +585,7 @@ export function TutorApplicationForm() {
 
       {/* Part 2 — Qualifications */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 2 — Qualifications & Experience</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 2 — Qualifications & Experience</h3>
 
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
@@ -669,7 +669,7 @@ export function TutorApplicationForm() {
 
       {/* Part 3 — Teaching Subjects & Grades */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 3 — Subjects & Grade Levels</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 3 — Subjects & Grade Levels</h3>
 
         <div>
           <label className="text-sm font-semibold text-gray-700 mb-2 block">Subject(s) They Can Teach</label>
@@ -737,7 +737,7 @@ export function TutorApplicationForm() {
 
       {/* Part 4 — Teaching Mode & Languages */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 4 — Teaching Mode & Languages</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 4 — Teaching Mode & Languages</h3>
 
         <div>
           <label className="text-sm font-semibold text-gray-700 mb-2 block">Teaching Mode</label>
@@ -799,7 +799,7 @@ export function TutorApplicationForm() {
 
       {/* Part 5 — Digital Skills */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2 mb-4">Part 5 — Digital Skills (Rate 1-5)</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2 mb-4">Part 5 — Digital Skills (Rate 1-5)</h3>
         {Object.keys(formData.digitalSkills).map(skill => (
           <div key={skill} className="flex items-center justify-between mb-3">
             <label htmlFor={`skill-${skill}`} className="text-sm font-medium capitalize">
@@ -820,7 +820,7 @@ export function TutorApplicationForm() {
 
       {/* Part 6 — Professional References */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 6 — Professional Reference</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 6 — Professional Reference</h3>
         
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
@@ -864,7 +864,7 @@ export function TutorApplicationForm() {
 
       {/* Part 7 — File Uploads */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 7 — Uploads</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 7 — Uploads</h3>
         
         <div className="flex flex-col gap-3">
           <div>
@@ -910,7 +910,7 @@ export function TutorApplicationForm() {
 
       {/* Part 8 — Agreements */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-bold text-lg text-blue-900 border-b pb-2">Part 8 — Agreements & Certifications</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 8 — Agreements & Certifications</h3>
         
         <label className="flex items-start gap-2">
           <input 
@@ -968,7 +968,7 @@ export function TutorApplicationForm() {
         </label>
       </section>
 
-      <button type="submit" className="w-full bg-[#2366c9] text-white font-bold px-6 py-4 rounded-xl shadow-lg hover:bg-blue-600 transition-colors active:scale-95">
+      <button type="submit" className="w-full bg-[#2366c9] text-white font-semibold px-6 py-4 rounded-xl shadow-lg hover:bg-blue-600 transition-colors active:scale-95">
         Submit Tutor Application
       </button>
     </form>
@@ -1033,7 +1033,7 @@ export default function Tutors() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
         <div className="container-custom relative z-10 max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <h1 className="text-5xl md:text-7xl text-white font-bold font-display mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl text-white font-semibold font-display mb-6 leading-tight">
               NOT TRADITIONAL <br/><span className="text-blue-400">Tutoring</span>
             </h1>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto mb-4 font-semibold">
@@ -1047,7 +1047,7 @@ export default function Tutors() {
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto bg-white/5 p-16 rounded-[3rem] border-4 border-white/10 backdrop-blur-sm text-left items-center">
               <div>
-                <h3 className="text-3xl font-bold mb-6 text-blue-400">The EduMeUp difference</h3>
+                <h3 className="text-3xl font-semibold mb-6 text-blue-400">The EduMeUp difference</h3>
                 <div className="space-y-4">
                   {[
                     "Builds toward independence",
@@ -1103,17 +1103,17 @@ export default function Tutors() {
         <div className="container-custom max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
-              <h4 className="text-3xl font-bold text-blue-400 mb-2">91%</h4>
+              <h4 className="text-3xl font-semibold text-blue-400 mb-2">91%</h4>
               <p className="text-xs font-semibold text-[#1e1b4b]">Pass rate</p>
               <p className="text-[10px] text-[#1e1b4b]/40 mt-2">vs 35% National</p>
             </div>
             <div>
-              <h4 className="text-3xl font-bold text-blue-400 mb-2">47%</h4>
+              <h4 className="text-3xl font-semibold text-blue-400 mb-2">47%</h4>
               <p className="text-xs font-semibold text-[#1e1b4b]">A/A* grades</p>
               <p className="text-[10px] text-[#1e1b4b]/40 mt-2">vs 18% Traditional</p>
             </div>
             <div>
-              <h4 className="text-3xl font-bold text-blue-400 mb-2">75%+</h4>
+              <h4 className="text-3xl font-semibold text-blue-400 mb-2">75%+</h4>
               <p className="text-xs font-semibold text-[#1e1b4b]">Retention</p>
               <p className="text-[10px] text-[#1e1b4b]/40 mt-2">vs 5-10% Traditional</p>
             </div>
@@ -1125,7 +1125,7 @@ export default function Tutors() {
       <section className="py-40 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-32">
-             <h2 className="text-5xl md:text-6xl font-display font-bold mb-8 text-[#1e1b4b] leading-tight">Why scaffolding, <span className="text-[#2366c9]">not crutches</span></h2>
+             <h2 className="text-5xl md:text-6xl font-display font-semibold mb-8 text-[#1e1b4b] leading-tight">Why scaffolding, <span className="text-[#2366c9]">not crutches</span></h2>
              <p className="text-xl text-[#1e1b4b]/40 font-semibold">Building independence, fast</p>
           </div>
 
@@ -1166,7 +1166,7 @@ export default function Tutors() {
                   { t: "Independence is GOAL", d: "Students transition to self-directed platform learning fast." }
                 ].map((item, i) => (
                   <div key={i} className="space-y-6">
-                    <div className="h-16 w-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-xl">{i+1}</div>
+                    <div className="h-16 w-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-semibold text-2xl shadow-xl">{i+1}</div>
                     <h4 className="text-2xl font-semibold text-blue-400">{item.t}</h4>
                     <p className="text-blue-100/60 font-medium leading-relaxed">{item.d}</p>
                   </div>
@@ -1237,7 +1237,7 @@ export default function Tutors() {
             ].map((scen, i) => (
               <Card key={i} className="rounded-[3rem] border-4 border-white shadow-2xl hover:border-[#2366c9] transition-all group bg-white flex flex-col h-full overflow-hidden">
                  <CardContent className="p-16 flex-1 flex flex-col">
-                    <div className="h-20 w-20 bg-[#1e1b4b] text-blue-400 rounded-3xl flex items-center justify-center mb-10 font-bold text-4xl shadow-xl group-hover:bg-[#2366c9] group-hover:text-white transition-all">{scen.id}</div>
+                    <div className="h-20 w-20 bg-[#1e1b4b] text-blue-400 rounded-3xl flex items-center justify-center mb-10 font-semibold text-4xl shadow-xl group-hover:bg-[#2366c9] group-hover:text-white transition-all">{scen.id}</div>
                     <h3 className="text-2xl font-semibold mb-2 text-[#1e1b4b]">{scen.title}</h3>
                     <p className="text-blue-600 font-semibold text-sm mb-10">{scen.sub}</p>
                     <div className="space-y-8 flex-1">
@@ -1261,7 +1261,7 @@ export default function Tutors() {
           
 
           <div className="mt-32 p-16 bg-red-50 rounded-[3rem] border-4 border-red-100 text-center max-w-4xl mx-auto">
-             <h3 className="text-2xl font-bold text-red-600 mb-4">Who doesn't need tutors?</h3>
+             <h3 className="text-2xl font-semibold text-red-600 mb-4">Who doesn't need tutors?</h3>
              <p className="text-[#1e1b4b] font-semibold">Students scoring 50%+, with a solid foundation and completed diagnostics/IGCSE / O-Level Bridge Programs – platform alone is sufficient. Save money, build independence immediately.</p>
           </div>
         </div>
@@ -1340,7 +1340,7 @@ export default function Tutors() {
       Tutor <span className="text-[#2366c9]">Certification & Digital Verification </span>
     </h2>
     <p className="text-lg md:text-xl mb-16 text-[#1e1b4b]/80">
-      Only <span className="font-bold text-[#2366c9]">15–20%</span> of applicants become certified. Here’s how we ensure quality:
+      Only <span className="font-semibold text-[#2366c9]">15–20%</span> of applicants become certified. Here’s how we ensure quality:
     </p>
 
     {/* Accordion Timeline */}
@@ -1402,12 +1402,12 @@ export default function Tutors() {
             <>
               <Disclosure.Button className="flex items-center justify-between w-full py-4 text-left">
                 <div className="flex items-center gap-4">
-                  <div className={`flex items-center justify-center h-10 w-10 rounded-full bg-[#2366c9] text-white font-bold text-lg`}>
+                  <div className={`flex items-center justify-center h-10 w-10 rounded-full bg-[#2366c9] text-white font-semibold text-lg`}>
                     {layer.step}
                   </div>
                   <h4 className="text-xl md:text-2xl font-semibold text-[#1e1b4b]">{layer.title}</h4>
                 </div>
-                <span className="text-[#2366c9] font-bold">{open ? "-" : "+"}</span>
+                <span className="text-[#2366c9] font-semibold">{open ? "-" : "+"}</span>
               </Disclosure.Button>
               <Disclosure.Panel className="pl-14 pb-6">
                 {layer.description}
@@ -1476,7 +1476,7 @@ export default function Tutors() {
           <div className="bg-[#2366c9] p-5 rounded-full mb-4 flex items-center justify-center">
             {card.icon}
           </div>
-          <h4 className="font-bold text-lg mb-2 text-[#1e1b4b]">{card.title}</h4>
+          <h4 className="font-semibold text-lg mb-2 text-[#1e1b4b]">{card.title}</h4>
           <p className="text-sm text-[#1e1b4b]/80">{card.desc}</p>
         </div>
       ))}
@@ -1487,7 +1487,7 @@ export default function Tutors() {
       <p className="text-[#1e1b4b]/80 mb-4">
         <strong>Who we’re looking for:</strong> Bachelor’s in relevant subject · 3+ years Cambridge experience · strong digital skills · commitment to independence‑building · available online (global) or physical (Lahore, Karachi, Islamabad/Rawalpindi, Faisalabad, or your city).
       </p>
-      <p className="font-bold text-[#2366c9] text-xl mb-2">Ready to apply?</p>
+      <p className="font-semibold text-[#2366c9] text-xl mb-2">Ready to apply?</p>
       <p className="text-[#1e1b4b]/70 mb-6 text-sm">
         Pro tip: Uploading a 5–10 min demo lesson increases your chances of getting matched faster.
       </p>
@@ -1497,7 +1497,7 @@ export default function Tutors() {
   trigger={
     <Button
       size="lg"
-      className="bg-[#2366c9] hover:bg-blue-500 active:scale-95 text-white font-bold h-14 px-12 rounded-3xl shadow-lg transition-transform duration-200"
+      className="bg-[#2366c9] hover:bg-blue-500 active:scale-95 text-white font-semibold h-14 px-12 rounded-3xl shadow-lg transition-transform duration-200"
       aria-label="Apply to become an SMK Certified (Subject Master Knowledge Certified) tutor at EduMeUp"
     >
       Apply as tutor
@@ -1538,7 +1538,7 @@ export default function Tutors() {
         trigger={
           <Button
             size="lg"
-            className="bg-[#2366c9] hover:bg-blue-600 text-white font-bold h-14 px-16 rounded-2xl shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
+            className="bg-[#2366c9] hover:bg-blue-600 text-white font-semibold h-14 px-16 rounded-2xl shadow-xl hover:shadow-2xl active:scale-95 transition-all duration-300"
           >
             Apply as Student
           </Button>
@@ -1674,7 +1674,7 @@ export default function Tutors() {
           </div>
 
           <div className="mb-6">
-            <p className="text-2xl font-bold text-[#2366c9]">
+            <p className="text-2xl font-semibold text-[#2366c9]">
               {c.res}
             </p>
           </div>
@@ -1724,7 +1724,7 @@ export default function Tutors() {
                       transition={{ duration: 0.3 }}
                       className="px-8 overflow-hidden"
                     >
-                      <div className="pb-8 text-sm text-[#1e1b4b]/70 font-bold leading-relaxed">
+                      <div className="pb-8 text-sm text-[#1e1b4b]/70 font-semibold leading-relaxed">
                         {item.a}
                       </div>
                     </motion.div>
@@ -1843,7 +1843,7 @@ export default function Tutors() {
           <motion.h2 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="text-6xl md:text-7xl font-bold mb-12 leading-[0.9] text-white"
+            className="text-6xl md:text-7xl font-semibold mb-12 leading-[0.9] text-white"
           >
             Ready for <span className="text-blue-400">independence?</span>
           </motion.h2>
@@ -1855,7 +1855,7 @@ export default function Tutors() {
               defaultType="tutor_application"
               title="Student Tutoring Application"
               trigger={
-                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-bold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
+                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
                   Apply as student
                 </Button> 
               }
@@ -1864,7 +1864,7 @@ export default function Tutors() {
               defaultType="tutor_application"
               title="Tutor Application"
               trigger={
-                <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 font-bold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
+                <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
                   Apply as tutor
                 </Button> 
               }

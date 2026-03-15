@@ -73,7 +73,7 @@ Your website has been successfully redesigned with a clean, premium SaaS-style t
   - Background color softened: #1e1b4b → slate-900
   - Card styling: p-12 rounded-[4rem] → p-6 rounded-lg
   - Icon sizing: h-12 w-12 → h-8 w-8
-  - Title: text-2xl font-black → text-lg font-bold
+  - Title: text-2xl font-black → text-lg font-semibold
   - Removed excessive uppercase
 
 ### 8. **School Section** ✅
@@ -106,7 +106,7 @@ Your website has been successfully redesigned with a clean, premium SaaS-style t
 
 ### Rule 1: Hierarchy Through Weight, Not Just Size
 ```
-Display: font-bold (700) - Large sizes, main emphasis
+Display: font-semibold (700) - Large sizes, main emphasis
 Heading: font-semibold (600) - Section titles
 Body: font-medium (500) - Supporting text
 Text: font-normal (400) - Main content
@@ -186,7 +186,7 @@ Colors: slate-900, slate-600, #2366c9 (consistent)
 // ✅ GOOD - Use semantic HTML with proper hierarchy
 <section className="py-16 md:py-24 bg-white">
   <div className="container-custom">
-    <h1 className="text-5xl md:text-6xl font-bold text-slate-950 mb-6">
+    <h1 className="text-5xl md:text-6xl font-semibold text-slate-950 mb-6">
       Main heading
     </h1>
     <p className="text-lg text-slate-600 max-w-2xl mb-12 leading-relaxed">
@@ -208,7 +208,7 @@ Colors: slate-900, slate-600, #2366c9 (consistent)
 ### Font Size Quick Reference
 - **Hero Title**: `text-5xl md:text-6xl`
 - **Section Title**: `text-4xl md:text-5xl`
-- **Card Title**: `text-2xl font-bold`
+- **Card Title**: `text-2xl font-semibold`
 - **Body Text**: `text-base text-slate-600`
 - **Small Text**: `text-sm text-slate-500`
 - **Label**: `text-xs font-medium uppercase tracking-wide`

@@ -23,7 +23,7 @@ export default function Schools() {
               <Badge className="bg-[#2366c9] text-white border-none px-6 py-2 mb-8 font-semibold text-xs rounded-full shadow-xl shadow-[#2366c9]/20">
                 COMPLETE O-LEVEL TRANSFORMATION SYSTEM
               </Badge>
-              <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight text-white">
+              <h1 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight text-white">
                 Transform Your <br/><span className="text-blue-400">O-Level</span> Program
               </h1>
               <p className="text-lg text-blue-100/80 mb-8 leading-relaxed font-medium max-w-2xl">
@@ -68,7 +68,7 @@ export default function Schools() {
               className="flex-1 w-full max-w-2xl relative"
             >
               <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm">
-                <h3 className="text-2xl font-bold mb-6 text-blue-400">The transformation</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-blue-400">The transformation</h3>
                 <ul className="space-y-6">
                   {[
                     { val: "91%", label: "Pass Rate", sub: "vs 35% national average" },
@@ -95,7 +95,7 @@ export default function Schools() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 text-[#1e1b4b]">Complete <span className="text-[#2366c9]">Ecosystem</span></h2>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-[#1e1b4b]">Complete <span className="text-[#2366c9]">Ecosystem</span></h2>
             <p className="text-lg text-[#1e1b4b]/40 font-semibold">Everything needed to transform student outcomes</p>
           </div>
           
@@ -145,7 +145,7 @@ export default function Schools() {
                       <item.icon className="h-8 w-8" />
                     </div>
                     <Badge className="w-fit mb-2 bg-blue-100 text-blue-700 hover:bg-blue-100 border-none px-4">{item.value}</Badge>
-                    <h3 className="text-xl font-bold mb-4 text-[#1e1b4b]">{item.title}</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-[#1e1b4b]">{item.title}</h3>
                     <p className="text-[#1e1b4b]/60 font-medium text-sm leading-relaxed mb-6 flex-1">{item.desc}</p>
                   </CardContent>
                 </Card>
@@ -160,12 +160,12 @@ export default function Schools() {
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-6 text-[#1e1b4b]">University <br/><span className="text-[#2366c9]">Validated</span></h2>
+              <h2 className="text-5xl md:text-6xl font-semibold mb-6 text-[#1e1b4b]">University <br/><span className="text-[#2366c9]">Validated</span></h2>
               <div className="space-y-12">
                 <div>
                   <div className="flex justify-between items-end mb-4">
                     <span className="text-sm font-semibold text-[#1e1b4b]">Pass rate (EduMeUp)</span>
-                    <span className="text-3xl font-bold text-[#2366c9]">91%</span>
+                    <span className="text-3xl font-semibold text-[#2366c9]">91%</span>
                   </div>
                   <div className="h-6 bg-white rounded-full overflow-hidden border-2 border-blue-100 p-1">
                     <motion.div 
@@ -183,7 +183,7 @@ export default function Schools() {
                 <div>
                   <div className="flex justify-between items-end mb-4">
                     <span className="text-sm font-semibold text-[#1e1b4b]">A/A* achievement</span>
-                    <span className="text-3xl font-bold text-[#2366c9]">47%</span>
+                    <span className="text-3xl font-semibold text-[#2366c9]">47%</span>
                   </div>
                   <div className="h-6 bg-white rounded-full overflow-hidden border-2 border-blue-100 p-1">
                     <motion.div 
@@ -201,20 +201,20 @@ export default function Schools() {
             </div>
             
             <div className="bg-[#1e1b4b] p-6 rounded-xl text-white shadow-lg">
-              <h3 className="text-2xl font-bold mb-6 text-blue-400">Retention outcome</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-blue-400">Retention outcome</h3>
               <div className="space-y-12">
                 <div className="grid grid-cols-3 gap-8 text-center">
                   <div>
                     <p className="text-[10px] font-semibold text-blue-400 mb-2">Day 1</p>
-                    <p className="text-3xl font-bold">100%</p>
+                    <p className="text-3xl font-semibold">100%</p>
                   </div>
                   <div>
                     <p className="text-[10px] font-semibold text-blue-400 mb-2">Day 30</p>
-                    <p className="text-3xl font-bold text-green-400">90%</p>
+                    <p className="text-3xl font-semibold text-green-400">90%</p>
                   </div>
                   <div>
                     <p className="text-[10px] font-semibold text-blue-400 mb-2">6 months</p>
-                    <p className="text-3xl font-bold text-green-400">75%</p>
+                    <p className="text-3xl font-semibold text-green-400">75%</p>
                   </div>
                 </div>
                 <div className="pt-12 border-t border-white/10">
@@ -241,7 +241,7 @@ export default function Schools() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 text-[#1e1b4b]">Partnership <span className="text-[#2366c9]">models</span></h2>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-[#1e1b4b]">Partnership <span className="text-[#2366c9]">models</span></h2>
             <p className="text-lg text-[#1e1b4b]/40 font-semibold">Strategic options for institution growth</p>
           </div>
 
@@ -275,7 +275,7 @@ export default function Schools() {
               <AccordionItem key={model.id} value={model.id} className="border border-blue-50 rounded-xl px-6 py-4 hover:border-blue-100 transition-all bg-blue-50/20">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="text-left">
-                    <h3 className="text-2xl font-bold text-[#1e1b4b] group-hover:text-blue-600 transition-colors">{model.title}</h3>
+                    <h3 className="text-2xl font-semibold text-[#1e1b4b] group-hover:text-blue-600 transition-colors">{model.title}</h3>
                     <p className="text-blue-400 font-semibold text-xs mt-1">{model.subtitle}</p>
                   </div>
                 </AccordionTrigger>
@@ -313,7 +313,7 @@ export default function Schools() {
       <section className="py-16 md:py-24 bg-blue-50">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 text-[#1e1b4b]">Available <span className="text-[#2366c9]">tiers</span></h2>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-[#1e1b4b]">Available <span className="text-[#2366c9]">tiers</span></h2>
             <p className="text-lg text-[#1e1b4b]/40 font-semibold">Limited enrollment for 2026</p>
           </div>
 
@@ -346,7 +346,7 @@ export default function Schools() {
             ].map((option, i) => (
               <div key={i} className={`p-6 rounded-xl border border-white flex flex-col ${option.color} ${option.textColor} shadow-lg`}>
                 <h3
-                  className={`text-3xl font-bold mb-2 tracking-tighter ${
+                  className={`text-3xl font-semibold mb-2 tracking-tighter ${
                     option.tier === "CHARTER TIER" ? "text-white" : ""
                   }`}
                 >
@@ -377,7 +377,7 @@ export default function Schools() {
           <motion.h2 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white"
+            className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-white"
           >
             Ready to <span className="text-blue-400">lead</span> your city?
           </motion.h2>

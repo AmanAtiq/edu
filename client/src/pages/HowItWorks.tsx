@@ -89,7 +89,7 @@ export default function HowItWorks() {
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-bold mb-8 font-display leading-tight text-white"
+              className="text-5xl md:text-7xl font-semibold mb-8 font-display leading-tight text-white"
             >
               How <span className="text-blue-400">EduMeUp</span> works
             </motion.h1>
@@ -198,7 +198,7 @@ export default function HowItWorks() {
                <div className="absolute top-0 right-0 w-64 h-64 bg-[#2366c9]/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
                <h3 className="text-3xl text-white font-semibold mb-8">10X learning leap model™</h3>
                <p className="text-xl text-blue-200 font-medium mb-12 uppercase tracking-wide leading-relaxed">Not magic. Science applied consistently. Every student completes all 8 steps.</p>
-               <Button className="w-full h-20 bg-[#2366c9] hover:bg-blue-600 rounded-2xl text-xl font-bold shadow-xl">
+               <Button className="w-full h-20 bg-[#2366c9] hover:bg-blue-600 rounded-2xl text-xl font-semibold shadow-xl">
                  View Full Research
                </Button>
             </div>
@@ -274,7 +274,7 @@ export default function HowItWorks() {
             ].map((story, i) => (
               <div key={i} className="bg-white p-12 rounded-[3.5rem] shadow-xl border-4 border-white hover:border-blue-100 transition-all">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-semibold">
                     {story.name[0]}
                   </div>
                   <div>
@@ -358,7 +358,7 @@ export default function HowItWorks() {
                 </ul>
 
                 <div className="pt-12 border-t border-white/10">
-                  <h3 className="text-2xl font-bold mb-6 text-red-400">Who it's not for</h3>
+                  <h3 className="text-2xl font-semibold mb-6 text-red-400">Who it's not for</h3>
                   <ul className="space-y-4 opacity-60">
                     {[
                       "Those looking for quick 'exam hacks' without effort",
@@ -411,7 +411,7 @@ export default function HowItWorks() {
             
             <div className="grid lg:grid-cols-2 gap-20 items-center relative z-10">
               <div>
-                <h3 className="text-5xl text-white font-bold mb-8 leading-none">
+                <h3 className="text-5xl text-white font-semibold mb-8 leading-none">
                   START YOUR <br /><span className="text-blue-400">10X LEAP</span> TODAY
                 </h3>
                 <div className="space-y-8 mb-12">
@@ -421,7 +421,7 @@ export default function HowItWorks() {
                     { step: "03", title: "Guaranteed Growth", desc: "Follow the system and see results in 14 days" }
                   ].map((s, i) => (
                     <div key={i} className="flex gap-8 group">
-                      <span className="text-3xl font-bold text-blue-800 group-hover:text-blue-400 transition-colors">{s.step}</span>
+                      <span className="text-3xl font-semibold text-blue-800 group-hover:text-blue-400 transition-colors">{s.step}</span>
                       <div>
                         <h4 className="text-xl text-white font-semibold mb-1">{s.title}</h4>
                         <p className="text-blue-100/50 font-medium text-sm">{s.desc}</p>
@@ -454,7 +454,7 @@ export default function HowItWorks() {
                   <div className="p-6 bg-blue-50 rounded-3xl border-2 border-blue-100 flex justify-between items-center">
                     <div>
                       <p className="text-[10px] font-semibold text-blue-600 mb-1">Standard program</p>
-                      <p className="text-2xl font-bold text-[#1e1b4b]">PKR 36,000</p>
+                      <p className="text-2xl font-semibold text-[#1e1b4b]">PKR 36,000</p>
                     </div>
                     <div className="text-right">
                       <p className="text-[10px] font-medium text-[#1e1b4b]/40 uppercase line-through">PKR 45,000</p>
@@ -464,7 +464,7 @@ export default function HowItWorks() {
                   <p className="text-center text-[10px] text-[#1e1b4b]/40 font-medium uppercase">All taxes included • No hidden fees</p>
                 </div>
 
-                <Button className="w-full h-24 bg-[#2366c9] hover:bg-blue-600 rounded-3xl text-2xl font-bold shadow-xl group transition-all">
+                <Button className="w-full h-24 bg-[#2366c9] hover:bg-blue-600 rounded-3xl text-2xl font-semibold shadow-xl group transition-all">
                   Join The Program
                   <ArrowRight className="ml-4 h-6 w-6 group-hover:translate-x-2 transition-transform" />
                 </Button>
@@ -477,14 +477,14 @@ export default function HowItWorks() {
       {/* CTA */}
       <section className="py-40 bg-white text-center relative overflow-hidden">
         <div className="container-custom">
-          <h2 className="text-5xl md:text-7xl font-bold mb-12 text-[#1e1b4b] leading-tight">
+          <h2 className="text-5xl md:text-7xl font-semibold mb-12 text-[#1e1b4b] leading-tight">
             Ready for <span className="text-[#2366c9]">True Mastery?</span>
           </h2>
           <div className="flex flex-col md:flex-row justify-center gap-6">
-            <Button size="lg" className="bg-[#2366c9] hover:bg-blue-600 h-24 px-20 rounded-[2rem] text-2xl font-bold shadow-2xl active:scale-95 transition-all">
+            <Button size="lg" className="bg-[#2366c9] hover:bg-blue-600 h-24 px-20 rounded-[2rem] text-2xl font-semibold shadow-2xl active:scale-95 transition-all">
               Get Started Now
             </Button>
-            <Button size="lg" variant="outline" className="border-4 border-blue-100 text-[#1e1b4b] hover:bg-blue-50 h-24 px-20 rounded-[2rem] text-2xl font-bold shadow-lg active:scale-95 transition-all">
+            <Button size="lg" variant="outline" className="border-4 border-blue-100 text-[#1e1b4b] hover:bg-blue-50 h-24 px-20 rounded-[2rem] text-2xl font-semibold shadow-lg active:scale-95 transition-all">
               Try Free Demo
             </Button>
           </div>

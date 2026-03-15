@@ -277,7 +277,7 @@ export default function Research() {
             <Badge className="bg-blue-400/20 text-blue-200 border border-blue-400/40 mb-6 px-4 py-1.5 uppercase tracking-widest text-xs font-semibold">
               Research & Development
             </Badge>
-            <h1 className="text-5xl md:text-6xl text-white font-bold leading-tight mb-5">
+            <h1 className="text-5xl md:text-6xl text-white font-semibold leading-tight mb-5">
               Where Cognitive Science Meets <span className="text-blue-400">Educational Technology</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-200 font-medium mb-8">PROOF, NOT PROMISES</p>
@@ -296,7 +296,7 @@ export default function Research() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-12">
             {byNumbers.map(([value, label]) => (
               <div key={value} className="rounded-2xl bg-white/10 border border-white/20 p-4 text-center">
-                <p className="text-2xl font-bold text-blue-300">{value}</p>
+                <p className="text-2xl font-semibold text-blue-300">{value}</p>
                 <p className="text-xs text-blue-100 font-medium mt-1">{label}</p>
               </div>
             ))}
@@ -308,12 +308,12 @@ export default function Research() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#pillars">
-              <Button size="lg" className="bg-[#2366c9] hover:bg-[#1d57ac] text-white h-14 px-8 rounded-2xl font-bold">
+              <Button size="lg" className="bg-[#2366c9] hover:bg-[#1d57ac] text-white h-14 px-8 rounded-2xl font-semibold">
                 Explore Our Methodology <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </a>
             <a href="/downloads/learning-science-whitepaper-v1.pdf">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] h-14 px-8 rounded-2xl font-bold">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] h-14 px-8 rounded-2xl font-semibold">
                 Download Whitepaper <Download className="ml-2 h-4 w-4" />
               </Button>
             </a>
@@ -324,7 +324,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">The Crisis of Unscientific Education</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">The Crisis of Unscientific Education</h2>
             <p className="text-lg text-slate-600 font-medium">Why most learning fails — and what science says we should do instead.</p>
           </div>
 
@@ -357,7 +357,7 @@ export default function Research() {
                 ].map(([method, retention], i) => (
                   <div key={method} className={`flex justify-between p-3 rounded-xl ${i >= 3 ? "bg-blue-50 border border-blue-100" : "bg-slate-50 border border-slate-100"}`}>
                     <span className="font-medium text-slate-700">{method}</span>
-                    <span className="font-bold text-[#1e1b4b]">{retention}</span>
+                    <span className="font-semibold text-[#1e1b4b]">{retention}</span>
                   </div>
                 ))}
                 <p className="text-xs text-slate-500 pt-3">
@@ -393,7 +393,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">Why Most EdTech Gets Research Wrong</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Why Most EdTech Gets Research Wrong</h2>
             <p className="text-slate-600 font-medium">Most platforms add “research-backed” as an afterthought. We reverse the order.</p>
           </div>
 
@@ -401,8 +401,8 @@ export default function Research() {
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
                 <tr className="bg-[#1e1b4b] text-white">
-                  <th className="p-4 text-left font-bold">What They Do</th>
-                  <th className="p-4 text-left font-bold">What Research Says</th>
+                  <th className="p-4 text-left font-semibold">What They Do</th>
+                  <th className="p-4 text-left font-semibold">What Research Says</th>
                 </tr>
               </thead>
               <tbody>
@@ -425,7 +425,7 @@ export default function Research() {
       <section id="pillars" className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e1b4b] mb-4">5 Pillars of Evidence-Based Learning</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">5 Pillars of Evidence-Based Learning</h2>
             <p className="text-slate-600 font-medium">The research foundation of EduMeUp&apos;s 10X Learning Leap Model™</p>
           </div>
 
@@ -482,7 +482,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">From Science to Student Experience</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">From Science to Student Experience</h2>
             <p className="text-slate-600 font-medium">What these principles look like in your child&apos;s daily platform experience.</p>
           </div>
 
@@ -490,8 +490,8 @@ export default function Research() {
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
                 <tr className="bg-[#1e1b4b] text-white">
-                  <th className="p-4 text-left font-bold">Research Principle</th>
-                  <th className="p-4 text-left font-bold">What Your Child Actually Does on EduMeUp</th>
+                  <th className="p-4 text-left font-semibold">Research Principle</th>
+                  <th className="p-4 text-left font-semibold">What Your Child Actually Does on EduMeUp</th>
                 </tr>
               </thead>
               <tbody>
@@ -514,7 +514,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">What the Research Actually Shows</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">What the Research Actually Shows</h2>
             <p className="text-slate-600 font-medium">Five comparative effectiveness findings (full library in Whitepaper).</p>
           </div>
 
@@ -543,7 +543,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-[#1e1b4b] text-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl text-white font-bold mb-4">Our Preliminary Data</h2>
+            <h2 className="text-4xl text-white font-semibold mb-4">Our Preliminary Data</h2>
             <p className="text-blue-200 font-medium">Pilot study — honest, preliminary, promising.</p>
           </div>
 
@@ -583,7 +583,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">How We Validate Our Approach</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">How We Validate Our Approach</h2>
             <p className="text-slate-600 font-medium">A five-phase methodology validation roadmap.</p>
           </div>
 
@@ -591,9 +591,9 @@ export default function Research() {
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
                 <tr className="bg-[#1e1b4b] text-white">
-                  <th className="p-4 text-left font-bold">Phase</th>
-                  <th className="p-4 text-left font-bold">Status</th>
-                  <th className="p-4 text-left font-bold">Description</th>
+                  <th className="p-4 text-left font-semibold">Phase</th>
+                  <th className="p-4 text-left font-semibold">Status</th>
+                  <th className="p-4 text-left font-semibold">Description</th>
                 </tr>
               </thead>
               <tbody>
@@ -613,7 +613,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">Honest Limitations</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Honest Limitations</h2>
             <p className="text-slate-600 font-medium">Intellectual honesty in educational research matters.</p>
           </div>
 
@@ -649,7 +649,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">Research Partnerships</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Research Partnerships</h2>
             <p className="text-slate-600 font-medium">Building independent validation through collaboration.</p>
           </div>
 
@@ -689,7 +689,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">Ongoing R&D Initiatives</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Ongoing R&D Initiatives</h2>
             <p className="text-slate-600 font-medium">Continuous improvement through measurable experiments.</p>
           </div>
 
@@ -724,7 +724,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">Selected References</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Selected References</h2>
             <p className="text-slate-600 font-medium">Full APA reference list (60+) is available in the downloadable Whitepaper.</p>
           </div>
 
@@ -749,7 +749,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold text-[#1e1b4b] mb-4">FAQ — Research Questions</h2>
+            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">FAQ — Research Questions</h2>
           </div>
 
           <div className="space-y-6">
@@ -800,7 +800,7 @@ export default function Research() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25)_0%,transparent_60%)]" />
         <div className="container-custom max-w-6xl relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">Proof + Action = Results</h2>
+            <h2 className="text-4xl md:text-5xl text-white font-semibold mb-4">Proof + Action = Results</h2>
             <p className="text-blue-200 text-lg">Turn research into your child&apos;s success.</p>
           </div>
 
@@ -829,15 +829,15 @@ export default function Research() {
             <InquiryDialog
               defaultType="diagnostic"
               title="Free Diagnostic"
-              trigger={<Button size="lg" className="h-14 px-8 rounded-2xl bg-[#2366c9] hover:bg-[#1d57ac] text-white font-bold">Take Free Diagnostic <ArrowRight className="ml-2 h-4 w-4" /></Button>}
+              trigger={<Button size="lg" className="h-14 px-8 rounded-2xl bg-[#2366c9] hover:bg-[#1d57ac] text-white font-semibold">Take Free Diagnostic <ArrowRight className="ml-2 h-4 w-4" /></Button>}
             />
             <Link href="/programs">
-              <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] font-bold">Explore Our Platform</Button>
+              <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] font-semibold">Explore Our Platform</Button>
             </Link>
             <InquiryDialog
               defaultType="consultation"
               title="Schedule Consultation"
-              trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-blue-300 text-blue-100 hover:bg-blue-300 hover:text-[#1e1b4b] font-bold">Book Consultation</Button>}
+              trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-blue-300 text-blue-100 hover:bg-blue-300 hover:text-[#1e1b4b] font-semibold">Book Consultation</Button>}
             />
           </div>
 

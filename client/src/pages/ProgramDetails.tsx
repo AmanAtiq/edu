@@ -27,7 +27,7 @@ export default function ProgramDetails() {
     return (
       <Layout>
         <div className="container-custom py-40 text-center">
-          <h1 className="text-5xl font-bold text-[#1e1b4b] mb-12 uppercase tracking-tighter leading-none">Program Not Found</h1>
+          <h1 className="text-5xl font-semibold text-[#1e1b4b] mb-12 uppercase tracking-tighter leading-none">Program Not Found</h1>
           <p className="mb-8 text-blue-600 font-medium uppercase tracking-widest">The requested program "{slug}" could not be located.</p>
           <Link href="/programs">
             <Button className="bg-[#2366c9] hover:bg-blue-700 h-20 px-16 rounded-3xl text-xl font-semibold uppercase tracking-widest">Back to Programs</Button>
@@ -51,7 +51,7 @@ export default function ProgramDetails() {
               <span className="inline-block px-6 py-2 bg-[#2366c9] text-white rounded-full text-xs font-semibold tracking-[0.3em] uppercase mb-10 shadow-xl shadow-[#2366c9]/20">
                 {program.category.replace(/_/g, " ")}
               </span>
-              <h1 className="text-[67px] text-white md:text-8xl font-bold font-display mb-8 uppercase leading-[0.85] tracking-tighter">{program.title}</h1>
+              <h1 className="text-[67px] text-white md:text-8xl font-semibold font-display mb-8 uppercase leading-[0.85] tracking-tighter">{program.title}</h1>
               <p className="text-2xl text-blue-100 font-medium max-w-3xl leading-relaxed">{program.shortDescription}</p>
             </div>
             
@@ -86,7 +86,7 @@ export default function ProgramDetails() {
             
             {/* Description */}
             <section>
-              <h2 className="text-5xl font-bold mb-10 text-[#1e1b4b] uppercase tracking-tighter leading-none">Program <span className="text-[#2366c9]">Overview</span></h2>
+              <h2 className="text-5xl font-semibold mb-10 text-[#1e1b4b] uppercase tracking-tighter leading-none">Program <span className="text-[#2366c9]">Overview</span></h2>
               <p className="text-2xl text-[#1e1b4b]/70 font-medium leading-relaxed border-l-8 border-blue-100 pl-10">
                 {program.fullDescription}
               </p>
@@ -94,7 +94,7 @@ export default function ProgramDetails() {
 
             {/* Features */}
             <section>
-              <h2 className="text-5xl font-bold mb-12 text-[#1e1b4b] uppercase tracking-tighter leading-none">What You'll <span className="text-[#2366c9]">Master</span></h2>
+              <h2 className="text-5xl font-semibold mb-12 text-[#1e1b4b] uppercase tracking-tighter leading-none">What You'll <span className="text-[#2366c9]">Master</span></h2>
               <div className="grid sm:grid-cols-2 gap-8">
                 {program.features?.map((feature, i) => (
                   <motion.div 
@@ -116,7 +116,7 @@ export default function ProgramDetails() {
           <div className="space-y-10">
             <div className="bg-[#1e1b4b] p-12 rounded-[4rem] border-[10px] border-blue-900 shadow-2xl text-white relative overflow-hidden group">
               <div className="absolute inset-0 bg-[#2366c9]/5 pointer-events-none"></div>
-              <h3 className="font-bold text-2xl mb-10 uppercase tracking-widest text-blue-400">Vital Stats</h3>
+              <h3 className="font-semibold text-2xl mb-10 uppercase tracking-widest text-blue-400">Vital Stats</h3>
               <ul className="space-y-10">
                 <li className="flex items-center gap-6 group/item">
                   <div className="h-14 w-14 bg-[#1e1b4b] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
@@ -150,7 +150,7 @@ export default function ProgramDetails() {
 
             <div className="bg-[#2366c9] p-12 rounded-[4rem] border-4 border-blue-500 shadow-2xl text-white relative overflow-hidden group">
               <Zap className="absolute -top-10 -right-10 h-40 w-40 text-white opacity-10 group-hover:scale-125 transition-transform duration-1000" />
-              <h3 className="font-bold text-2xl mb-4 uppercase tracking-tighter">Need Help?</h3>
+              <h3 className="font-semibold text-2xl mb-4 uppercase tracking-tighter">Need Help?</h3>
               <p className="text-blue-100 mb-10 font-medium leading-relaxed">Talk to our lead academic counselors about mapping your personalized success route.</p>
               <InquiryDialog 
                 defaultType="contact"
