@@ -12,6 +12,7 @@ import {
   ShoppingCart,
   Beaker,
   ChevronDown,
+  Mail,
 } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,6 +35,7 @@ export function Navbar() {
     { href: "/", label: "Home", icon: House },
     { href: "/programs", label: "Mastery Path", icon: BookOpen },
     { href: "/pricing", label: "Pricing", icon: ShoppingCart },
+    { href: "/contact", label: "Contact", icon: Mail },
   ];
 
   const groupedLinks = [
@@ -41,10 +43,12 @@ export function Navbar() {
       label: "Portals",
       icon: Users,
       children: [
-        { href: "/parents", label: "Parents", icon: Users },
+        { href: "/for-schools", label: "For Schools", icon: School },
+        { href: "/for-parents", label: "For Parents", icon: Users },
+        { href: "/parents", label: "Parent Portal", icon: Users },
         { href: "/students", label: "Students", icon: GraduationCap },
         { href: "/tutors", label: "Tutors", icon: GraduationCap },
-        { href: "/schools", label: "Schools", icon: School },
+        { href: "/schools", label: "School Portal", icon: School },
       ],
     },
     {
@@ -52,6 +56,11 @@ export function Navbar() {
       icon: Beaker,
       children: [
         { href: "/resources", label: "Freebies / Resources", icon: FileText },
+        { href: "/resources/all", label: "All Resources", icon: BookOpen },
+        { href: "/resources/workbooks", label: "Conceptual Workbooks", icon: BookOpen },
+        { href: "/resources/topical-workbooks", label: "Topical Workbooks", icon: BookOpen },
+        { href: "/resources/exam-papers", label: "Exam Papers", icon: BookOpen },
+        { href: "/resources/worksheets", label: "Worksheets", icon: BookOpen },
         { href: "/research", label: "Research", icon: Beaker },
         { href: "/blog", label: "Blog", icon: FileText },
       ],
@@ -61,7 +70,9 @@ export function Navbar() {
       icon: Users,
       children: [
         { href: "/about", label: "About", icon: Users },
+        { href: "/why-edumeup", label: "Why EduMeUp", icon: Beaker },
         { href: "/how-it-works", label: "How It Works", icon: BookOpen },
+        { href: "/teacher-training", label: "Teacher Training (SMK)", icon: GraduationCap },
       ],
     },
   ];

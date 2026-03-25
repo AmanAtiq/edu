@@ -136,6 +136,11 @@ export default function ForParents() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/for-parents">
+                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
+                  Open For Parents Main Page
+                </Button>
+              </Link>
               <Link href="/resources">
                 <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-semibold">
                   Explore Free Library <ArrowRight className="h-4 w-4 ml-2" />

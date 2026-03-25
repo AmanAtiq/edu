@@ -286,13 +286,22 @@ export default function Home() {
             
               { label: "SCHOOL", id: "school-section", icon: GraduationIcon },
               { label: "TEACHER", id: "teacher-section", icon: BookOpen }
-         ,  { label: "PARENT", id: "parent-section", icon: UserCheck }
+         ,  { label: "PARENT", href: "/for-parents", icon: UserCheck }
             ].map((role) => (
               <motion.button 
                 key={role.label}
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.99 }}
-                onClick={() => role.id ? scrollToSection(role.id) : null}
+                onClick={() => {
+                  if ("href" in role && role.href) {
+                    window.location.href = role.href;
+                    return;
+                  }
+
+                  if ("id" in role && role.id) {
+                    scrollToSection(role.id);
+                  }
+                }}
                 className="w-full bg-white hover:bg-blue-50 px-4 py-3.5 md:py-4 rounded-xl transition-all border border-blue-200 hover:border-blue-300 shadow-sm hover:shadow-md group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2366c9]/40"
               >
                 <div className="mx-auto h-12 w-12 md:h-16 md:w-16  bg-blue-100 text-[#2366c9] flex items-center justify-center mb-2">

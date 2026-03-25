@@ -20,6 +20,21 @@ import Cart from "@/pages/Cart";
 import Schools from "@/pages/Schools";
 import Tutors from "@/pages/Tutors";
 import Contact from "@/pages/Contact";
+import ForSchools from "@/pages/ForSchools";
+import ForSchoolsPartnership from "@/pages/ForSchoolsPartnership";
+import ForParentsMain from "@/pages/ForParentsMain";
+import TeacherTraining from "@/pages/TeacherTraining";
+import WhyEduMeUp from "@/pages/WhyEduMeUp";
+import ATPCourses from "@/pages/programs/ATPCourses";
+import TutorBooking from "@/pages/programs/TutorBooking";
+import ConceptualWorkbooks from "@/pages/resources/ConceptualWorkbooks";
+import TopicalWorkbooks from "@/pages/resources/TopicalWorkbooks";
+import ExamPapers from "@/pages/resources/ExamPapers";
+import Worksheets from "@/pages/resources/Worksheets";
+import AllResources from "@/pages/resources/AllResources";
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
+import Cookies from "@/pages/Cookies";
 
 function Router() {
   return (
@@ -32,13 +47,30 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/programs" component={Programs} />
+      <Route path="/programs/atp-courses" component={ATPCourses} />
+      <Route path="/programs/tutor-booking" component={TutorBooking} />
       <Route path="/programs/:slug" component={ProgramDetails} />
       <Route path="/resources" component={Resources} />
+      <Route path="/resources/freebies" component={Resources} />
+      <Route path="/resources/all" component={AllResources} />
+      <Route path="/resources/workbooks" component={ConceptualWorkbooks} />
+      <Route path="/resources/topical-workbooks" component={TopicalWorkbooks} />
+      <Route path="/resources/exam-papers" component={ExamPapers} />
+      <Route path="/resources/worksheets" component={Worksheets} />
       <Route path="/about" component={About} />
       <Route path="/cart" component={Cart} />
       <Route path="/schools" component={Schools} />
+      <Route path="/for-schools" component={ForSchools} />
+      <Route path="/for-schools/partnership" component={ForSchoolsPartnership} />
+      <Route path="/for-parents" component={ForParentsMain} />
+      <Route path="/teacher-training" component={TeacherTraining} />
+      <Route path="/why-edumeup" component={WhyEduMeUp} />
+      <Route path="/why-edumeup/how-it-works" component={HowItWorks} />
       <Route path="/tutors" component={Tutors} />
       <Route path="/contact" component={Contact} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/cookies" component={Cookies} />
       <Route component={NotFound} />
     </Switch>
   );

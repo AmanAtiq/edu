@@ -36,7 +36,7 @@ export function Footer() {
                 { label: "IGCSE / O-Level Bridge Programs", href: "/programs" },
                 { label: "Free Resources", href: "/resources" },
                 { label: "For Schools", href: "/schools" },
-                { label: "SMK Certified (Subject Master Knowledge Certified)", href: "/tutors" },
+                { label: "SMK Teacher Certification", href: "/teacher-training#smk" },
                 { label: "About Us", href: "/about" },
               ].map((link) => (
                 <li key={link.href}>
@@ -81,7 +81,20 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-slate-700 pt-8 text-center text-slate-400 [text-shadow:0_0_8px_rgba(226,232,240,0.16)]">
-          <p>&copy; {new Date().getFullYear()} Edumeup. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Edumeup. All rights reserved. {" "}
+            <Link href="/privacy" className="text-slate-300 hover:text-white underline-offset-2 hover:underline">
+              Privacy Policy
+            </Link>
+            {" "}|{" "}
+            <Link href="/terms" className="text-slate-300 hover:text-white underline-offset-2 hover:underline">
+              Terms of Use
+            </Link>
+            {" "}|{" "}
+            <Link href="/cookies" className="text-slate-300 hover:text-white underline-offset-2 hover:underline">
+              Cookie Policy
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
