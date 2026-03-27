@@ -241,67 +241,66 @@ export default function ForStudents() {
 
   return (
     <Layout>
-      <section className="pt-24 pb-28 bg-[#2366c9] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.25)_0%,transparent_55%)]" />
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom relative z-10 max-w-5xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <Badge className="bg-blue-500/20 text-blue-200 mb-6 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest border border-blue-500/30">
+            <Badge className="bg-blue-100 text-[#2366c9] mb-6 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest border border-blue-200">
               For Students
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-semibold leading-tight text-white mb-6">
-              Stop Studying Hard. <span className="text-blue-400">Start Studying Smart.</span>
+            <h1 className="text-5xl md:text-6xl font-semibold leading-tight text-slate-900 mb-6">
+              Stop Studying Hard. <span className="text-[#2366c9]">Start Studying Smart.</span>
             </h1>
-            <p className="text-lg md:text-xl text-blue-100 font-medium leading-relaxed max-w-4xl mx-auto mb-4">
+            <p className="text-lg md:text-xl text-slate-700 font-medium leading-relaxed max-w-4xl mx-auto mb-4">
               You do not need more tuition, more notes, or more late nights. You need the right system, strategy, and feedback.
             </p>
-            <p className="text-[14px] md:text-base text-blue-200/90 font-semibold mb-10">
+            <p className="text-[14px] md:text-base text-slate-600 font-semibold mb-10">
               Designed for O-Level and IGCSE students â€” Cambridge-aligned, research-backed, built for how your brain actually learns.
             </p>
 
-            <div className="bg-white/5 border border-white/10 rounded-[2rem] p-3 md:p-6 mb-10 overflow-x-auto">
+            <div className="bg-white border border-blue-100 shadow-sm rounded-2xl p-3 md:p-6 mb-10 overflow-x-auto">
               <table className="w-full min-w-[760px] text-left">
                 <thead>
-                  <tr className="border-b border-white/10">
-                    <th className="p-3 text-xs font-semibold uppercase tracking-wider text-red-300">What is not working</th>
-                    <th className="p-3 text-xs font-semibold uppercase tracking-wider text-green-300">What EduMeUp does instead</th>
+                  <tr className="border-b border-blue-100">
+                    <th className="p-3 text-xs font-semibold uppercase tracking-wider text-red-600">What is not working</th>
+                    <th className="p-3 text-xs font-semibold uppercase tracking-wider text-green-600">What EduMeUp does instead</th>
                   </tr>
                 </thead>
                 <tbody>
                   {notWorkingVsEdu.map((row, i) => (
-                    <tr key={i} className="border-b border-white/5 last:border-0">
-                      <td className="p-3 text-[14px] text-blue-100/80 font-semibold">{row[0]}</td>
-                      <td className="p-3 text-[14px] text-white font-semibold">{row[1]}</td>
+                    <tr key={i} className="border-b border-blue-50 last:border-0">
+                      <td className="p-3 text-[14px] text-slate-600 font-semibold">{row[0]}</td>
+                      <td className="p-3 text-[14px] text-slate-900 font-semibold">{row[1]}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <p className="text-blue-200 font-semibold mb-8">The earlier you start, the stronger your foundation.</p>
+            <p className="text-slate-600 font-semibold mb-8">The earlier you start, the stronger your foundation.</p>
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {["45,000+ Practice Questions", "Past Papers 2010â€“2025", "80% Mastery Gates", "ATP Pathway to 38â€“40/40"].map((signal, i) => (
-                <span key={i} className="px-3 py-1 rounded-full border border-blue-300/30 bg-blue-500/10 text-[14px] md:text-xs font-semibold uppercase tracking-wide text-blue-100">
+                <span key={i} className="px-3 py-1 rounded-full border border-blue-200 bg-blue-50 text-[14px] md:text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
                   {signal}
                 </span>
               ))}
             </div>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/resources">
-                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-semibold">
-                  Explore Free Library <ArrowRight className="h-4 w-4 ml-2" />
+                <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                  Explore Free Library <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
               </Link>
               <InquiryDialog
                 defaultType="diagnostic"
                 title="Take Free Diagnostic"
                 trigger={
-                  <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
+                  <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
                     Take Free Diagnostic
                   </Button>
                 }
               />
               <Link href="/why-edumeup/how-it-works">
-                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
+                <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
                   See How The Platform Works
                 </Button>
               </Link>
@@ -585,23 +584,23 @@ export default function ForStudents() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#2366c9] text-white text-center">
+      <section className="py-16 md:py-24 bg-blue-50 text-center">
         <div className="container-custom max-w-5xl">
-          <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">The opportunity is yours.</h2>
-          <p className="text-lg text-blue-100 font-medium max-w-3xl mx-auto mb-8">
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-5">The opportunity is yours.</h2>
+          <p className="text-lg text-slate-700 font-medium max-w-3xl mx-auto mb-8">
             Every activity, feedback loop, and progression gate is built around how learning actually works.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/resources">
-              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-14 px-8">Explore Free Library</Button>
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">Explore Free Library <ArrowRight className="ml-2 h-5 w-5" /></Button>
             </Link>
             <InquiryDialog
               defaultType="diagnostic"
               title="Take Free Diagnostic"
-              trigger={<Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">Take Free Diagnostic</Button>}
+              trigger={<Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">Take Free Diagnostic</Button>}
             />
             <Link href="/why-edumeup/how-it-works">
-              <Button size="lg" variant="outline" className="h-14 px-8 border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">See Inside The Platform</Button>
+              <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">See Inside The Platform</Button>
             </Link>
           </div>
         </div>

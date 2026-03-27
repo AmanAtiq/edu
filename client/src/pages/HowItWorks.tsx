@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Layout } from "@/components/Layout";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   Brain,
@@ -119,10 +120,9 @@ export default function HowItWorks() {
               Built for retention, not content delivery.
             </p>
             <Link href="/programs/ai-diagnostic">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-6 py-3 text-[14px] font-semibold text-white hover:bg-blue-700">
-                Start Your Free Diagnostic
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                Start Your Free Diagnostic <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
           </motion.div>
         </div>
@@ -222,33 +222,31 @@ export default function HowItWorks() {
       </section>
 
       {/* THE CYCLE AT A GLANCE */}
-      <section className="py-12 bg-[#2366c9]">
+      <section className="py-12 bg-blue-50">
         <div className="container-custom">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">The Cycle at a Glance</h2>
-            <p className="text-blue-200 text-base font-medium">
-              Diagnose → Repair → Learn → Practise → Retrieve → Assess → Correct → Simulate → <span className="text-blue-400 font-bold">Mastery</span>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4 tracking-tight">The Cycle at a Glance</h2>
+            <p className="text-slate-700 text-base font-medium">
+              Diagnose → Repair → Learn → Practise → Retrieve → Assess → Correct → Simulate → <span className="text-[#2366c9] font-bold">Mastery</span>
             </p>
-            <p className="mt-3 text-[14px] text-blue-300/70">Each step creates the conditions for the next. The sequence is the product.</p>
+            <p className="mt-3 text-[14px] text-slate-500">Each step creates the conditions for the next. The sequence is the product.</p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-14 bg-blue-50/50">
+      <section className="py-16 md:py-20 bg-white">
         <div className="container-custom">
-          <div className="mx-auto max-w-4xl flex flex-col gap-4 sm:flex-row sm:justify-center">
+          <div className="mx-auto max-w-4xl flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/programs/ai-diagnostic">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-700">
-                Start Your Free Diagnostic
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                Start Your Free Diagnostic <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
             <Link href="/for-parents">
-              <span className="inline-flex items-center gap-2 rounded-full border-2 border-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-[#2366c9] hover:bg-blue-50">
-                Parent Dashboard Overview
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
+                Parent Dashboard Overview <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
           </div>
         </div>

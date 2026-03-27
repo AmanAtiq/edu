@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
+import { Button } from "@/components/ui/button";
 
 const stats = [
   { value: "90%", label: "FORGOTTEN", sub: "of learning lost within 6 days without review" },
@@ -107,17 +108,16 @@ export default function WhyEduMeUp() {
             <p className="text-base text-slate-700 max-w-3xl mx-auto leading-relaxed mb-8">
               Not another course platform. A learning transformation system.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/why-edumeup/how-it-works">
-                <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-6 py-3 text-[14px] font-semibold text-white hover:bg-blue-700">
-                  See How It Works
-                  <ArrowRight className="h-4 w-4" />
-                </span>
+                <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                  See How It Works <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
               </Link>
               <Link href="/programs/ai-diagnostic">
-                <span className="inline-flex items-center gap-2 rounded-full border-2 border-[#2366c9] px-6 py-3 text-[14px] font-semibold text-[#2366c9] hover:bg-blue-50">
+                <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
                   Start Free Diagnostic
-                </span>
+                </Button>
               </Link>
             </div>
           </motion.div>
@@ -274,20 +274,18 @@ export default function WhyEduMeUp() {
       </section>
 
       {/* CTA STRIP */}
-      <section className="bg-[#2366c9] py-12">
+      <section className="py-16 md:py-20 bg-blue-50">
         <div className="container-custom">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/programs/ai-diagnostic">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-600">
-                Start Your Free Diagnostic
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                Start Your Free Diagnostic <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
             <Link href="/why-edumeup/how-it-works">
-              <span className="inline-flex items-center gap-2 rounded-full border border-blue-400 px-7 py-3.5 text-[14px] font-semibold text-white hover:border-blue-300">
-                See How the System Works
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
+                See How the System Works <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
           </div>
         </div>

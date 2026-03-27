@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, GraduationCap, BookOpen, Target, Brain, Lightbulb, AlertTriangle, PenLine } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
+import { Button } from "@/components/ui/button";
 
 const workshopDetails = [
   { label: "Workshop Name", value: "Cambridge Teacher Mastery Workshop (CTMW)" },
@@ -295,20 +296,18 @@ export default function TeacherTraining() {
       </section>
 
       {/* CTA STRIP */}
-      <section className="bg-[#2366c9] py-12">
-        <div className="container-custom">
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+      <section className="py-16 md:py-20 bg-blue-50">
+        <div className="container-custom text-center">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
-              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-600">
-                Book for Your School
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                Book for Your School <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
             <Link href="/contact">
-              <span className="inline-flex items-center gap-2 rounded-full border border-blue-400 px-7 py-3.5 text-[14px] font-semibold text-white hover:border-blue-300">
-                Register as an Individual Teacher
-                <ArrowRight className="h-4 w-4" />
-              </span>
+              <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
+                Register as an Individual Teacher <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </Link>
           </div>
         </div>

@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
+import { Button } from "@/components/ui/button";
 import {
   schoolAudience,
   schoolSolutions,
@@ -71,12 +72,11 @@ export default function ForSchools() {
               </Link>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/for-schools/partnership">
-                <span className="inline-flex items-center gap-2 rounded-lg bg-[#2366c9] px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700">
-                  Book a School Consultation
-                  <ArrowRight className="h-4 w-4" />
-                </span>
+                <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                  Book a School Consultation <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
               </Link>
             </div>
           </motion.div>

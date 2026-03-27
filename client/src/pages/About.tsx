@@ -13,21 +13,20 @@ export default function About() {
   return (
     <Layout>
       {/* ================= HERO - THE MISSION ================= */}
-      <section className="pt-28 pb-32 bg-[#2366c9] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_60%)]" />
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom relative z-10 text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="space-y-6"
           >
-            <span className="text-blue-400 font-semibold text-[14px]">About EduMeUp</span>
-            <h1 className="text-5xl md:text-6xl font-semibold mb-8 font-display leading-none text-white">
-              Transforming Education Through <span className="text-blue-400">Science and Personalization</span>
+            <span className="text-[#2366c9] font-semibold text-[14px]">About EduMeUp</span>
+            <h1 className="text-5xl md:text-6xl font-semibold mb-8 font-display leading-none text-slate-900">
+              Transforming Education Through <span className="text-[#2366c9]">Science and Personalization</span>
             </h1>
             <div className="max-w-2xl mx-auto">
-              <h3 className="text-xl font-semibold text-blue-200 mb-4">Our Mission:</h3>
-              <p className="text-xl text-blue-100 font-medium leading-relaxed">
+              <h3 className="text-xl font-semibold text-[#2366c9] mb-4">Our Mission:</h3>
+              <p className="text-xl text-slate-700 font-medium leading-relaxed">
                 End the global learning crisis by replacing passive instruction and rapid forgetting with research-validated active learning and systematic retention strategies.
               </p>
             </div>
@@ -563,21 +562,20 @@ export default function About() {
       </section>
 
       {/* ================= FINAL CTA ================= */}
-      <section className="py-16 md:py-24 bg-[#2366c9] text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)] pointer-events-none"></div>
-        <div className="container-custom relative z-10 max-w-4xl">
-          <h2 className="text-5xl md:text-6xl font-semibold text-white mb-4 leading-tight">
-            Ready to transform <span className="text-blue-400">learning?</span>
+      <section className="py-16 md:py-24 bg-blue-50 text-center">
+        <div className="container-custom max-w-4xl">
+          <h2 className="text-5xl md:text-6xl font-semibold text-slate-900 mb-4 leading-tight">
+            Ready to transform <span className="text-[#2366c9]">learning?</span>
           </h2>
-          <p className="text-lg text-blue-200 mb-8 font-semibold">
+          <p className="text-lg text-slate-600 mb-8 font-semibold">
             Experience the science of success
           </p>
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-           <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
-                  Start free diagnostic
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+              Start Free Diagnostic <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-   <Button size="lg" variant="outline" className="h-28 px-20 border-4 border-white/10 bg-white/5 hover:bg-white/10 rounded-3xl text-2xl font-semibold shadow-lg">
-             Talk to expert
+            <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
+              Talk to Expert <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>

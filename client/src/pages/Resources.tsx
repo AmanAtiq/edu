@@ -35,22 +35,21 @@ export default function Resources() {
   return (
     <Layout>
       {/* SECTION 1: HERO */}
-      <section className="bg-[#2366c9] py-32 text-white relative overflow-hidden text-center">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white text-center">
         <div className="container-custom relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <Badge className="bg-[#2366c9] text-white border-none px-6 py-2 mb-10 font-semibold text-xs rounded-full">
+            <Badge className="bg-blue-100 text-[#2366c9] border border-blue-200 px-6 py-2 mb-10 font-semibold text-xs rounded-full">
               Try before you subscribe
             </Badge>
-            <h1 className="text-5xl md:text-6xl text-white font-semibold font-display mb-8 leading-tight">
-              Experience <span className="text-blue-400">$698</span> worth of resources free
+            <h1 className="text-5xl md:text-6xl text-slate-900 font-semibold font-display mb-8 leading-tight">
+              Experience <span className="text-[#2366c9]">$698</span> worth of resources free
             </h1>
-            <p className="text-2xl text-blue-100 max-w-3xl mx-auto mb-16 font-medium">
+            <p className="text-2xl text-slate-700 max-w-3xl mx-auto mb-16 font-medium">
               Everything here is free. Forever. No credit card. No hidden costs. 
               Just research-backed learning resources to help you succeed.
             </p>
 
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center bg-white/5 p-12 rounded-[4rem] border-4 border-white/10 backdrop-blur-sm text-left">
+            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center bg-white p-10 rounded-2xl border border-blue-100 shadow-sm text-left">
               <div>
                 <h3 className="text-2xl font-semibold mb-6 text-blue-400">Free resources â€“ no catch</h3>
                 <ul className="space-y-4">
@@ -63,17 +62,17 @@ export default function Resources() {
                     "Expert Roadmaps",
                     "Diagnostic Test Samples"
                   ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-4 text-[14px] font-medium text-white/80">
-                      <CheckCircle2 className="h-5 w-5 text-green-400" /> {item}
+                    <li key={i} className="flex items-center gap-4 text-[14px] font-medium text-slate-700">
+                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" /> {item}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-semibold mb-4 text-white">$698</div>
-                <div className="text-blue-400 font-semibold text-xs mb-10">Total sample value free</div>
-                <Button size="lg" className="w-full bg-[#2366c9] hover:bg-blue-500 h-20 rounded-2xl font-semibold shadow-2xl">
-                   Take free diagnostic test
+                <div className="text-5xl font-semibold mb-4 text-slate-900">$698</div>
+                <div className="text-[#2366c9] font-semibold text-xs mb-10">Total sample value free</div>
+                <Button className="w-full bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                  Take Free Diagnostic Test
                 </Button>
               </div>
             </div>

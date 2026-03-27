@@ -11,8 +11,7 @@ export default function Schools() {
   return (
     <Layout>
       {/* SECTION 1: HERO - PROBLEM → SOLUTION */}
-      <section className="bg-[#2366c9] py-16 md:py-20 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-24">
             <motion.div 
@@ -20,18 +19,18 @@ export default function Schools() {
               animate={{ opacity: 1, x: 0 }}
               className="flex-1"
             >
-              <Badge className="bg-[#2366c9] text-white border-none px-6 py-2 mb-8 font-semibold text-xs rounded-full shadow-xl shadow-[#2366c9]/20">
+              <Badge className="bg-blue-100 text-[#2366c9] border border-blue-200 px-6 py-2 mb-8 font-semibold text-xs rounded-full">
                 COMPLETE O-LEVEL TRANSFORMATION SYSTEM
               </Badge>
-              <h1 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight text-white">
-                Transform Your <br/><span className="text-blue-400">O-Level</span> Program
+              <h1 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight text-slate-900">
+                Transform Your <br/><span className="text-[#2366c9]">O-Level</span> Program
               </h1>
-              <p className="text-lg text-blue-100/80 mb-8 leading-relaxed font-medium max-w-2xl">
+              <p className="text-lg text-slate-700 mb-8 leading-relaxed font-medium max-w-2xl">
                 Research-Backed Platform Used by 150+ Schools. Zero Upfront Investment.
               </p>
               
               <div className="grid gap-4 mb-16">
-                <p className="text-lg font-semibold text-red-400 mb-2">Is your school facing these challenges?</p>
+                <p className="text-lg font-semibold text-red-600 mb-2">Is your school facing these challenges?</p>
                 <ul className="grid sm:grid-cols-2 gap-4">
                   {[
                     "Pass rates below 60% (national 35%)",
@@ -42,20 +41,20 @@ export default function Schools() {
                     "Difficulty competing with academies",
                     "No data-driven insights"
                   ].map((text, i) => (
-                    <li key={i} className="flex items-center gap-3 text-[14px] font-semibold text-white/70">
+                    <li key={i} className="flex items-center gap-3 text-[14px] font-semibold text-slate-600">
                       <span className="text-red-500">❌</span> {text}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="flex flex-wrap gap-6">
+              <div className="flex flex-wrap gap-4">
                 <InquiryDialog 
                   defaultType="school_charter"
                   title="School Partnership Inquiry"
                   trigger={
-                    <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold px-8 h-10 rounded-lg text-[14px] shadow-md active:scale-95 transition-all">
-                      Get started now
+                    <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                      Get Started Now <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   }
                 />
@@ -67,8 +66,8 @@ export default function Schools() {
               animate={{ opacity: 1, scale: 1 }}
               className="flex-1 w-full max-w-2xl relative"
             >
-              <div className="bg-white/5 p-6 rounded-xl border border-white/10 backdrop-blur-sm">
-                <h3 className="text-2xl font-semibold mb-6 text-blue-400">The transformation</h3>
+              <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-sm">
+                <h3 className="text-2xl font-semibold mb-6 text-[#2366c9]">The transformation</h3>
                 <ul className="space-y-6">
                   {[
                     { val: "91%", label: "Pass Rate", sub: "vs 35% national average" },
@@ -77,10 +76,10 @@ export default function Schools() {
                     { val: "5-6h", label: "Saved Per Teacher", sub: "Weekly automation" }
                   ].map((stat, i) => (
                     <li key={i} className="flex items-center gap-6 group">
-                      <div className="text-3xl font-semibold text-white w-24">{stat.val}</div>
+                      <div className="text-3xl font-semibold text-slate-900 w-24">{stat.val}</div>
                       <div>
-                        <p className="text-xs font-semibold text-blue-400">{stat.label}</p>
-                        <p className="text-xs font-medium text-white/40">{stat.sub}</p>
+                        <p className="text-xs font-semibold text-[#2366c9]">{stat.label}</p>
+                        <p className="text-xs font-medium text-slate-500">{stat.sub}</p>
                       </div>
                     </li>
                   ))}
@@ -371,29 +370,28 @@ export default function Schools() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-16 md:py-24 bg-[#2366c9] text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)]"></div>
-        <div className="container-custom relative z-10">
+      <section className="py-16 md:py-24 bg-blue-50 text-center">
+        <div className="container-custom">
           <motion.h2 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-white"
+            className="text-5xl md:text-6xl font-semibold mb-6 leading-tight text-slate-900"
           >
-            Ready to <span className="text-blue-400">lead</span> your city?
+            Ready to <span className="text-[#2366c9]">lead</span> your city?
           </motion.h2>
-          <p className="text-lg text-blue-100/80 mb-12 max-w-3xl mx-auto font-medium ">
+          <p className="text-lg text-slate-600 mb-10 max-w-3xl mx-auto font-medium">
             Applications for 2026 Charter membership close March 31. Secure your institution's legacy today.
           </p>
           <InquiryDialog 
             defaultType="school_charter"
             title="School Partnership Inquiry"
             trigger={
-              <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 text-white font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
-                   Apply for charter
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                Apply for Charter <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             }
           />
-          <p className="mt-8 text-[#2366c9] font-semibold text-xs">Serving 50,000+ students globally</p>
+          <p className="mt-8 text-slate-500 font-semibold text-xs">Serving 50,000+ students globally</p>
         </div>
       </section>
     </Layout>

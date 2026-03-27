@@ -270,51 +270,50 @@ const references = [
 export default function Research() {
   return (
     <Layout>
-      <section className="pt-28 pb-24 bg-[#2366c9] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_60%)]" />
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom max-w-6xl relative z-10">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="bg-blue-400/20 text-blue-200 border border-blue-400/40 mb-6 px-4 py-1.5 uppercase tracking-widest text-xs font-semibold">
+            <Badge className="bg-blue-100 text-[#2366c9] border border-blue-200 mb-6 px-4 py-1.5 uppercase tracking-widest text-xs font-semibold">
               Research & Development
             </Badge>
-            <h1 className="text-5xl md:text-6xl text-white font-semibold leading-tight mb-5">
-              Where Cognitive Science Meets <span className="text-blue-400">Educational Technology</span>
+            <h1 className="text-5xl md:text-6xl text-slate-900 font-semibold leading-tight mb-5">
+              Where Cognitive Science Meets <span className="text-[#2366c9]">Educational Technology</span>
             </h1>
-            <p className="text-xl md:text-2xl text-blue-200 font-medium mb-8">PROOF, NOT PROMISES</p>
-            <p className="text-blue-100 text-lg leading-relaxed mb-5">
+            <p className="text-xl md:text-2xl text-[#2366c9] font-medium mb-8">PROOF, NOT PROMISES</p>
+            <p className="text-slate-700 text-lg leading-relaxed mb-5">
               Education is too important to rely on guesswork. EduMeUp is built on peer-reviewed learning science, not trends.
             </p>
             <div className="grid md:grid-cols-2 gap-6 text-[14px] text-left mb-12 max-w-3xl mx-auto">
-              <div className="p-4 rounded-2xl bg-white/10 border border-white/15">Others: Build features first, then find research to justify</div>
-              <div className="p-4 rounded-2xl bg-blue-500/20 border border-blue-300/40">EduMeUp: Study research first, then design features accordingly</div>
+              <div className="p-4 rounded-2xl bg-red-50 border border-red-100 text-slate-700">Others: Build features first, then find research to justify</div>
+              <div className="p-4 rounded-2xl bg-blue-50 border border-blue-200 text-slate-700">EduMeUp: Study research first, then design features accordingly</div>
             </div>
-            <p className="text-[14px] text-blue-200/90 font-medium mb-8">
+            <p className="text-[14px] text-slate-600 font-medium mb-8">
               Powered by: Moodle 4.5.1 LMS · H5P Interactive Activities · AI Chatbot · Multilingual Support
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-12">
             {byNumbers.map(([value, label]) => (
-              <div key={value} className="rounded-2xl bg-white/10 border border-white/20 p-4 text-center">
-                <p className="text-2xl font-semibold text-blue-300">{value}</p>
-                <p className="text-xs text-blue-100 font-medium mt-1">{label}</p>
+              <div key={value} className="rounded-2xl bg-white border border-blue-100 shadow-sm p-4 text-center">
+                <p className="text-2xl font-semibold text-[#2366c9]">{value}</p>
+                <p className="text-xs text-slate-600 font-medium mt-1">{label}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-[14px] text-blue-100/90 mb-8">
+          <p className="text-center text-[14px] text-slate-600 font-medium mb-8">
             For the full academic treatment — 60+ citations, 22 study briefs, and complete APA references — download our Learning Science Whitepaper v1.0.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#pillars">
-              <Button size="lg" className="bg-[#2366c9] hover:bg-[#1d57ac] text-white h-14 px-8 rounded-2xl font-semibold">
-                Explore Our Methodology <ArrowRight className="ml-2 h-4 w-4" />
+              <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                Explore Our Methodology <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
             <a href="/downloads/learning-science-whitepaper-v1.pdf">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 h-14 px-8 rounded-2xl font-semibold">
-                Download Whitepaper <Download className="ml-2 h-4 w-4" />
+              <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
+                Download Whitepaper <Download className="ml-2 h-5 w-5" />
               </Button>
             </a>
           </div>
@@ -796,52 +795,51 @@ export default function Research() {
         </div>
       </section>
 
-      <section className="py-24 md:py-28 bg-[#2366c9] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25)_0%,transparent_60%)]" />
-        <div className="container-custom max-w-6xl relative z-10">
+      <section className="py-16 md:py-24 bg-blue-50 text-center">
+        <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-10">
-            <h2 className="text-4xl md:text-5xl text-white font-semibold mb-4">Proof + Action = Results</h2>
-            <p className="text-blue-200 text-lg">Turn research into your child&apos;s success.</p>
+            <h2 className="text-4xl md:text-5xl text-slate-900 font-semibold mb-4">Proof + Action = Results</h2>
+            <p className="text-slate-600 text-lg">Turn research into your child's success.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <Card className="border-[#2366c9]  border-2 bg-white/5 border-white/20 text-white">
+            <Card className="border border-blue-100 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-lg text-blue-300">1) Free Diagnostic Test</CardTitle>
+                <CardTitle className="text-lg text-[#2366c9]">1) Free Diagnostic Test</CardTitle>
               </CardHeader>
-              <CardContent className="text-[15px] leading-relaxed text-blue-100 font-medium">See baseline performance and identify specific knowledge gaps in about 30 minutes.</CardContent>
+              <CardContent className="text-[15px] leading-relaxed text-slate-700 font-medium">See baseline performance and identify specific knowledge gaps in about 30 minutes.</CardContent>
             </Card>
-            <Card className="border-[#2366c9]  border-2 bg-white/5 border-white/20 text-white">
+            <Card className="border border-blue-100 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-lg text-blue-300">2) Free Platform Trial (7 Days)</CardTitle>
+                <CardTitle className="text-lg text-[#2366c9]">2) Free Platform Trial (7 Days)</CardTitle>
               </CardHeader>
-              <CardContent className="text-[15px] leading-relaxed text-blue-100 font-medium">Explore sample lessons, H5P interactions, and AI support before committing.</CardContent>
+              <CardContent className="text-[15px] leading-relaxed text-slate-700 font-medium">Explore sample lessons, H5P interactions, and AI support before committing.</CardContent>
             </Card>
-            <Card className="border-[#2366c9]  border-2 bg-white/5 border-white/20 text-white">
+            <Card className="border border-blue-100 shadow-sm">
               <CardHeader>
-                <CardTitle className="text-lg text-blue-300">3) Schedule Consultation</CardTitle>
+                <CardTitle className="text-lg text-[#2366c9]">3) Schedule Consultation</CardTitle>
               </CardHeader>
-              <CardContent className="text-[15px] leading-relaxed text-blue-100 font-medium">Speak with our pedagogy team for a no-pressure fit assessment.</CardContent>
+              <CardContent className="text-[15px] leading-relaxed text-slate-700 font-medium">Speak with our pedagogy team for a no-pressure fit assessment.</CardContent>
             </Card>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-5 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <InquiryDialog
               defaultType="diagnostic"
               title="Free Diagnostic"
-              trigger={<Button size="lg" className="h-14 px-8 rounded-2xl bg-[#2366c9] hover:bg-[#1d57ac] text-white font-semibold">Take Free Diagnostic <ArrowRight className="ml-2 h-4 w-4" /></Button>}
+              trigger={<Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">Take Free Diagnostic <ArrowRight className="ml-2 h-5 w-5" /></Button>}
             />
             <Link href="/programs">
-              <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-slate-900 font-semibold">Explore Our Platform</Button>
+              <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">Explore Our Platform</Button>
             </Link>
             <InquiryDialog
               defaultType="consultation"
               title="Schedule Consultation"
-              trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-blue-300 text-blue-100 hover:bg-blue-300 hover:text-slate-900 font-semibold">Book Consultation</Button>}
+              trigger={<Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">Book Consultation</Button>}
             />
           </div>
 
-          <div className="text-center text-[14px] text-blue-100/90 max-w-4xl mx-auto">
+          <div className="text-center text-[14px] text-slate-600 max-w-4xl mx-auto">
             Education based on evidence, not guesswork. Every feature, interaction, and pathway is built on cognitive science — not opinion.
           </div>
         </div>

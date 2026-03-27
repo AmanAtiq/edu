@@ -105,54 +105,48 @@ export default function ForParents() {
 
   return (
     <Layout>
-      <section className="pt-24 pb-28 bg-[#2366c9] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.25)_0%,transparent_55%)]" />
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom relative z-10 max-w-6xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <Badge className="bg-blue-500/20 text-blue-200 mb-6 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-blue-500/30">
+            <Badge className="bg-blue-100 text-[#2366c9] mb-6 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-blue-200">
               For Parents
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-semibold text-white leading-tight mb-5">
-              Your Child Deserves a <span className="text-blue-400">Structured Path</span> to O-Level Success
+            <h1 className="text-5xl md:text-6xl font-semibold text-slate-900 leading-tight mb-5">
+              Your Child Deserves a <span className="text-[#2366c9]">Structured Path</span> to O-Level Success
             </h1>
-            <p className="text-2xl md:text-3xl font-black text-blue-300 uppercase tracking-wide mb-6">Beyond Tutoring.</p>
-            <p className="text-lg md:text-xl text-blue-100 max-w-4xl mx-auto font-medium leading-relaxed mb-6">
+            <p className="text-2xl md:text-3xl font-black text-[#2366c9] uppercase tracking-wide mb-6">Beyond Tutoring.</p>
+            <p className="text-lg md:text-xl text-slate-700 max-w-4xl mx-auto font-medium leading-relaxed mb-6">
               A complete academic mastery system — with you informed at every step.
             </p>
-            <p className="text-blue-200/90 max-w-5xl mx-auto  mb-10">
+            <p className="text-slate-600 max-w-5xl mx-auto mb-10">
               Designed with educational researchers and Cambridge O-Level specialists. Built for how students actually learn. Structured so parents always know exactly where their child stands.
             </p>
 
-            <div className="bg-white/5 border border-white/10 rounded-[2rem] p-6 max-w-5xl mx-auto mb-10 text-left">
-              <p className="text-[14px] md:text-base text-blue-100 font-semibold mb-2">You want three outcomes from this journey:</p>
+            <div className="bg-white border border-blue-100 shadow-sm rounded-2xl p-6 max-w-5xl mx-auto mb-10 text-left">
+              <p className="text-[14px] md:text-base text-slate-700 font-semibold mb-2">You want three outcomes from this journey:</p>
               <div className="grid md:grid-cols-3 gap-3 text-[14px]">
-                <p className="text-white font-semibold">Genuine understanding — not fragile memorization</p>
-                <p className="text-white font-semibold">Measurable progress — not vague reassurance</p>
-                <p className="text-white font-semibold">Growing independence — not tutor dependency</p>
+                <p className="text-slate-900 font-semibold">Genuine understanding — not fragile memorization</p>
+                <p className="text-slate-900 font-semibold">Measurable progress — not vague reassurance</p>
+                <p className="text-slate-900 font-semibold">Growing independence — not tutor dependency</p>
               </div>
-              <p className="mt-4 text-blue-200 ">
+              <p className="mt-4 text-slate-600">
                 EduMeUp was built to deliver all three through a research-grounded digital platform with optional human support, giving your family complete control, complete visibility, and genuine results.
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/for-parents">
-                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
-                  Open For Parents Main Page
-                </Button>
-              </Link>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/resources">
-                <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-14 px-8 rounded-2xl font-semibold">
-                  Explore Free Library <ArrowRight className="h-4 w-4 ml-2" />
+                <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+                  Explore Free Library <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
               </Link>
               <InquiryDialog
                 defaultType="diagnostic"
                 title="Take Free Diagnostic"
-                trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">Take Free Diagnostic</Button>}
+                trigger={<Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">Take Free Diagnostic</Button>}
               />
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white/10 bg-white/5 text-white hover:bg-white/10 font-semibold">
+                <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
                   Speak With Our Team
                 </Button>
               </Link>

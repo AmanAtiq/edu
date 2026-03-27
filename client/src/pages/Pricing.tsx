@@ -198,16 +198,15 @@ const ROICalculator = () => {
 export default function Pricing() {
   return (
     <Layout>
-      <section className="pt-28 pb-24 bg-[#2366c9] text-white relative overflow-hidden text-center">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_60%)]" />
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl text-white font-extrabold mb-6">Simple, Transparent Pricing</h1>
-            <p className="text-2xl text-blue-300 font-semibold mb-4">Structured Support. Affordable Access.</p>
-            <p className="text-lg text-blue-100 mb-10 max-w-3xl mx-auto">No hidden fees. Flexible plans. 30-day money-back guarantee. Education should be accessible — not exclusive.</p>
+            <h1 className="text-5xl md:text-6xl text-slate-900 font-extrabold mb-6">Simple, Transparent Pricing</h1>
+            <p className="text-2xl text-[#2366c9] font-semibold mb-4">Structured Support. Affordable Access.</p>
+            <p className="text-lg text-slate-700 mb-10 max-w-3xl mx-auto">No hidden fees. Flexible plans. 30-day money-back guarantee. Education should be accessible — not exclusive.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/programs"><Button size="lg" className="bg-[#2366c9] hover:bg-[#1d57ac] h-14 px-10 rounded-2xl font-semibold text-white">Browse Programs <ArrowRight className="h-4 w-4 ml-2" /></Button></Link>
-              <InquiryDialog defaultType="diagnostic" title="Free Diagnostic" trigger={<Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 h-14 px-10 rounded-2xl font-semibold">Take Free Diagnostic</Button>} />
+              <Link href="/programs"><Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">Browse Programs <ArrowRight className="h-5 w-5 ml-2" /></Button></Link>
+              <InquiryDialog defaultType="diagnostic" title="Free Diagnostic" trigger={<Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">Take Free Diagnostic</Button>} />
             </div>
           </div>
         </div>

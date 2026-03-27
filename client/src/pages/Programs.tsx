@@ -31,39 +31,38 @@ export default function Programs() {
   return (
     <Layout>
       {/* HERO - EMOTIONAL HOOK */}
-      <section className="pt-24 pb-32 bg-[#2366c9] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
+      <section className="py-16 md:py-24 relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="space-y-8"
           >
-            <span className="text-blue-400 font-semibold text-[14px]">Exam Mastery pathways</span>
-            <h1 className="text-5xl md:text-6xl font-semibold mb-8 font-display leading-tight text-white">
-              STOP THE <span className="text-blue-400">STUDY STRUGGLE</span>
+            <span className="text-[#2366c9] font-semibold text-[14px]">Exam Mastery pathways</span>
+            <h1 className="text-5xl md:text-6xl font-semibold mb-8 font-display leading-tight text-slate-900">
+              STOP THE <span className="text-[#2366c9]">STUDY STRUGGLE</span>
             </h1>
             
             <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-2xl md:text-3xl text-blue-100 font-semibold leading-tight">
+              <p className="text-2xl md:text-3xl text-slate-700 font-semibold leading-tight">
                 Most students struggle because they forget 80% of what they learn within 48 hours.
               </p>
-              <p className="text-lg text-blue-200/60 font-medium italic">
+              <p className="text-lg text-slate-500 font-medium italic">
                 The "Ebbinghaus Forgetting Curve" isn't a theory—it's the reason for your exam anxiety. 
                 EduMeUp doesn't just teach; it ensures you never forget.
               </p>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 pt-4">
-                <div className="bg-red-500/10 border border-red-500/20 px-6 py-3 rounded-full text-[14px] font-semibold text-red-400">
+              <div className="bg-red-50 border border-red-200 px-6 py-3 rounded-full text-[14px] font-semibold text-red-600">
                 80% forget rate (traditional)
               </div>
-              <div className="bg-green-500/10 border border-green-500/20 px-6 py-3 rounded-full text-[14px] font-semibold text-green-400">
+              <div className="bg-green-50 border border-green-200 px-6 py-3 rounded-full text-[14px] font-semibold text-green-600">
                 92% grade improvement
               </div>
             </div>
 
-            <div className="inline-block bg-white text-slate-900 px-10 py-4 rounded-2xl font-semibold text-[14px] shadow-2xl mt-8">
+            <div className="inline-block bg-[#2366c9] text-white px-10 py-4 rounded-2xl font-semibold text-[14px] shadow-md mt-8">
               Proven science. Guaranteed results.
             </div>
           </motion.div>
@@ -473,16 +472,15 @@ export default function Programs() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-32 bg-[#2366c9] text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)] pointer-events-none"></div>
-        <div className="container-custom relative z-10">
-          <h2 className="text-4xl md:text-6xl text-white font-semibold mb-12 leading-none">Not sure which path <span className="text-blue-400">to take?</span></h2>
-          <div className="flex flex-col md:flex-row justify-center gap-8">
-            <Button size="lg" className="h-20 px-12 bg-[#2366c9] hover:bg-blue-600 rounded-2xl text-xl font-semibold shadow-xl">
-              Take Free Diagnostic (90 Min)
+      <section className="py-16 md:py-24 bg-blue-50 text-center">
+        <div className="container-custom">
+          <h2 className="text-4xl md:text-6xl text-slate-900 font-semibold mb-6 leading-none">Not sure which path <span className="text-[#2366c9]">to take?</span></h2>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button className="bg-[#2366c9] hover:bg-blue-700 text-white font-semibold text-[14px] py-3 px-6">
+              Take Free Diagnostic (90 Min) <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="h-20 px-12 border-4 border-white/10 bg-white/5 hover:bg-white/10 rounded-2xl text-xl font-semibold shadow-lg">
-              Talk to Education Expert
+            <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] font-semibold text-[14px] py-3 px-6">
+              Talk to Education Expert <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
