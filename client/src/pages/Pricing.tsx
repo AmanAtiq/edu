@@ -53,7 +53,7 @@ const PricingCard = ({
       {note && <p className="mt-6 text-xs text-black font-semibold">{note}</p>}
     </CardContent>
     <CardFooter className="p-8 pt-0">
-      <Button className={`w-full h-12 text-[14px] font-semibold rounded-xl ${isPopular ? "bg-[#2366c9]" : "bg-[#1e1b4b]"}`}>{ctaText}</Button>
+      <Button className={`w-full h-12 text-[14px] font-semibold rounded-xl ${isPopular ? "bg-[#2366c9]" : "bg-[#2366c9]"}`}>{ctaText}</Button>
     </CardFooter>
   </Card>
 );
@@ -198,7 +198,7 @@ const ROICalculator = () => {
 export default function Pricing() {
   return (
     <Layout>
-      <section className="pt-28 pb-24 bg-[#1e1b4b] text-white relative overflow-hidden text-center">
+      <section className="pt-28 pb-24 bg-[#2366c9] text-white relative overflow-hidden text-center">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_60%)]" />
         <div className="max-w-4xl mx-auto px-6">
           <div className="relative z-10">
@@ -380,7 +380,7 @@ export default function Pricing() {
           <div className="overflow-x-auto rounded-2xl border border-blue-100 shadow-sm">
             <table className="w-full text-[14px]">
               <thead>
-                <tr className="bg-[#1e1b4b] text-white">
+                <tr className="bg-[#2366c9] text-white">
                   <th className="text-left p-4 font-semibold">Traditional Tutoring Model</th>
                   <th className="text-left p-4 font-semibold">EduMeUp Structured Platform</th>
                 </tr>
@@ -460,7 +460,7 @@ export default function Pricing() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="py-20 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25)_0%,transparent_60%)]" />
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
           <h2 className="text-4xl md:text-5xl text-white font-black mb-6">Ready to Start?</h2>

@@ -241,7 +241,7 @@ export default function ForStudents() {
 
   return (
     <Layout>
-      <section className="pt-24 pb-28 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="pt-24 pb-28 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.25)_0%,transparent_55%)]" />
         <div className="container-custom relative z-10 max-w-5xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -350,7 +350,7 @@ export default function ForStudents() {
             ))}
           </div>
 
-          <div className="mt-16 bg-[#1e1b4b] rounded-[2.5rem] p-8 md:p-12 text-white overflow-x-auto">
+          <div className="mt-16 bg-[#2366c9] rounded-[2.5rem] p-8 md:p-12 text-white overflow-x-auto">
             <h3 className="text-2xl font-semibold text-white mb-6">What happens when students follow the system</h3>
             <table className="w-full min-w-[680px]">
               <thead>
@@ -438,7 +438,7 @@ export default function ForStudents() {
             <InquiryDialog
               defaultType="diagnostic"
               title="Diagnostic Test"
-              trigger={<Button className="bg-[#1e1b4b] hover:bg-[#2366c9] rounded-xl font-semibold">Diagnostic Test Recommends Your Best Pathway â†’</Button>}
+              trigger={<Button className="bg-[#2366c9] hover:bg-[#2366c9] rounded-xl font-semibold">Diagnostic Test Recommends Your Best Pathway â†’</Button>}
             />
           </div>
         </div>
@@ -537,7 +537,7 @@ export default function ForStudents() {
                 <InquiryDialog
                   defaultType="diagnostic"
                   title="Take Free Diagnostic Assessment"
-                  trigger={<Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>}
+                  trigger={<Button className="w-full bg-[#2366c9] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>}
                 />
               </CardContent>
             </Card>
@@ -555,7 +555,7 @@ export default function ForStudents() {
             </Card>
           </div>
 
-          <div className="bg-[#1e1b4b] rounded-[2rem] p-8 text-white">
+          <div className="bg-[#2366c9] rounded-[2rem] p-8 text-white">
             <p className="text-xs font-semibold uppercase tracking-widest text-blue-300 mb-2">March 2026 launch offer</p>
             <h3 className="text-2xl font-semibold text-white mb-4">Enroll within 30 days and receive</h3>
             <div className="grid md:grid-cols-2 gap-3 text-[14px] font-semibold text-blue-100">
@@ -585,7 +585,7 @@ export default function ForStudents() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#1e1b4b] text-white text-center">
+      <section className="py-20 bg-[#2366c9] text-white text-center">
         <div className="container-custom max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">The opportunity is yours.</h2>
           <p className="text-lg text-blue-100 font-medium max-w-3xl mx-auto mb-8">

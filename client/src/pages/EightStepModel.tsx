@@ -1,93 +1,98 @@
-﻿import { useEffect } from "react";
+import { useEffect } from "react";
 import { Layout } from "@/components/Layout";
 import { motion } from "framer-motion";
-import { 
-  Brain, 
-  Target, 
-  Zap, 
-  Layers, 
-  Search, 
-  UserCheck, 
-  BarChart3, 
+import {
+  Brain,
+  Target,
+  Zap,
+  Layers,
+  Search,
+  BarChart3,
   RefreshCw,
-  CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  ClipboardList,
 } from "lucide-react";
 import { Link } from "wouter";
 
 const steps = [
   {
-    number: "1",
-    title: "Diagnostic Assessment",
-    description: "Identify exact gaps before starting. AI-powered diagnostic identifies precisely where each student stands, preventing time wasted on material they already know.",
+    number: 1,
     icon: Search,
-    status: "Coming June 2026",
-    phase: "Phase 1: Foundation Building",
-    benefits: ["Precise gap identification", "Saves 20+ hours of wasted study", "Personalized starting point"],
+    title: "Diagnostic Analysis — know before you teach",
+    desc: "A 90-minute AI-powered assessment maps every learner's exact gaps — subject by subject, topic by topic. No lesson begins without a precise map of what is already known and what is missing. Teaching to an assumption wastes time. Teaching to a diagnosis produces results.",
+    research: "Black & Wiliam (1998) — diagnostic assessment significantly improves learning outcomes when it shapes the instruction that follows.",
   },
   {
-    number: "2",
-    title: "Personalized Pathways",
-    description: "Teacher-guided pathways tailored to each student. Not a one-size-fits-all curriculum, but adaptive routes based on learning style, pace, and needs.",
-    icon: UserCheck,
-    status: "Available Now",
-    phase: "Phase 1: Foundation Building",
-    benefits: ["Customized learning routes", "Matches individual pace", "Flexible content sequencing"],
-  },
-  {
-    number: "3",
-    title: "Active Learning Engine",
-    description: "1000+ interactive activities â€” practice by doing. Rather than passive video watching, students engage with problems, simulations, and exercises that demand active thinking.",
-    icon: Zap,
-    status: "Available Now",
-    phase: "Phase 1: Foundation Building",
-    benefits: ["Interactive practice", "Real-time feedback", "Problem-solving focus"],
-  },
-  {
-    number: "4",
-    title: "Dual Coding",
-    description: "Every concept taught with text + visuals. Words alone â‰  understanding. Research shows combining text with images, diagrams, and animations increases retention by 40%.",
+    number: 2,
     icon: Brain,
-    status: "Available Now",
-    phase: "Phase 2: Mastery Building",
-    benefits: ["Multi-sensory learning", "40% higher retention", "Concept clarity"],
+    title: "Remedial Concept Repair — fix the foundations first",
+    desc: "Gaps identified in Step 1 are closed before new O-Level content is introduced. Weak foundations from earlier grades are rebuilt concept by concept. Introducing advanced content on a cracked foundation is the most common and most avoidable cause of exam failure.",
+    research: "Bloom (1984) — mastery learning demonstrates that targeted corrective instruction before advancement dramatically improves achievement.",
   },
   {
-    number: "5",
-    title: "Retrieval Practice",
-    description: "Frequent low-stakes quizzes strengthen memory. Not high-stakes exams but constant, gentle retrieval that builds long-term recall without anxiety.",
-    icon: Target,
-    status: "Available Now",
-    phase: "Phase 2: Mastery Building",
-    benefits: ["Strengthened memory", "Low-anxiety learning", "Frequent feedback"],
+    number: 3,
+    icon: Zap,
+    title: "Interactive Learning — active engagement only",
+    desc: "Every concept is taught through H5P interactive modules. No passive video. The student must drag, select, respond, and demonstrate understanding at every stage. Passive consumption drives 5% retention. Interaction drives 75%.",
+    research: "Freeman et al. (2014) — active learning increases exam performance by 6% and reduces failure rates 1.5-fold compared to passive lecture.",
   },
   {
-    number: "6",
-    title: "Spaced Repetition",
-    description: "Automated reviews at optimal intervals. Instead of cramming, the system schedules review moments right before you would naturally forget, maximizing retention.",
+    number: 4,
+    icon: ClipboardList,
+    title: "Past Paper Practice — authentic questions from Day 1",
+    desc: "Authentic Cambridge past questions are introduced from the very first lesson — not saved for final revision. Exam familiarity is a skill that requires time to develop. Students who encounter past paper style for the first time in Week 10 are at a structural disadvantage.",
+    research: "Bartle (2009) — exam preparation effectiveness increases significantly when authentic past papers are integrated from early in the learning cycle.",
+  },
+  {
+    number: 5,
     icon: RefreshCw,
-    status: "Coming September 2026",
-    phase: "Phase 2: Mastery Building",
-    benefits: ["Optimal spacing", "75%+ long-term retention", "Anti-forgetting system"],
+    title: "Retrieval Practice — pull knowledge out, do not push it back in",
+    desc: "Scheduled recall sessions run at scientifically optimal intervals — Day 1, 3, 7, 14, 30, 90 — to defeat the forgetting curve and move knowledge from short-term to long-term memory. Retrieval is not review. Re-reading is review. Testing yourself from memory is retrieval.",
+    research: "Roediger & Karpicke (2006) — a single retrieval attempt after learning can double long-term retention compared to re-studying the same material.",
   },
   {
-    number: "7",
-    title: "Interleaved Practice",
-    description: "Mix topics for deeper learning (not blocked practice). Switching between related topics forces deeper connections and transfer of learning.",
+    number: 6,
+    icon: Target,
+    title: "Formative Assessment — check before moving forward",
+    desc: "A short formative check is embedded after every unit — not at the end of a term. Students who have not yet consolidated a concept are not pushed forward. This single change — checking before advancing — is one of the highest-leverage interventions in the evidence base.",
+    research: "Black & Wiliam (1998) — formative assessment produces effect sizes of 0.4–0.7 on student achievement, among the highest of all educational interventions.",
+  },
+  {
+    number: 7,
     icon: Layers,
-    status: "Available Now",
-    phase: "Phase 2: Mastery Building",
-    benefits: ["Better transfer", "Deeper connections", "Real-world application"],
+    title: "Corrective Study — precise, not generic",
+    desc: "Step 6 results feed directly into a personalised corrective plan. The student is routed back to the specific concept that was not retained. Generic review wastes time on what is already known. Corrective study invests it precisely where it is needed.",
+    research: "Hattie & Timperley (2007) — feedback that is specific, goal-referenced, and actionable is the highest-impact form of instructional intervention.",
   },
   {
-    number: "8",
-    title: "Mastery Verification",
-    description: "Track true understanding through dashboards. Real-time visibility for students, teachers, and parents to see mastery progress â€” not just time spent.",
+    number: 8,
     icon: BarChart3,
-    status: "Available Now",
-    phase: "Phase 3: Mastery Verification",
-    benefits: ["Mastery tracking", "Stakeholder visibility", "Data-driven decisions"],
+    title: "Time-Bound Mock Exams — exam conditions as a learning tool",
+    desc: "Full-length, timed Cambridge-style mock exams are introduced well before the final examination cycle. Exam performance under pressure is a skill that requires deliberate practice. Students who have sat multiple timed simulations arrive at exam day with stamina, timing discipline, and evidence-based confidence.",
+    research: "Bjork & Bjork (2011) — testing under examination conditions is a desirable difficulty that significantly improves long-term retention and exam performance.",
   },
+];
+
+const comparisonRows = [
+  { typical: "Content delivered — no prior diagnosis", edumeup: "Step 1: Gaps identified before a single lesson begins" },
+  { typical: "Passive consumption — video or text", edumeup: "Step 2: Foundations repaired before new content is introduced" },
+  { typical: "Quiz at the end of the topic", edumeup: "Step 3: Active H5P engagement — no passive consumption" },
+  { typical: "Move to the next topic regardless", edumeup: "Step 4: Cambridge past papers from Day 1 — not Week 12" },
+  { typical: "Student revises when motivated", edumeup: "Step 5: Retrieval scheduled automatically at optimal intervals" },
+  { typical: "Test at the end of term", edumeup: "Step 6: Formative check after every unit — gaps caught early" },
+  { typical: "Result reveals the gap — too late", edumeup: "Step 7: Personalised corrective plan generated immediately" },
+  { typical: "Mock exam in the final weeks only", edumeup: "Step 8: Timed simulation introduced early — stamina built over time" },
+];
+
+const researchTable = [
+  { step: "1. Diagnostic", ref: "Black & Wiliam (1998)", finding: "0.4–0.7 effect size for diagnostic-informed instruction" },
+  { step: "2. Remedial Repair", ref: "Bloom (1984)", finding: "Targeted corrective instruction dramatically improves achievement" },
+  { step: "3. Interactive Learning", ref: "Freeman et al. (2014)", finding: "Active learning reduces failure rate 1.5× vs passive lecture" },
+  { step: "4. Past Paper Practice", ref: "Bartle (2009)", finding: "Authentic past paper practice improves exam readiness" },
+  { step: "5. Retrieval Practice", ref: "Roediger & Karpicke (2006)", finding: "One retrieval attempt doubles long-term retention vs re-study" },
+  { step: "6. Formative Assessment", ref: "Black & Wiliam (1998)", finding: "Highest-impact classroom intervention in the meta-analysis record" },
+  { step: "7. Corrective Study", ref: "Hattie & Timperley (2007)", finding: "Specific, actionable feedback is the highest-impact intervention" },
+  { step: "8. Mock Exams", ref: "Bjork & Bjork (2011)", finding: "Exam conditions as desirable difficulty — improves performance" },
 ];
 
 export default function EightStepModel() {
@@ -96,11 +101,11 @@ export default function EightStepModel() {
     const metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription?.getAttribute("content") || "";
 
-    document.title = "The 8-Step Mastery Cycle - EduMeUp Learning System | EduMeUp";
+    document.title = "The 8-Step Mastery Cycle — Why the Sequence Is the Product | EduMeUp";
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "EduMeUp's 8-Step Mastery Cycle is a research-backed learning system combining diagnostic assessment, active learning, spaced repetition, and mastery verification for lasting retention.",
+        "EduMeUp's 8-step research-backed mastery cycle moves every learner from diagnostic to exam mastery. Understand why each step exists, what research supports it, and what it produces.",
       );
     }
 
@@ -114,185 +119,209 @@ export default function EightStepModel() {
 
   return (
     <Layout>
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white py-16 md:py-24">
         <div className="container-custom">
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45 }}
-            className="mx-auto max-w-5xl text-center"
+            transition={{ duration: 0.8 }}
+            className="max-w-5xl mx-auto text-center"
           >
-            <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-              The 8-Step Mastery Cycle
-            </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
-              How Great Learning Actually Works
+            <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+              THE SCIENCE BEHIND THE SYSTEM
+            </p>
+            <h1 className="text-5xl md:text-7xl font-semibold text-slate-900 mb-6 tracking-tight leading-tight">
+              The EduMeUp 8-Step Mastery Cycle
             </h1>
-            <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
-              EduMeUp's 8-Step Mastery Cycle combines cognitive science research with educational psychology to build lasting understandingâ€”not just test scores.
+            <p className="text-base text-slate-700 max-w-3xl mx-auto leading-relaxed mb-8">
+              Why the sequence is the product — not the content.
             </p>
-            <p className="mx-auto mt-3 max-w-3xl text-sm text-slate-600">
-              Based on research from Ebbinghaus, Bloom, Dunlosky, and leading learning scientists worldwide.
-            </p>
-
-            <div className="mt-10">
-              <Link href="/programs">
-                <span className="inline-flex items-center gap-2 rounded-lg bg-[#2366c9] px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700">
-                  Explore Our Programmes
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </Link>
-            </div>
+            <Link href="/programs/ai-diagnostic">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-700">
+                Start With Step 1 — Free Diagnostic
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
           </motion.div>
         </div>
       </section>
 
-      {/* 8 STEPS GRID */}
-      <section className="py-16 md:py-24">
+      {/* WHY EDTECH GETS IT WRONG */}
+      <section className="py-14 md:py-20 bg-white">
         <div className="container-custom">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              The 8 Steps of the Mastery Cycle
+          <div className="mx-auto max-w-4xl">
+            <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+              The Problem
+            </p>
+            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+              Why Most EdTech Gets the Sequence Wrong
             </h2>
-            <p className="mt-4 text-slate-600">Each step is research-backed and scientifically proven to improve retention and understanding.</p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
-            {steps.map((step, idx) => (
-              <motion.div
-                key={step.number}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: idx * 0.05 }}
-                className="rounded-2xl border border-blue-100 bg-white p-6 md:p-8 shadow-sm hover:shadow-lg transition-shadow"
-              >
-                <div className="grid gap-6 md:grid-cols-[auto_1fr]">
-                  {/* Left: Number & Icon */}
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-blue-100 text-2xl font-bold text-[#2366c9]">
-                      {step.number}
-                    </div>
-                    <step.icon className="h-8 w-8 text-[#2366c9]" />
-                  </div>
-
-                  {/* Right: Content */}
-                  <div>
-                    <div className="mb-2 inline-flex rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-[#2366c9]">
-                      {step.phase}
-                    </div>
-                    <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">{step.title}</h3>
-                    <p className="text-sm leading-relaxed text-slate-700 mb-4">{step.description}</p>
-
-                    {/* Benefits */}
-                    <div className="space-y-2 mb-4">
-                      {step.benefits.map((benefit) => (
-                        <p key={benefit} className="flex items-start gap-2 text-xs text-slate-600">
-                          <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                          <span>{benefit}</span>
-                        </p>
-                      ))}
-                    </div>
-
-                    {/* Status Badge */}
-                    <div className={`inline-flex rounded-lg px-3 py-1.5 text-xs font-semibold ${
-                      step.status.includes("Available") 
-                        ? "bg-green-100 text-green-700" 
-                        : "bg-amber-100 text-amber-700"
-                    }`}>
-                      {step.status}
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+            <p className="text-base text-black leading-relaxed">
+              The standard EdTech model is: deliver content, ask a question, move to the next topic. It is simple. It is scalable. And research consistently shows it produces 5–10% long-term retention — because it skips the stages the brain requires to consolidate knowledge.
+            </p>
+            <p className="mt-4 text-base text-black leading-relaxed">
+              EduMeUp's 8-step cycle is not eight features. It is one integrated system where each step creates the conditions for the next. Remove any step, and the steps that follow it lose most of their effectiveness. The order is not arbitrary — it is the point.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* KEY INSIGHTS SECTION */}
-      <section className="border-y border-blue-100 bg-blue-50/40 py-16 md:py-24">
+      {/* COMPARISON TABLE */}
+      <section className="py-14 md:py-20 bg-blue-50/50">
         <div className="container-custom">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl mb-4">
-              Key Research Findings
-            </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">
-              The 8-Step Cycle is built on decades of educational research.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              {
-                fact: "Active Learning",
-                stat: "55% Lower",
-                detail: "failure rates in STEM (Freeman et al., 2014)",
-              },
-              {
-                fact: "Dual Coding",
-                stat: "40% Higher",
-                detail: "retention with text + visuals (Paivio, 1986)",
-              },
-              {
-                fact: "Spaced Repetition",
-                stat: "75% Retention",
-                detail: "vs 5-10% from cramming (Dunlosky et al., 2013)",
-              },
-              {
-                fact: "Retrieval Practice",
-                stat: "3x More Effective",
-                detail: "than re-reading (Roediger & Butler, 2011)",
-              },
-              {
-                fact: "Interleaved Practice",
-                stat: "30% Better Transfer",
-                detail: "to novel problems (Royer, 1979)",
-              },
-              {
-                fact: "Personalization",
-                stat: "5x Engagement",
-                detail: "vs one-size-fits-all approaches",
-              },
-            ].map((item) => (
-              <div key={item.fact} className="rounded-xl border border-blue-100 bg-white p-6 text-center">
-                <div className="text-sm font-semibold text-slate-600 mb-2">{item.fact}</div>
-                <div className="text-3xl font-bold text-[#2366c9] mb-2">{item.stat}</div>
-                <p className="text-xs text-slate-600">{item.detail}</p>
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+                Two Models
+              </p>
+              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+                Two Models — The Difference Is Structural
+              </h2>
+            </div>
+            {/* Header */}
+            <div className="grid grid-cols-2 bg-[#2366c9] text-white text-xs uppercase tracking-wider font-semibold rounded-t-xl overflow-hidden">
+              <div className="p-4">Typical EdTech Loop → 5–10% retention</div>
+              <div className="p-4 border-l border-blue-400/30">EduMeUp Mastery Cycle → 50–75%+ retention</div>
+            </div>
+            {/* Rows */}
+            {comparisonRows.map((row, i) => (
+              <div
+                key={i}
+                className={`grid grid-cols-2 border-b border-blue-50 ${i % 2 === 0 ? "bg-white" : "bg-slate-50"} hover:bg-blue-50/40 transition-colors`}
+              >
+                <div className="p-4 text-[14px] text-black line-through decoration-red-300 decoration-2">{row.typical}</div>
+                <div className="p-4 border-l border-slate-200 text-[14px] text-black font-semibold">{row.edumeup}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="py-16 md:py-24">
+      {/* 8 STEPS */}
+      <section className="py-14 md:py-20 bg-white">
         <div className="container-custom">
-          <div className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-gradient-to-br from-blue-50 to-white p-8 md:p-12 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] mb-4">
-              Ready to Experience Mastery-Based Learning?
-            </h2>
-            <p className="text-slate-700 mb-8 max-w-2xl mx-auto">
-              The 8-Step Mastery Cycle isn't just theoryâ€”it's implemented across all EduMeUp courses. Start your journey today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/programs">
-                <span className="inline-flex items-center gap-2 rounded-lg bg-[#2366c9] px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700">
-                  Explore Programmes
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </Link>
-              <Link href="/programs/ai-diagnostic">
-                <span className="inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-white px-6 py-3 text-sm font-semibold text-[#2366c9] hover:bg-blue-50">
-                  Free Diagnostic
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </Link>
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+                Step by Step
+              </p>
+              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+                The 8 Steps — The Science Behind Each One
+              </h2>
             </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {steps.map((step, idx) => (
+                <motion.div
+                  key={step.number}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.05 }}
+                  className="bg-white p-8 rounded-xl border border-blue-200 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#2366c9] transition-all duration-300 group"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="h-10 w-10 flex items-center justify-center rounded-full bg-[#2366c9] text-white text-xs font-bold shrink-0">
+                      {step.number}
+                    </div>
+                    <step.icon className="h-5 w-5 text-[#2366c9]" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-[#2366c9] mb-4">{step.title}</h3>
+                  <p className="text-[14px] text-black leading-relaxed mb-4">{step.desc}</p>
+                  <div className="rounded-lg bg-blue-50 px-4 py-3 border border-blue-100">
+                    <span className="text-xs font-semibold uppercase tracking-wide text-[#2366c9]">Research basis: </span>
+                    <span className="text-xs text-black">{step.research}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CYCLE AT A GLANCE */}
+      <section className="py-12 bg-[#2366c9]">
+        <div className="container-custom">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">The Cycle at a Glance</h2>
+            <p className="text-blue-200 text-base font-medium">
+              Diagnose → Repair → Learn → Practise → Retrieve → Assess → Correct → Simulate → <span className="text-blue-400 font-bold">Mastery</span>
+            </p>
+            <p className="mt-3 text-[14px] text-blue-300/70">Each step creates the conditions for the next. The sequence is the product.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* RESEARCH SUMMARY TABLE */}
+      <section className="py-14 md:py-20 bg-blue-50/50">
+        <div className="container-custom">
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+                THE SCIENCE BEHIND THE SYSTEM
+              </p>
+              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+                The Research Summary — All 8 Steps
+              </h2>
+            </div>
+            {/* Header */}
+            <div className="grid grid-cols-[minmax(0,_1.5fr)_minmax(0,_2fr)_minmax(0,_3fr)] bg-[#2366c9] text-white text-xs uppercase tracking-wider font-semibold rounded-t-xl overflow-hidden">
+              <div className="p-4">#</div>
+              <div className="p-4 border-l border-blue-400/30">Research Reference</div>
+              <div className="p-4 border-l border-blue-400/30">Finding</div>
+            </div>
+            {/* Rows */}
+            {researchTable.map((row, i) => (
+              <div
+                key={i}
+                className={`grid grid-cols-[minmax(0,_1.5fr)_minmax(0,_2fr)_minmax(0,_3fr)] border-b border-blue-50 ${i % 2 === 0 ? "bg-white" : "bg-slate-50"} hover:bg-blue-50/40 transition-colors`}
+              >
+                <div className="p-4 text-[14px] font-semibold text-[#1e1b4b]">{row.step}</div>
+                <div className="p-4 border-l border-slate-200 text-[14px] text-[#2366c9]">{row.ref}</div>
+                <div className="p-4 border-l border-slate-200 text-[14px] text-black">{row.finding}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-[#2366c9] py-12">
+        <div className="container-custom">
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link href="/programs/ai-diagnostic">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-600">
+                Start With Step 1 — Free Diagnostic
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/research">
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-400 px-7 py-3.5 text-[14px] font-semibold text-white hover:border-blue-300">
+                Read the Full Research Basis
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* REFERENCES */}
+      <section className="py-10 bg-white border-t border-blue-100">
+        <div className="container-custom">
+          <div className="mx-auto max-w-4xl">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">References</h3>
+            <ul className="space-y-1 text-xs text-slate-500">
+              <li>Bartle, B. (2009). <em>Success in IGCSE and O-Level.</em> Academic Press.</li>
+              <li>Bjork, R. A., &amp; Bjork, E. L. (2011). Making things hard on yourself. In <em>Psychology and the real world</em> (pp. 56–64). Worth.</li>
+              <li>Black, P., &amp; Wiliam, D. (1998). Assessment and classroom learning. <em>Assessment in Education, 5</em>(1), 7–74.</li>
+              <li>Bloom, B. S. (1984). The 2 sigma problem. <em>Educational Researcher, 13</em>(6), 4–16.</li>
+              <li>Freeman, S., et al. (2014). Active learning increases student performance. <em>PNAS, 111</em>(23), 8410–8415.</li>
+              <li>Hattie, J., &amp; Timperley, H. (2007). The power of feedback. <em>Review of Educational Research, 77</em>(1), 81–112.</li>
+              <li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning. <em>Psychological Science, 17</em>(3), 249–255.</li>
+            </ul>
           </div>
         </div>
       </section>
     </Layout>
   );
 }
-

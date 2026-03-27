@@ -13,7 +13,7 @@ export default function About() {
   return (
     <Layout>
       {/* ================= HERO - THE MISSION ================= */}
-      <section className="pt-28 pb-32 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="pt-28 pb-32 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_60%)]" />
         <div className="container-custom relative z-10 text-center max-w-4xl mx-auto">
           <motion.div
@@ -109,7 +109,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-20 p-12 bg-[#1e1b4b] rounded-[3rem] text-white">
+          <div className="mt-20 p-12 bg-[#2366c9] rounded-[3rem] text-white">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <h4 className="text-3xl font-semibold text-blue-400 mb-2">91%</h4>
@@ -278,7 +278,7 @@ export default function About() {
               </div>
             </div>
 
-         <div className="bg-[#1e1b4b] p-12 rounded-[3.5rem] text-white shadow-2xl border-4 border-white/10 relative overflow-hidden">
+         <div className="bg-[#2366c9] p-12 rounded-[3.5rem] text-white shadow-2xl border-4 border-white/10 relative overflow-hidden">
   {/* Subltle academic watermark/icon in background */}
   <div className="absolute top-0 right-0 p-8 opacity-10">
     <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
@@ -380,7 +380,7 @@ export default function About() {
       </section>
 
       {/* ================= RESEARCH FOUNDATION ================= */}
-      <section className="py-16 md:py-24 bg-[#1e1b4b] text-white">
+      <section className="py-16 md:py-24 bg-[#2366c9] text-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight">
@@ -529,7 +529,7 @@ export default function About() {
       {/* ================= LIMITATIONS & HONESTY ================= */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom max-w-4xl">
-          <div className="bg-[#1e1b4b] p-16 rounded-[4rem] text-white">
+          <div className="bg-[#2366c9] p-16 rounded-[4rem] text-white">
             <h2 className="text-3xl font-black mb-12 uppercase tracking-tighter text-white ">Transparency Builds Trust</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6">
@@ -563,7 +563,7 @@ export default function About() {
       </section>
 
       {/* ================= FINAL CTA ================= */}
-      <section className="py-16 md:py-24 bg-[#1e1b4b] text-white text-center relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-[#2366c9] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)] pointer-events-none"></div>
         <div className="container-custom relative z-10 max-w-4xl">
           <h2 className="text-5xl md:text-6xl font-semibold text-white mb-4 leading-tight">

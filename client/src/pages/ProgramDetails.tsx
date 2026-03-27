@@ -40,7 +40,7 @@ export default function ProgramDetails() {
   return (
     <Layout>
       {/* Header */}
-      <div className="bg-[#1e1b4b] text-white py-32 relative overflow-hidden">
+      <div className="bg-[#2366c9] text-white py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
         <div className="container-custom relative z-10">
           <Link href="/programs" className="inline-flex items-center text-blue-400 hover:text-white mb-12 transition-all font-semibold uppercase tracking-widest text-xs group">
@@ -114,12 +114,12 @@ export default function ProgramDetails() {
 
           {/* Sidebar */}
           <div className="space-y-10">
-            <div className="bg-[#1e1b4b] p-12 rounded-[4rem] border-[10px] border-blue-900 shadow-2xl text-white relative overflow-hidden group">
+            <div className="bg-[#2366c9] p-12 rounded-[4rem] border-[10px] border-blue-900 shadow-2xl text-white relative overflow-hidden group">
               <div className="absolute inset-0 bg-[#2366c9]/5 pointer-events-none"></div>
               <h3 className="font-semibold text-2xl mb-10 uppercase tracking-widest text-blue-400">Vital Stats</h3>
               <ul className="space-y-10">
                 <li className="flex items-center gap-6 group/item">
-                  <div className="h-14 w-14 bg-[#1e1b4b] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
+                  <div className="h-14 w-14 bg-[#2366c9] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
                     <Calendar className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
@@ -128,7 +128,7 @@ export default function ProgramDetails() {
                   </div>
                 </li>
                 <li className="flex items-center gap-6 group/item">
-                  <div className="h-14 w-14 bg-[#1e1b4b] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
+                  <div className="h-14 w-14 bg-[#2366c9] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
                     <Clock className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
@@ -137,7 +137,7 @@ export default function ProgramDetails() {
                   </div>
                 </li>
                 <li className="flex items-center gap-6 group/item">
-                  <div className="h-14 w-14 bg-[#1e1b4b] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
+                  <div className="h-14 w-14 bg-[#2366c9] rounded-2xl flex items-center justify-center border-2 border-blue-800 shadow-xl group-hover/item:scale-110 transition-transform">
                     <Award className="h-6 w-6 text-blue-400" />
                   </div>
                   <div>
@@ -156,7 +156,7 @@ export default function ProgramDetails() {
                 defaultType="contact"
                 title="Academic Consultation"
                 trigger={
-                  <Button className="w-full bg-[#1e1b4b] hover:bg-black font-semibold h-20 rounded-2xl text-[14px] uppercase tracking-widest shadow-2xl active:scale-95 transition-all border-b-4 border-blue-900">
+                  <Button className="w-full bg-[#2366c9] hover:bg-black font-semibold h-20 rounded-2xl text-[14px] uppercase tracking-widest shadow-2xl active:scale-95 transition-all border-b-4 border-blue-900">
                     TALK TO EXPERT 
                   </Button>
                 }

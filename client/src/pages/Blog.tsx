@@ -198,18 +198,18 @@ export default function Blog() {
   };
 
   const pillClass: Record<string, string> = {
-    "O-Level Strategy": "bg-[#1e1b4b]/10 text-[#1e1b4b]",
+    "O-Level Strategy": "bg-[#2366c9]/10 text-[#1e1b4b]",
     "English P1&P2": "bg-[#2366c9]/10 text-[#2366c9]",
     "Sciences & ATP": "bg-[#2366c9]/10 text-[#2366c9]",
-    Mathematics: "bg-[#1e1b4b]/10 text-[#1e1b4b]",
+    Mathematics: "bg-[#2366c9]/10 text-[#1e1b4b]",
     "Foundational O-Level Bridge Courses": "bg-[#2366c9]/10 text-[#2366c9]",
-    "Parent Guides": "bg-[#1e1b4b]/10 text-[#1e1b4b]",
+    "Parent Guides": "bg-[#2366c9]/10 text-[#1e1b4b]",
     "Study Skills": "bg-[#2366c9]/10 text-[#2366c9]",
   };
 
   return (
     <Layout>
-      <section className="bg-[#1e1b4b] py-20 relative overflow-hidden">
+      <section className="bg-[#2366c9] py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.03)_0px,rgba(255,255,255,0.03)_1px,transparent_1px,transparent_12px)]" />
         <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#2366c9]" />
         <div className="container-custom relative z-10 text-center max-w-5xl">
@@ -296,7 +296,7 @@ export default function Blog() {
               >
                 <img src={article.image} alt={article.title} className="w-full h-[180px] object-cover" />
                 <div className="p-5 flex flex-col min-h-[220px]">
-                  <span className={`inline-flex w-fit px-2.5 py-1 rounded-full text-[11px] font-medium ${pillClass[article.category] ?? "bg-[#1e1b4b]/10 text-[#1e1b4b]"}`}>
+                  <span className={`inline-flex w-fit px-2.5 py-1 rounded-full text-[11px] font-medium ${pillClass[article.category] ?? "bg-[#2366c9]/10 text-[#1e1b4b]"}`}>
                     {article.category}
                   </span>
                   <h3 className="text-[17px] font-semibold text-[#1e1b4b] leading-snug mt-2 mb-2 line-clamp-3">{article.title}</h3>
@@ -312,7 +312,7 @@ export default function Blog() {
             ))}
           </div>
 
-          <div className="mt-10 rounded-xl bg-[#1e1b4b] p-8 md:p-10 text-white">
+          <div className="mt-10 rounded-xl bg-[#2366c9] p-8 md:p-10 text-white">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div>
                 <p className="text-xs font-medium uppercase tracking-widest text-blue-300 mb-2">{inlineCta.eyebrow}</p>
@@ -364,7 +364,7 @@ export default function Blog() {
               <h3 className="text-xl font-semibold text-[#1e1b4b]">Explore Free Learning Materials</h3>
               <p className="text-[14px] text-slate-700">No account needed to browse core samples and frameworks.</p>
               <Link href="/resources">
-                <Button variant="outline" className="border-2 border-[#1e1b4b] text-[#1e1b4b] hover:bg-[#1e1b4b] hover:text-white font-medium">Visit Library</Button>
+                <Button variant="outline" className="border-2 border-[#1e1b4b] text-[#1e1b4b] hover:bg-[#2366c9] hover:text-white font-medium">Visit Library</Button>
               </Link>
             </div>
             <div className="space-y-2">

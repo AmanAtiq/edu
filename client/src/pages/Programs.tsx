@@ -31,7 +31,7 @@ export default function Programs() {
   return (
     <Layout>
       {/* HERO - EMOTIONAL HOOK */}
-      <section className="pt-24 pb-32 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="pt-24 pb-32 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
         <div className="container-custom relative z-10 text-center">
           <motion.div
@@ -125,7 +125,7 @@ export default function Programs() {
             </div>
 
             <div className="space-y-8">
-              <div className="bg-[#1e1b4b] p-12 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
+              <div className="bg-[#2366c9] p-12 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
                 <h3 className="text-2xl font-semibold mb-8 text-red-400">Who it's not for</h3>
                 <ul className="space-y-6">
@@ -278,7 +278,7 @@ export default function Programs() {
       </section>
 
       {/* SYSTEM CAPABILITIES - COLLAPSIBLE */}
-      <section className="py-32 bg-[#1e1b4b] text-white">
+      <section className="py-32 bg-[#2366c9] text-white">
         <div className="container-custom">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-5xl text-white font-semibold">System capabilities</h2>
@@ -465,7 +465,7 @@ export default function Programs() {
                   ))}
                 </ul>
                 <div className="text-[14px] font-medium text-emerald-500 bg-emerald-50/70 inline-block px-3 py-1 rounded-full mb-8">Save {pkg.save} vs individual</div>
-                <Button className={`w-full h-16 rounded-2xl font-semibold ${pkg.popular ? 'bg-[#2366c9] hover:bg-blue-600 shadow-lg shadow-blue-200' : 'bg-[#1e1b4b] hover:bg-black'}`}>Select package</Button>
+                <Button className={`w-full h-16 rounded-2xl font-semibold ${pkg.popular ? 'bg-[#2366c9] hover:bg-blue-600 shadow-lg shadow-blue-200' : 'bg-[#2366c9] hover:bg-black'}`}>Select package</Button>
               </div>
             ))}
           </div>
@@ -473,7 +473,7 @@ export default function Programs() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-32 bg-[#1e1b4b] text-white text-center relative overflow-hidden">
+      <section className="py-32 bg-[#2366c9] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)] pointer-events-none"></div>
         <div className="container-custom relative z-10">
           <h2 className="text-4xl md:text-6xl text-white font-semibold mb-12 leading-none">Not sure which path <span className="text-blue-400">to take?</span></h2>

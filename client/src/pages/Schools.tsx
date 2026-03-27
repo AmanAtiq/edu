@@ -11,7 +11,7 @@ export default function Schools() {
   return (
     <Layout>
       {/* SECTION 1: HERO - PROBLEM → SOLUTION */}
-      <section className="bg-[#1e1b4b] py-16 md:py-20 text-white relative overflow-hidden">
+      <section className="bg-[#2366c9] py-16 md:py-20 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
         <div className="container-custom relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-24">
@@ -200,7 +200,7 @@ export default function Schools() {
               </div>
             </div>
             
-            <div className="bg-[#1e1b4b] p-6 rounded-xl text-white shadow-lg">
+            <div className="bg-[#2366c9] p-6 rounded-xl text-white shadow-lg">
               <h3 className="text-2xl font-semibold mb-6 text-blue-400">Retention outcome</h3>
               <div className="space-y-12">
                 <div className="grid grid-cols-3 gap-8 text-center">
@@ -288,7 +288,7 @@ export default function Schools() {
                         <p className="text-[14px] font-semibold text-[#1e1b4b]">{model.impact}</p>
                       </div>
                     </div>
-                    <div className="bg-[#1e1b4b] text-white p-10 rounded-[2.5rem] shadow-xl">
+                    <div className="bg-[#2366c9] text-white p-10 rounded-[2.5rem] shadow-xl">
                       <h4 className="text-xl font-semibold text-blue-400 mb-6">Financial structure</h4>
                       <p className="text-[14px] font-semibold leading-relaxed text-blue-100">{model.revenue}</p>
                       <div className="mt-8 pt-8 border-t border-white/10">
@@ -324,7 +324,7 @@ export default function Schools() {
                 limit: "10 Founding Schools",
                 desc: "Permanent charter status + 20% lifetime discount + founder privileges.",
                 status: "6 spots remaining",
-                color: "bg-[#1e1b4b]",
+                color: "bg-[#2366c9]",
                 textColor: "text-white"
               },
               {
@@ -371,7 +371,7 @@ export default function Schools() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-16 md:py-24 bg-[#1e1b4b] text-white text-center relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-[#2366c9] text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)]"></div>
         <div className="container-custom relative z-10">
           <motion.h2 

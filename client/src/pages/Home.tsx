@@ -14,7 +14,7 @@ const tiers = [
     limit: "10 Founding Schools",
     desc: "Permanent charter status + 20% lifetime discount + founder privileges.",
     status: "6 spots remaining",
-    color: "bg-[#1e1b4b]",
+    color: "bg-[#2366c9]",
     textColor: "text-white",
   },
   {
@@ -96,7 +96,7 @@ const stakeholders = [
   {
     title: "STUDENTS",
     colorClass: "border-t-[#1e1b4b]",
-    bulletColorClass: "bg-[#1e1b4b]",
+    bulletColorClass: "bg-[#2366c9]",
     features: [
       "Personalised learning pathways",
       "AI-powered diagnostic analysis",
@@ -771,7 +771,7 @@ export default function Home() {
             </div>
 
             <div className="bg-[#2366c9] p-8 text-white relative text-left">
-              <div className="absolute inset-0 bg-[#1e1b4b]/10 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-[#2366c9]/10 pointer-events-none"></div>
               <div className="mb-8 text-center relative z-10">
                 <div className="h-1 w-16 bg-white mx-auto rounded-full mb-4"></div>
                 <h4 className="text-2xl font-semibold text-white mb-2 leading-tight">

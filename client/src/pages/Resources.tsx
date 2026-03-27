@@ -35,7 +35,7 @@ export default function Resources() {
   return (
     <Layout>
       {/* SECTION 1: HERO */}
-      <section className="bg-[#1e1b4b] py-32 text-white relative overflow-hidden text-center">
+      <section className="bg-[#2366c9] py-32 text-white relative overflow-hidden text-center">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
         <div className="container-custom relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -105,7 +105,7 @@ export default function Resources() {
               </div>
             </div>
 
-            <div className="bg-[#1e1b4b] p-16 rounded-[4rem] text-white">
+            <div className="bg-[#2366c9] p-16 rounded-[4rem] text-white">
                <h3 className="text-2xl font-semibold mb-10 text-blue-400">What makes this different</h3>
                <div className="space-y-6">
                  <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-6">
@@ -155,7 +155,7 @@ export default function Resources() {
                  ))}
                </div>
              </div>
-             <div className="bg-[#1e1b4b] p-16 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
+             <div className="bg-[#2366c9] p-16 rounded-[4rem] text-white shadow-2xl relative overflow-hidden">
                 <Microscope className="absolute -top-10 -right-10 h-60 w-60 text-blue-500 opacity-10" />
                 <h3 className="text-2xl font-semibold mb-8 text-blue-400">Quality threshold</h3>
                 <div className="text-5xl font-semibold text-white mb-4">85%</div>
@@ -188,7 +188,7 @@ export default function Resources() {
               { s: "Business", t: "Marketing Mix (4 Ps)", time: "60-75 min", link: "https://moodle.example.com/biz1" }
             ].map((mod, i) => (
               <Card key={i} className="rounded-[3rem] border-4 border-blue-50 overflow-hidden hover:border-[#2366c9] transition-all group shadow-xl">
-                 <CardHeader className="p-10 bg-blue-50 group-hover:bg-[#1e1b4b] transition-colors">
+                 <CardHeader className="p-10 bg-blue-50 group-hover:bg-[#2366c9] transition-colors">
                     <Badge className="bg-[#2366c9] text-white w-fit mb-4">{mod.s}</Badge>
                     <h4 className="text-2xl font-semibold text-[#1e1b4b] group-hover:text-white leading-none">{mod.t}</h4>
                  </CardHeader>
@@ -196,7 +196,7 @@ export default function Resources() {
                     <p className="text-xs font-medium text-[#1e1b4b]/40 mb-10 flex items-center gap-2">
                        <Clock className="h-4 w-4" /> {mod.time}
                     </p>
-                    <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-semibold" onClick={() => window.open(mod.link, '_blank')}>
+                    <Button className="w-full bg-[#2366c9] hover:bg-[#2366c9] h-16 rounded-xl font-semibold" onClick={() => window.open(mod.link, '_blank')}>
                       START MODULE
                     </Button>
                  </CardContent>
@@ -204,7 +204,7 @@ export default function Resources() {
             ))}
           </div>
 
-          <div className="mt-32 p-16 bg-[#1e1b4b] rounded-[4rem] text-white text-center shadow-2xl relative overflow-hidden">
+          <div className="mt-32 p-16 bg-[#2366c9] rounded-[4rem] text-white text-center shadow-2xl relative overflow-hidden">
             <Zap className="absolute -top-10 -left-10 h-40 w-40 text-blue-500 opacity-10" />
             <h3 className="text-3xl text-white font-semibold mb-8">Ready for the full structured course?</h3>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-16 font-medium">1000+ interactive modules, automated spaced repetition, adaptive difficulty, and 24/7 AI support.</p>
@@ -259,7 +259,7 @@ export default function Resources() {
                      </div>
                      <Badge className="bg-blue-100 text-[#2366c9] mb-4 border-none">{res.type}</Badge>
                      <h4 className="text-2xl font-semibold text-[#1e1b4b] leading-tight mb-8">{res.title}</h4>
-                     <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] h-16 rounded-xl font-semibold gap-2">
+                     <Button className="w-full bg-[#2366c9] hover:bg-[#2366c9] h-16 rounded-xl font-semibold gap-2">
                         <Download className="h-5 w-5" /> DOWNLOAD PDF
                      </Button>
                   </CardContent>
@@ -270,7 +270,7 @@ export default function Resources() {
       </section>
 
       {/* SECTION 8: PARENT SUPPORT */}
-      <section className="py-40 bg-[#1e1b4b] text-white">
+      <section className="py-40 bg-[#2366c9] text-white">
         <div className="container-custom">
            <div className="grid lg:grid-cols-2 gap-24 items-center">
               <div className="bg-white/5 p-16 rounded-[4rem] border-4 border-white/10 backdrop-blur-sm shadow-2xl">
@@ -312,7 +312,7 @@ export default function Resources() {
            </div>
            
            <div className="max-w-5xl mx-auto border-8 border-blue-50 rounded-[4rem] overflow-hidden shadow-2xl">
-              <div className="grid grid-cols-3 bg-[#1e1b4b] text-white p-10 font-semibold text-xs">
+              <div className="grid grid-cols-3 bg-[#2366c9] text-white p-10 font-semibold text-xs">
                  <div>Feature</div>
                  <div className="text-center">Free Resources</div>
                  <div className="text-center text-blue-400">Paid Programs</div>
@@ -334,7 +334,7 @@ export default function Resources() {
            </div>
            <div className="text-center mt-20">
               <Link href="/programs">
-                <Button size="lg" className="bg-[#1e1b4b] hover:bg-black text-white h-24 px-20 rounded-3xl font-semibold text-2xl shadow-2xl border-b-8 border-blue-900">Upgrade to full access</Button>
+                <Button size="lg" className="bg-[#2366c9] hover:bg-black text-white h-24 px-20 rounded-3xl font-semibold text-2xl shadow-2xl border-b-8 border-blue-900">Upgrade to full access</Button>
               </Link>
            </div>
         </div>

@@ -105,7 +105,7 @@ export default function ForParents() {
 
   return (
     <Layout>
-      <section className="pt-24 pb-28 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="pt-24 pb-28 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.25)_0%,transparent_55%)]" />
         <div className="container-custom relative z-10 max-w-6xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -219,7 +219,7 @@ export default function ForParents() {
                 </CardContent>
               </Card>
 
-              <Card className="border-[#2366c9]  border-2 bg-[#1e1b4b] border-0 rounded-[2rem] text-white">
+              <Card className="border-[#2366c9]  border-2 bg-[#2366c9] border-0 rounded-[2rem] text-white">
                 <CardContent className="p-6">
                   <p className="text-[14px] uppercase tracking-widest font-black text-blue-300 mb-3">Platform Stack</p>
                   <div className="grid grid-cols-2 gap-2 text-[11px] font-black uppercase tracking-wide">
@@ -277,7 +277,7 @@ export default function ForParents() {
 
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
-          <div className="bg-[#1e1b4b] rounded-[2.5rem] p-8 md:p-12 text-white">
+          <div className="bg-[#2366c9] rounded-[2.5rem] p-8 md:p-12 text-white">
             <p className="text-xs font-black uppercase tracking-widest text-blue-300 mb-2">Key Differentiator</p>
             <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">Parent Partnership Model</h2>
             <p className="text-blue-100 text-lg  max-w-4xl mb-8">
@@ -496,7 +496,7 @@ export default function ForParents() {
                 <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
                 <p className="text-[14px] text-[#1e1b4b]/70  mb-4">30–40 minute assessment with topic-level gap report and personalized plan.</p>
                 <Link href="/contact?type=diagnostic">
-                  <Button className="w-full bg-[#1e1b4b] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>
+                  <Button className="w-full bg-[#2366c9] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -514,7 +514,7 @@ export default function ForParents() {
             </Card>
           </div>
 
-<div className="bg-[#1e1b4b] rounded-[2.5rem] p-10 text-white mb-12 shadow-2xl shadow-blue-900/30 relative overflow-hidden border border-white/5">
+<div className="bg-[#2366c9] rounded-[2.5rem] p-10 text-white mb-12 shadow-2xl shadow-blue-900/30 relative overflow-hidden border border-white/5">
   {/* Decorative Background Element */}
   <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 blur-[80px] rounded-full -mr-32 -mt-32"></div>
 
@@ -576,7 +576,7 @@ export default function ForParents() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#1e1b4b] text-white text-center">
+      <section className="py-20 bg-[#2366c9] text-white text-center">
         <div className="container-custom max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-semibold text-white mb-5">Begin Your Child’s Structured Preparation</h2>
           <p className="text-lg text-blue-100 max-w-3xl mx-auto mb-8 font-medium">

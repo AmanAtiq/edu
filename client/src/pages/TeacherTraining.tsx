@@ -1,68 +1,79 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2, GraduationCap, School, UserCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, GraduationCap, BookOpen, Target, Brain, Lightbulb, AlertTriangle, PenLine } from "lucide-react";
+import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
 
-const comparisonRows = [
+const workshopDetails = [
+  { label: "Workshop Name", value: "Cambridge Teacher Mastery Workshop (CTMW)" },
+  { label: "Certificate Awarded", value: "EduMeUp Certificate of Cambridge Teaching Excellence (CCTE)" },
+  { label: "CPD Hours", value: "7 hours — recognised continuing professional development" },
+  { label: "Duration", value: "One full day — 08:30 to 16:30" },
+  { label: "Format", value: "In-person (school or venue) or live online — maximum 30 participants" },
+  { label: "Subjects Covered", value: "All 10: English, Mathematics, Physics, Chemistry, Biology, Economics, Business Studies, Urdu (3248), Islamiyat, Pakistan Studies" },
+  { label: "Certificate Criteria", value: "Full attendance + open-book post-workshop reflective assessment" },
+  { label: "Conducted by", value: "EduMeUp Cambridge Education Specialists — 27+ years in school leadership" },
+];
+
+const modules = [
   {
-    traditional: "Generic CPD with no Cambridge alignment",
-    smk: "Cambridge Subject Master Knowledge (SMK) by subject and syllabus",
+    number: 1,
+    icon: BookOpen,
+    title: "Cambridge Assessment Architecture",
+    desc: "How examinations are structured, how marks are allocated, and the command word taxonomy every teacher must master.",
   },
   {
-    traditional: "One-off training with limited classroom transfer",
-    smk: "Structured implementation cycle with classroom-ready templates",
+    number: 2,
+    icon: Target,
+    title: "Teaching for Maximum Marks",
+    desc: "The content-performance gap and 8 specific response-architecture techniques that close it.",
   },
   {
-    traditional: "No measurable teacher growth evidence",
-    smk: "Trackable competency milestones and certification outcomes",
+    number: 3,
+    icon: Brain,
+    title: "High-Retention Lesson Design",
+    desc: "The forgetting curve and a practical 3-phase lesson structure based on retrieval practice and spaced repetition science.",
   },
   {
-    traditional: "No direct link to student performance",
-    smk: "Teacher mastery connected to student retention and exam readiness",
+    number: 4,
+    icon: GraduationCap,
+    title: "Classroom Management for Cambridge",
+    desc: "High-expectation academic culture, anxiety management, cold calling without embarrassment, and the 3-second wait-time technique.",
+  },
+  {
+    number: 5,
+    icon: Lightbulb,
+    title: "Inspiring Students",
+    desc: "SDT in Cambridge classrooms, 8 growth mindset language shifts, and targeted strategies for the 4 most common student motivation profiles.",
+  },
+  {
+    number: 6,
+    icon: AlertTriangle,
+    title: "Common Teaching Mistakes",
+    desc: "The 7 most costly student mark-loss patterns, their root teaching cause, and a specific correction for each — applicable the next morning.",
+  },
+  {
+    number: 7,
+    icon: PenLine,
+    title: "Subject Application & Action Planning",
+    desc: "Subject breakout groups apply the day's learning. Every participant leaves with a 3-week lesson improvement plan and one ready-to-use classroom intervention.",
   },
 ];
 
-const implementationSteps = [
-  "Baseline teacher skills and subject-need mapping",
-  "SMK intensive workshop delivery",
-  "Classroom practice sprint with guided templates",
-  "Review, feedback, and certification evaluation",
+const practicalTools = [
+  "A 3-week personalised lesson improvement plan",
+  "One retrieval practice opener for their next lesson",
+  "The Cambridge command word taxonomy — annotated",
+  "A mark-loss pattern analysis for their subject",
+  "The 3-phase retention lesson structure template",
 ];
 
-const certificationTracks = [
-  {
-    title: "School Track",
-    description:
-      "For institutions onboarding full department teams with leadership reporting and implementation review.",
-  },
-  {
-    title: "Individual Teacher Track",
-    description:
-      "For teachers seeking personal Cambridge-aligned mastery and formal competency certification.",
-  },
-  {
-    title: "Advanced Lead Mentor Track",
-    description:
-      "For senior teachers preparing to mentor peers and scale best practices across campuses.",
-  },
-];
-
-const pricingOptions = [
-  {
-    plan: "Institution Bundle",
-    detail: "School-level delivery for teacher cohorts",
-    price: "Custom Quote",
-  },
-  {
-    plan: "Individual Teacher",
-    detail: "Per-teacher enrollment with certification",
-    price: "From PKR 25,000",
-  },
-  {
-    plan: "Lead Mentor Upgrade",
-    detail: "Advanced mentoring and implementation support",
-    price: "From PKR 40,000",
-  },
+const certConfirms = [
+  "Cambridge assessment architecture competency",
+  "Evidence-based retention lesson design skills",
+  "Examination strategy teaching capability",
+  "Classroom management for academic culture",
+  "7 CPD hours of recognised professional development",
 ];
 
 export default function TeacherTraining() {
@@ -71,11 +82,11 @@ export default function TeacherTraining() {
     const metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription?.getAttribute("content") || "";
 
-    document.title = "Teacher Training (SMK) - Cambridge Teacher Certification | EduMeUp";
+    document.title = "Cambridge Teacher Training — CTMW Workshop & CCTE Certificate | EduMeUp";
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "EduMeUp SMK Teacher Training helps schools and teachers build Cambridge-aligned subject mastery with structured certification tracks.",
+        "EduMeUp's Cambridge Teacher Mastery Workshop (CTMW) trains educators in mark scheme mastery, retention lesson design, and exam strategy. 7 CPD hours. Certificate of Cambridge Teaching Excellence awarded.",
       );
     }
 
@@ -89,145 +100,230 @@ export default function TeacherTraining() {
 
   return (
     <Layout>
+      {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-blue-50/80 to-white py-16 md:py-24">
         <div className="container-custom">
-          <div className="mx-auto max-w-5xl text-center">
-            <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-              Teacher Training
-            </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
-              Cambridge SMK Teacher Certification
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-5xl mx-auto text-center"
+          >
+            <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+              Cambridge Teacher Training
+            </p>
+            <h1 className="text-5xl md:text-7xl font-semibold text-slate-900 mb-6 tracking-tight leading-tight">
+              Cambridge Teacher Training That Changes What Happens in the Exam Room
             </h1>
-            <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
-              A structured certification pathway that upgrades subject mastery, teaching quality, and measurable classroom outcomes.
+            <p className="text-base text-slate-700 max-w-3xl mx-auto leading-relaxed mb-8">
+              One day. 7 CPD hours. Certificate of Cambridge Teaching Excellence.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="#smk">
-                <span className="inline-flex items-center rounded-full bg-[#2366c9] px-5 py-2.5 text-sm font-semibold text-white hover:bg-blue-700">
-                  View SMK Framework
-                </span>
-              </Link>
-              <Link href="/contact">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-5 py-2.5 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Book Training Consultation
-                </span>
-              </Link>
+            <Link href="/contact">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-700">
+                Book a Workshop for Your School
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* THE GAP */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="container-custom">
+          <div className="mx-auto max-w-4xl">
+            <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+              The Problem
+            </p>
+            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+              The Gap Most Teacher Training Ignores
+            </h2>
+            <p className="text-base text-black leading-relaxed">
+              Subject knowledge is necessary. Cambridge exam performance requires something additional: explicit understanding of how assessment works, how marks are allocated, and how to teach students to demonstrate their knowledge under timed, unsupported conditions. Most teacher training programmes never address this. The Cambridge Teacher Mastery Workshop does — in a single, intensive, practical day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WORKSHOP AT A GLANCE — grid table */}
+      <section className="py-14 md:py-20 bg-blue-50/50">
+        <div className="container-custom">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-10">
+              <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+                Workshop Details
+              </p>
+              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+                Workshop at a Glance
+              </h2>
+            </div>
+            {/* Header */}
+            <div className="grid grid-cols-[200px_1fr] bg-[#2366c9] text-white text-xs uppercase tracking-wider font-semibold rounded-t-xl overflow-hidden">
+              <div className="p-4">Detail</div>
+              <div className="p-4 border-l border-blue-400/30">Information</div>
+            </div>
+            {/* Rows */}
+            {workshopDetails.map((row, i) => (
+              <div
+                key={i}
+                className={`grid grid-cols-[200px_1fr] border-b border-blue-50 ${i % 2 === 0 ? "bg-white" : "bg-slate-50"} hover:bg-blue-50/40 transition-colors`}
+              >
+                <div className="p-4 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">{row.label}</div>
+                <div className="p-4 border-l border-slate-200 text-[14px] text-black">{row.value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7 MODULES */}
+      <section className="py-14 md:py-20 bg-white">
+        <div className="container-custom">
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+                The Day
+              </p>
+              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+                7 Modules — What the Day Covers
+              </h2>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {modules.map((mod) => (
+                <motion.div
+                  key={mod.number}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: mod.number * 0.05 }}
+                  className="bg-white p-8 rounded-xl border border-blue-200 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#2366c9] transition-all duration-300 group"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="h-10 w-10 flex items-center justify-center rounded-full bg-[#2366c9] text-white text-xs font-bold shrink-0">
+                      {mod.number}
+                    </div>
+                    <mod.icon className="h-5 w-5 text-[#2366c9]" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-[#2366c9] mb-4">{mod.title}</h3>
+                  <p className="text-[14px] text-black leading-relaxed">{mod.desc}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section id="smk" className="py-14 md:py-20">
+      {/* WHAT TEACHERS LEAVE WITH */}
+      <section className="py-14 md:py-20 bg-blue-50/50">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              SMK vs Traditional Teacher CPD
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              SMK is designed for Cambridge classrooms where subject precision matters. It is not generic pedagogy; it is subject-specific, classroom-anchored, and certifiable.
-            </p>
-
-            <div className="mt-8 overflow-hidden rounded-2xl border border-blue-100">
-              <table className="w-full border-collapse text-left">
-                <thead>
-                  <tr className="bg-[#1e1b4b] text-white">
-                    <th className="p-4 text-sm font-semibold md:p-5 md:text-base">Traditional CPD</th>
-                    <th className="p-4 text-sm font-semibold text-blue-300 md:p-5 md:text-base">EduMeUp SMK Certification</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-blue-100 bg-white">
-                  {comparisonRows.map((row) => (
-                    <tr key={row.traditional}>
-                      <td className="p-4 align-top text-sm text-slate-600 md:p-5">{row.traditional}</td>
-                      <td className="p-4 align-top text-sm font-medium text-[#1e1b4b] md:p-5">{row.smk}</td>
-                    </tr>
+            <div className="text-center mb-12">
+              <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+                Outcomes
+              </p>
+              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+                What Teachers Leave With
+              </h2>
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="bg-white p-8 rounded-xl border border-blue-200 shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-[#2366c9] transition-all duration-300">
+                <h3 className="text-2xl font-semibold text-[#2366c9] mb-4">Practical tools — ready tomorrow:</h3>
+                <ul className="space-y-3">
+                  {practicalTools.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-[14px] text-black">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
+                      {item}
+                    </li>
                   ))}
-                </tbody>
-              </table>
+                </ul>
+              </div>
+              <div className="bg-white p-8 rounded-xl border border-[#2366c9] border-2 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-4">
+                  <GraduationCap className="h-6 w-6 text-[#2366c9]" />
+                  <h3 className="text-2xl font-semibold text-[#2366c9]">The CCTE Certificate confirms:</h3>
+                </div>
+                <ul className="space-y-3">
+                  {certConfirms.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-[14px] text-black">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#2366c9]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
+      {/* EVIDENCE */}
+      <section className="py-14 md:py-20 bg-white">
         <div className="container-custom">
-          <div className="mx-auto max-w-5xl">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              Implementation Steps
+          <div className="mx-auto max-w-4xl bg-blue-50/50 border border-blue-200 rounded-xl p-8 md:p-10">
+            <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+              Research Engine
+            </p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+              The Evidence for Teacher Professional Development
             </h2>
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              {implementationSteps.map((step, index) => (
-                <div key={step} className="rounded-2xl border border-blue-100 bg-white p-5 shadow-sm">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-                    Step {index + 1}
-                  </p>
-                  <p className="mt-2 text-sm font-medium text-[#1e1b4b] md:text-base">{step}</p>
-                </div>
-              ))}
-            </div>
+            <p className="text-base text-black leading-relaxed">
+              Teacher quality is the single most powerful in-school factor affecting student achievement — more than class size, school resources, or curriculum (Hattie, 2009). Effective CPD is sustained, content-specific, and directly connected to classroom practice (Darling-Hammond et al., 2017). Pedagogical content knowledge — knowing how to teach a subject, not just knowing the subject — is the most significant differentiator between teachers who produce exam results and those who do not (Shulman, 1986).
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="py-14 md:py-20">
+      {/* BOOK SECTION */}
+      <section className="py-14 md:py-20 bg-blue-50/50">
         <div className="container-custom">
-          <div className="mx-auto max-w-5xl">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              Certification Tracks
+          <div className="mx-auto max-w-4xl">
+            <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
+              Enrol
+            </p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+              Book a Workshop for Your School or Register Individually
             </h2>
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
-              {certificationTracks.map((track, index) => (
-                <div key={track.title} className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-                  <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
-                    {index === 0 ? (
-                      <School className="h-5 w-5" />
-                    ) : index === 1 ? (
-                      <UserCheck className="h-5 w-5" />
-                    ) : (
-                      <GraduationCap className="h-5 w-5" />
-                    )}
-                  </div>
-                  <h3 className="text-xl font-semibold text-[#1e1b4b]">{track.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-700">{track.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#1e1b4b] py-14 text-white md:py-20">
-        <div className="container-custom">
-          <div className="mx-auto max-w-5xl">
-            <h2 className="text-3xl font-semibold text-white md:text-4xl">Pricing & Enrollment</h2>
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
-              {pricingOptions.map((pricing) => (
-                <div key={pricing.plan} className="rounded-2xl border border-white/20 bg-white/5 p-6">
-                  <h3 className="text-lg font-semibold text-white">{pricing.plan}</h3>
-                  <p className="mt-2 text-sm text-blue-100">{pricing.detail}</p>
-                  <p className="mt-4 text-xl font-semibold text-blue-300">{pricing.price}</p>
-                  <div className="mt-5 flex items-center gap-2 text-xs font-medium text-blue-100">
-                    <CheckCircle2 className="h-4 w-4" />
-                    Certification included
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              <Link href="/contact">
-                <span className="flex items-center justify-between rounded-xl bg-[#2366c9] px-5 py-4 text-sm font-semibold text-white hover:bg-blue-700">
-                  Enquire About SMK Training
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </Link>
+            <p className="text-base text-black leading-relaxed">
+              The CTMW is available as a full school booking (all subject teachers, one day) or for individual teacher registration. School bookings include a pre-workshop needs analysis and a post-workshop 30-day follow-up session at no additional cost. Part of the{" "}
               <Link href="/for-schools/partnership">
-                <span className="flex items-center justify-between rounded-xl border border-blue-300 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-200 hover:text-[#2366c9]">
-                  Explore School Partnership Model
-                  <ArrowRight className="h-4 w-4" />
-                </span>
+                <span className="text-[#2366c9] underline cursor-pointer font-semibold">EduMeUp School Partnership</span>
               </Link>
-            </div>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA STRIP */}
+      <section className="bg-[#2366c9] py-12">
+        <div className="container-custom">
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link href="/contact">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#2366c9] px-7 py-3.5 text-[14px] font-semibold text-white hover:bg-blue-600">
+                Book for Your School
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/contact">
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-400 px-7 py-3.5 text-[14px] font-semibold text-white hover:border-blue-300">
+                Register as an Individual Teacher
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* REFERENCES */}
+      <section className="py-10 bg-white border-t border-blue-100">
+        <div className="container-custom">
+          <div className="mx-auto max-w-4xl">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">References</h3>
+            <ul className="space-y-1 text-xs text-slate-500">
+              <li>Darling-Hammond, L., Hyler, M. E., &amp; Gardner, M. (2017). <em>Effective teacher professional development.</em> Learning Policy Institute.</li>
+              <li>Hattie, J. (2009). <em>Visible learning.</em> Routledge.</li>
+              <li>Shulman, L. S. (1986). Those who understand: Knowledge growth in teaching. <em>Educational Researcher, 15</em>(2), 4–14.</li>
+            </ul>
           </div>
         </div>
       </section>

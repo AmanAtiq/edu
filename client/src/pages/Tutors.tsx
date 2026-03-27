@@ -1029,7 +1029,7 @@ export default function Tutors() {
   return (
     <Layout>
       {/* SECTION 1: HERO */}
-      <section className="bg-[#1e1b4b] py-32 text-white relative overflow-hidden text-center">
+      <section className="bg-[#2366c9] py-32 text-white relative overflow-hidden text-center">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
         <div className="container-custom relative z-10 max-w-6xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -1158,7 +1158,7 @@ export default function Tutors() {
              </Card>
           </div>
 
-          <div className="bg-[#1e1b4b] p-20 rounded-[5rem] text-white shadow-3xl relative overflow-hidden">
+          <div className="bg-[#2366c9] p-20 rounded-[5rem] text-white shadow-3xl relative overflow-hidden">
              <div className="grid lg:grid-cols-3 gap-16 relative z-10">
                 {[
                   { t: "Platform is PRIMARY", d: "Our 10X Learning Leap Modelâ„¢ teaches students HOW to learn." },
@@ -1237,7 +1237,7 @@ export default function Tutors() {
             ].map((scen, i) => (
               <Card key={i} className="rounded-[3rem] border-4 border-white shadow-2xl hover:border-[#2366c9] transition-all group bg-white flex flex-col h-full overflow-hidden">
                  <CardContent className="p-16 flex-1 flex flex-col">
-                    <div className="h-20 w-20 bg-[#1e1b4b] text-blue-400 rounded-3xl flex items-center justify-center mb-10 font-semibold text-4xl shadow-xl group-hover:bg-[#2366c9] group-hover:text-white transition-all">{scen.id}</div>
+                    <div className="h-20 w-20 bg-[#2366c9] text-blue-400 rounded-3xl flex items-center justify-center mb-10 font-semibold text-4xl shadow-xl group-hover:bg-[#2366c9] group-hover:text-white transition-all">{scen.id}</div>
                     <h3 className="text-2xl font-semibold mb-2 text-[#1e1b4b]">{scen.title}</h3>
                     <p className="text-blue-600 font-semibold text-[14px] mb-10">{scen.sub}</p>
                     <div className="space-y-8 flex-1">
@@ -1836,7 +1836,7 @@ export default function Tutors() {
   </div>
 </section>
       {/* FINAL CTA */}
-        <section className="py-32 bg-[#1e1b4b] text-white text-center relative overflow-hidden">
+        <section className="py-32 bg-[#2366c9] text-white text-center relative overflow-hidden">
        
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.2)_0%,transparent_70%)]"></div>
         <div className="container-custom relative z-10">

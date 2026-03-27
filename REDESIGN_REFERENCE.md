@@ -173,7 +173,7 @@ Benefits:
 
 #### Before
 ```
-Background: bg-[#1e1b4b] (very dark)
+Background: bg-[#2366c9] (very dark)
 Text:       font-black UPPERCASE tracking-tighter
 Labels:     text-xs font-black UPPERCASE tracking-[0.4em]
 Borders:    border-[6px] border-blue-800

@@ -270,7 +270,7 @@ const references = [
 export default function Research() {
   return (
     <Layout>
-      <section className="pt-28 pb-24 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="pt-28 pb-24 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.2)_0%,transparent_60%)]" />
         <div className="container-custom max-w-6xl relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -382,7 +382,7 @@ export default function Research() {
               </div>
               <div className="text-center mt-6">
                 <a href="#pillars">
-                  <Button className="bg-[#1e1b4b] hover:bg-[#17153c] text-white rounded-xl">See Our 5 Pillars <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                  <Button className="bg-[#2366c9] hover:bg-[#17153c] text-white rounded-xl">See Our 5 Pillars <ArrowRight className="ml-2 h-4 w-4" /></Button>
                 </a>
               </div>
             </CardContent>
@@ -400,7 +400,7 @@ export default function Research() {
           <div className="overflow-x-auto rounded-2xl border border-blue-100 bg-white">
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
-                <tr className="bg-[#1e1b4b] text-white">
+                <tr className="bg-[#2366c9] text-white">
                   <th className="p-4 text-left font-semibold">What They Do</th>
                   <th className="p-4 text-left font-semibold">What Research Says</th>
                 </tr>
@@ -489,7 +489,7 @@ export default function Research() {
           <div className="overflow-x-auto rounded-2xl border border-blue-100 bg-white">
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
-                <tr className="bg-[#1e1b4b] text-white">
+                <tr className="bg-[#2366c9] text-white">
                   <th className="p-4 text-left font-semibold">Research Principle</th>
                   <th className="p-4 text-left font-semibold">What Your Child Actually Does on EduMeUp</th>
                 </tr>
@@ -540,7 +540,7 @@ export default function Research() {
         </div>
       </section>
 
-      <section className="py-24 md:py-28 bg-[#1e1b4b] text-white">
+      <section className="py-24 md:py-28 bg-[#2366c9] text-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl text-white font-semibold mb-4">Our Preliminary Data</h2>
@@ -590,7 +590,7 @@ export default function Research() {
           <div className="overflow-x-auto rounded-2xl border border-blue-100">
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
-                <tr className="bg-[#1e1b4b] text-white">
+                <tr className="bg-[#2366c9] text-white">
                   <th className="p-4 text-left font-semibold">Phase</th>
                   <th className="p-4 text-left font-semibold">Status</th>
                   <th className="p-4 text-left font-semibold">Description</th>
@@ -679,7 +679,7 @@ export default function Research() {
               <InquiryDialog
                 defaultType="consultation"
                 title="Research Collaboration"
-                trigger={<Button className="mt-3 bg-[#1e1b4b] hover:bg-[#17153c] text-white">Express Research Interest <ArrowRight className="ml-2 h-4 w-4" /></Button>}
+                trigger={<Button className="mt-3 bg-[#2366c9] hover:bg-[#17153c] text-white">Express Research Interest <ArrowRight className="ml-2 h-4 w-4" /></Button>}
               />
             </CardContent>
           </Card>
@@ -738,7 +738,7 @@ export default function Research() {
 
           <div className="text-center mt-8">
             <a href="/downloads/learning-science-whitepaper-v1.pdf">
-              <Button className="bg-[#1e1b4b] hover:bg-[#17153c] text-white rounded-xl">
+              <Button className="bg-[#2366c9] hover:bg-[#17153c] text-white rounded-xl">
                 Download Full Reference List (60+ Citations) <Download className="ml-2 h-4 w-4" />
               </Button>
             </a>
@@ -796,7 +796,7 @@ export default function Research() {
         </div>
       </section>
 
-      <section className="py-24 md:py-28 bg-[#1e1b4b] text-white relative overflow-hidden">
+      <section className="py-24 md:py-28 bg-[#2366c9] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25)_0%,transparent_60%)]" />
         <div className="container-custom max-w-6xl relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-10">
