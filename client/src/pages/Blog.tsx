@@ -198,12 +198,12 @@ export default function Blog() {
   };
 
   const pillClass: Record<string, string> = {
-    "O-Level Strategy": "bg-[#2366c9]/10 text-[#1e1b4b]",
+    "O-Level Strategy": "bg-[#2366c9]/10 text-slate-900",
     "English P1&P2": "bg-[#2366c9]/10 text-[#2366c9]",
     "Sciences & ATP": "bg-[#2366c9]/10 text-[#2366c9]",
-    Mathematics: "bg-[#2366c9]/10 text-[#1e1b4b]",
+    Mathematics: "bg-[#2366c9]/10 text-slate-900",
     "Foundational O-Level Bridge Courses": "bg-[#2366c9]/10 text-[#2366c9]",
-    "Parent Guides": "bg-[#2366c9]/10 text-[#1e1b4b]",
+    "Parent Guides": "bg-[#2366c9]/10 text-slate-900",
     "Study Skills": "bg-[#2366c9]/10 text-[#2366c9]",
   };
 
@@ -247,7 +247,7 @@ export default function Blog() {
                 className={`px-4 py-1.5 rounded-full text-xs font-medium whitespace-nowrap border transition-all ${
                   activeCategory === category
                     ? "bg-[#2366c9] text-white border-[#2366c9]"
-                    : "bg-white text-[#1e1b4b] border-[#1e1b4b] hover:bg-[#EFF6FF]"
+                    : "bg-white text-slate-900 border-[#1e1b4b] hover:bg-[#EFF6FF]"
                 }`}
               >
                 {category}
@@ -269,8 +269,8 @@ export default function Blog() {
                   </span>
                 </div>
                 <div className="p-7 lg:p-8 border-l-4 border-[#2366c9] flex flex-col justify-center">
-                  <Badge className="w-fit mb-3 bg-[#EFF6FF] text-[#1e1b4b] border border-slate-200">{featured.category}</Badge>
-                  <h2 className="text-2xl md:text-3xl font-semibold text-[#1e1b4b] leading-tight mb-3 line-clamp-2">{featured.title}</h2>
+                  <Badge className="w-fit mb-3 bg-[#EFF6FF] text-slate-900 border border-slate-200">{featured.category}</Badge>
+                  <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight mb-3 line-clamp-2">{featured.title}</h2>
                   <p className="text-[14px] text-black font-medium leading-relaxed mb-4 line-clamp-3">{featured.excerpt}</p>
                   <p className="text-xs text-black font-medium mb-5">
                     {featured.author} Â· {featured.date} Â· {featured.readTime} read
@@ -296,15 +296,15 @@ export default function Blog() {
               >
                 <img src={article.image} alt={article.title} className="w-full h-[180px] object-cover" />
                 <div className="p-5 flex flex-col min-h-[220px]">
-                  <span className={`inline-flex w-fit px-2.5 py-1 rounded-full text-[11px] font-medium ${pillClass[article.category] ?? "bg-[#2366c9]/10 text-[#1e1b4b]"}`}>
+                  <span className={`inline-flex w-fit px-2.5 py-1 rounded-full text-[11px] font-medium ${pillClass[article.category] ?? "bg-[#2366c9]/10 text-slate-900"}`}>
                     {article.category}
                   </span>
-                  <h3 className="text-[17px] font-semibold text-[#1e1b4b] leading-snug mt-2 mb-2 line-clamp-3">{article.title}</h3>
+                  <h3 className="text-[17px] font-semibold text-slate-900 leading-snug mt-2 mb-2 line-clamp-3">{article.title}</h3>
                   <p className="text-[14px] text-black line-clamp-2 mb-3">{article.excerpt}</p>
                   <p className="text-xs text-black mt-auto mb-3">
                     {article.author} Â· {article.date} Â· {article.readTime} read
                   </p>
-                  <button className="text-[14px] font-medium text-[#1e1b4b] hover:text-[#2366c9] text-left">
+                  <button className="text-[14px] font-medium text-slate-900 hover:text-[#2366c9] text-left">
                     READ MORE â†’
                   </button>
                 </div>
@@ -353,7 +353,7 @@ export default function Blog() {
           <div className="bg-blue-50 border-l-4 border-[#2366c9] rounded-xl p-6 md:p-8 grid md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Not sure where to start?</p>
-              <h3 className="text-xl font-semibold text-[#1e1b4b]">Find Your Starting Point</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Find Your Starting Point</h3>
               <p className="text-[14px] text-slate-700">Sample lessons, essay frameworks, and diagnostic pathways in one place.</p>
               <Link href="/portals/parents">
                 <Button className="bg-[#2366c9] hover:bg-blue-500 text-white font-medium">Take Diagnostic</Button>
@@ -361,15 +361,15 @@ export default function Blog() {
             </div>
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Free resources, no login</p>
-              <h3 className="text-xl font-semibold text-[#1e1b4b]">Explore Free Learning Materials</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Explore Free Learning Materials</h3>
               <p className="text-[14px] text-slate-700">No account needed to browse core samples and frameworks.</p>
               <Link href="/resources">
-                <Button variant="outline" className="border-2 border-[#1e1b4b] text-[#1e1b4b] hover:bg-[#2366c9] hover:text-white font-medium">Visit Library</Button>
+                <Button variant="outline" className="border-2 border-[#1e1b4b] text-slate-900 hover:bg-[#2366c9] hover:text-white font-medium">Visit Library</Button>
               </Link>
             </div>
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Talk to a real person</p>
-              <h3 className="text-xl font-semibold text-[#1e1b4b]">Speak With Our Education Team</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Speak With Our Education Team</h3>
               <p className="text-[14px] text-slate-700">9AMâ€“9PM PKT. Guidance call, not a pressure sales call.</p>
               <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] hover:bg-[#2366c9] hover:text-white font-medium">WhatsApp Us</Button>
             </div>

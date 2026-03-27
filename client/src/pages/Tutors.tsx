@@ -1078,14 +1078,14 @@ export default function Tutors() {
                     defaultType="tutor_application"
                     title="Student Tutoring Application"
                     trigger={
-                      <Button size="lg" className="w-full bg-white text-[#1e1b4b] hover:bg-blue-50 h-10 rounded-lg font-semibold shadow-md">Apply as student</Button>
+                      <Button size="lg" className="w-full bg-white text-slate-900 hover:bg-blue-50 h-10 rounded-lg font-semibold shadow-md">Apply as student</Button>
                     }
                   />
                   <InquiryDialog 
                     defaultType="tutor_application"
                     title="Tutor Application"
                     trigger={
-                      <Button size="lg" className="w-full bg-white text-[#1e1b4b] hover:bg-blue-50 h-10 rounded-lg font-semibold shadow-md">Become an SMK Certified (Subject Master Knowledge Certified) tutor</Button>
+                      <Button size="lg" className="w-full bg-white text-slate-900 hover:bg-blue-50 h-10 rounded-lg font-semibold shadow-md">Become an SMK Certified (Subject Master Knowledge Certified) tutor</Button>
                     }
                   />
                   <Link href="/programs">
@@ -1104,18 +1104,18 @@ export default function Tutors() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h4 className="text-3xl font-semibold text-blue-400 mb-2">91%</h4>
-              <p className="text-xs font-semibold text-[#1e1b4b]">Pass rate</p>
-              <p className="text-[14px] text-[#1e1b4b]/40 mt-2">vs 35% National</p>
+              <p className="text-xs font-semibold text-slate-900">Pass rate</p>
+              <p className="text-[14px] text-slate-900/40 mt-2">vs 35% National</p>
             </div>
             <div>
               <h4 className="text-3xl font-semibold text-blue-400 mb-2">47%</h4>
-              <p className="text-xs font-semibold text-[#1e1b4b]">A/A* grades</p>
-              <p className="text-[14px] text-[#1e1b4b]/40 mt-2">vs 18% Traditional</p>
+              <p className="text-xs font-semibold text-slate-900">A/A* grades</p>
+              <p className="text-[14px] text-slate-900/40 mt-2">vs 18% Traditional</p>
             </div>
             <div>
               <h4 className="text-3xl font-semibold text-blue-400 mb-2">75%+</h4>
-              <p className="text-xs font-semibold text-[#1e1b4b]">Retention</p>
-              <p className="text-[14px] text-[#1e1b4b]/40 mt-2">vs 5-10% Traditional</p>
+              <p className="text-xs font-semibold text-slate-900">Retention</p>
+              <p className="text-[14px] text-slate-900/40 mt-2">vs 5-10% Traditional</p>
             </div>
           </div>
         </div>
@@ -1125,8 +1125,8 @@ export default function Tutors() {
       <section className="py-40 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-32">
-             <h2 className="text-5xl md:text-6xl font-display font-semibold mb-8 text-[#1e1b4b] leading-tight">Why scaffolding, <span className="text-[#2366c9]">not crutches</span></h2>
-             <p className="text-xl text-[#1e1b4b]/40 font-semibold">Building independence, fast</p>
+             <h2 className="text-5xl md:text-6xl font-display font-semibold mb-8 text-slate-900 leading-tight">Why scaffolding, <span className="text-[#2366c9]">not crutches</span></h2>
+             <p className="text-xl text-slate-900/40 font-semibold">Building independence, fast</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-24 items-start mb-40">
@@ -1203,8 +1203,8 @@ export default function Tutors() {
       <section className="py-40 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-32">
-             <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 text-[#1e1b4b] leading-tight">Who needs <span className="text-[#2366c9]">scaffolding?</span></h2>
-             <p className="text-lg text-[#1e1b4b]/40 font-semibold">3 specific strategic scenarios</p>
+             <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 text-slate-900 leading-tight">Who needs <span className="text-[#2366c9]">scaffolding?</span></h2>
+             <p className="text-lg text-slate-900/40 font-semibold">3 specific strategic scenarios</p>
           </div>
 
          
@@ -1238,20 +1238,20 @@ export default function Tutors() {
               <Card key={i} className="rounded-[3rem] border-4 border-white shadow-2xl hover:border-[#2366c9] transition-all group bg-white flex flex-col h-full overflow-hidden">
                  <CardContent className="p-16 flex-1 flex flex-col">
                     <div className="h-20 w-20 bg-[#2366c9] text-blue-400 rounded-3xl flex items-center justify-center mb-10 font-semibold text-4xl shadow-xl group-hover:bg-[#2366c9] group-hover:text-white transition-all">{scen.id}</div>
-                    <h3 className="text-2xl font-semibold mb-2 text-[#1e1b4b]">{scen.title}</h3>
+                    <h3 className="text-2xl font-semibold mb-2 text-slate-900">{scen.title}</h3>
                     <p className="text-blue-600 font-semibold text-[14px] mb-10">{scen.sub}</p>
                     <div className="space-y-8 flex-1">
                        <div>
-                          <p className="text-[14px] font-semibold text-[#1e1b4b]/40 mb-2">Ideal for</p>
-                          <p className="text-[14px] font-semibold text-[#1e1b4b]">{scen.for}</p>
+                          <p className="text-[14px] font-semibold text-slate-900/40 mb-2">Ideal for</p>
+                          <p className="text-[14px] font-semibold text-slate-900">{scen.for}</p>
                        </div>
                        <div>
-                          <p className="text-[14px] font-semibold text-[#1e1b4b]/40 mb-2">Tutor's role</p>
-                          <p className="text-[14px] font-semibold text-[#1e1b4b]">{scen.role}</p>
+                          <p className="text-[14px] font-semibold text-slate-900/40 mb-2">Tutor's role</p>
+                          <p className="text-[14px] font-semibold text-slate-900">{scen.role}</p>
                        </div>
                        <div className="pt-8 border-t border-blue-50">
                           <p className="text-green-600 font-semibold text-xs mb-2">Outcome goal</p>
-                          <p className="text-[14px] font-semibold text-[#1e1b4b]">{scen.goal}</p>
+                          <p className="text-[14px] font-semibold text-slate-900">{scen.goal}</p>
                        </div>
                     </div>
                  </CardContent>
@@ -1262,7 +1262,7 @@ export default function Tutors() {
 
           <div className="mt-32 p-16 bg-red-50 rounded-[3rem] border-4 border-red-100 text-center max-w-4xl mx-auto">
              <h3 className="text-2xl font-semibold text-red-600 mb-4">Who doesn't need tutors?</h3>
-             <p className="text-[#1e1b4b] font-semibold">Students scoring 50%+, with a solid foundation and completed diagnostics/Foundational O-Level Bridge Courses - platform alone is sufficient. Save money, build independence immediately.</p>
+             <p className="text-slate-900 font-semibold">Students scoring 50%+, with a solid foundation and completed diagnostics/Foundational O-Level Bridge Courses - platform alone is sufficient. Save money, build independence immediately.</p>
           </div>
         </div>
       </section>
@@ -1270,8 +1270,8 @@ export default function Tutors() {
       <section className="py-40 bg-white">
         <div className="container-custom max-w-6xl">
            <div className="text-center max-w-4xl mx-auto mb-32">
-             <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 text-[#1e1b4b] leading-tight">Your scaffolding <span className="text-[#2366c9]">journey</span></h2>
-             <p className="text-lg text-[#1e1b4b]/40 font-semibold">From application to independence</p>
+             <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 text-slate-900 leading-tight">Your scaffolding <span className="text-[#2366c9]">journey</span></h2>
+             <p className="text-lg text-slate-900/40 font-semibold">From application to independence</p>
           </div>
 
           <div className="grid lg:grid-cols-5 gap-10">
@@ -1286,8 +1286,8 @@ export default function Tutors() {
                   <div className="mx-auto h-24 w-24 bg-blue-50 rounded-full flex items-center justify-center text-[#2366c9] group-hover:bg-[#2366c9] group-hover:text-white transition-all shadow-xl">
                      <step.icon className="h-10 w-10" />
                   </div>
-                  <h4 className="text-xl font-semibold text-[#1e1b4b]">{step.t}</h4>
-                  <p className="text-[14px] text-[#1e1b4b]/60 font-medium">{step.d}</p>
+                  <h4 className="text-xl font-semibold text-slate-900">{step.t}</h4>
+                  <p className="text-[14px] text-slate-900/60 font-medium">{step.d}</p>
                </div>
              ))}
           </div>
@@ -1298,7 +1298,7 @@ export default function Tutors() {
       <section className="py-40 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 text-[#1e1b4b] leading-tight">What's <span className="text-[#2366c9]">included</span></h2>
+            <h2 className="text-4xl md:text-5xl font-display font-semibold mb-8 text-slate-900 leading-tight">What's <span className="text-[#2366c9]">included</span></h2>
           </div>
         
             <div className="grid md:grid-cols-3 gap-12">
@@ -1323,8 +1323,8 @@ export default function Tutors() {
                 }
               ].map((item,i)=>(
                 <div key={i} className={`${item.color} p-16 rounded-[3rem] border-4 ${item.border} shadow-xl`}> 
-                  <h3 className="text-2xl font-semibold mb-4 text-[#1e1b4b]">{item.title}</h3>
-                  <p className="text-[#1e1b4b]/80 font-medium leading-relaxed">{item.desc}</p>
+                  <h3 className="text-2xl font-semibold mb-4 text-slate-900">{item.title}</h3>
+                  <p className="text-slate-900/80 font-medium leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -1336,10 +1336,10 @@ export default function Tutors() {
  
 <section className="py-32 bg-gradient-to-b from-white to-blue-50">
   <div className="container-custom max-w-5xl mx-auto text-center">
-    <h2 className="text-4xl md:text-5xl font-display font-semibold mb-6 text-[#1e1b4b]">
+    <h2 className="text-4xl md:text-5xl font-display font-semibold mb-6 text-slate-900">
       Tutor <span className="text-[#2366c9]">Certification & Digital Verification </span>
     </h2>
-    <p className="text-lg md:text-xl mb-16 text-[#1e1b4b]/80">
+    <p className="text-lg md:text-xl mb-16 text-slate-900/80">
       Only <span className="font-semibold text-[#2366c9]">15â€“20%</span> of applicants become certified. Hereâ€™s how we ensure quality:
     </p>
 
@@ -1367,7 +1367,7 @@ export default function Tutors() {
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2">
                   <span className="inline-block w-2 h-2 bg-[#2366c9] rounded-full mt-1"></span>
-                  <span className="text-[14px] text-[#1e1b4b]/80">{item}</span>
+                  <span className="text-[14px] text-slate-900/80">{item}</span>
                 </li>
               ))}
             </ul>
@@ -1386,7 +1386,7 @@ export default function Tutors() {
                 ))}
               </ul>
               <p className="font-semibold mb-1">Step B â€” Live 10â€‘Minute Call</p>
-              <p className="text-[14px] text-[#1e1b4b]/80">Tutor demonstrates screen sharing, whiteboard explanation, Moodle navigation, and assigning an H5P activity.</p>
+              <p className="text-[14px] text-slate-900/80">Tutor demonstrates screen sharing, whiteboard explanation, Moodle navigation, and assigning an H5P activity.</p>
             </>
           ),
         },
@@ -1405,7 +1405,7 @@ export default function Tutors() {
                   <div className={`flex items-center justify-center h-10 w-10 rounded-full bg-[#2366c9] text-white font-semibold text-lg`}>
                     {layer.step}
                   </div>
-                  <h4 className="text-xl md:text-2xl font-semibold text-[#1e1b4b]">{layer.title}</h4>
+                  <h4 className="text-xl md:text-2xl font-semibold text-slate-900">{layer.title}</h4>
                 </div>
                 <span className="text-[#2366c9] font-semibold">{open ? "-" : "+"}</span>
               </Disclosure.Button>
@@ -1418,7 +1418,7 @@ export default function Tutors() {
       ))}
     </div>
 
-    <p className="mt-8 mb-12 text-[#1e1b4b]/80">
+    <p className="mt-8 mb-12 text-slate-900/80">
       Tutors are continuously monitored via recorded sessions, student feedback, and performance dashboards. Parents receive a satisfaction guarantee with tutor replacement if needed.
     </p>
 
@@ -1426,13 +1426,13 @@ export default function Tutors() {
     <div className="overflow-x-auto">
       <table className="w-full text-left border-collapse">
         <thead>
-          <tr className="bg-blue-100 text-[#1e1b4b]">
+          <tr className="bg-blue-100 text-slate-900">
             <th className="py-3 px-6">Feature</th>
             <th className="py-3 px-6">Marketplace Tutors</th>
             <th className="py-3 px-6">EduMeUp Certified Network</th>
           </tr>
         </thead>
-        <tbody className="text-[#1e1b4b]/90">
+        <tbody className="text-slate-900/90">
           {[
             ["Applicant % Certified", "âœ—", " 15â€“20%"],
             ["SMK Mastery Exam", "âœ—", " 30â€‘min test"],
@@ -1457,10 +1457,10 @@ export default function Tutors() {
 <section className="py-32 bg-blue-50">
   <div className="container-custom max-w-6xl mx-auto text-center">
     {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-display font-semibold text-[#1e1b4b] mb-4">
+    <h2 className="text-4xl md:text-5xl font-display font-semibold text-slate-900 mb-4">
       Join as an <span className="text-[#2366c9]">SMK Certified (Subject Master Knowledge Certified) Tutor</span>
     </h2>
-    <p className="text-lg md:text-xl text-[#1e1b4b]/70 mb-12">
+    <p className="text-lg md:text-xl text-slate-900/70 mb-12">
       Empower students worldwide while growing your career with EduMeUp.
     </p>
 
@@ -1476,19 +1476,19 @@ export default function Tutors() {
           <div className="bg-[#2366c9] p-5 rounded-full mb-4 flex items-center justify-center">
             {card.icon}
           </div>
-          <h4 className="font-semibold text-lg mb-2 text-[#1e1b4b]">{card.title}</h4>
-          <p className="text-[14px] text-[#1e1b4b]/80">{card.desc}</p>
+          <h4 className="font-semibold text-lg mb-2 text-slate-900">{card.title}</h4>
+          <p className="text-[14px] text-slate-900/80">{card.desc}</p>
         </div>
       ))}
     </div>
 
     {/* Call-to-Action */}
     <div className="max-w-3xl mx-auto">
-      <p className="text-[#1e1b4b]/80 mb-4">
+      <p className="text-slate-900/80 mb-4">
         <strong>Who weâ€™re looking for:</strong> Bachelorâ€™s in relevant subject Â· 3+ years Cambridge experience Â· strong digital skills Â· commitment to independenceâ€‘building Â· available online (global) or physical (Lahore, Karachi, Islamabad/Rawalpindi, Faisalabad, or your city).
       </p>
       <p className="font-semibold text-[#2366c9] text-xl mb-2">Ready to apply?</p>
-      <p className="text-[#1e1b4b]/70 mb-6 text-[14px]">
+      <p className="text-slate-900/70 mb-6 text-[14px]">
         Pro tip: Uploading a 5â€“10 min demo lesson increases your chances of getting matched faster.
       </p>
     <div className="flex justify-center">
@@ -1522,11 +1522,11 @@ export default function Tutors() {
 
     <div className="bg-white rounded-[40px] shadow-[0_30px_80px_rgba(35,102,201,0.15)] p-16 md:p-20 text-center">
 
-      <h2 className="text-4xl md:text-5xl font-display font-semibold text-[#1e1b4b] leading-tight mb-6">
+      <h2 className="text-4xl md:text-5xl font-display font-semibold text-slate-900 leading-tight mb-6">
         Start Your <span className="text-[#2366c9]">Learning Journey</span>
       </h2>
 
-      <p className="text-lg md:text-xl text-[#1e1b4b]/70 max-w-2xl mx-auto mb-12">
+      <p className="text-lg md:text-xl text-slate-900/70 max-w-2xl mx-auto mb-12">
         Personalized tutor matching. Diagnostic assessment. 
         First session within 5â€“7 days.
       </p>
@@ -1545,7 +1545,7 @@ export default function Tutors() {
         }
       />
 
-      <p className="mt-6 text-[14px] text-[#1e1b4b]/50">
+      <p className="mt-6 text-[14px] text-slate-900/50">
         Takes less than 3 minutes to apply.
       </p>
 
@@ -1556,7 +1556,7 @@ export default function Tutors() {
   <div className="max-w-6xl mx-auto px-6">
 
     <div className="text-center mb-20">
-      <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b]">
+      <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">
         Tuition Plans
       </h2>
       <p className="mt-4 text-gray-500 text-lg">
@@ -1603,12 +1603,12 @@ export default function Tutors() {
             </div>
           )}
 
-          <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-2">
+          <h3 className="text-2xl font-semibold text-slate-900 mb-2">
             {plan.title}
           </h3>
 
           <div className="mb-6">
-            <span className="text-4xl font-medium text-[#1e1b4b]">
+            <span className="text-4xl font-medium text-slate-900">
               {plan.price}
             </span>
             <span className="text-gray-400 text-[14px]"> / hour</span>
@@ -1628,7 +1628,7 @@ export default function Tutors() {
             className={`mt-10 w-full py-3 rounded-xl font-semibold transition
             ${plan.highlight
                 ? "bg-[#2366c9] text-white hover:bg-blue-600"
-                : "bg-gray-100 text-[#1e1b4b] hover:bg-gray-200"
+                : "bg-gray-100 text-slate-900 hover:bg-gray-200"
               }`}
           >
             Apply Now
@@ -1649,7 +1649,7 @@ export default function Tutors() {
   <div className="max-w-6xl mx-auto px-6">
 
     <div className="text-center mb-20">
-      <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b]">
+      <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">
         Student Outcomes
       </h2>
       <p className="mt-4 text-gray-500">
@@ -1667,7 +1667,7 @@ export default function Tutors() {
         <div key={i} className="p-8 border border-gray-200 rounded-2xl">
 
           <div className="mb-6">
-            <h4 className="text-xl font-semibold text-[#1e1b4b]">
+            <h4 className="text-xl font-semibold text-slate-900">
               {c.name}
             </h4>
             <p className="text-[14px] text-gray-400">{c.tag}</p>
@@ -1694,7 +1694,7 @@ export default function Tutors() {
 
       <section className="py-40 bg-blue-50">
         <div className="container-custom max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-semibold mb-20 text-center text-[#1e1b4b]">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-20 text-center text-slate-900">
             Frequently Asked Questions
           </h2>
     
@@ -1724,7 +1724,7 @@ export default function Tutors() {
                       transition={{ duration: 0.3 }}
                       className="px-8 overflow-hidden"
                     >
-                      <div className="pb-8 text-[14px] text-[#1e1b4b]/70 font-semibold leading-relaxed">
+                      <div className="pb-8 text-[14px] text-slate-900/70 font-semibold leading-relaxed">
                         {item.a}
                       </div>
                     </motion.div>
@@ -1740,7 +1740,7 @@ export default function Tutors() {
   <div className="max-w-6xl mx-auto px-6">
 
     <div className="text-center mb-20">
-      <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b]">
+      <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">
         Choose Your Path
       </h2>
       <p className="mt-4 text-gray-500 text-lg">
@@ -1752,7 +1752,7 @@ export default function Tutors() {
 
       {/* Path 1 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-        <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
+        <h3 className="text-xl font-semibold text-slate-900 mb-3">
           Path 1 â€” Platform First
         </h3>
         <p className="text-gray-500 mb-6">
@@ -1768,7 +1768,7 @@ export default function Tutors() {
 
       {/* Path 2 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-        <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
+        <h3 className="text-xl font-semibold text-slate-900 mb-3">
           Path 2 â€” Diagnostic + Consultation
         </h3>
         <p className="text-gray-500 mb-6">
@@ -1784,7 +1784,7 @@ export default function Tutors() {
 
       {/* Path 3 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-        <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
+        <h3 className="text-xl font-semibold text-slate-900 mb-3">
           Path 3 â€” Apply as Student
         </h3>
         <p className="text-gray-500 mb-6">
@@ -1792,7 +1792,7 @@ export default function Tutors() {
         </p>
         <Link
           href="/portals/teachers"
-          className="inline-block bg-gray-100 text-[#1e1b4b] px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+          className="inline-block bg-gray-100 text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
         >
           Apply as Student
         </Link>
@@ -1800,7 +1800,7 @@ export default function Tutors() {
 
       {/* Path 4 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
-        <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
+        <h3 className="text-xl font-semibold text-slate-900 mb-3">
           Path 4 â€” Become an SMK Certified (Subject Master Knowledge Certified) Tutor
         </h3>
         <p className="text-gray-500 mb-6">
@@ -1808,7 +1808,7 @@ export default function Tutors() {
         </p>
         <Link
           href="/portals/teachers"
-          className="inline-block bg-gray-100 text-[#1e1b4b] px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+          className="inline-block bg-gray-100 text-slate-900 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
         >
           Apply as Tutor
         </Link>
@@ -1864,7 +1864,7 @@ export default function Tutors() {
               defaultType="tutor_application"
               title="Tutor Application"
               trigger={
-                <Button size="lg" className="bg-white text-[#1e1b4b] hover:bg-blue-50 font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
+                <Button size="lg" className="bg-white text-slate-900 hover:bg-blue-50 font-semibold h-28 px-20 rounded-3xl text-2xl shadow-2xl active:scale-95 transition-all border-b-[10px] border-blue-800">
                   Apply as tutor
                 </Button> 
               }

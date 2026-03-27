@@ -150,7 +150,7 @@ export default function WhyEduMeUp() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               The Problem
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-6">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-6">
               The Problem With Tutoring Alone
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -171,7 +171,7 @@ export default function WhyEduMeUp() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Comparison
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 What Tutoring Does Well — and Where It Falls Short
               </h2>
             </div>
@@ -209,7 +209,7 @@ export default function WhyEduMeUp() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 What EduMeUp Provides
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Five Things EduMeUp Provides That Tutoring Cannot
               </h2>
             </div>
@@ -235,7 +235,7 @@ export default function WhyEduMeUp() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               Better Together
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-5">
               EduMeUp and Tutoring — Better Together
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -255,7 +255,7 @@ export default function WhyEduMeUp() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               Research Engine
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-5">
               The Research Behind the Model
             </h2>
             <p className="text-base text-black leading-relaxed">

@@ -115,7 +115,7 @@ export default function BridgeCourses() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               The Problem
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-5">
               The Gap Nobody Warns Families About
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -136,7 +136,7 @@ export default function BridgeCourses() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 What It Is
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 What a Bridge Course Is — and What It Is Not
               </h2>
             </div>
@@ -173,7 +173,7 @@ export default function BridgeCourses() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Five Subjects
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Five Subjects — What Each Bridge Course Covers
               </h2>
             </div>
@@ -214,7 +214,7 @@ export default function BridgeCourses() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               Research Engine
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-5">
               The Evidence for Early Structured Preparation
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -232,7 +232,7 @@ export default function BridgeCourses() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Pricing
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">Pricing</h2>
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">Pricing</h2>
             </div>
             {/* Header */}
             <div className="grid grid-cols-2 bg-[#2366c9] text-white text-xs uppercase tracking-wider font-semibold rounded-t-xl overflow-hidden">

@@ -33,10 +33,10 @@ const PricingCard = ({
   <Card className={`h-full flex flex-col border-2 ${isPopular ? "border-[#2366c9] shadow-xl md:scale-105 z-10" : "border-blue-100 shadow-lg"}`}>
     {isPopular && <div className="bg-[#2366c9] text-white text-center py-1.5 text-xs font-semibold uppercase tracking-widest">Most Popular</div>}
     <CardHeader className="p-8 pb-4">
-      {badge && <Badge className="w-fit mb-4 bg-blue-100 text-[#1e1b4b]">{badge}</Badge>}
-      <CardTitle className="text-2xl font-semibold text-[#1e1b4b]">{title}</CardTitle>
+      {badge && <Badge className="w-fit mb-4 bg-blue-100 text-slate-900">{badge}</Badge>}
+      <CardTitle className="text-2xl font-semibold text-slate-900">{title}</CardTitle>
       <div className="mt-4 flex items-baseline gap-1">
-        <span className="text-4xl font-medium text-[#1e1b4b]">{price}</span>
+        <span className="text-4xl font-medium text-slate-900">{price}</span>
         <span className="text-[14px] font-normal text-black">{period}</span>
       </div>
       <p className="mt-4 text-black text-[14px] leading-relaxed font-medium">{description}</p>
@@ -67,7 +67,7 @@ const CostPerspectiveCalculator = () => {
   return (
     <div className="bg-white rounded-3xl shadow-2xl border border-blue-100 overflow-hidden text-slate-900 grid lg:grid-cols-2">
       <div className="p-8 md:p-12 bg-slate-50">
-        <h3 className="text-2xl font-semibold mb-8 flex items-center gap-3 text-[#1e1b4b]"><Calculator className="text-[#2366c9]" /> Cost Perspective</h3>
+        <h3 className="text-2xl font-semibold mb-8 flex items-center gap-3 text-slate-900"><Calculator className="text-[#2366c9]" /> Cost Perspective</h3>
         <div className="space-y-10">
           <div>
             <label className="block text-[14px] font-semibold text-slate-700 mb-6 uppercase tracking-wider">Number of Subjects: <span className="text-[#2366c9] text-xl ml-2">{subjects}</span></label>
@@ -85,7 +85,7 @@ const CostPerspectiveCalculator = () => {
       </div>
       <div className="p-8 md:p-12 flex flex-col justify-center items-center text-center bg-gradient-to-b from-emerald-50/40 via-white to-white border-t lg:border-t-0 lg:border-l border-emerald-100/60">
         <p className="text-black font-semibold uppercase tracking-widest text-xs mb-4">Estimated Annual Savings</p>
-        <div className="text-6xl md:text-7xl font-medium text-[#1e1b4b] mb-4">${savings}</div>
+        <div className="text-6xl md:text-7xl font-medium text-slate-900 mb-4">${savings}</div>
         <div className="space-y-3 w-full max-w-xs">
           <div className="flex justify-between text-[14px] py-2 border-b border-slate-100"><span className="text-black">Traditional Cost</span><span className="font-medium line-through text-rose-400">${traditionalCost}</span></div>
           <div className="flex justify-between text-[14px] py-2"><span className="text-black">EduMeUp Cost</span><span className="font-medium text-emerald-400">${eduMeUpCost}</span></div>
@@ -132,7 +132,7 @@ const ROICalculator = () => {
   return (
     <Card className="border-[#2366c9]  border-2 border-blue-100 shadow-xl">
       <CardHeader className="pb-4">
-        <CardTitle className="text-2xl text-[#1e1b4b]">Estimate Your Savings</CardTitle>
+        <CardTitle className="text-2xl text-slate-900">Estimate Your Savings</CardTitle>
         <p className="text-[14px] text-black font-medium">
           Results are estimates based on mid-range pricing assumptions. Educational outcomes depend on student participation and consistency.
         </p>
@@ -177,7 +177,7 @@ const ROICalculator = () => {
           <div className="space-y-3">
             <div className="flex justify-between items-center">
               <span className="text-[14px] text-black">Estimated current cost</span>
-              <span className="text-lg font-semibold text-[#1e1b4b]">${currentCost.toLocaleString()}</span>
+              <span className="text-lg font-semibold text-slate-900">${currentCost.toLocaleString()}</span>
             </div>
             <div className="flex justify-between items-center">
               <span className="text-[14px] text-black">Estimated EduMeUp cost</span>
@@ -207,7 +207,7 @@ export default function Pricing() {
             <p className="text-lg text-blue-100 mb-10 max-w-3xl mx-auto">No hidden fees. Flexible plans. 30-day money-back guarantee. Education should be accessible — not exclusive.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/programs"><Button size="lg" className="bg-[#2366c9] hover:bg-[#1d57ac] h-14 px-10 rounded-2xl font-semibold text-white">Browse Programs <ArrowRight className="h-4 w-4 ml-2" /></Button></Link>
-              <InquiryDialog defaultType="diagnostic" title="Free Diagnostic" trigger={<Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] h-14 px-10 rounded-2xl font-semibold">Take Free Diagnostic</Button>} />
+              <InquiryDialog defaultType="diagnostic" title="Free Diagnostic" trigger={<Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 h-14 px-10 rounded-2xl font-semibold">Take Free Diagnostic</Button>} />
             </div>
           </div>
         </div>
@@ -215,9 +215,9 @@ export default function Pricing() {
 
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-6">Why Our Prices Are Lower Than Traditional Tutoring</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-6">Why Our Prices Are Lower Than Traditional Tutoring</h2>
           <p className="text-lg text-black font-medium leading-relaxed">
-            Private tutoring for O-Level students often costs between <span className="font-semibold text-[#1e1b4b]">$2,000–$6,000 per year</span>.
+            Private tutoring for O-Level students often costs between <span className="font-semibold text-slate-900">$2,000–$6,000 per year</span>.
             For many families, that is unsustainable over 2–3 years. EduMeUp was designed differently.
           </p>
           <p className="text-lg text-black font-medium leading-relaxed mt-4">
@@ -233,7 +233,7 @@ export default function Pricing() {
             "Parent progress visibility",
             "Optional certified tutor support",
           ].map((item) => (
-            <div key={item} className="p-5 rounded-2xl border border-blue-100 bg-blue-50/50 text-[14px] font-semibold text-[#1e1b4b] flex items-center gap-3">
+            <div key={item} className="p-5 rounded-2xl border border-blue-100 bg-blue-50/50 text-[14px] font-semibold text-slate-900 flex items-center gap-3">
               <CheckCircle2 className="h-5 w-5 text-[#2366c9]" />
               {item}
             </div>
@@ -246,7 +246,7 @@ export default function Pricing() {
 
       <section className="py-20 bg-blue-50/60">
         <div className="max-w-6xl mx-auto px-6 text-center mb-12">
-          <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-3">Core Programs</h2>
+          <h2 className="text-4xl font-semibold text-slate-900 mb-3">Core Programs</h2>
           <p className="text-black font-semibold">Clear plans. Clear outcomes. Clear guarantees.</p>
         </div>
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
@@ -260,7 +260,7 @@ export default function Pricing() {
         <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-8">
           <Card className="border-[#2366c9]  border-2 border-blue-100">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#1e1b4b]">What&apos;s Included (All Programs)</CardTitle>
+              <CardTitle className="text-2xl text-slate-900">What&apos;s Included (All Programs)</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
               {[
@@ -278,13 +278,13 @@ export default function Pricing() {
                   {item}
                 </p>
               ))}
-              <p className="text-[14px] font-semibold text-[#1e1b4b] pt-2">No hidden platform charges.</p>
+              <p className="text-[14px] font-semibold text-slate-900 pt-2">No hidden platform charges.</p>
             </CardContent>
           </Card>
 
           <Card className="border-[#2366c9]  border-2 border-blue-100">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#1e1b4b]">Payment Options</CardTitle>
+              <CardTitle className="text-2xl text-slate-900">Payment Options</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               {[
@@ -294,12 +294,12 @@ export default function Pricing() {
                 { title: "Installments (Selected Programs)", desc: "Available for flagship teacher-led programs." },
               ].map((option) => (
                 <div key={option.title} className="p-4 rounded-xl bg-blue-50/60 border border-blue-100">
-                  <h4 className=" text-[#1e1b4b]">{option.title}</h4>
+                  <h4 className=" text-slate-900">{option.title}</h4>
                   <p className="text-[14px] text-black font-medium">{option.desc}</p>
                 </div>
               ))}
               <div className="pt-2">
-                <h4 className=" text-[#1e1b4b] mb-2">Optional add-ons</h4>
+                <h4 className=" text-slate-900 mb-2">Optional add-ons</h4>
                 <ul className="space-y-2 text-[14px] text-black font-medium">
                   <li>• Certified tutors (online or in-home, region dependent)</li>
                   <li>• Printed workbooks</li>
@@ -313,7 +313,7 @@ export default function Pricing() {
       <section className="py-20 bg-blue-50/60">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-3">How We Compare (Calm & Balanced)</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-3">How We Compare (Calm & Balanced)</h2>
             <p className="text-black font-semibold">Education support comes in many forms. Each has strengths.</p>
           </div>
 
@@ -342,7 +342,7 @@ export default function Pricing() {
             ].map((block) => (
               <Card key={block.title} className="border-blue-100 h-full">
                 <CardHeader>
-                  <CardTitle className="text-xl text-[#1e1b4b]">{block.title}</CardTitle>
+                  <CardTitle className="text-xl text-slate-900">{block.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-[14px]">
                   <div>
@@ -353,7 +353,7 @@ export default function Pricing() {
                   </div>
                   {block.considerations.length > 0 && (
                     <div>
-                      <p className="font-semibold text-[#1e1b4b] mb-2">Considerations</p>
+                      <p className="font-semibold text-slate-900 mb-2">Considerations</p>
                       <ul className="space-y-1 text-black font-medium">
                         {block.considerations.map((line) => <li key={line}>• {line}</li>)}
                       </ul>
@@ -373,11 +373,11 @@ export default function Pricing() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-3">How EduMeUp Differs from Traditional Support Models</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-3">How EduMeUp Differs from Traditional Support Models</h2>
             <p className="text-black font-semibold">Clear Structural Differences</p>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl border border-blue-100 shadow-sm">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-md">
             <table className="w-full text-[14px]">
               <thead>
                 <tr className="bg-[#2366c9] text-white">
@@ -399,7 +399,7 @@ export default function Pricing() {
                 ].map((row, index) => (
                   <tr key={row[0]} className={index % 2 ? "bg-blue-50/40" : "bg-white"}>
                     <td className="p-4 text-slate-700  border-t border-blue-100">{row[0]}</td>
-                    <td className="p-4 text-[#1e1b4b]  border-t border-blue-100">{row[1]}</td>
+                    <td className="p-4 text-slate-900  border-t border-blue-100">{row[1]}</td>
                   </tr>
                 ))}
               </tbody>
@@ -429,18 +429,18 @@ export default function Pricing() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8">
           <Card className="border-[#2366c9]  border-2 border-blue-100">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#1e1b4b] flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-[#2366c9]" /> Guarantee & Refund Policy</CardTitle>
+              <CardTitle className="text-2xl text-slate-900 flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-[#2366c9]" /> Guarantee & Refund Policy</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-[14px] text-slate-700 font-medium">
-              <p><span className="font-semibold text-[#1e1b4b]">30-Day Money-Back Guarantee:</span> If you&apos;re not satisfied within the first 30 days, request refund via email. Full refund processed within 5–7 business days.</p>
-              <p><span className="font-semibold text-[#1e1b4b]">Performance Support Guarantee (Selected Programs):</span> If a student completes ≥80% of assigned coursework and assessments and does not reach agreed benchmark levels, additional remediation support is provided at no extra cost. Clear compliance terms apply.</p>
-              <p className="font-semibold text-[#1e1b4b]">We stand behind structured effort.</p>
+              <p><span className="font-semibold text-slate-900">30-Day Money-Back Guarantee:</span> If you&apos;re not satisfied within the first 30 days, request refund via email. Full refund processed within 5–7 business days.</p>
+              <p><span className="font-semibold text-slate-900">Performance Support Guarantee (Selected Programs):</span> If a student completes ≥80% of assigned coursework and assessments and does not reach agreed benchmark levels, additional remediation support is provided at no extra cost. Clear compliance terms apply.</p>
+              <p className="font-semibold text-slate-900">We stand behind structured effort.</p>
             </CardContent>
           </Card>
 
           <Card className="border-[#2366c9]  border-2 border-blue-100">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#1e1b4b]">Pricing FAQ</CardTitle>
+              <CardTitle className="text-2xl text-slate-900">Pricing FAQ</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-[14px]">
               {[
@@ -451,7 +451,7 @@ export default function Pricing() {
                 ["Do you offer financial assistance?", "Case-by-case support and sibling discounts available."],
               ].map(([question, answer]) => (
                 <div key={question} className="p-4 rounded-xl bg-blue-50/50 border border-blue-100">
-                  <p className="font-semibold text-[#1e1b4b]">{question}</p>
+                  <p className="font-semibold text-slate-900">{question}</p>
                   <p className="text-black font-medium mt-1">{answer}</p>
                 </div>
               ))}
@@ -483,7 +483,7 @@ export default function Pricing() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/programs"><Button size="lg" className="bg-[#2366c9] hover:bg-[#1d57ac] h-14 px-10 rounded-2xl font-semibold text-white">Browse Programs <ArrowRight className="h-4 w-4 ml-2" /></Button></Link>
-            <InquiryDialog defaultType="consultation" title="Schedule Consultation" trigger={<Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] h-14 px-10 rounded-2xl font-semibold">Schedule Consultation</Button>} />
+            <InquiryDialog defaultType="consultation" title="Schedule Consultation" trigger={<Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 h-14 px-10 rounded-2xl font-semibold">Schedule Consultation</Button>} />
           </div>
         </div>
       </section>

@@ -313,7 +313,7 @@ export default function Research() {
               </Button>
             </a>
             <a href="/downloads/learning-science-whitepaper-v1.pdf">
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] h-14 px-8 rounded-2xl font-semibold">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 h-14 px-8 rounded-2xl font-semibold">
                 Download Whitepaper <Download className="ml-2 h-4 w-4" />
               </Button>
             </a>
@@ -324,14 +324,14 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">The Crisis of Unscientific Education</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">The Crisis of Unscientific Education</h2>
             <p className="text-lg text-black font-medium">Why most learning fails — and what science says we should do instead.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-10 mb-14">
             <Card className="border-[#2366c9]  border-2 border-red-100">
               <CardHeader>
-                <CardTitle className="text-2xl text-[#1e1b4b] flex items-center gap-2">
+                <CardTitle className="text-2xl text-slate-900 flex items-center gap-2">
                    The Forgetting Curve
                 </CardTitle>
               </CardHeader>
@@ -345,7 +345,7 @@ export default function Research() {
 
             <Card className="border-[#2366c9]  border-2 border-blue-100">
               <CardHeader>
-                <CardTitle className="text-2xl text-[#1e1b4b]">The Passive Learning Trap</CardTitle>
+                <CardTitle className="text-2xl text-slate-900">The Passive Learning Trap</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-[15px] leading-relaxed">
                 {[
@@ -357,7 +357,7 @@ export default function Research() {
                 ].map(([method, retention], i) => (
                   <div key={method} className={`flex justify-between p-3 rounded-xl ${i >= 3 ? "bg-blue-50 border border-blue-100" : "bg-slate-50 border border-slate-100"}`}>
                     <span className="font-medium text-slate-700">{method}</span>
-                    <span className="font-semibold text-[#1e1b4b]">{retention}</span>
+                    <span className="font-semibold text-slate-900">{retention}</span>
                   </div>
                 ))}
                 <p className="text-xs text-black pt-3">
@@ -369,7 +369,7 @@ export default function Research() {
 
           <Card className="border-[#2366c9]  border-2 border-blue-100 bg-blue-50/40">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#1e1b4b]">The Solution: Evidence-Based Design</CardTitle>
+              <CardTitle className="text-2xl text-slate-900">The Solution: Evidence-Based Design</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-6 mb-6">
@@ -393,11 +393,11 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Why Most EdTech Gets Research Wrong</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">Why Most EdTech Gets Research Wrong</h2>
             <p className="text-black font-medium">Most platforms add “research-backed” as an afterthought. We reverse the order.</p>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl border border-blue-100 bg-white">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-md bg-white">
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
                 <tr className="bg-[#2366c9] text-white">
@@ -409,7 +409,7 @@ export default function Research() {
                 {edtechResearchGap.map(([left, right], index) => (
                   <tr key={left} className={index % 2 ? "bg-blue-50/40" : "bg-white"}>
                     <td className="p-4 border-t border-blue-100 text-slate-700 font-medium">{left}</td>
-                    <td className="p-4 border-t border-blue-100 text-[#1e1b4b] font-medium">{right}</td>
+                    <td className="p-4 border-t border-blue-100 text-slate-900 font-medium">{right}</td>
                   </tr>
                 ))}
               </tbody>
@@ -425,7 +425,7 @@ export default function Research() {
       <section id="pillars" className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">5 Pillars of Evidence-Based Learning</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">5 Pillars of Evidence-Based Learning</h2>
             <p className="text-black font-medium">The research foundation of EduMeUp&apos;s 10X Learning Leap Model™</p>
           </div>
 
@@ -433,7 +433,7 @@ export default function Research() {
             {pillars.map((pillar) => (
               <Card key={pillar.title} className="border-blue-100">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-[#1e1b4b] flex items-center gap-3">
+                  <CardTitle className="text-2xl text-slate-900 flex items-center gap-3">
                     <pillar.icon className="h-5 w-5 text-[#2366c9]" />
                     {pillar.title}
                   </CardTitle>
@@ -445,7 +445,7 @@ export default function Research() {
                     <p className="text-[14px] font-semibold text-[#2366c9] mb-2">Key Research</p>
                     <div className="flex flex-wrap gap-2">
                       {pillar.studies.map((study) => (
-                        <Badge key={study} className="bg-blue-100 text-[#1e1b4b] border border-blue-200">{study}</Badge>
+                        <Badge key={study} className="bg-blue-100 text-slate-900 border border-blue-200">{study}</Badge>
                       ))}
                     </div>
                   </div>
@@ -456,7 +456,7 @@ export default function Research() {
                         <p className="text-xs font-semibold uppercase tracking-wider text-black mb-1">Myth</p>
                         <p className="text-[14px] text-slate-700 font-medium mb-3">{myth}</p>
                         <p className="text-xs font-semibold uppercase tracking-wider text-[#2366c9] mb-1">Reality</p>
-                        <p className="text-[14px] text-[#1e1b4b] font-medium">{reality}</p>
+                        <p className="text-[14px] text-slate-900 font-medium">{reality}</p>
                       </div>
                     ))}
                   </div>
@@ -482,11 +482,11 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">From Science to Student Experience</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">From Science to Student Experience</h2>
             <p className="text-black font-medium">What these principles look like in your child&apos;s daily platform experience.</p>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl border border-blue-100 bg-white">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-md bg-white">
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
                 <tr className="bg-[#2366c9] text-white">
@@ -497,7 +497,7 @@ export default function Research() {
               <tbody>
                 {dailyExperienceRows.map(([principle, action], index) => (
                   <tr key={principle} className={index % 2 ? "bg-blue-50/40" : "bg-white"}>
-                    <td className="p-4 border-t border-blue-100 text-[#1e1b4b] font-medium">{principle}</td>
+                    <td className="p-4 border-t border-blue-100 text-slate-900 font-medium">{principle}</td>
                     <td className="p-4 border-t border-blue-100 text-slate-700 font-medium">{action}</td>
                   </tr>
                 ))}
@@ -514,7 +514,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">What the Research Actually Shows</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">What the Research Actually Shows</h2>
             <p className="text-black font-medium">Five comparative effectiveness findings (full library in Whitepaper).</p>
           </div>
 
@@ -522,7 +522,7 @@ export default function Research() {
             {comparativeStudies.map((study) => (
               <Card key={study.title} className="border-blue-100 h-full">
                 <CardHeader>
-                  <CardTitle className="text-xl text-[#1e1b4b]">{study.title}</CardTitle>
+                  <CardTitle className="text-xl text-slate-900">{study.title}</CardTitle>
                   <p className="text-xs text-[#2366c9] font-semibold">Source: {study.source}</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -583,11 +583,11 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">How We Validate Our Approach</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">How We Validate Our Approach</h2>
             <p className="text-black font-medium">A five-phase methodology validation roadmap.</p>
           </div>
 
-          <div className="overflow-x-auto rounded-2xl border border-blue-100">
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-md">
             <table className="w-full text-[15px] leading-relaxed">
               <thead>
                 <tr className="bg-[#2366c9] text-white">
@@ -599,7 +599,7 @@ export default function Research() {
               <tbody>
                 {roadmap.map(([phase, status, description], index) => (
                   <tr key={phase} className={index % 2 ? "bg-blue-50/40" : "bg-white"}>
-                    <td className="p-4 border-t border-blue-100 text-[#1e1b4b] font-medium">{phase}</td>
+                    <td className="p-4 border-t border-blue-100 text-slate-900 font-medium">{phase}</td>
                     <td className="p-4 border-t border-blue-100 text-slate-700 font-medium">{status}</td>
                     <td className="p-4 border-t border-blue-100 text-black font-medium">{description}</td>
                   </tr>
@@ -613,7 +613,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Honest Limitations</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">Honest Limitations</h2>
             <p className="text-black font-medium">Intellectual honesty in educational research matters.</p>
           </div>
 
@@ -649,7 +649,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Research Partnerships</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">Research Partnerships</h2>
             <p className="text-black font-medium">Building independent validation through collaboration.</p>
           </div>
 
@@ -661,7 +661,7 @@ export default function Research() {
             ].map(([institution, context]) => (
               <Card key={institution} className="border-blue-100">
                 <CardHeader>
-                  <CardTitle className="text-xl text-[#1e1b4b]">{institution}</CardTitle>
+                  <CardTitle className="text-xl text-slate-900">{institution}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-[14px] text-black font-medium">{context}</CardContent>
               </Card>
@@ -670,7 +670,7 @@ export default function Research() {
 
           <Card className="border-[#2366c9]  border-2 border-blue-100 bg-blue-50/50">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#1e1b4b]">Call for Research Collaboration</CardTitle>
+              <CardTitle className="text-2xl text-slate-900">Call for Research Collaboration</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-[15px] leading-relaxed text-slate-700 font-medium">
               <p>We welcome independent evaluation partnerships in learning analytics, assessment design, and pedagogical innovation.</p>
@@ -689,7 +689,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Ongoing R&D Initiatives</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">Ongoing R&D Initiatives</h2>
             <p className="text-black font-medium">Continuous improvement through measurable experiments.</p>
           </div>
 
@@ -704,7 +704,7 @@ export default function Research() {
             ].map(([title, detail]) => (
               <Card key={title} className="border-blue-100">
                 <CardHeader>
-                  <CardTitle className="text-xl text-[#1e1b4b] flex items-center gap-2"><Beaker className="h-4 w-4 text-[#2366c9]" /> {title}</CardTitle>
+                  <CardTitle className="text-xl text-slate-900 flex items-center gap-2"><Beaker className="h-4 w-4 text-[#2366c9]" /> {title}</CardTitle>
                 </CardHeader>
                 <CardContent className="text-[15px] leading-relaxed text-black font-medium">{detail}</CardContent>
               </Card>
@@ -724,7 +724,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">Selected References</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">Selected References</h2>
             <p className="text-black font-medium">Full APA reference list (60+) is available in the downloadable Whitepaper.</p>
           </div>
 
@@ -749,7 +749,7 @@ export default function Research() {
       <section className="py-24 md:py-28 bg-blue-50/60">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-semibold text-[#1e1b4b] mb-4">FAQ — Research Questions</h2>
+            <h2 className="text-4xl font-semibold text-slate-900 mb-4">FAQ — Research Questions</h2>
           </div>
 
           <div className="space-y-6">
@@ -777,7 +777,7 @@ export default function Research() {
             ].map(([q, a]) => (
               <Card key={q} className="border-blue-100">
                 <CardHeader>
-                  <CardTitle className="text-lg text-[#1e1b4b]">{q}</CardTitle>
+                  <CardTitle className="text-lg text-slate-900">{q}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-[15px] leading-relaxed text-black font-medium">{a}</p>
@@ -832,12 +832,12 @@ export default function Research() {
               trigger={<Button size="lg" className="h-14 px-8 rounded-2xl bg-[#2366c9] hover:bg-[#1d57ac] text-white font-semibold">Take Free Diagnostic <ArrowRight className="ml-2 h-4 w-4" /></Button>}
             />
             <Link href="/programs">
-              <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-[#1e1b4b] font-semibold">Explore Our Platform</Button>
+              <Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-white text-white hover:bg-white hover:text-slate-900 font-semibold">Explore Our Platform</Button>
             </Link>
             <InquiryDialog
               defaultType="consultation"
               title="Schedule Consultation"
-              trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-blue-300 text-blue-100 hover:bg-blue-300 hover:text-[#1e1b4b] font-semibold">Book Consultation</Button>}
+              trigger={<Button size="lg" variant="outline" className="h-14 px-8 rounded-2xl border-2 border-blue-300 text-blue-100 hover:bg-blue-300 hover:text-slate-900 font-semibold">Book Consultation</Button>}
             />
           </div>
 

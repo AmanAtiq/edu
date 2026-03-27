@@ -63,7 +63,7 @@ export default function Programs() {
               </div>
             </div>
 
-            <div className="inline-block bg-white text-[#1e1b4b] px-10 py-4 rounded-2xl font-semibold text-[14px] shadow-2xl mt-8">
+            <div className="inline-block bg-white text-slate-900 px-10 py-4 rounded-2xl font-semibold text-[14px] shadow-2xl mt-8">
               Proven science. Guaranteed results.
             </div>
           </motion.div>
@@ -73,7 +73,7 @@ export default function Programs() {
       {/* SYSTEM ECOSYSTEM */}
       <section className="py-20 bg-blue-50 border-y-4 border-blue-100">
         <div className="container-custom text-center">
-          <div className="flex flex-wrap justify-center items-center gap-4 text-[14px] md:text-xs font-semibold text-[#1e1b4b]/60">
+          <div className="flex flex-wrap justify-center items-center gap-4 text-[14px] md:text-xs font-semibold text-slate-900/60">
             <span>Diagnostic</span>
             <span className="text-blue-400">→</span>
             <span>Remedial</span>
@@ -96,7 +96,7 @@ export default function Programs() {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-20 items-center ">
             <div>
-              <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-8 leading-none">
+              <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-8 leading-none">
                 PROVEN BY <span className="text-blue-600">NUMBERS</span>
               </h2>
               <div className="grid grid-cols-2 gap-8 mb-12">
@@ -107,9 +107,9 @@ export default function Programs() {
                   { label: "Students Served", val: "5k+", sub: "Since 2021" }
                 ].map((stat, i) => (
                   <div key={i} className="p-8 bg-blue-50 rounded-[2.5rem] border-2 border-blue-100">
-                    <p className="text-4xl font-semibold text-[#1e1b4b] mb-1">{stat.val}</p>
+                    <p className="text-4xl font-semibold text-slate-900 mb-1">{stat.val}</p>
                     <p className="text-[14px] font-semibold text-blue-600 mb-1">{stat.label}</p>
-                    <p className="text-[14px] font-semibold text-[#1e1b4b]/40 uppercase">{stat.sub}</p>
+                    <p className="text-[14px] font-semibold text-slate-900/40 uppercase">{stat.sub}</p>
                   </div>
                 ))}
               </div>
@@ -117,8 +117,8 @@ export default function Programs() {
                 <div className="flex items-start gap-4 p-6 bg-green-50 rounded-3xl border-2 border-green-100">
                   <ShieldCheck className="h-6 w-6 text-green-600 mt-1" />
                   <div>
-                    <h4 className="text-lg font-semibold text-[#1e1b4b]">The EduMeUp guarantee</h4>
-                    <p className="text-[14px] text-[#1e1b4b]/70 ">Try any program for 14 days. If you don't see a measurable shift in retention, we'll provide a 100% refund. No questions asked.</p>
+                    <h4 className="text-lg font-semibold text-slate-900">The EduMeUp guarantee</h4>
+                    <p className="text-[14px] text-slate-900/70 ">Try any program for 14 days. If you don't see a measurable shift in retention, we'll provide a 100% refund. No questions asked.</p>
                   </div>
                 </div>
               </div>
@@ -146,9 +146,9 @@ export default function Programs() {
               </div>
 
               <div className="bg-blue-50 p-12 rounded-[4rem] border-4 border-blue-100">
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-8">Success stories</h3>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-8">Success stories</h3>
                 <div className="space-y-6">
-                  <p className="text-[#1e1b4b]/70 font-medium italic">"Ahmed went from a 'D' in Physics to an 'A*' in just 4 months. The diagnostic revealed he was missing Grade 7 fundamentals."</p>
+                  <p className="text-slate-900/70 font-medium italic">"Ahmed went from a 'D' in Physics to an 'A*' in just 4 months. The diagnostic revealed he was missing Grade 7 fundamentals."</p>
                   <p className="text-[14px] font-semibold text-blue-600">— O-Level parent</p>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function Programs() {
       <section className="py-28 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-24">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">The 4 learning pathways</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">The 4 learning pathways</h2>
             <p className="text-lg text-blue-600 font-semibold">Designed for every stage of the O-Level journey</p>
           </div>
 
@@ -239,24 +239,24 @@ export default function Programs() {
                 <AccordionItem value={path.id} className="border-none">
                   <AccordionTrigger className="px-10 py-8 hover:no-underline group">
                     <div className="text-left">
-                      <h3 className="text-2xl font-semibold text-[#1e1b4b] group-hover:text-[#2366c9] transition-colors">{path.title}</h3>
+                      <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-[#2366c9] transition-colors">{path.title}</h3>
                       <p className="text-blue-600 font-semibold uppercase text-xs tracking-widest mt-1">{path.subtitle}</p>
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-10 pb-10">
                     <div className="pt-6 border-t border-white/50">
                       <div className="mb-8 p-6 bg-white/50 rounded-2xl border border-white">
-                        <span className="text-[14px] font-semibold text-[#1e1b4b]/40">Ideal for</span>
-                        <p className="text-[#1e1b4b] font-semibold mt-1">{path.for}</p>
+                        <span className="text-[14px] font-semibold text-slate-900/40">Ideal for</span>
+                        <p className="text-slate-900 font-semibold mt-1">{path.for}</p>
                       </div>
                       <div className="grid md:grid-cols-2 gap-8">
                         {path.priorities.map((item, j) => (
                           <div key={j} className="space-y-4">
                             <div className="flex items-center gap-3">
                               <div className="w-2 h-2 rounded-full bg-[#2366c9]" />
-                              <h4 className="text-lg font-semibold text-[#1e1b4b]">{item.title}</h4>
+                              <h4 className="text-lg font-semibold text-slate-900">{item.title}</h4>
                             </div>
-                            <p className="text-[14px] text-[#1e1b4b]/70 font-medium leading-relaxed">{item.details}</p>
+                            <p className="text-[14px] text-slate-900/70 font-medium leading-relaxed">{item.details}</p>
                             {('cost' in item || 'pricing' in item || 'value' in item) && (
                               <div className="text-[14px] font-semibold text-[#2366c9] bg-white/50 inline-block px-3 py-1 rounded-full">
                                 {('cost' in item ? item.cost : 'pricing' in item ? item.pricing : 'value' in item ? item.value : '')}
@@ -317,8 +317,8 @@ export default function Programs() {
       <section className="py-32 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-24">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b]">Choose your path</h2>
-            <p className="text-xl text-[#1e1b4b]/40 font-semibold uppercase tracking-wide">Quick Decision Framework</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900">Choose your path</h2>
+            <p className="text-xl text-slate-900/40 font-semibold uppercase tracking-wide">Quick Decision Framework</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16">
@@ -333,8 +333,8 @@ export default function Programs() {
                 ].map((item, i) => (
                   <div key={i} className="p-8 bg-blue-50 rounded-3xl border-2 border-white hover:border-blue-100 transition-all">
                     <span className="text-[14px] font-semibold text-[#2366c9]">{item.q}</span>
-                    <h4 className="text-xl font-semibold text-[#1e1b4b] mt-2 mb-1">{item.path}</h4>
-                    <p className="text-xs text-[#1e1b4b]/40 font-semibold uppercase">Start With: {item.start}</p>
+                    <h4 className="text-xl font-semibold text-slate-900 mt-2 mb-1">{item.path}</h4>
+                    <p className="text-xs text-slate-900/40 font-semibold uppercase">Start With: {item.start}</p>
                   </div>
                 ))}
               </div>
@@ -351,8 +351,8 @@ export default function Programs() {
                 ].map((item, i) => (
                   <div key={i} className="p-8 bg-blue-50 rounded-3xl border-2 border-white hover:border-blue-100 transition-all flex items-center justify-between">
                     <div>
-                      <h4 className="text-xl font-semibold text-[#1e1b4b]">{item.q}</h4>
-                      <p className="text-xs text-[#1e1b4b]/40 font-semibold uppercase mt-1">Recommended: {item.path}</p>
+                      <h4 className="text-xl font-semibold text-slate-900">{item.q}</h4>
+                      <p className="text-xs text-slate-900/40 font-semibold uppercase mt-1">Recommended: {item.path}</p>
                     </div>
                     <ArrowRight className="text-blue-600" />
                   </div>
@@ -366,7 +366,7 @@ export default function Programs() {
       {/* PROGRAMS LISTING */}
       <div className="container-custom py-24 bg-blue-50/30 rounded-[5rem] my-32 border-4 border-white shadow-inner">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Explore specific courses</h2>
+          <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Explore specific courses</h2>
           <div className="w-24 h-4 bg-[#2366c9] mx-auto rounded-full"></div>
         </div>
 
@@ -409,7 +409,7 @@ export default function Programs() {
                 ))}
                 {(!programs || programs.length === 0) && (
                   <div className="col-span-full text-center py-32 bg-white rounded-[3rem] border-4 border-dashed border-blue-100 shadow-inner">
-                    <p className="text-[#1e1b4b]/30 font-semibold text-[14px]">No programs found.</p>
+                    <p className="text-slate-900/30 font-semibold text-[14px]">No programs found.</p>
                   </div>
                 )}
               </div>
@@ -440,8 +440,8 @@ export default function Programs() {
       <section className="py-28 bg-blue-50 border-y-4 border-blue-100">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Flexible bundles</h2>
-            <p className="text-xl text-[#1e1b4b]/40 font-semibold uppercase tracking-wide">Save Up to 40% with Subject Packages</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Flexible bundles</h2>
+            <p className="text-xl text-slate-900/40 font-semibold uppercase tracking-wide">Save Up to 40% with Subject Packages</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -452,14 +452,14 @@ export default function Programs() {
             ].map((pkg, i) => (
               <div key={i} className={`p-12 rounded-[3.5rem] border-4 ${pkg.popular ? 'border-[#2366c9] bg-white shadow-2xl' : 'border-white bg-white/50 shadow-sm'} relative`}>
                 {pkg.popular && <span className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#2366c9] text-white px-6 py-2 rounded-full text-xs font-semibold">Most popular</span>}
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-2">{pkg.title}</h3>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-2">{pkg.title}</h3>
                 <div className="flex items-end gap-2 mb-8">
                   <span className="text-5xl font-semibold text-[#2366c9]">{pkg.price}</span>
-                  <span className="text-[14px] font-semibold text-[#1e1b4b]/40 uppercase mb-2">/ year</span>
+                  <span className="text-[14px] font-semibold text-slate-900/40 uppercase mb-2">/ year</span>
                 </div>
                 <ul className="space-y-4 mb-10">
                   {pkg.features.map((f, j) => (
-                    <li key={j} className="text-[14px] font-semibold text-[#1e1b4b]/70 flex items-center gap-3">
+                    <li key={j} className="text-[14px] font-semibold text-slate-900/70 flex items-center gap-3">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#2366c9]" /> {f}
                     </li>
                   ))}

@@ -27,7 +27,7 @@ export default function Cookies() {
     <Layout>
       <section className="py-16 md:py-24 bg-gradient-to-b from-blue-50/80 to-white">
         <div className="container-custom max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b]">Cookie Policy</h1>
+          <h1 className="text-4xl md:text-6xl font-semibold text-slate-900">Cookie Policy</h1>
           <p className="mt-4 text-sm text-slate-600">Last Updated: [INSERT DATE BEFORE PUBLISHING]</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function Cookies() {
       <section className="pb-16 md:pb-24">
         <div className="container-custom max-w-4xl space-y-8">
           <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">1. What Are Cookies</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">1. What Are Cookies</h2>
             <p className="mt-3 text-sm text-slate-700 leading-relaxed">
               Cookies are small text files placed on your device when you visit a website. They help websites recognize devices,
               remember preferences, and collect usage insights.
@@ -43,14 +43,14 @@ export default function Cookies() {
           </div>
 
           <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">2. Cookies We Use</h2>
-            <div className="mt-4 overflow-x-auto rounded-xl border border-blue-100">
+            <h2 className="text-2xl font-semibold text-slate-900">2. Cookies We Use</h2>
+            <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200 shadow-md">
               <table className="w-full min-w-[640px]">
                 <thead>
-                  <tr className="bg-blue-50 text-left">
-                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Cookie Type</th>
-                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Purpose</th>
-                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Can Be Disabled?</th>
+                  <tr className="bg-[#2366c9] text-white text-left">
+                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Cookie Type</th>
+                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Purpose</th>
+                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Can Be Disabled?</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -80,7 +80,7 @@ export default function Cookies() {
           </div>
 
           <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">3. Managing Your Cookie Preferences</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">3. Managing Your Cookie Preferences</h2>
             <p className="mt-3 text-sm text-slate-700 leading-relaxed">
               Manage preferences through the cookie settings banner or browser controls. Disabling certain cookies may affect
               how some platform features work.
@@ -88,7 +88,7 @@ export default function Cookies() {
           </div>
 
           <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">4. Third-Party Cookies</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">4. Third-Party Cookies</h2>
             <p className="mt-3 text-sm text-slate-700 leading-relaxed">
               Some features may use third-party services that set their own cookies: [INSERT e.g. YouTube, Google Analytics,
               payment processor]. We do not control these cookies. Review third-party privacy policies for details.
@@ -96,7 +96,7 @@ export default function Cookies() {
           </div>
 
           <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">5. Contact</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">5. Contact</h2>
             <p className="mt-3 text-sm text-slate-700">Cookie and privacy enquiries: info@edumeup.com | EduMeUp.com</p>
           </div>
 

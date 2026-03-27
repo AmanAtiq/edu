@@ -43,7 +43,7 @@ export default function ExamPapers() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Programme 10: Workbooks & Materials
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">
               Real Cambridge O-Level Papers, Online and Hands-On with Enhanced Solutions
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
@@ -55,17 +55,17 @@ export default function ExamPapers() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link href="/programs/ai-diagnostic">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   AI Diagnostic
                 </span>
               </Link>
               <Link href="/resources/all">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   All Resources
                 </span>
               </Link>
               <Link href="/programs/complete-o-level">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Complete O-Level
                 </span>
               </Link>
@@ -86,7 +86,7 @@ export default function ExamPapers() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">What This Resource Provides</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">What This Resource Provides</h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
               Cambridge O-Level exams test students differently by paper type.
               Multiple-choice papers demand speed and precision under time pressure,
@@ -101,12 +101,12 @@ export default function ExamPapers() {
       <section className="pb-14 md:pb-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">The Two Paper Formats</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">The Two Paper Formats</h2>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-[#1e1b4b]">Format A - Paper 1: Multiple Choice (Online, Time-Bound)</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Format A - Paper 1: Multiple Choice (Online, Time-Bound)</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 Paper 1 MCQ exams run directly on the platform with Cambridge-matched
                 timing and countdown control. On submission, enhanced solutions are
@@ -120,7 +120,7 @@ export default function ExamPapers() {
             </div>
 
             <div className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-[#1e1b4b]">Format B - Paper 2: Essay/Structured Response (Download + Simulation)</h3>
+              <h3 className="text-xl font-semibold text-slate-900">Format B - Paper 2: Essay/Structured Response (Download + Simulation)</h3>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 Paper 2 practice is completed by hand using downloadable PDFs. Students
                 can do standard self-timed practice, or use real-time simulation:
@@ -143,7 +143,7 @@ export default function ExamPapers() {
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Features</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Features</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {examPapersFeatures.map((feature) => (
@@ -151,7 +151,7 @@ export default function ExamPapers() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <feature.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{feature.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">{feature.description}</p>
               </div>
             ))}
@@ -178,7 +178,7 @@ export default function ExamPapers() {
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">Research References</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">Research References</h2>
             <div className="mt-4 space-y-3">
               {examPapersReferences.map((reference) => (
                 <p key={reference} className="text-sm text-slate-700">
@@ -193,11 +193,11 @@ export default function ExamPapers() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Pricing</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Pricing</h2>
             <p className="mt-3 text-sm text-slate-700">Confirm pricing from the owner.</p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <Link href="/resources/exam-papers">
-                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Start Exam Preparation
                   <ArrowRight className="h-4 w-4" />
                 </span>

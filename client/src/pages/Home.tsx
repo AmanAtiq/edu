@@ -292,7 +292,7 @@ export default function Home() {
           >
             {/* Background color ko slate-50 jaisa rakha gaya hai taake Pic 1 se match kare */}
             <div className="bg-[#f8fafc] p-8 rounded-2xl border border-blue-100 shadow-sm">
-              <h3 className="text-xl md:text-[1.6rem] font-semibold text-[#1e1b4b] mb-6 flex items-center gap-2">
+              <h3 className="text-xl md:text-[1.6rem] font-semibold text-slate-900 mb-6 flex items-center gap-2">
                 {/* Blue Dot */}
                 <div className="h-2 w-2 bg-[#2366c9] rounded-full shrink-0"></div>
                 IGCSE / O-Level Total Mastery System
@@ -606,7 +606,7 @@ export default function Home() {
               THE SCIENCE BEHIND THE SYSTEM
             </p>
             <div className="flex justify-center w-full">
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] mb-4 md:whitespace-nowrap">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 mb-4 md:whitespace-nowrap">
                 The EduMeUp 8-Step Research-Backed Mastery Cycle
               </h2>
             </div>
@@ -669,7 +669,7 @@ export default function Home() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               COMPLETE ECOSYSTEM
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] mb-4 md:whitespace-nowrap text-center">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 mb-4 md:whitespace-nowrap text-center">
               A Complete Ecosystem Empowering Every Stakeholder
             </h2>
             <p className="text-lg text-black font-medium text-left">
@@ -1821,7 +1821,7 @@ export default function Home() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               WHAT SETS US APART
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4 md:whitespace-nowrap">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4 md:whitespace-nowrap">
               What Makes EduMeUp Unique
             </h2>
           </div>

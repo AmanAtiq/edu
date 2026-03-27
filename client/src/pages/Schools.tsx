@@ -95,8 +95,8 @@ export default function Schools() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-[#1e1b4b]">Complete <span className="text-[#2366c9]">Ecosystem</span></h2>
-            <p className="text-lg text-[#1e1b4b]/40 font-semibold">Everything needed to transform student outcomes</p>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-slate-900">Complete <span className="text-[#2366c9]">Ecosystem</span></h2>
+            <p className="text-lg text-slate-900/40 font-semibold">Everything needed to transform student outcomes</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -145,8 +145,8 @@ export default function Schools() {
                       <item.icon className="h-8 w-8" />
                     </div>
                     <Badge className="w-fit mb-2 bg-blue-100 text-blue-700 hover:bg-blue-100 border-none px-4">{item.value}</Badge>
-                    <h3 className="text-xl font-semibold mb-4 text-[#1e1b4b]">{item.title}</h3>
-                    <p className="text-[#1e1b4b]/60 font-medium text-[14px] leading-relaxed mb-6 flex-1">{item.desc}</p>
+                    <h3 className="text-xl font-semibold mb-4 text-slate-900">{item.title}</h3>
+                    <p className="text-slate-900/60 font-medium text-[14px] leading-relaxed mb-6 flex-1">{item.desc}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -160,11 +160,11 @@ export default function Schools() {
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
-              <h2 className="text-5xl md:text-6xl font-semibold mb-6 text-[#1e1b4b]">University <br/><span className="text-[#2366c9]">Validated</span></h2>
+              <h2 className="text-5xl md:text-6xl font-semibold mb-6 text-slate-900">University <br/><span className="text-[#2366c9]">Validated</span></h2>
               <div className="space-y-12">
                 <div>
                   <div className="flex justify-between items-end mb-4">
-                    <span className="text-[14px] font-semibold text-[#1e1b4b]">Pass rate (EduMeUp)</span>
+                    <span className="text-[14px] font-semibold text-slate-900">Pass rate (EduMeUp)</span>
                     <span className="text-3xl font-semibold text-[#2366c9]">91%</span>
                   </div>
                   <div className="h-6 bg-white rounded-full overflow-hidden border-2 border-blue-100 p-1">
@@ -174,7 +174,7 @@ export default function Schools() {
                       className="h-full bg-[#2366c9] rounded-full"
                     />
                   </div>
-                  <div className="flex justify-between items-end mt-4 text-[#1e1b4b]/40">
+                  <div className="flex justify-between items-end mt-4 text-slate-900/40">
                     <span className="text-[14px] font-semibold">Traditional average: 35%</span>
                     <span className="text-[14px] font-semibold">160% improvement</span>
                   </div>
@@ -182,7 +182,7 @@ export default function Schools() {
 
                 <div>
                   <div className="flex justify-between items-end mb-4">
-                    <span className="text-[14px] font-semibold text-[#1e1b4b]">A/A* achievement</span>
+                    <span className="text-[14px] font-semibold text-slate-900">A/A* achievement</span>
                     <span className="text-3xl font-semibold text-[#2366c9]">47%</span>
                   </div>
                   <div className="h-6 bg-white rounded-full overflow-hidden border-2 border-blue-100 p-1">
@@ -192,7 +192,7 @@ export default function Schools() {
                       className="h-full bg-blue-400 rounded-full"
                     />
                   </div>
-                  <div className="flex justify-between items-end mt-4 text-[#1e1b4b]/40">
+                  <div className="flex justify-between items-end mt-4 text-slate-900/40">
                     <span className="text-[14px] font-semibold">Traditional average: 18%</span>
                     <span className="text-[14px] font-semibold">161% improvement</span>
                   </div>
@@ -241,8 +241,8 @@ export default function Schools() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-[#1e1b4b]">Partnership <span className="text-[#2366c9]">models</span></h2>
-            <p className="text-lg text-[#1e1b4b]/40 font-semibold">Strategic options for institution growth</p>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-slate-900">Partnership <span className="text-[#2366c9]">models</span></h2>
+            <p className="text-lg text-slate-900/40 font-semibold">Strategic options for institution growth</p>
           </div>
 
           <Accordion type="single" collapsible className="w-full space-y-8">
@@ -275,17 +275,17 @@ export default function Schools() {
               <AccordionItem key={model.id} value={model.id} className="border border-blue-50 rounded-xl px-6 py-4 hover:border-blue-100 transition-all bg-blue-50/20">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="text-left">
-                    <h3 className="text-2xl font-semibold text-[#1e1b4b] group-hover:text-blue-600 transition-colors">{model.title}</h3>
+                    <h3 className="text-2xl font-semibold text-slate-900 group-hover:text-blue-600 transition-colors">{model.title}</h3>
                     <p className="text-blue-400 font-semibold text-xs mt-1">{model.subtitle}</p>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pt-8 pb-4">
                   <div className="grid md:grid-cols-2 gap-12 border-t-2 border-white pt-8">
                     <div className="space-y-6">
-                      <p className="text-lg text-[#1e1b4b]/70 font-medium leading-relaxed">{model.details}</p>
+                      <p className="text-lg text-slate-900/70 font-medium leading-relaxed">{model.details}</p>
                       <div className="bg-white p-6 rounded-2xl border-2 border-blue-50">
                         <p className="text-xs font-semibold text-blue-600 mb-2">Projected impact</p>
-                        <p className="text-[14px] font-semibold text-[#1e1b4b]">{model.impact}</p>
+                        <p className="text-[14px] font-semibold text-slate-900">{model.impact}</p>
                       </div>
                     </div>
                     <div className="bg-[#2366c9] text-white p-10 rounded-[2.5rem] shadow-xl">
@@ -313,8 +313,8 @@ export default function Schools() {
       <section className="py-16 md:py-24 bg-blue-50">
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-32">
-            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-[#1e1b4b]">Available <span className="text-[#2366c9]">tiers</span></h2>
-            <p className="text-lg text-[#1e1b4b]/40 font-semibold">Limited enrollment for 2026</p>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-4 text-slate-900">Available <span className="text-[#2366c9]">tiers</span></h2>
+            <p className="text-lg text-slate-900/40 font-semibold">Limited enrollment for 2026</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-12">
@@ -333,7 +333,7 @@ export default function Schools() {
                 desc: "Complete platform access + standard support + revenue sharing.",
                 status: "Open Enrollment",
                 color: "bg-white",
-                textColor: "text-[#1e1b4b]"
+                textColor: "text-slate-900"
               },
               {
                 tier: "FOUNDATION TIER",
@@ -341,7 +341,7 @@ export default function Schools() {
                 desc: "Essential features + community support + flexible terms.",
                 status: "Open Enrollment",
                 color: "bg-white",
-                textColor: "text-[#1e1b4b]"
+                textColor: "text-slate-900"
               }
             ].map((option, i) => (
               <div key={i} className={`p-6 rounded-xl border border-white flex flex-col ${option.color} ${option.textColor} shadow-lg`}>

@@ -40,7 +40,7 @@ export default function Worksheets() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Programme 14: Workbooks & Materials
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">
               Conceptual Learning & Practice Worksheets, Primary through O-Level
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
@@ -52,17 +52,17 @@ export default function Worksheets() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link href="/programs/ai-diagnostic">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   AI Diagnostic
                 </span>
               </Link>
               <Link href="/resources/all">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   All Resources
                 </span>
               </Link>
               <Link href="/programs/complete-o-level">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Complete O-Level
                 </span>
               </Link>
@@ -83,7 +83,7 @@ export default function Worksheets() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">What This Resource Provides</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">What This Resource Provides</h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
               Worksheets provide structured printable and digital practice from Grade
               1 through O-Level across English, Mathematics, and Sciences. Each sheet
@@ -98,7 +98,7 @@ export default function Worksheets() {
       <section className="pb-14 md:pb-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Features</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Features</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {worksheetFeatures.map((feature) => (
@@ -106,7 +106,7 @@ export default function Worksheets() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <feature.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{feature.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">{feature.description}</p>
               </div>
             ))}
@@ -117,11 +117,11 @@ export default function Worksheets() {
       <section className="py-14 md:py-20 border-y border-blue-100 bg-blue-50/40">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Pricing</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Pricing</h2>
             <p className="mt-3 text-sm text-slate-700">Confirm current pricing with Muhammad Benyameen.</p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <Link href="/resources/worksheets">
-                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Browse Worksheets
                   <ArrowRight className="h-4 w-4" />
                 </span>

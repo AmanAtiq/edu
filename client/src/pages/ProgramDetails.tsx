@@ -27,7 +27,7 @@ export default function ProgramDetails() {
     return (
       <Layout>
         <div className="container-custom py-40 text-center">
-          <h1 className="text-5xl font-semibold text-[#1e1b4b] mb-12 uppercase tracking-tighter leading-none">Program Not Found</h1>
+          <h1 className="text-5xl font-semibold text-slate-900 mb-12 uppercase tracking-tighter leading-none">Program Not Found</h1>
           <p className="mb-8 text-blue-600 font-medium uppercase tracking-widest">The requested program "{slug}" could not be located.</p>
           <Link href="/programs">
             <Button className="bg-[#2366c9] hover:bg-blue-700 h-20 px-16 rounded-3xl text-xl font-semibold uppercase tracking-widest">Back to Programs</Button>
@@ -61,7 +61,7 @@ export default function ProgramDetails() {
               className="bg-white p-12 rounded-[4rem] border-[10px] border-blue-900/50 min-w-[380px] shadow-2xl relative overflow-hidden group"
             >
               <div className="absolute top-0 right-0 bg-[#2366c9] text-white font-semibold text-[14px] px-8 py-3 rounded-bl-3xl uppercase tracking-widest">Pricing</div>
-              <div className="text-5xl font-medium mb-2 text-[#1e1b4b] tracking-tighter leading-none">
+              <div className="text-5xl font-medium mb-2 text-slate-900 tracking-tighter leading-none">
                 {program.price ? `$${(program.price / 100).toFixed(2)}` : "Enquire"}
               </div>
               <div className="text-blue-400 font-semibold uppercase text-xs tracking-widest mb-10">per academic term</div>
@@ -86,15 +86,15 @@ export default function ProgramDetails() {
             
             {/* Description */}
             <section>
-              <h2 className="text-5xl font-semibold mb-10 text-[#1e1b4b] uppercase tracking-tighter leading-none">Program <span className="text-[#2366c9]">Overview</span></h2>
-              <p className="text-2xl text-[#1e1b4b]/70 font-medium leading-relaxed border-l-8 border-blue-100 pl-10">
+              <h2 className="text-5xl font-semibold mb-10 text-slate-900 uppercase tracking-tighter leading-none">Program <span className="text-[#2366c9]">Overview</span></h2>
+              <p className="text-2xl text-slate-900/70 font-medium leading-relaxed border-l-8 border-blue-100 pl-10">
                 {program.fullDescription}
               </p>
             </section>
 
             {/* Features */}
             <section>
-              <h2 className="text-5xl font-semibold mb-12 text-[#1e1b4b] uppercase tracking-tighter leading-none">What You'll <span className="text-[#2366c9]">Master</span></h2>
+              <h2 className="text-5xl font-semibold mb-12 text-slate-900 uppercase tracking-tighter leading-none">What You'll <span className="text-[#2366c9]">Master</span></h2>
               <div className="grid sm:grid-cols-2 gap-8">
                 {program.features?.map((feature, i) => (
                   <motion.div 
@@ -105,7 +105,7 @@ export default function ProgramDetails() {
                     <div className="h-12 w-12 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                       <ShieldCheck className="h-6 w-6 text-[#2366c9]" />
                     </div>
-                    <span className="text-[#1e1b4b] font-semibold uppercase text-[14px] tracking-widest leading-tight">{feature}</span>
+                    <span className="text-slate-900 font-semibold uppercase text-[14px] tracking-widest leading-tight">{feature}</span>
                   </motion.div>
                 ))}
               </div>

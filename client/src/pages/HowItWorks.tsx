@@ -135,7 +135,7 @@ export default function HowItWorks() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               The Difference
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-6">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-6">
               Two Systems. Two Outcomes.
             </h2>
             <div className="space-y-4 text-base text-black leading-relaxed">
@@ -161,7 +161,7 @@ export default function HowItWorks() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 THE SCIENCE BEHIND THE SYSTEM
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Two Models — The Difference Is Structural
               </h2>
             </div>
@@ -192,7 +192,7 @@ export default function HowItWorks() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 THE 8-STEP MASTERY CYCLE
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 The 8 Steps — What Happens at Each Stage
               </h2>
             </div>

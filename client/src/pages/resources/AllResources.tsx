@@ -58,7 +58,7 @@ export default function AllResources() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Programme 15: All Resources
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">Every EduMeUp Resource, In One Place</h1>
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">Every EduMeUp Resource, In One Place</h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
               Courses. Workbooks. Worksheets. Past papers. All in one searchable catalogue.
             </p>
@@ -88,14 +88,14 @@ export default function AllResources() {
 
       <section className="py-14 md:py-20">
         <div className="container-custom">
-          <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl text-center">Browse by Category</h2>
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl text-center">Browse by Category</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {resourceCategories.map((category) => (
               <div key={category.title} className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm">
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <category.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{category.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">{category.description}</p>
                 <Link href={category.href}>
                   <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#2366c9] hover:text-blue-700">
@@ -111,7 +111,7 @@ export default function AllResources() {
 
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
-          <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl text-center">Browse by Subject</h2>
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl text-center">Browse by Subject</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-2">
             {["All", ...resourceSubjects].map((subject) => (
               <button
@@ -121,7 +121,7 @@ export default function AllResources() {
                 className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                   activeSubject === subject
                     ? "border-[#2366c9] bg-[#2366c9] text-white"
-                    : "border-blue-200 bg-white text-[#1e1b4b] hover:border-blue-300"
+                    : "border-blue-200 bg-white text-slate-900 hover:border-blue-300"
                 }`}
               >
                 {subject}
@@ -133,7 +133,7 @@ export default function AllResources() {
             {filtered.map((item) => (
               <Link key={`${item.title}-${item.subject}`} href={item.href}>
                 <div className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm hover:border-blue-300">
-                  <p className="text-base font-semibold text-[#1e1b4b]">{item.title}</p>
+                  <p className="text-base font-semibold text-slate-900">{item.title}</p>
                   <p className="mt-1 text-xs text-slate-600">{item.subject} | {item.type}</p>
                 </div>
               </Link>
@@ -168,7 +168,7 @@ export default function AllResources() {
                 </span>
               </Link>
               <Link href="/programs">
-                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Explore Programmes
                   <ArrowRight className="h-4 w-4" />
                 </span>

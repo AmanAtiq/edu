@@ -43,7 +43,7 @@ export default function ConceptualWorkbooks() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Programme 8: Workbooks & Materials
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">
               Conceptual Workbooks with Solutions, All Subjects, All Topics
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
@@ -67,7 +67,7 @@ export default function ConceptualWorkbooks() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">What This Resource Provides</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">What This Resource Provides</h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
               Each workbook covers a complete O-Level subject topic by topic. Before
               each practice section, students receive concise concept summaries,
@@ -88,7 +88,7 @@ export default function ConceptualWorkbooks() {
       <section className="pb-14 md:pb-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Features</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Features</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -97,7 +97,7 @@ export default function ConceptualWorkbooks() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <feature.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{feature.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{feature.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">{feature.description}</p>
               </div>
             ))}
@@ -108,7 +108,7 @@ export default function ConceptualWorkbooks() {
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-2xl font-semibold text-[#1e1b4b]">Research References</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">Research References</h2>
             <div className="mt-4 space-y-3">
               {conceptualReferences.map((reference) => (
                 <p key={reference} className="text-sm text-slate-700">
@@ -123,10 +123,10 @@ export default function ConceptualWorkbooks() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Next Step</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Next Step</h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <Link href="/resources/workbooks">
-                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Browse Workbooks
                   <ArrowRight className="h-4 w-4" />
                 </span>

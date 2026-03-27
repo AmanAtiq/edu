@@ -313,8 +313,8 @@ export default function ForStudents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">We Understand Your Struggles</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Because each struggle below has a systematic solution</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">We Understand Your Struggles</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Because each struggle below has a systematic solution</p>
           </div>
 
           <div className="space-y-8">
@@ -327,22 +327,22 @@ export default function ForStudents() {
                     </div>
                     <div>
                       <p className="text-[14px] font-semibold uppercase tracking-widest text-blue-600 mb-1">Struggle #{index + 1}</p>
-                      <h3 className="text-2xl font-semibold text-[#1e1b4b]">{item.title}</h3>
+                      <h3 className="text-2xl font-semibold text-slate-900">{item.title}</h3>
                     </div>
                   </div>
 
-                  <p className="text-[#1e1b4b]/70 font-medium mb-3"><span className="font-semibold text-[#1e1b4b]">Why this happens:</span> {item.why}</p>
-                  <p className="text-[14px] italic text-[#1e1b4b]/60 font-semibold mb-3">â€œ{item.quote}â€</p>
+                  <p className="text-slate-900/70 font-medium mb-3"><span className="font-semibold text-slate-900">Why this happens:</span> {item.why}</p>
+                  <p className="text-[14px] italic text-slate-900/60 font-semibold mb-3">â€œ{item.quote}â€</p>
                   <div className="space-y-2 mb-4">
                     {item.solution.map((point, i) => (
-                      <div key={i} className="flex items-start gap-3 text-[14px] text-[#1e1b4b]/80 font-semibold">
+                      <div key={i} className="flex items-start gap-3 text-[14px] text-slate-900/80 font-semibold">
                         <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                         <span>{point}</span>
                       </div>
                     ))}
                   </div>
                   <p className="text-[#2366c9] font-semibold mb-5">The result: {item.result}</p>
-                  <Button variant="outline" className="border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-semibold">
+                  <Button variant="outline" className="border-blue-200 text-slate-900 hover:bg-blue-50 font-semibold">
                     {item.cta}
                   </Button>
                 </CardContent>
@@ -383,16 +383,16 @@ export default function ForStudents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Beyond Content â€” We Teach How to Learn</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">7 skills that improve exam outcomes and last for life</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Beyond Content â€” We Teach How to Learn</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">7 skills that improve exam outcomes and last for life</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {skills.map((skill, i) => (
               <Card key={i} className="bg-white border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
                   <p className="text-[14px] font-semibold uppercase text-blue-600 tracking-widest mb-2">Skill {i + 1}</p>
-                  <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">{skill.title}</h3>
-                  <p className="text-xs text-[#1e1b4b]/70 font-medium mb-2"><span className="text-[#1e1b4b] font-semibold">Why it matters:</span> {skill.why}</p>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-2">{skill.title}</h3>
+                  <p className="text-xs text-slate-900/70 font-medium mb-2"><span className="text-slate-900 font-semibold">Why it matters:</span> {skill.why}</p>
                   <p className="text-xs text-[#2366c9] font-medium"><span className="font-semibold">How EduMeUp builds it:</span> {skill.how}</p>
                 </CardContent>
               </Card>
@@ -411,20 +411,20 @@ export default function ForStudents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Your Personalized Learning Path</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Four pathways, one platform</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Your Personalized Learning Path</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Four pathways, one platform</p>
           </div>
           <div className="grid lg:grid-cols-2 gap-8">
             {pathways.map((path, i) => (
               <Card key={i} className="border-2 border-blue-50 rounded-[2rem]">
                 <CardHeader className="pb-2">
-                  <h3 className="text-xl font-semibold text-[#1e1b4b]">{path.title}</h3>
-                  <p className="text-[14px] text-[#1e1b4b]/60 font-semibold">{path.profile}</p>
+                  <h3 className="text-xl font-semibold text-slate-900">{path.title}</h3>
+                  <p className="text-[14px] text-slate-900/60 font-semibold">{path.profile}</p>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2 mb-4">
                     {path.route.map((step, stepIndex) => (
-                      <p key={stepIndex} className="text-[14px] text-[#1e1b4b]/80 font-semibold">
+                      <p key={stepIndex} className="text-[14px] text-slate-900/80 font-semibold">
                         {stepIndex + 1}. {step}
                       </p>
                     ))}
@@ -447,16 +447,16 @@ export default function ForStudents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Your Transformation Timeline</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">What progress looks like month by month</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Your Transformation Timeline</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">What progress looks like month by month</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {transformationTimeline.map((month, i) => (
               <Card key={i} className="bg-white border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
                   <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-1">{month.phase}</p>
-                  <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">{month.title}</h3>
-                  <p className="text-[#1e1b4b]/70 font-medium text-[14px] mb-2"><span className="font-semibold text-[#1e1b4b]">What you'll feel:</span> {month.feel}</p>
+                  <h3 className="text-xl font-semibold text-slate-900 mb-2">{month.title}</h3>
+                  <p className="text-slate-900/70 font-medium text-[14px] mb-2"><span className="font-semibold text-slate-900">What you'll feel:</span> {month.feel}</p>
                   <p className="text-[#2366c9] font-semibold text-[14px]">{month.measurable}</p>
                 </CardContent>
               </Card>
@@ -464,8 +464,8 @@ export default function ForStudents() {
           </div>
 
           <div className="mt-12 bg-white border-2 border-blue-100 rounded-[2rem] p-8">
-            <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-4">Composite student journeys</h3>
-            <div className="space-y-4 text-[14px] text-[#1e1b4b]/80 font-semibold">
+            <h3 className="text-2xl font-semibold text-slate-900 mb-4">Composite student journeys</h3>
+            <div className="space-y-4 text-[14px] text-slate-900/80 font-semibold">
               <p><span className="text-[#2366c9] font-semibold">ATP improvement case:</span> A student starting near 22/40 in ATP Chemistry moved to 35â€“38/40 in mock conditions through structured ATP training and past-paper strategy.</p>
               <p><span className="text-[#2366c9] font-semibold">English structure case:</span> A student struggling with essay structure reached A-grade performance after framework-driven writing practice and feedback cycles.</p>
               <p><span className="text-[#2366c9] font-semibold">Emergency prep case:</span> A student with D grades across multiple subjects used risk-based triage and high-yield planning to pass all subjects within 14 weeks.</p>
@@ -477,13 +477,13 @@ export default function ForStudents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Is EduMeUp Right for You?</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Is EduMeUp Right for You?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="border-[#2366c9]  border-2 border-2 border-green-100 rounded-2xl bg-green-50/40">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-green-700 mb-4 flex items-center gap-2"><CheckCircle2 className="h-5 w-5" />EduMeUp works best if you</h3>
-                <ul className="space-y-2 text-[14px] font-semibold text-[#1e1b4b]/80">
+                <ul className="space-y-2 text-[14px] font-semibold text-slate-900/80">
                   <li>â€¢ Are willing to practice actively</li>
                   <li>â€¢ Want conceptual understanding, not memorization only</li>
                   <li>â€¢ Can follow a structured system consistently</li>
@@ -495,7 +495,7 @@ export default function ForStudents() {
             <Card className="border-[#2366c9]  border-2 border-2 border-red-100 rounded-2xl bg-red-50/40">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-red-700 mb-4 flex items-center gap-2"><AlertTriangle className="h-5 w-5" />Not ideal if you</h3>
-                <ul className="space-y-2 text-[14px] font-semibold text-[#1e1b4b]/80">
+                <ul className="space-y-2 text-[14px] font-semibold text-slate-900/80">
                   <li>â€¢ Want shortcuts without effort</li>
                   <li>â€¢ Prefer direct answers without thinking</li>
                   <li>â€¢ Do not want a structured process</li>
@@ -510,17 +510,17 @@ export default function ForStudents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Three Ways to Start</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">The earlier you start, the stronger your foundation</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Three Ways to Start</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">The earlier you start, the stronger your foundation</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6 mb-10">
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-200 rounded-[2rem] bg-white shadow-sm">
               <CardContent className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">Recommended</p>
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Explore Free Library</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 font-semibold mb-4">Permanent free access to sample lessons, ATP previews, essay frameworks, worked examples, and platform walkthroughs.</p>
-                <p className="text-[11px] text-[#1e1b4b]/50 font-semibold mb-4">No time limit â€¢ Free account to save progress</p>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-3">Explore Free Library</h3>
+                <p className="text-[14px] text-slate-900/70 font-semibold mb-4">Permanent free access to sample lessons, ATP previews, essay frameworks, worked examples, and platform walkthroughs.</p>
+                <p className="text-[11px] text-slate-900/50 font-semibold mb-4">No time limit â€¢ Free account to save progress</p>
                 <Link href="/resources">
                   <Button className="w-full bg-[#2366c9] hover:bg-blue-500 font-semibold">
                     <Library className="h-4 w-4 mr-2" /> Explore Free Library Now
@@ -532,8 +532,8 @@ export default function ForStudents() {
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-[2rem] bg-white shadow-sm">
               <CardContent className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">Option 2</p>
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 font-semibold mb-4">30â€“40 minute test with topic-level gap analysis and personalized roadmap.</p>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-3">Free Diagnostic Assessment</h3>
+                <p className="text-[14px] text-slate-900/70 font-semibold mb-4">30â€“40 minute test with topic-level gap analysis and personalized roadmap.</p>
                 <InquiryDialog
                   defaultType="diagnostic"
                   title="Take Free Diagnostic Assessment"
@@ -545,10 +545,10 @@ export default function ForStudents() {
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-[2rem] bg-white shadow-sm">
               <CardContent className="p-7">
                 <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2">Option 3</p>
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Speak With Our Team</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 font-semibold mb-4">Discuss your subjects, timeline, and concerns with zero pressure.</p>
-                <p className="text-[14px] font-semibold text-[#1e1b4b] mb-4">Available 9 AM â€“ 9 PM Pakistan Time</p>
-                <Button variant="outline" className="w-full border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-semibold">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-3">Speak With Our Team</h3>
+                <p className="text-[14px] text-slate-900/70 font-semibold mb-4">Discuss your subjects, timeline, and concerns with zero pressure.</p>
+                <p className="text-[14px] font-semibold text-slate-900 mb-4">Available 9 AM â€“ 9 PM Pakistan Time</p>
+                <Button variant="outline" className="w-full border-blue-200 text-slate-900 hover:bg-blue-50 font-semibold">
                   <MessageCircle className="h-4 w-4 mr-2" /> Contact Support Team
                 </Button>
               </CardContent>
@@ -576,8 +576,8 @@ export default function ForStudents() {
             ].map((faq, i) => (
               <Card key={i} className="bg-white border border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
-                  <h4 className="text-base font-semibold text-[#1e1b4b] mb-2">{faq[0]}</h4>
-                  <p className="text-[14px] text-[#1e1b4b]/70 font-semibold">{faq[1]}</p>
+                  <h4 className="text-base font-semibold text-slate-900 mb-2">{faq[0]}</h4>
+                  <p className="text-[14px] text-slate-900/70 font-semibold">{faq[1]}</p>
                 </CardContent>
               </Card>
             ))}

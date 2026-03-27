@@ -135,7 +135,7 @@ export default function TeacherTraining() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               The Problem
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-5">
               The Gap Most Teacher Training Ignores
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -153,7 +153,7 @@ export default function TeacherTraining() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Workshop Details
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Workshop at a Glance
               </h2>
             </div>
@@ -184,7 +184,7 @@ export default function TeacherTraining() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 The Day
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 7 Modules — What the Day Covers
               </h2>
             </div>
@@ -221,7 +221,7 @@ export default function TeacherTraining() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Outcomes
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 What Teachers Leave With
               </h2>
             </div>
@@ -263,7 +263,7 @@ export default function TeacherTraining() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               Research Engine
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-5">
               The Evidence for Teacher Professional Development
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -280,7 +280,7 @@ export default function TeacherTraining() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               Enrol
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-5">
               Book a Workshop for Your School or Register Individually
             </h2>
             <p className="text-base text-black leading-relaxed">

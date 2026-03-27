@@ -164,46 +164,46 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Why O-Level Demands a Different Approach</h2>
-            <p className="text-xl text-[#1e1b4b]/60 ">The O-Level challenge most families underestimate</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Why O-Level Demands a Different Approach</h2>
+            <p className="text-xl text-slate-900/60 ">The O-Level challenge most families underestimate</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6 items-start">
             <Card className="border-[#2366c9]  border-2 lg:col-span-2 border-2 border-blue-100 rounded-[2rem] shadow-sm">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-4">Cambridge examinations test thinking — not memorization</h3>
-                <p className="text-[#1e1b4b]/70 mb-5">
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4">Cambridge examinations test thinking — not memorization</h3>
+                <p className="text-slate-900/70 mb-5">
                   O-Level differs fundamentally from national-curriculum exam habits and from what most private tutoring emphasizes.
                 </p>
-                <div className="overflow-x-auto rounded-2xl border border-blue-100 bg-white">
+                <div className="overflow-x-auto rounded-2xl border border-slate-200 shadow-md bg-white">
                   <table className="w-full min-w-[620px] text-left">
                     <thead>
-                      <tr className="bg-blue-50 border-b border-blue-100">
-                        <th className="p-4 text-xs font-black uppercase tracking-wider text-[#1e1b4b]">Assessment Objective</th>
-                        <th className="p-4 text-xs font-black uppercase tracking-wider text-[#1e1b4b]">What it demands</th>
-                        <th className="p-4 text-xs font-black uppercase tracking-wider text-[#1e1b4b]">What most teaching delivers</th>
+                      <tr className="bg-[#2366c9] text-white">
+                        <th className="p-4 text-xs font-black uppercase tracking-wider">Assessment Objective</th>
+                        <th className="p-4 text-xs font-black uppercase tracking-wider">What it demands</th>
+                        <th className="p-4 text-xs font-black uppercase tracking-wider">What most teaching delivers</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b border-blue-50">
-                        <td className="p-4 text-[14px] font-semibold text-[#1e1b4b]">AO1 — Knowledge</td>
-                        <td className="p-4 text-[14px] font-semibold text-[#1e1b4b]/80">Recall of concepts and facts</td>
+                        <td className="p-4 text-[14px] font-semibold text-slate-900">AO1 — Knowledge</td>
+                        <td className="p-4 text-[14px] font-semibold text-slate-900/80">Recall of concepts and facts</td>
                         <td className="p-4 text-[14px] font-semibold text-green-700"> Usually covered</td>
                       </tr>
                       <tr className="border-b border-blue-50">
-                        <td className="p-4 text-[14px] font-semibold text-[#1e1b4b]">AO2 — Application</td>
-                        <td className="p-4 text-[14px] font-semibold text-[#1e1b4b]/80">Applying knowledge in new contexts</td>
+                        <td className="p-4 text-[14px] font-semibold text-slate-900">AO2 — Application</td>
+                        <td className="p-4 text-[14px] font-semibold text-slate-900/80">Applying knowledge in new contexts</td>
                         <td className="p-4 text-[14px] font-semibold text-amber-700"> Partially covered</td>
                       </tr>
                       <tr>
-                        <td className="p-4 text-[14px] font-semibold text-[#1e1b4b]">AO3 — Analysis</td>
-                        <td className="p-4 text-[14px] font-semibold text-[#1e1b4b]/80">Evaluating, interpreting, synthesizing</td>
+                        <td className="p-4 text-[14px] font-semibold text-slate-900">AO3 — Analysis</td>
+                        <td className="p-4 text-[14px] font-semibold text-slate-900/80">Evaluating, interpreting, synthesizing</td>
                         <td className="p-4 text-[14px] font-semibold text-red-700"> Rarely taught explicitly</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <p className="mt-5 text-[14px] text-[#1e1b4b]/70 ">
+                <p className="mt-5 text-[14px] text-slate-900/70 ">
                   AO2 and AO3 represent the majority of marks in many papers. Students prepared only for AO1 often study hard yet underperform on unseen questions.
                 </p>
               </CardContent>
@@ -212,8 +212,8 @@ export default function ForParents() {
             <div className="space-y-4">
               <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-[2rem] bg-blue-50/50">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">Built for this exact reality</h3>
-                  <p className="text-[14px] text-[#1e1b4b]/70">
+                  <h3 className="text-xl font-semibold text-slate-900 mb-3">Built for this exact reality</h3>
+                  <p className="text-[14px] text-slate-900/70">
                     EduMeUp is designed around the thinking Cambridge rewards, not just the content it tests.
                   </p>
                 </CardContent>
@@ -244,11 +244,11 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">The EduMeUp Approach</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Built with O-Level specialists and decades of learning science</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">The EduMeUp Approach</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Built with O-Level specialists and decades of learning science</p>
           </div>
 
-          <p className="text-center text-[#1e1b4b]/70 font-semibold max-w-4xl mx-auto mb-8">
+          <p className="text-center text-slate-900/70 font-semibold max-w-4xl mx-auto mb-8">
             EduMeUp was developed with educational researchers and Cambridge specialists to solve a common failure point in exam preparation: content delivery without learning architecture.
           </p>
 
@@ -259,10 +259,10 @@ export default function ForParents() {
                   <div className="h-12 w-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4">
                     <pillar.icon className="h-6 w-6 text-[#2366c9]" />
                   </div>
-                  <h3 className="text-xl  text-[#1e1b4b] mb-4">{pillar.title}</h3>
+                  <h3 className="text-xl  text-slate-900 mb-4">{pillar.title}</h3>
                   <div className="space-y-2">
                     {pillar.points.map((point, idx) => (
-                      <p key={idx} className="text-[14px] text-[#1e1b4b]/80  flex items-start gap-2">
+                      <p key={idx} className="text-[14px] text-slate-900/80  flex items-start gap-2">
                         <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                         <span>{point}</span>
                       </p>
@@ -303,37 +303,37 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">What’s Covered</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Comprehensive O-Level subject coverage</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">What’s Covered</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Comprehensive O-Level subject coverage</p>
           </div>
 
-          <p className="text-center text-[#1e1b4b]/70 max-w-4xl mx-auto mb-8">
+          <p className="text-center text-slate-900/70 max-w-4xl mx-auto mb-8">
             Core subjects include Mathematics, Physics, Chemistry, Biology, English Language, Economics, Business Studies, Pakistan Studies, and Computer Science.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             <Card className="border-[#2366c9]  border-2 bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">Core Subjects</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 ">Mathematics, Physics, Chemistry, Biology, English Language, Economics, Business Studies, Pakistan Studies, Computer Science.</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Core Subjects</h3>
+                <p className="text-[14px] text-slate-900/70 ">Mathematics, Physics, Chemistry, Biology, English Language, Economics, Business Studies, Pakistan Studies, Computer Science.</p>
               </CardContent>
             </Card>
             <Card className="border-[#2366c9]  border-2 bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">ATP Courses</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 ">Physics, Chemistry, Biology ATP with experimental design, variables, data interpretation, and conclusion writing.</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">ATP Courses</h3>
+                <p className="text-[14px] text-slate-900/70 ">Physics, Chemistry, Biology ATP with experimental design, variables, data interpretation, and conclusion writing.</p>
               </CardContent>
             </Card>
             <Card className="border-[#2366c9]  border-2 bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">English Frameworks</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 ">Structured Paper 1 summary and Paper 2 essay systems for repeatable high-quality writing.</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">English Frameworks</h3>
+                <p className="text-[14px] text-slate-900/70 ">Structured Paper 1 summary and Paper 2 essay systems for repeatable high-quality writing.</p>
               </CardContent>
             </Card>
             <Card className="border-[#2366c9]  border-2 bg-white border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-[#1e1b4b] mb-2">Foundational O-Level Bridge Courses + Past Papers</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70">Foundational O-Level Bridge Courses (Grades 6–8) and past paper coverage from 2010–2025.</p>
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">Foundational O-Level Bridge Courses + Past Papers</h3>
+                <p className="text-[14px] text-slate-900/70">Foundational O-Level Bridge Courses (Grades 6–8) and past paper coverage from 2010–2025.</p>
               </CardContent>
             </Card>
           </div>
@@ -343,11 +343,11 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Human Support — On Your Terms</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Platform-first. Human help available when needed.</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Human Support — On Your Terms</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Platform-first. Human help available when needed.</p>
           </div>
 
-          <p className="text-center text-[#1e1b4b]/70  max-w-4xl mx-auto mb-8">
+          <p className="text-center text-slate-900/70  max-w-4xl mx-auto mb-8">
             Most students can perform strongly with the platform alone when used consistently. Human support is offered as a flexible add-on, not a forced dependency.
           </p>
 
@@ -355,24 +355,24 @@ export default function ForParents() {
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
                 <FlaskConical className="h-6 w-6 text-[#2366c9] mb-3" />
-                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">Online Tutoring</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70  mb-3">One-on-one live sessions, booked only when needed, informed by platform data.</p>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Online Tutoring</h3>
+                <p className="text-[14px] text-slate-900/70  mb-3">One-on-one live sessions, booked only when needed, informed by platform data.</p>
                 <p className="text-[14px] font-semibold text-[#2366c9]">From $15/hour</p>
               </CardContent>
             </Card>
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
                 <MessageCircle className="h-6 w-6 text-[#2366c9] mb-3" />
-                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">Tutor Booking - 1-to-1 Personalised Education</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 mb-3">In-person support in Lahore, Karachi, Islamabad, and Rawalpindi.</p>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Tutor Booking - 1-to-1 Personalised Education</h3>
+                <p className="text-[14px] text-slate-900/70 mb-3">In-person support in Lahore, Karachi, Islamabad, and Rawalpindi.</p>
                 <p className="text-[14px] font-semibold text-[#2366c9]">From $20/hour</p>
               </CardContent>
             </Card>
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-2xl">
               <CardContent className="p-6">
                 <ShieldCheck className="h-6 w-6 text-[#2366c9] mb-3" />
-                <h3 className="text-xl font-semibold text-[#1e1b4b] mb-2">Teacher-Guided Programme</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70  mb-3">Structured oversight, homework review, and consistent guidance.</p>
+                <h3 className="text-xl font-semibold text-slate-900 mb-2">Teacher-Guided Programme</h3>
+                <p className="text-[14px] text-slate-900/70  mb-3">Structured oversight, homework review, and consistent guidance.</p>
                 <p className="text-[14px] font-semibold text-[#2366c9]">From $40/month</p>
               </CardContent>
             </Card>
@@ -383,13 +383,13 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Investment and Value</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Transparent, measurable, and controllable</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Investment and Value</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Transparent, measurable, and controllable</p>
           </div>
 
           <Card className="border-[#2366c9]  border-2 bg-white border-2 border-blue-100 rounded-[2rem]">
             <CardContent className="p-8">
-              <p className="text-[#1e1b4b]/80 mb-4">
+              <p className="text-slate-900/80 mb-4">
                   Many families in Pakistan and the Gulf spend roughly $300–$800/month on combined O-Level tutoring. The real decision is not just spend — it is whether you can clearly see accountability, risk, and progress in time to act.
               </p>
               <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -401,14 +401,14 @@ export default function ForParents() {
                   "Diagnostic assessment + personalized plan",
                   "Parent Orientation Programme",
                 ].map((item, i) => (
-                  <p key={i} className="text-[14px] text-[#1e1b4b]/80  flex items-start gap-2">
+                  <p key={i} className="text-[14px] text-slate-900/80  flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>{item}</span>
                   </p>
                 ))}
               </div>
               <p className="text-[#2366c9] font-semibold">Platform pricing: from $30/month (local currency shown at checkout)</p>
-              <p className="text-[#1e1b4b]/70 text-[14px] mt-2">Optional tutoring: from $15/hour, only if and when needed.</p>
+              <p className="text-slate-900/70 text-[14px] mt-2">Optional tutoring: from $15/hour, only if and when needed.</p>
             </CardContent>
           </Card>
         </div>
@@ -417,8 +417,8 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Parent Experiences</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Composite journeys based on common patterns</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Parent Experiences</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Composite journeys based on common patterns</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -441,8 +441,8 @@ export default function ForParents() {
             ].map((story, i) => (
               <Card key={i} className="border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
-                  <h3 className="text-lg  text-[#1e1b4b] mb-2">{story.title}</h3>
-                  <p className="text-[14px] text-[#1e1b4b]/75  mb-3">{story.body}</p>
+                  <h3 className="text-lg  text-slate-900 mb-2">{story.title}</h3>
+                  <p className="text-[14px] text-slate-900/75  mb-3">{story.body}</p>
                   <p className="text-[14px] font-semibold text-[#2366c9] italic">{story.value}</p>
                 </CardContent>
               </Card>
@@ -454,15 +454,15 @@ export default function ForParents() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Frequently Asked Questions</h2>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-5">
             {faqs.map((faq, i) => (
               <Card key={i} className="bg-white border-2 border-blue-100 rounded-2xl">
                 <CardContent className="p-6">
-                  <h3 className="text-base font-semibold text-[#1e1b4b] mb-2">{faq.q}</h3>
-                  <p className="text-[14px] text-[#1e1b4b]/70 font-semibold">{faq.a}</p>
+                  <h3 className="text-base font-semibold text-slate-900 mb-2">{faq.q}</h3>
+                  <p className="text-[14px] text-slate-900/70 font-semibold">{faq.a}</p>
                 </CardContent>
               </Card>
             ))}
@@ -473,17 +473,17 @@ export default function ForParents() {
       <section className="py-20 bg-white">
         <div className="container-custom max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] mb-4">Start With Confidence</h2>
-            <p className="text-xl text-[#1e1b4b]/60 font-semibold">Three low-risk ways to begin</p>
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 mb-4">Start With Confidence</h2>
+            <p className="text-xl text-slate-900/60 font-semibold">Three low-risk ways to begin</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-6 mb-10">
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-200 rounded-[2rem] bg-white">
               <CardContent className="p-7">
                 <p className="text-xs font-black uppercase tracking-widest text-blue-600 mb-2">Option 1</p>
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Explore Free Library</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70  mb-4">Permanent access to real sample resources: H5P activities, ATP samples, essay frameworks, worked examples, and walkthroughs.</p>
-                <p className="text-[11px] text-[#1e1b4b]/50 font-semibold mb-4">No account needed for browsing.</p>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-3">Explore Free Library</h3>
+                <p className="text-[14px] text-slate-900/70  mb-4">Permanent access to real sample resources: H5P activities, ATP samples, essay frameworks, worked examples, and walkthroughs.</p>
+                <p className="text-[11px] text-slate-900/50 font-semibold mb-4">No account needed for browsing.</p>
                 <Link href="/resources">
                   <Button className="w-full bg-[#2366c9] hover:bg-blue-500 font-semibold">Explore Free Library</Button>
                 </Link>
@@ -493,8 +493,8 @@ export default function ForParents() {
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-[2rem] bg-white">
               <CardContent className="p-7">
                 <p className="text-xs font-black uppercase tracking-widest text-blue-600 mb-2">Option 2</p>
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Free Diagnostic Assessment</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70  mb-4">30–40 minute assessment with topic-level gap report and personalized plan.</p>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-3">Free Diagnostic Assessment</h3>
+                <p className="text-[14px] text-slate-900/70  mb-4">30–40 minute assessment with topic-level gap report and personalized plan.</p>
                 <Link href="/contact?type=diagnostic">
                   <Button className="w-full bg-[#2366c9] hover:bg-[#2366c9] font-semibold">Take Free Diagnostic</Button>
                 </Link>
@@ -504,11 +504,11 @@ export default function ForParents() {
             <Card className="border-[#2366c9]  border-2 border-2 border-blue-100 rounded-[2rem] bg-white">
               <CardContent className="p-7">
                 <p className="text-xs font-black uppercase tracking-widest text-blue-600 mb-2">Option 3</p>
-                <h3 className="text-2xl font-semibold text-[#1e1b4b] mb-3">Speak With Our Education Team</h3>
-                <p className="text-[14px] text-[#1e1b4b]/70 mb-4">Discuss your child’s subjects, timeline, and concerns with honest recommendations.</p>
-                <p className="text-[14px] font-semibold text-[#1e1b4b] mb-4">9 AM – 9 PM Pakistan Time • International families supported</p>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-3">Speak With Our Education Team</h3>
+                <p className="text-[14px] text-slate-900/70 mb-4">Discuss your child’s subjects, timeline, and concerns with honest recommendations.</p>
+                <p className="text-[14px] font-semibold text-slate-900 mb-4">9 AM – 9 PM Pakistan Time • International families supported</p>
                 <Link href="/contact">
-                  <Button variant="outline" className="w-full border-blue-200 text-[#1e1b4b] hover:bg-blue-50 font-semibold">WhatsApp / Call</Button>
+                  <Button variant="outline" className="w-full border-blue-200 text-slate-900 hover:bg-blue-50 font-semibold">WhatsApp / Call</Button>
                 </Link>
               </CardContent>
             </Card>
@@ -532,28 +532,28 @@ export default function ForParents() {
 
     <div className="grid md:grid-cols-2 gap-y-6 gap-x-12">
       <div className="flex items-center gap-4 group">
-        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
+        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-slate-900 transition-all">
           <span className="text-[14px] font-semibold">01</span>
         </div>
         <p className="text-lg  text-white">25% off all programmes</p>
       </div>
 
       <div className="flex items-center gap-4 group">
-        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
+        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-slate-900 transition-all">
           <span className="text-[14px] font-semibold">02</span>
         </div>
         <p className="text-lg  text-white">Free diagnostic assessment</p>
       </div>
 
       <div className="flex items-center gap-4 group">
-        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
+        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-slate-900 transition-all">
           <span className="text-[14px] font-semibold">03</span>
         </div>
         <p className="text-lg  text-white">Parent Orientation Programme</p>
       </div>
 
       <div className="flex items-center gap-4 group">
-        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-[#1e1b4b] transition-all">
+        <div className="flex-shrink-0 w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-slate-900 transition-all">
           <span className="text-[14px] font-semibold">04</span>
         </div>
         <p className="text-lg  text-white">Permanent Library access</p>
@@ -564,13 +564,13 @@ export default function ForParents() {
       <p className="text-[11px] font-medium text-blue-200/60 uppercase tracking-widest">
         All pricing in USD • Local currency shown at checkout
       </p>
-      <button className="bg-white text-[#1e1b4b] px-8 py-3 rounded-xl font-semibold text-[14px] hover:bg-blue-50 transition-colors shadow-lg">
+      <button className="bg-white text-slate-900 px-8 py-3 rounded-xl font-semibold text-[14px] hover:bg-blue-50 transition-colors shadow-lg">
         Claim Enrollment Offer
       </button>
     </div>
   </div>
 </div>
-          <p className="text-center text-[#1e1b4b]/80 font-semibold max-w-4xl mx-auto">
+          <p className="text-center text-slate-900/80 font-semibold max-w-4xl mx-auto">
             EduMeUp is built on one conviction: every student deserves preparation designed around how learning actually works, and every parent deserves the confidence of clear, timely, data-backed visibility.
           </p>
         </div>

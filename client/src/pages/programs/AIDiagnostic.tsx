@@ -136,7 +136,7 @@ export default function AIDiagnostic() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               The Problem
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-5">
               The Cost of Guessing
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -157,7 +157,7 @@ export default function AIDiagnostic() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 What It Finds
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 What the Diagnostic Finds
               </h2>
             </div>
@@ -184,7 +184,7 @@ export default function AIDiagnostic() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 How It Works
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Three Steps
               </h2>
             </div>
@@ -213,7 +213,7 @@ export default function AIDiagnostic() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 After The Diagnostic
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-3">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-3">
                 What Happens After the Diagnostic
               </h2>
               <p className="text-[14px] text-black max-w-2xl mx-auto">
@@ -244,7 +244,7 @@ export default function AIDiagnostic() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               Research Engine
             </p>
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-5xl font-semibold text-slate-900 tracking-tight mb-5">
               The Evidence for Diagnostic-First Learning
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -262,7 +262,7 @@ export default function AIDiagnostic() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Who This Is For
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Who This Is For
               </h2>
             </div>

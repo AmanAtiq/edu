@@ -44,7 +44,7 @@ export default function Portals() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               My Dashboard
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">Portals Hub</h1>
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">Portals Hub</h1>
             <p className="mt-5 text-base text-slate-700 md:text-lg">
               Choose your dashboard to access learning progress, insights, and support.
             </p>
@@ -55,7 +55,7 @@ export default function Portals() {
               <Link key={card.href} href={card.href}>
                 <div className="group rounded-2xl border border-blue-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-blue-300 hover:shadow-md">
                   <card.icon className="h-6 w-6 text-[#2366c9]" />
-                  <h2 className="mt-3 text-xl font-semibold text-[#1e1b4b]">{card.title}</h2>
+                  <h2 className="mt-3 text-xl font-semibold text-slate-900">{card.title}</h2>
                   <p className="mt-2 text-sm text-slate-700">{card.description}</p>
                   <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#2366c9]">
                     Open Portal

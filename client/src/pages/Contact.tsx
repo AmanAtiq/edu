@@ -45,7 +45,7 @@ export default function Contact() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Contact EduMeUp
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">
               Get in Touch
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-base text-slate-700 md:text-lg">
@@ -57,17 +57,17 @@ export default function Contact() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link href="/for-schools/partnership">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   School Partnership
                 </span>
               </Link>
               <Link href="/teacher-training">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Teacher Training
                 </span>
               </Link>
               <Link href="/programs/ai-diagnostic">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   AI Diagnostic
                 </span>
               </Link>
@@ -87,7 +87,7 @@ export default function Contact() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <item.icon className="h-5 w-5" />
                 </div>
-                <h2 className="text-xl font-semibold text-[#1e1b4b]">{item.title}</h2>
+                <h2 className="text-xl font-semibold text-slate-900">{item.title}</h2>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">
                   {item.description}
                 </p>
@@ -101,7 +101,7 @@ export default function Contact() {
         <div className="container-custom">
           <div className="grid gap-8 lg:grid-cols-[1fr_1.3fr]">
             <div className="space-y-5">
-              <h2 className="text-3xl font-semibold text-[#1e1b4b]">Contact Details</h2>
+              <h2 className="text-3xl font-semibold text-slate-900">Contact Details</h2>
               {contactDetailItems.map((item) => (
                 <div
                   key={item.label}
@@ -115,7 +115,7 @@ export default function Contact() {
                       <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                         {item.label}
                       </p>
-                      <p className="mt-1 text-base font-semibold text-[#1e1b4b]">
+                      <p className="mt-1 text-base font-semibold text-slate-900">
                         {item.value}
                       </p>
                       {item.hint ? (
@@ -139,7 +139,7 @@ export default function Contact() {
       <section className="border-t border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               Quick Actions
             </h2>
           </div>
@@ -153,7 +153,7 @@ export default function Contact() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <action.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{action.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{action.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-700">
                   {action.description}
                 </p>

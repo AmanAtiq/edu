@@ -154,7 +154,7 @@ export default function EightStepModel() {
             <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
               The Problem
             </p>
-            <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight mb-5">
+            <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight mb-5">
               Why Most EdTech Gets the Sequence Wrong
             </h2>
             <p className="text-base text-black leading-relaxed">
@@ -175,7 +175,7 @@ export default function EightStepModel() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Two Models
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 Two Models — The Difference Is Structural
               </h2>
             </div>
@@ -206,7 +206,7 @@ export default function EightStepModel() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 Step by Step
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 The 8 Steps — The Science Behind Each One
               </h2>
             </div>
@@ -260,7 +260,7 @@ export default function EightStepModel() {
               <p className="inline-flex rounded-full border border-blue-200 bg-[#2366c9] px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.14em] text-white mb-5">
                 THE SCIENCE BEHIND THE SYSTEM
               </p>
-              <h2 className="text-4xl md:text-6xl font-semibold text-[#1e1b4b] tracking-tight">
+              <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 tracking-tight">
                 The Research Summary — All 8 Steps
               </h2>
             </div>
@@ -276,7 +276,7 @@ export default function EightStepModel() {
                 key={i}
                 className={`grid grid-cols-[minmax(0,_1.5fr)_minmax(0,_2fr)_minmax(0,_3fr)] border-b border-blue-50 ${i % 2 === 0 ? "bg-white" : "bg-slate-50"} hover:bg-blue-50/40 transition-colors`}
               >
-                <div className="p-4 text-[14px] font-semibold text-[#1e1b4b]">{row.step}</div>
+                <div className="p-4 text-[14px] font-semibold text-slate-900">{row.step}</div>
                 <div className="p-4 border-l border-slate-200 text-[14px] text-[#2366c9]">{row.ref}</div>
                 <div className="p-4 border-l border-slate-200 text-[14px] text-black">{row.finding}</div>
               </div>

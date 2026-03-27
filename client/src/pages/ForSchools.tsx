@@ -43,7 +43,7 @@ export default function ForSchools() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               For Schools
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">
               Transform Your School into a Centre of Cambridge Excellence
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
@@ -55,17 +55,17 @@ export default function ForSchools() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link href="/for-schools/partnership">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   School Partnership
                 </span>
               </Link>
               <Link href="/teacher-training">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Teacher Training
                 </span>
               </Link>
               <Link href="/why-edumeup/how-it-works">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   How It Works
                 </span>
               </Link>
@@ -86,7 +86,7 @@ export default function ForSchools() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               The Problem Most Cambridge Schools Share
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -103,7 +103,7 @@ export default function ForSchools() {
       <section className="pb-14 md:pb-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               What EduMeUp Provides to Your School
             </h2>
           </div>
@@ -117,7 +117,7 @@ export default function ForSchools() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <item.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">
                   {item.description}
                 </p>
@@ -130,7 +130,7 @@ export default function ForSchools() {
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-4xl">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               The EduMeUp Advantage Over Standard EdTech
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -146,7 +146,7 @@ export default function ForSchools() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               Who This Is For
             </h2>
           </div>
@@ -160,7 +160,7 @@ export default function ForSchools() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-[#2366c9]">
                   <item.icon className="h-5 w-5" />
                 </div>
-                <h3 className="text-xl font-semibold text-[#1e1b4b]">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-700">
                   {item.description}
                 </p>
@@ -170,7 +170,7 @@ export default function ForSchools() {
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             <Link href="/for-schools/partnership">
-              <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+              <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                 Explore the Full Partnership Details
                 <ArrowRight className="h-4 w-4" />
               </span>

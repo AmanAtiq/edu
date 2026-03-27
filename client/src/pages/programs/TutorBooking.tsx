@@ -56,7 +56,7 @@ export default function TutorBooking() {
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Programme 7: Certified Tutor Network
             </div>
-            <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
+            <h1 className="text-4xl font-semibold text-slate-900 md:text-6xl">
               Personalized 1-to-1 Tutoring, Matched by Experts, Not an Algorithm
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
@@ -68,22 +68,22 @@ export default function TutorBooking() {
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link href="/programs/ai-diagnostic">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   AI Diagnostic
                 </span>
               </Link>
               <Link href="/for-parents">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   For Parents
                 </span>
               </Link>
               <Link href="/teacher-training">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Teacher Training
                 </span>
               </Link>
               <Link href="/contact">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Contact
                 </span>
               </Link>
@@ -102,7 +102,7 @@ export default function TutorBooking() {
             <p className="text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
               Why 1-to-1 Tutoring Exists at EduMeUp
             </p>
-            <h2 className="mt-2 text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
+            <h2 className="mt-2 text-3xl font-semibold text-slate-900 md:text-4xl">
               When a Student Joins Late, This Is the Answer
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
@@ -122,31 +122,31 @@ export default function TutorBooking() {
       <section className="pb-14 md:pb-20">
         <div className="container-custom">
           <div className="mb-8 text-center">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Two Journeys, One Managed System</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Two Journeys, One Managed System</h2>
           </div>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:divide-x lg:divide-blue-100">
             <div className="space-y-6 lg:pr-8">
-              <h3 className="text-2xl font-semibold text-[#1e1b4b]">For Students and Parents</h3>
+              <h3 className="text-2xl font-semibold text-slate-900">For Students and Parents</h3>
               {studentJourneySteps.map((step) => (
                 <div key={step.title} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
                   <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-[#2366c9]">
                     <step.icon className="h-5 w-5" />
                   </div>
-                  <p className="text-base font-semibold text-[#1e1b4b]">{step.title}</p>
+                  <p className="text-base font-semibold text-slate-900">{step.title}</p>
                   <p className="mt-2 text-sm text-slate-700">{step.description}</p>
                 </div>
               ))}
             </div>
 
             <div className="space-y-6 lg:pl-8">
-              <h3 className="text-2xl font-semibold text-[#1e1b4b]">For Tutors</h3>
+              <h3 className="text-2xl font-semibold text-slate-900">For Tutors</h3>
               {tutorJourneySteps.map((step) => (
                 <div key={step.title} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
                   <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-[#2366c9]">
                     <step.icon className="h-5 w-5" />
                   </div>
-                  <p className="text-base font-semibold text-[#1e1b4b]">{step.title}</p>
+                  <p className="text-base font-semibold text-slate-900">{step.title}</p>
                   <p className="mt-2 text-sm text-slate-700">{step.description}</p>
                 </div>
               ))}
@@ -158,7 +158,7 @@ export default function TutorBooking() {
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom space-y-12">
           <div>
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">What Comes With Your Tutor</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">What Comes With Your Tutor</h2>
             <p className="mt-3 text-sm text-slate-700 md:text-base">
               EduMeUp tuition goes beyond teacher matching. Selected platform tools are included to strengthen outcomes alongside tutor sessions, at no extra cost.
             </p>
@@ -168,7 +168,7 @@ export default function TutorBooking() {
                   <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-[#2366c9]">
                     <feature.icon className="h-5 w-5" />
                   </div>
-                  <p className="text-base font-semibold text-[#1e1b4b]">{feature.title}</p>
+                  <p className="text-base font-semibold text-slate-900">{feature.title}</p>
                   <p className="mt-2 text-sm text-slate-700">{feature.description}</p>
                 </div>
               ))}
@@ -176,7 +176,7 @@ export default function TutorBooking() {
           </div>
 
           <div>
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">What EduMeUp Provides Tutors</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">What EduMeUp Provides Tutors</h2>
             <p className="mt-3 text-sm text-slate-700 md:text-base">
               Once certified, tutors receive selected platform support tools at no cost.
             </p>
@@ -186,7 +186,7 @@ export default function TutorBooking() {
                   <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-[#2366c9]">
                     <feature.icon className="h-5 w-5" />
                   </div>
-                  <p className="text-base font-semibold text-[#1e1b4b]">{feature.title}</p>
+                  <p className="text-base font-semibold text-slate-900">{feature.title}</p>
                   <p className="mt-2 text-sm text-slate-700">{feature.description}</p>
                 </div>
               ))}
@@ -197,18 +197,18 @@ export default function TutorBooking() {
 
       <section className="py-14 md:py-20">
         <div className="container-custom">
-          <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Pricing</h2>
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Pricing</h2>
           <p className="mt-3 text-sm text-slate-700 md:text-base">All prices are per subject. Platform access is free in all packages.</p>
 
           <div className="mt-6 overflow-x-auto rounded-xl border border-blue-100 bg-white shadow-sm">
             <table className="w-full min-w-[760px]">
               <thead>
-                <tr className="bg-blue-50 text-left">
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Level</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Online (Standard)</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Online (Intensive)</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Physical (Standard)</th>
-                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">Physical (Intensive)</th>
+                <tr className="bg-[#2366c9] text-white text-left">
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Level</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Online (Standard)</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Online (Intensive)</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Physical (Standard)</th>
+                  <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide">Physical (Intensive)</th>
                 </tr>
               </thead>
               <tbody>
@@ -249,14 +249,14 @@ export default function TutorBooking() {
 
       <section className="border-y border-blue-100 bg-blue-50/40 py-14 md:py-20">
         <div className="container-custom">
-          <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Why Join the EduMeUp Certified Tutor Network</h2>
+          <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Why Join the EduMeUp Certified Tutor Network</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {tutorNetworkReasons.map((item) => (
               <div key={item.title} className="rounded-xl border border-blue-100 bg-white p-4 shadow-sm">
                 <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-[#2366c9]">
                   <item.icon className="h-5 w-5" />
                 </div>
-                <p className="text-base font-semibold text-[#1e1b4b]">{item.title}</p>
+                <p className="text-base font-semibold text-slate-900">{item.title}</p>
                 <p className="mt-2 text-sm text-slate-700">{item.description}</p>
               </div>
             ))}
@@ -267,13 +267,13 @@ export default function TutorBooking() {
       <section className="py-14 md:py-20">
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">Bottom CTA</h2>
+            <h2 className="text-3xl font-semibold text-slate-900 md:text-4xl">Bottom CTA</h2>
             <div className="mt-6 flex flex-wrap gap-3">
               <TutorBookingRegistrationDialogs />
             </div>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <Link href="/tutor-booking/request">
-                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-slate-900 hover:border-blue-300 hover:text-[#2366c9]">
                   Request a Tutor
                   <ArrowRight className="h-4 w-4" />
                 </span>
