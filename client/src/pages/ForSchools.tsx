@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -72,7 +72,7 @@ export default function ForSchools() {
             </div>
 
             <div className="mt-10">
-              <Link href="/for-schools/consultation">
+              <Link href="/for-schools/partnership">
                 <span className="inline-flex items-center gap-2 rounded-lg bg-[#2366c9] px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700">
                   Book a School Consultation
                   <ArrowRight className="h-4 w-4" />
@@ -176,7 +176,7 @@ export default function ForSchools() {
               </span>
             </Link>
 
-            <Link href="/for-schools/consultation">
+            <Link href="/for-schools/partnership">
               <span className="flex items-center justify-between rounded-xl bg-[#2366c9] px-5 py-4 text-sm font-semibold text-white hover:bg-blue-700">
                 Book a School Consultation
                 <ArrowRight className="h-4 w-4" />

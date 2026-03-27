@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+﻿import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from "@/components/ui/table";
@@ -18,33 +18,33 @@ import { Disclosure } from "@headlessui/react";
 export function StudentApplicationForm() {
   const [formData, setFormData] = useState({
     studentName: "",
-    dateOfBirth: "", // ✅ MISSING
+    dateOfBirth: "", // âœ… MISSING
     parentName: "",
     parentEmail: "",
     parentPhone: "",
-    emergencyContact: "", // ✅ MISSING
+    emergencyContact: "", // âœ… MISSING
     school: "",
-    currentGrade: "", // ✅ MISSING
+    currentGrade: "", // âœ… MISSING
     country: "",
     timezone: "",
-    curriculum: "", // ✅ MISSING
+    curriculum: "", // âœ… MISSING
     primarySubject: "",
     subjects: [] as string[],
-    mode: "", // ✅ MISSING (online/physical)
-    sessionDuration: "", // ✅ MISSING (30/45/60 min)
-    budgetRange: "", // ✅ MISSING
+    mode: "", // âœ… MISSING (online/physical)
+    sessionDuration: "", // âœ… MISSING (30/45/60 min)
+    budgetRange: "", // âœ… MISSING
     average: "",
     struggle: "",
-    previousTutorExp: "", // ✅ MISSING
+    previousTutorExp: "", // âœ… MISSING
     learningNeeds: "",
-    availability: "", // ✅ MISSING (weekday/weekend)
-    timeSlot: "", // ✅ MISSING (morning/afternoon/evening)
-    sessionsPerWeek: "", // ✅ MISSING
-    learningGoals: "", // ✅ MISSING (3-month goals)
-    tutorPreference: "", // ✅ MISSING (patient/strict/friendly)
+    availability: "", // âœ… MISSING (weekday/weekend)
+    timeSlot: "", // âœ… MISSING (morning/afternoon/evening)
+    sessionsPerWeek: "", // âœ… MISSING
+    learningGoals: "", // âœ… MISSING (3-month goals)
+    tutorPreference: "", // âœ… MISSING (patient/strict/friendly)
     heardFrom: "",
     tutorRequest: "",
-    parentConsent: false, // ✅ MISSING
+    parentConsent: false, // âœ… MISSING
   });
 
   const handleChange = (field: string, value: any) => {
@@ -63,9 +63,9 @@ export function StudentApplicationForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8 max-h-[80vh] overflow-y-auto pr-2">
-      {/* PART 1 — STUDENT INFORMATION */}
+      {/* PART 1 â€” STUDENT INFORMATION */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 1 — Student Information</h3>
+        <h3 className="font-semibold text-lg">Part 1 â€” Student Information</h3>
 
         <div>
           <label className="block font-medium">Student Full Name</label>
@@ -170,9 +170,9 @@ export function StudentApplicationForm() {
         </div>
       </section>
 
-      {/* PART 2 — SUBJECTS NEEDED */}
+      {/* PART 2 â€” SUBJECTS NEEDED */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 2 — Subjects Needed</h3>
+        <h3 className="font-semibold text-lg">Part 2 â€” Subjects Needed</h3>
         <div>
           <label htmlFor="primarySubject" className="block font-medium">Subject</label>
           <select
@@ -207,9 +207,9 @@ export function StudentApplicationForm() {
         </div>
       </section>
 
-      {/* PART 3 — TUTORING PREFERENCE */}
+      {/* PART 3 â€” TUTORING PREFERENCE */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 3 — Tutoring Preference</h3>
+        <h3 className="font-semibold text-lg">Part 3 â€” Tutoring Preference</h3>
 
         <div className="space-y-2">
           <label className="block font-medium">Learning Mode</label>
@@ -250,9 +250,9 @@ export function StudentApplicationForm() {
         </div>
       </section>
 
-      {/* PART 4 — LEARNING SCENARIO */}
+      {/* PART 4 â€” LEARNING SCENARIO */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 4 — Learning Scenario</h3>
+        <h3 className="font-semibold text-lg">Part 4 â€” Learning Scenario</h3>
         <div className="space-y-2">
           {["Late Starter", "Advanced Learner", "Slow Learner", "Not Sure"].map((type) => (
             <label key={type} className="flex gap-2">
@@ -263,9 +263,9 @@ export function StudentApplicationForm() {
         </div>
       </section>
 
-      {/* PART 5 — CURRENT PERFORMANCE */}
+      {/* PART 5 â€” CURRENT PERFORMANCE */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 5 — Current Performance</h3>
+        <h3 className="font-semibold text-lg">Part 5 â€” Current Performance</h3>
 
         <div>
           <label className="block font-medium">Current Average % or Grade</label>
@@ -290,9 +290,9 @@ export function StudentApplicationForm() {
         </div>
       </section>
 
-      {/* PART 6 — SCHEDULE PREFERENCES */}
+      {/* PART 6 â€” SCHEDULE PREFERENCES */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 6 — Schedule Preferences</h3>
+        <h3 className="font-semibold text-lg">Part 6 â€” Schedule Preferences</h3>
 
         <div>
           <label className="block font-medium">Availability</label>
@@ -317,9 +317,9 @@ export function StudentApplicationForm() {
     onChange={(e) => handleChange("timeSlot", e.target.value)}
   >
     <option value="">Select time</option>
-    <option value="Morning (8AM–12PM)">Morning (8AM–12PM)</option>
-    <option value="Afternoon (12–4PM)">Afternoon (12–4PM)</option>
-    <option value="Evening (4–9PM)">Evening (4–9PM)</option>
+    <option value="Morning (8AMâ€“12PM)">Morning (8AMâ€“12PM)</option>
+    <option value="Afternoon (12â€“4PM)">Afternoon (12â€“4PM)</option>
+    <option value="Evening (4â€“9PM)">Evening (4â€“9PM)</option>
   </select>
 </div>
 
@@ -386,9 +386,9 @@ export function StudentApplicationForm() {
         </div>
       </section>
 
-      {/* PART 8 — CONSENT */}
+      {/* PART 8 â€” CONSENT */}
       <section className="border rounded-2xl p-6 space-y-4">
-        <h3 className="font-semibold text-lg">Part 8 — Parent Consent</h3>
+        <h3 className="font-semibold text-lg">Part 8 â€” Parent Consent</h3>
         <label className="flex gap-2">
           <input type="checkbox" checked={formData.parentConsent} onChange={(e) => handleChange("parentConsent", e.target.checked)} required />
           I authorize this application and agree to EduMeUp's terms
@@ -489,9 +489,9 @@ export function TutorApplicationForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6 max-h-[80vh] overflow-y-auto px-2 text-left">
       
-      {/* Part 1 — Personal Information */}
+      {/* Part 1 â€” Personal Information */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 1 — Personal Information</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 1 â€” Personal Information</h3>
         
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
@@ -583,9 +583,9 @@ export function TutorApplicationForm() {
         </div>
       </section>
 
-      {/* Part 2 — Qualifications */}
+      {/* Part 2 â€” Qualifications */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 2 — Qualifications & Experience</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 2 â€” Qualifications & Experience</h3>
 
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
@@ -667,9 +667,9 @@ export function TutorApplicationForm() {
         </div>
       </section>
 
-      {/* Part 3 — Teaching Subjects & Grades */}
+      {/* Part 3 â€” Teaching Subjects & Grades */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 3 — Subjects & Grade Levels</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 3 â€” Subjects & Grade Levels</h3>
 
         <div>
           <label className="text-[14px] font-semibold text-gray-700 mb-2 block">Subject(s) They Can Teach</label>
@@ -735,9 +735,9 @@ export function TutorApplicationForm() {
         </div>
       </section>
 
-      {/* Part 4 — Teaching Mode & Languages */}
+      {/* Part 4 â€” Teaching Mode & Languages */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 4 — Teaching Mode & Languages</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 4 â€” Teaching Mode & Languages</h3>
 
         <div>
           <label className="text-[14px] font-semibold text-gray-700 mb-2 block">Teaching Mode</label>
@@ -797,9 +797,9 @@ export function TutorApplicationForm() {
         </div>
       </section>
 
-      {/* Part 5 — Digital Skills */}
+      {/* Part 5 â€” Digital Skills */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2 mb-4">Part 5 — Digital Skills (Rate 1-5)</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2 mb-4">Part 5 â€” Digital Skills (Rate 1-5)</h3>
         {Object.keys(formData.digitalSkills).map(skill => (
           <div key={skill} className="flex items-center justify-between mb-3">
             <label htmlFor={`skill-${skill}`} className="text-[14px] font-medium capitalize">
@@ -818,9 +818,9 @@ export function TutorApplicationForm() {
         ))}
       </section>
 
-      {/* Part 6 — Professional References */}
+      {/* Part 6 â€” Professional References */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 6 — Professional Reference</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 6 â€” Professional Reference</h3>
         
         <div className="grid gap-4">
           <div className="flex flex-col gap-1">
@@ -862,9 +862,9 @@ export function TutorApplicationForm() {
         </div>
       </section>
 
-      {/* Part 7 — File Uploads */}
+      {/* Part 7 â€” File Uploads */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 7 — Uploads</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 7 â€” Uploads</h3>
         
         <div className="flex flex-col gap-3">
           <div>
@@ -908,9 +908,9 @@ export function TutorApplicationForm() {
         </div>
       </section>
 
-      {/* Part 8 — Agreements */}
+      {/* Part 8 â€” Agreements */}
       <section className="p-5 border rounded-2xl bg-white shadow-sm space-y-4">
-        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 8 — Agreements & Certifications</h3>
+        <h3 className="font-semibold text-lg text-blue-900 border-b pb-2">Part 8 â€” Agreements & Certifications</h3>
         
         <label className="flex items-start gap-2">
           <input 
@@ -983,7 +983,7 @@ export default function Tutors() {
     },
     {
       q: "How long is tutoring needed?",
-      a: "Most students need 3–6 months. Tutors are phased out once independence develops."
+      a: "Most students need 3â€“6 months. Tutors are phased out once independence develops."
     },
     {
       q: "Any hidden costs?",
@@ -995,7 +995,7 @@ export default function Tutors() {
     },
     {
       q: "Is platform included free?",
-      a: "Yes. Platform worth $360–$720/year is included with tutoring."
+      a: "Yes. Platform worth $360â€“$720/year is included with tutoring."
     },
     {
       q: "Do tutors follow school syllabus?",
@@ -1007,7 +1007,7 @@ export default function Tutors() {
     },
     {
       q: "What if student becomes independent early?",
-      a: "Great — tutoring hours reduce and student transitions to platform-only learning."
+      a: "Great â€” tutoring hours reduce and student transitions to platform-only learning."
     },
     {
       q: "Are sessions recorded?",
@@ -1041,9 +1041,9 @@ export default function Tutors() {
             </p>
             <p className="text-[14px] text-blue-200 max-w-4xl mx-auto mb-8">
               SMK-Aligned Tutors + Research-Backed Platform + Proven Independence Model<br/>
-              Powered by: Moodle 4.5.1 LMS · H5P Interactive Activities · AI Chatbot · Multilingual Support
+              Powered by: MoodleÂ 4.5.1â€¯LMS Â· H5P Interactive Activities Â· AI Chatbot Â· Multilingual Support
             </p>
-            <p className="text-[14px] text-blue-200 font-semibold mb-12">LAUNCHING MARCH 2026 — Early applications open</p>
+            <p className="text-[14px] text-blue-200 font-semibold mb-12">LAUNCHING MARCHâ€¯2026 â€” Early applications open</p>
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto bg-white/5 p-16 rounded-[3rem] border-4 border-white/10 backdrop-blur-sm text-left items-center">
               <div>
@@ -1161,7 +1161,7 @@ export default function Tutors() {
           <div className="bg-[#1e1b4b] p-20 rounded-[5rem] text-white shadow-3xl relative overflow-hidden">
              <div className="grid lg:grid-cols-3 gap-16 relative z-10">
                 {[
-                  { t: "Platform is PRIMARY", d: "Our 10X Learning Leap Model™ teaches students HOW to learn." },
+                  { t: "Platform is PRIMARY", d: "Our 10X Learning Leap Modelâ„¢ teaches students HOW to learn." },
                   { t: "Tutors are SUPPLEMENTAL", d: "For specific needs only (catch-up, advanced, differentiated)." },
                   { t: "Independence is GOAL", d: "Students transition to self-directed platform learning fast." }
                 ].map((item, i) => (
@@ -1173,16 +1173,16 @@ export default function Tutors() {
                 ))}
              </div>
              <p className="mt-8 text-white/90 font-semibold">
-               Every session integrates Moodle 4.5.1, H5P interactive activities, and our AI chatbot — so learning never stops between sessions.
+               Every session integrates Moodle 4.5.1, H5P interactive activities, and our AI chatbot â€” so learning never stops between sessions.
              </p>
              <p className="mt-6 font-semibold text-blue-200">
-               THE 3‑STAGE SCAFFOLDING PROCESS:
+               THE 3â€‘STAGE SCAFFOLDING PROCESS:
              </p>
              <div className="mt-4 grid md:grid-cols-3 gap-6 text-white">
                {[
-                 { stage: "Stage 1: Intensive", timeline: "Months 1–3", hours: "8–12 hrs/month", role: "Guided usage" },
-                 { stage: "Stage 2: Gradual Independence", timeline: "Months 4–6", hours: "4–6 hrs/month", role: "Student-led" },
-                 { stage: "Stage 3: Platform-Only", timeline: "Month 7+", hours: "0–2 hrs/month", role: "Full independence" }
+                 { stage: "StageÂ 1: Intensive", timeline: "MonthsÂ 1â€“3", hours: "8â€“12â€¯hrs/month", role: "Guided usage" },
+                 { stage: "StageÂ 2: Gradual Independence", timeline: "MonthsÂ 4â€“6", hours: "4â€“6â€¯hrs/month", role: "Student-led" },
+                 { stage: "StageÂ 3: Platform-Only", timeline: "MonthÂ 7+", hours: "0â€“2â€¯hrs/month", role: "Full independence" }
                ].map((item,i)=>(
                  <div key={i} className="bg-white/20 p-6 rounded-2xl">
                    <h4 className="font-semibold mb-2 text-lg text-white">{item.stage}</h4>
@@ -1193,7 +1193,7 @@ export default function Tutors() {
                ))}
              </div>
              <p className="mt-6 font-semibold text-blue-200">
-               SMK Framework: Subject Matter Knowledge · Metacognitive Skills · Platform Integration · Independence Building
+               SMK Framework: Subject Matter Knowledge Â· Metacognitive Skills Â· Platform Integration Â· Independence Building
              </p>
           </div>
         </div>
@@ -1216,15 +1216,15 @@ export default function Tutors() {
                 sub: "Catch-Up Support",
                 for: "Missed Foundational O-Level Bridge Courses / weak O-Level foundation",
                 role: "Intensive remedial instruction targeting exact foundational gaps.",
-                goal: "Platform independence in 3–6 months."
+                goal: "Platform independence in 3â€“6 months."
               },
               {
                 id: "B",
                 title: "ADVANCED LEARNERS",
                 sub: "Beyond-Routine Excellence",
-                for: "Scoring 75–85%, targeting A* (90%+) with depth beyond syllabus.",
+                for: "Scoring 75â€“85%, targeting A* (90%+) with depth beyond syllabus.",
                 role: "Advanced problem sets and exam strategy coaching.",
-                goal: "6–12 months strategic support with occasional check‑ins."
+                goal: "6â€“12 months strategic support with occasional checkâ€‘ins."
               },
               {
                 id: "C",
@@ -1232,7 +1232,7 @@ export default function Tutors() {
                 sub: "Differentiated Support",
                 for: "Below 50%, needs slower pace and human patience.",
                 role: "Break concepts into smaller steps and build confidence with small wins.",
-                goal: "6–12 months to reach grade‑level competency via platform guidance."
+                goal: "6â€“12 months to reach gradeâ€‘level competency via platform guidance."
               }
             ].map((scen, i) => (
               <Card key={i} className="rounded-[3rem] border-4 border-white shadow-2xl hover:border-[#2366c9] transition-all group bg-white flex flex-col h-full overflow-hidden">
@@ -1276,11 +1276,11 @@ export default function Tutors() {
 
           <div className="grid lg:grid-cols-5 gap-10">
              {[
-               { t: "Day 0–2", d: "Free diagnostic test (30–40 min) + 20‑min consultation call — decide platform-only or tutoring scenario.", icon: Microscope },
-               { t: "Day 3–5", d: "Tutor matched · platform account created free · parent dashboard activated · first session plan set.", icon: UserCheck },
-               { t: "Months 1–3", d: "8–12 hrs/month | Tutor assigns H5P activities on Moodle | Weekly progress reports.", icon: Zap },
-               { t: "Months 4–6", d: "4–6 hrs/month | Teaching shifts to coaching | Student becomes primary learner.", icon: Target },
-               { t: "Month 7+", d: "0–2 hrs/month | Student fully independent on platform — SUCCESS.", icon: CheckCircle2 }
+               { t: "Day 0â€“2", d: "Free diagnostic test (30â€“40â€¯min) + 20â€‘min consultation call â€” decide platform-only or tutoring scenario.", icon: Microscope },
+               { t: "Day 3â€“5", d: "Tutor matched Â· platform account created free Â· parent dashboard activated Â· first session plan set.", icon: UserCheck },
+               { t: "Months 1â€“3", d: "8â€“12â€¯hrs/month | Tutor assigns H5P activities on Moodle | Weekly progress reports.", icon: Zap },
+               { t: "Months 4â€“6", d: "4â€“6â€¯hrs/month | Teaching shifts to coaching | Student becomes primary learner.", icon: Target },
+               { t: "Month 7+", d: "0â€“2â€¯hrs/month | Student fully independent on platform â€” SUCCESS.", icon: CheckCircle2 }
              ].map((step, i) => (
                <div key={i} className="text-center space-y-8 group">
                   <div className="mx-auto h-24 w-24 bg-blue-50 rounded-full flex items-center justify-center text-[#2366c9] group-hover:bg-[#2366c9] group-hover:text-white transition-all shadow-xl">
@@ -1304,20 +1304,20 @@ export default function Tutors() {
             <div className="grid md:grid-cols-3 gap-12">
               {[
                 {
-                  title: "SMK‑Aligned Tutors",
-                  desc: "SMK‑trained + platform‑integrated + independence‑focused + scenario‑specific + digitally verified.",
+                  title: "SMKâ€‘Aligned Tutors",
+                  desc: "SMKâ€‘trained + platformâ€‘integrated + independenceâ€‘focused + scenarioâ€‘specific + digitally verified.",
                   color: "bg-red-50",
                   border: "border-red-100",
                 },
                 {
                   title: "Platform Access FREE",
-                  desc: "Diagnostic tests • study materials • AI chatbot (24/7) • translator • audio features • Moodle analytics • spaced repetition ($360‑720 value).",
+                  desc: "Diagnostic tests â€¢ study materials â€¢ AI chatbot (24/7) â€¢ translator â€¢ audio features â€¢ Moodle analytics â€¢ spaced repetition ($360â€‘720 value).",
                   color: "bg-blue-50",
                   border: "border-blue-100",
                 },
                 {
                   title: "Transparent Monitoring",
-                  desc: "Parent dashboard (session tracking, weekly reports, independence stage) + Tutor dashboard (Moodle‑integrated, H5P assignment, student analytics).",
+                  desc: "Parent dashboard (session tracking, weekly reports, independence stage) + Tutor dashboard (Moodleâ€‘integrated, H5P assignment, student analytics).",
                   color: "bg-green-50",
                   border: "border-green-100",
                 }
@@ -1332,7 +1332,7 @@ export default function Tutors() {
      
       </section>
 
-     {/* SECTION 6: TUTOR CERTIFICATION & DIGITAL VERIFICATION ⭐ [NEW] */}
+     {/* SECTION 6: TUTOR CERTIFICATION & DIGITAL VERIFICATION â­ [NEW] */}
  
 <section className="py-32 bg-gradient-to-b from-white to-blue-50">
   <div className="container-custom max-w-5xl mx-auto text-center">
@@ -1340,7 +1340,7 @@ export default function Tutors() {
       Tutor <span className="text-[#2366c9]">Certification & Digital Verification </span>
     </h2>
     <p className="text-lg md:text-xl mb-16 text-[#1e1b4b]/80">
-      Only <span className="font-semibold text-[#2366c9]">15–20%</span> of applicants become certified. Here’s how we ensure quality:
+      Only <span className="font-semibold text-[#2366c9]">15â€“20%</span> of applicants become certified. Hereâ€™s how we ensure quality:
     </p>
 
     {/* Accordion Timeline */}
@@ -1350,7 +1350,7 @@ export default function Tutors() {
           step: 1,
           title: "Credentials Screening",
           icon: <UserCheck className="h-6 w-6 text-white" />,
-          description: "Bachelor’s degree in subject + 3 years Cambridge/O-Level experience + professional references + background check.",
+          description: "Bachelorâ€™s degree in subject + 3 years Cambridge/O-Level experience + professional references + background check.",
         },
         {
           step: 2,
@@ -1359,7 +1359,7 @@ export default function Tutors() {
           description: (
             <ul className="space-y-1">
               {[
-                "30‑minute proctored exam on Moodle Safe Exam Browser",
+                "30â€‘minute proctored exam on Moodle Safe Exam Browser",
                 "Locked full-screen; no tab switching",
                 "No copy/paste; no other browser/app access",
                 "Randomized question bank mapped to Cambridge syllabus",
@@ -1379,13 +1379,13 @@ export default function Tutors() {
           icon: <Zap className="h-6 w-6 text-white" />,
           description: (
             <>
-              <p className="font-semibold mb-2">Step A — Online Tools Quiz (15 min)</p>
+              <p className="font-semibold mb-2">Step A â€” Online Tools Quiz (15 min)</p>
               <ul className="flex flex-wrap gap-4 mb-2">
                 {["Zoom/Google Meet", "Google Classroom", "Digital Whiteboard", "Moodle LMS", "H5P Assignment"].map((item, i) => (
                   <li key={i} className="bg-blue-50 text-[#2366c9] px-3 py-1 rounded-full text-[14px] font-medium">{item}</li>
                 ))}
               </ul>
-              <p className="font-semibold mb-1">Step B — Live 10‑Minute Call</p>
+              <p className="font-semibold mb-1">Step B â€” Live 10â€‘Minute Call</p>
               <p className="text-[14px] text-[#1e1b4b]/80">Tutor demonstrates screen sharing, whiteboard explanation, Moodle navigation, and assigning an H5P activity.</p>
             </>
           ),
@@ -1394,7 +1394,7 @@ export default function Tutors() {
           step: 4,
           title: "SMK Framework Orientation",
           icon: <GraduationCap className="h-6 w-6 text-white" />,
-          description: "10X Learning Leap Model™ · Scaffolding principles · Metacognitive coaching · Platform integration · Progress monitoring.",
+          description: "10X Learning Leap Modelâ„¢ Â· Scaffolding principles Â· Metacognitive coaching Â· Platform integration Â· Progress monitoring.",
         },
       ].map((layer) => (
         <Disclosure key={layer.step} as="div" className="border-l-4 border-blue-200 pl-12 relative">
@@ -1434,13 +1434,13 @@ export default function Tutors() {
         </thead>
         <tbody className="text-[#1e1b4b]/90">
           {[
-            ["Applicant % Certified", "✗", " 15–20%"],
-            ["SMK Mastery Exam", "✗", " 30‑min test"],
-            ["Digital Skills Quiz + Demo", "✗", " Yes"],
-            ["SMK Framework Teaching", "✗", " Yes"],
-            ["Phase-Out Independence Strategy", "✗", " Yes"],
-            ["Platform Integration (Moodle/H5P/AI)", "✗", " Full integration"],
-            ["Parent Dashboard Visibility", "✗", " Full dashboard"],
+            ["Applicant % Certified", "âœ—", " 15â€“20%"],
+            ["SMK Mastery Exam", "âœ—", " 30â€‘min test"],
+            ["Digital Skills Quiz + Demo", "âœ—", " Yes"],
+            ["SMK Framework Teaching", "âœ—", " Yes"],
+            ["Phase-Out Independence Strategy", "âœ—", " Yes"],
+            ["Platform Integration (Moodle/H5P/AI)", "âœ—", " Full integration"],
+            ["Parent Dashboard Visibility", "âœ—", " Full dashboard"],
           ].map(([feature, market, edu], i) => (
             <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-blue-50"}>
               <td className="py-3 px-6 font-medium">{feature}</td>
@@ -1485,11 +1485,11 @@ export default function Tutors() {
     {/* Call-to-Action */}
     <div className="max-w-3xl mx-auto">
       <p className="text-[#1e1b4b]/80 mb-4">
-        <strong>Who we’re looking for:</strong> Bachelor’s in relevant subject · 3+ years Cambridge experience · strong digital skills · commitment to independence‑building · available online (global) or physical (Lahore, Karachi, Islamabad/Rawalpindi, Faisalabad, or your city).
+        <strong>Who weâ€™re looking for:</strong> Bachelorâ€™s in relevant subject Â· 3+ years Cambridge experience Â· strong digital skills Â· commitment to independenceâ€‘building Â· available online (global) or physical (Lahore, Karachi, Islamabad/Rawalpindi, Faisalabad, or your city).
       </p>
       <p className="font-semibold text-[#2366c9] text-xl mb-2">Ready to apply?</p>
       <p className="text-[#1e1b4b]/70 mb-6 text-[14px]">
-        Pro tip: Uploading a 5–10 min demo lesson increases your chances of getting matched faster.
+        Pro tip: Uploading a 5â€“10 min demo lesson increases your chances of getting matched faster.
       </p>
     <div className="flex justify-center">
 <InquiryDialog
@@ -1528,7 +1528,7 @@ export default function Tutors() {
 
       <p className="text-lg md:text-xl text-[#1e1b4b]/70 max-w-2xl mx-auto mb-12">
         Personalized tutor matching. Diagnostic assessment. 
-        First session within 5–7 days.
+        First session within 5â€“7 days.
       </p>
 
       <InquiryDialog
@@ -1570,14 +1570,14 @@ export default function Tutors() {
         {
           title: "Standard",
           price: "$12",
-          desc: "1–2 sessions weekly. Best for steady improvement.",
+          desc: "1â€“2 sessions weekly. Best for steady improvement.",
           inc: ["Platform access", "Monthly progress report", "Flexible scheduling"],
           highlight: false
         },
         {
           title: "Intensive",
           price: "$18",
-          desc: "3–4 sessions weekly. Designed for accelerated growth.",
+          desc: "3â€“4 sessions weekly. Designed for accelerated growth.",
           inc: ["Priority tutor access", "Strategy coaching", "Parent dashboard"],
           highlight: true
         },
@@ -1620,7 +1620,7 @@ export default function Tutors() {
 
           <ul className="space-y-3 text-[14px] text-gray-700">
             {plan.inc.map((item, ii) => (
-              <li key={ii}>• {item}</li>
+              <li key={ii}>â€¢ {item}</li>
             ))}
           </ul>
 
@@ -1639,7 +1639,7 @@ export default function Tutors() {
     </div>
 
     <p className="mt-16 text-center text-[14px] text-gray-500">
-      Platform value ($360–$720/year) included with all active tutoring plans.
+      Platform value ($360â€“$720/year) included with all active tutoring plans.
     </p>
 
   </div>
@@ -1660,9 +1660,9 @@ export default function Tutors() {
     <div className="grid md:grid-cols-3 gap-12">
 
       {[
-        { name: "Ahmed", tag: "Late Starter", res: "35% → 82%", duration: "7 months", cost: "$840" },
-        { name: "Sara", tag: "Advanced Learner", res: "82% → 94% (A*)", duration: "8 months", cost: "$720" },
-        { name: "Usman", tag: "Slow Learner", res: "40% → 71% (B)", duration: "12 months", cost: "$1,020" }
+        { name: "Ahmed", tag: "Late Starter", res: "35% â†’ 82%", duration: "7 months", cost: "$840" },
+        { name: "Sara", tag: "Advanced Learner", res: "82% â†’ 94% (A*)", duration: "8 months", cost: "$720" },
+        { name: "Usman", tag: "Slow Learner", res: "40% â†’ 71% (B)", duration: "12 months", cost: "$1,020" }
       ].map((c, i) => (
         <div key={i} className="p-8 border border-gray-200 rounded-2xl">
 
@@ -1710,7 +1710,7 @@ export default function Tutors() {
                   className="p-8 font-semibold cursor-pointer flex justify-between items-center hover:border-[#2366c9]"
                 >
                   <span>{item.q}</span>
-                  <span className="text-2xl">{open === i ? "−" : "+"}</span>
+                  <span className="text-2xl">{open === i ? "âˆ’" : "+"}</span>
                 </div>
 
                 {/* ANSWER */}
@@ -1753,10 +1753,10 @@ export default function Tutors() {
       {/* Path 1 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
         <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
-          Path 1 — Platform First
+          Path 1 â€” Platform First
         </h3>
         <p className="text-gray-500 mb-6">
-          Free diagnostic → Start independently → Add tutor if needed
+          Free diagnostic â†’ Start independently â†’ Add tutor if needed
         </p>
         <Link
           href="/programs"
@@ -1769,7 +1769,7 @@ export default function Tutors() {
       {/* Path 2 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
         <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
-          Path 2 — Diagnostic + Consultation
+          Path 2 â€” Diagnostic + Consultation
         </h3>
         <p className="text-gray-500 mb-6">
           Free test + 20-minute honest recommendation.
@@ -1785,13 +1785,13 @@ export default function Tutors() {
       {/* Path 3 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
         <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
-          Path 3 — Apply as Student
+          Path 3 â€” Apply as Student
         </h3>
         <p className="text-gray-500 mb-6">
           If your scenario fits structured tutoring support.
         </p>
         <Link
-          href="/tutors"
+          href="/portals/teachers"
           className="inline-block bg-gray-100 text-[#1e1b4b] px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
         >
           Apply as Student
@@ -1801,13 +1801,13 @@ export default function Tutors() {
       {/* Path 4 */}
       <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
         <h3 className="text-xl font-semibold text-[#1e1b4b] mb-3">
-          Path 4 — Become an SMK Certified (Subject Master Knowledge Certified) Tutor
+          Path 4 â€” Become an SMK Certified (Subject Master Knowledge Certified) Tutor
         </h3>
         <p className="text-gray-500 mb-6">
           For qualified educators ready to join EduMeUp.
         </p>
         <Link
-          href="/tutors"
+          href="/portals/teachers"
           className="inline-block bg-gray-100 text-[#1e1b4b] px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
         >
           Apply as Tutor
@@ -1822,7 +1822,7 @@ export default function Tutors() {
         March 2026 Launch Offer
       </p>
       <p className="text-[14px] text-gray-500 mt-2">
-        Priority matching · Launch pricing locked 12 months · Free 30-min founder consultation · Limited spots
+        Priority matching Â· Launch pricing locked 12 months Â· Free 30-min founder consultation Â· Limited spots
       </p>
       <p className="mt-4 text-[14px] text-gray-400">
         Contact: tutoring@edumeup.com
@@ -1870,9 +1870,10 @@ export default function Tutors() {
               }
             />
           </div>
-          <p className="mt-12 text-[#2366c9] font-semibold text-xs">SMK-certified tutors • research-backed platform</p>
+          <p className="mt-12 text-[#2366c9] font-semibold text-xs">SMK-certified tutors â€¢ research-backed platform</p>
         </div>
       </section>
     </Layout>
   );
 }
+

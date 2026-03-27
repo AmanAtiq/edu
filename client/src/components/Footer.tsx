@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+﻿import { Link } from "wouter";
 import { GraduationCap, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export function Footer() {
@@ -19,9 +19,9 @@ export function Footer() {
     { label: "Foundational O-Level Bridge Courses", href: "/programs/bridge-courses" },
     { label: "Complete O-Level Subject Preparation", href: "/programs/complete-o-level" },
     { label: "English Language Mastery Courses", href: "/programs/english-mastery" },
-    { label: "ATP Courses (Physics / Chemistry / Biology)", href: "/programs/atp-courses" },
+    { label: "ATP Courses (Physics | Chemistry | Biology)", href: "/programs/atp-courses" },
     { label: "Real-Time Exam Preparation", href: "/programs/exam-prep" },
-    { label: "Tutor Booking - 1-to-1 Personalised Education", href: "/programs/tutor-booking" },
+    { label: "Tutor Booking â€” 1-to-1 Personalised Education", href: "/programs/tutor-booking" },
     { label: "Teacher Training (CTMW)", href: "/teacher-training" },
   ];
 
@@ -30,16 +30,16 @@ export function Footer() {
     { label: "Topical Exam Practice Workbooks", href: "/resources/topical-workbooks" },
     { label: "Exam Practice Papers with Enhanced Solutions", href: "/resources/exam-papers" },
     { label: "Conceptual Learning & Practice Worksheets (Primary to O-Level)", href: "/resources/worksheets" },
-    { label: "All Resources (Courses | Workbooks | Worksheets)", href: "/resources" },
+    { label: "All Resources (Courses | Workbooks | Worksheets)", href: "/resources/all" },
     { label: "Free Resources (Freebies)", href: "/resources/freebies" },
     { label: "Research & Development", href: "/research" },
     { label: "Blog", href: "/blog" },
   ];
 
   const pakistanProgrammes = [
-    { label: "Pakistan Matric Programme (Grades 9-10)", href: "/programs/matric" },
-    { label: "Pakistan FSc / ICS Programme (Intermediate)", href: "/programs/fsc-ics" },
-    { label: "ECAT Engineering Entry Test", href: "/programs/ecat" },
+    { label: "Pakistan Matric Programme (Grades 9â€“10)", href: "/programs/matric" },
+    { label: "Pakistan FSc / ICS Programme", href: "/programs/fsc-ics" },
+    { label: "Pakistan ECAT â€” Engineering Entry Test", href: "/programs/ecat" },
   ];
 
   return (
@@ -174,12 +174,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/for-schools/consultation" className="break-words hover:text-white transition-colors underline-offset-2 hover:underline">
+                <Link href="/for-schools/partnership" className="break-words hover:text-white transition-colors underline-offset-2 hover:underline">
                   Book School Consultation
                 </Link>
               </li>
               <li>
-                <Link href="/teacher-training/book" className="break-words hover:text-white transition-colors underline-offset-2 hover:underline">
+                <Link href="/teacher-training" className="break-words hover:text-white transition-colors underline-offset-2 hover:underline">
                   Book Teacher Training
                 </Link>
               </li>
@@ -209,3 +209,4 @@ export function Footer() {
     </footer>
   );
 }
+

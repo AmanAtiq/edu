@@ -1,27 +1,72 @@
 ﻿import { useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, BookOpen, PenTool, Lightbulb } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
-import {
-  atpCoverage,
-  atpHowItWorks,
-  atpSubjectsIncluded,
-  atpWhoItsFor,
-} from "@/components/programs/atp-courses-content";
 
-export default function ATPCourses() {
+const englishCoverage = [
+  {
+    title: "Paper 1: Comprehension Mastery",
+    description: "Develop advanced reading skills, understanding complex texts, drawing inferences, and managing time.",
+    icon: BookOpen,
+  },
+  {
+    title: "Paper 2: Composition Excellence",
+    description: "Master essay writing, formal letters, creative narratives, and persuasive techniques with examiner feedback.",
+    icon: PenTool,
+  },
+  {
+    title: "Vocabulary & Grammar Foundation",
+    description: "Build Cambridge-level vocabulary and grammatical accuracy for both papers.",
+    icon: Lightbulb,
+  },
+];
+
+const englishHowItWorks = [
+  {
+    title: "1. Skill Building Modules",
+    description: "Work through targeted modules on comprehension strategies, essay structures, and writing techniques.",
+    icon: BookOpen,
+  },
+  {
+    title: "2. Guided Practice Sets",
+    description: "Solve real past paper questions with detailed explanations and marking guidance.",
+    icon: PenTool,
+  },
+  {
+    title: "3. Personalized Feedback",
+    description: "Receive detailed feedback on essays and comprehension answers aligned with Cambridge standards.",
+    icon: Lightbulb,
+  },
+];
+
+const englishWhoItsFor = [
+  "O-Level students aiming for English Language A* / 9",
+  "Non-native English speakers strengthening comprehension and expression",
+  "Students struggling with essay writing or time management",
+  "Learners wanting structured, systematic English mastery",
+];
+
+const englishSubjectsIncluded = [
+  "Paper 1: Reading Comprehension (2 hours)",
+  "Paper 2: Directed Writing & Composition (2 hours)",
+  "Vocabulary building exercises",
+  "Grammar correction and improvement",
+  "Cambridge past papers (2010-2024)",
+];
+
+export default function EnglishMastery() {
   useEffect(() => {
     const previousTitle = document.title;
     const metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription?.getAttribute("content") || "";
 
     document.title =
-      "ATP Courses - Alternative to Practicals Physics Chemistry Biology | EduMeUp";
+      "Cambridge English Language Mastery | O-Level Papers 1 & 2 | EduMeUp";
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "EduMeUp's ATP Courses prepare Cambridge O-Level students for Paper 4 practical exams in Physics, Chemistry, and Biology with virtual lab training and conceptual exam strategies.",
+        "Master Cambridge O-Level English Language with comprehensive comprehension and composition training. Get A* with EduMeUp's structured approach to Papers 1 & 2.",
       );
     }
 
@@ -44,17 +89,17 @@ export default function ATPCourses() {
             className="mx-auto max-w-5xl text-center"
           >
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-              Programme 5: ATP Courses
+              Cambridge O-Level Programme
             </div>
             <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
-              Master Cambridge Paper 4, No Lab Required
+              Master Cambridge English Language Papers 1 & 2
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
-              Virtual lab training and exam strategy for Physics, Chemistry, and
-              Biology practicals.
+              Complete comprehension and composition training aligned with Cambridge standards. Get A* with
+              structured skill-building and real past papers.
             </p>
             <p className="mx-auto mt-3 max-w-3xl text-sm text-slate-600">
-              ATP alternative to practical IGCSE Cambridge Paper 4.
+              Available separately: Comprehension ($110), Composition ($160), or Bundle ($250 â€” save $60).
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -91,14 +136,14 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What ATP Exams Demand and Why Students Are Often Unprepared
+              Why English Language Requires Different Strategies for Papers 1 & 2
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Cambridge Paper 4 (Alternative to Practical) tests experimental design,
-              data analysis, error analysis, graph interpretation, and scientific
-              conclusion writing without physically performing experiments. Students
-              not trained in these specific skills often experience Paper 4 as a very
-              different exam from Papers 1, 2, and 3.
+              Comprehension and Composition are fundamentally different skills. Students excel at one but struggle
+              with the other because they apply the same strategies universally. Paper 1 demands precision in
+              reading, inference-drawing, and speed. Paper 2 requires planning, original thinking, and technical
+              accuracy. Our dual-track training ensures you master both independently, then integrate seamlessly
+              for a 4-hour exam marathon of writing excellence.
             </p>
           </div>
         </div>
@@ -108,12 +153,12 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What the ATP Courses Cover
+              What English Mastery Covers
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {atpCoverage.map((item) => (
+            {englishCoverage.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -138,8 +183,8 @@ export default function ATPCourses() {
               How It Works
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {atpHowItWorks.map((item) => (
+          <div className="grid gap-6 md:grid-cols-3">
+            {englishHowItWorks.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -165,7 +210,7 @@ export default function ATPCourses() {
                 Who This Is For
               </h2>
               <div className="mt-5 space-y-3">
-                {atpWhoItsFor.map((item) => (
+                {englishWhoItsFor.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                     <span>{item}</span>
@@ -175,9 +220,9 @@ export default function ATPCourses() {
             </div>
 
             <div className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-semibold text-[#1e1b4b]">Subjects Included</h2>
+              <h2 className="text-2xl font-semibold text-[#1e1b4b]">Coverage</h2>
               <div className="mt-5 space-y-3">
-                {atpSubjectsIncluded.map((item) => (
+                {englishSubjectsIncluded.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#2366c9]" />
                     <span>{item}</span>
@@ -199,49 +244,40 @@ export default function ATPCourses() {
                 <thead>
                   <tr className="bg-blue-50 text-left">
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Subject
+                      Programme
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Cost (US$)
+                      Duration
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Package Price
+                      Price (USD)
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Physics</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">149</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">
-                      ATP Physics + Chemistry: 218 (from 278)
-                    </td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Comprehension Only</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Lifetime access</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">$110</td>
                   </tr>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Chemistry</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">129</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
-                  </tr>
-                  <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Biology</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">99</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Composition Only</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Lifetime access</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">$160</td>
                   </tr>
                   <tr className="border-t border-blue-100 bg-blue-50/50">
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Total when separate</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">377</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-[#2366c9]">
-                      ATP Physics + Chemistry + Biology: 229 (save 148)
-                    </td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Bundle (Both Papers)</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Lifetime access</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-[#2366c9]">$250 (Save $20)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <Link href="/programs/atp-courses">
+              <Link href="/programs/english-mastery">
                 <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Browse ATP Courses
+                  Browse English Mastery
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
@@ -258,3 +294,4 @@ export default function ATPCourses() {
     </Layout>
   );
 }
+

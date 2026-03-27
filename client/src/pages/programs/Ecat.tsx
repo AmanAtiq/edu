@@ -3,25 +3,75 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
-import {
-  atpCoverage,
-  atpHowItWorks,
-  atpSubjectsIncluded,
-  atpWhoItsFor,
-} from "@/components/programs/atp-courses-content";
 
-export default function ATPCourses() {
+const ecatCoverage = [
+  {
+    title: "Engineering Entry Test Mastery",
+    description: "100% ECAT curriculum with focus on Physics, Chemistry, Mathematics, and English sections.",
+    icon: CheckCircle2,
+  },
+  {
+    title: "Time Management & Speed",
+    description: "Timed mock exams and section-wise drills to maximize score in 2-hour exam window.",
+    icon: CheckCircle2,
+  },
+  {
+    title: "Competitive Strategy",
+    description: "Proven tactics for high-scoring universities (FAST, LUMS, UET, NED, GIKI) and cutoff optimization.",
+    icon: CheckCircle2,
+  },
+];
+
+const ecatHowItWorks = [
+  {
+    title: "1. Concept + Formula Review",
+    description: "Quick refresh of FSc topics plus ECAT-specific formula collections and shortcuts.",
+    icon: CheckCircle2,
+  },
+  {
+    title: "2. Topic-Wise ECAT Drills",
+    description: "Past ECAT questions organized by topic with detailed explanations and alternative approaches.",
+    icon: CheckCircle2,
+  },
+  {
+    title: "3. Full-Length Mock Exams",
+    description: "Timed tests matching actual ECAT format with score analytics and performance tracking.",
+    icon: CheckCircle2,
+  },
+  {
+    title: "4. Merit List Optimization",
+    description: "Strategies to maximize composite score and improve merit-based admission chances.",
+    icon: CheckCircle2,
+  },
+];
+
+const ecatWhoItsFor = [
+  "FSc students preparing for ECAT (Engineering Entry Test)",
+  "Students targeting top engineering universities",
+  "Learners aiming for merit-based scholarships",
+  "Anyone needing speed and accuracy under exam pressure",
+];
+
+const ecatSubjectsIncluded = [
+  "Physics (Mechanics, Electromagnetism, Thermodynamics, Modern Physics)",
+  "Chemistry (Inorganic, Organic, Physical, Analytical)",
+  "Mathematics (Algebra, Calculus, Geometry, Trigonometry)",
+  "English (Comprehension, Grammar, Vocabulary)",
+  "Reasoning & Logic Skills",
+];
+
+export default function Ecat() {
   useEffect(() => {
     const previousTitle = document.title;
     const metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription?.getAttribute("content") || "";
 
     document.title =
-      "ATP Courses - Alternative to Practicals Physics Chemistry Biology | EduMeUp";
+      "Pakistan ECAT â€” Engineering Entry Test Prep | FAST | LUMS | UET | EduMeUp";
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "EduMeUp's ATP Courses prepare Cambridge O-Level students for Paper 4 practical exams in Physics, Chemistry, and Biology with virtual lab training and conceptual exam strategies.",
+        "EduMeUp's Pakistan ECAT Engineering Entry Test preparation with timed mock exams, topic-wise drills, and proven strategies for FAST, LUMS, UET, NED, GIKI.",
       );
     }
 
@@ -44,33 +94,32 @@ export default function ATPCourses() {
             className="mx-auto max-w-5xl text-center"
           >
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-              Programme 5: ATP Courses
+              Engineering Entry Test
             </div>
             <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
-              Master Cambridge Paper 4, No Lab Required
+              Master ECAT: Ace Pakistan's Toughest Engineering Exam
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
-              Virtual lab training and exam strategy for Physics, Chemistry, and
-              Biology practicals.
+              Competitive prep for FAST, LUMS, UET, NED, and GIKI with proven strategies and real ECAT past papers.
             </p>
             <p className="mx-auto mt-3 max-w-3xl text-sm text-slate-600">
-              ATP alternative to practical IGCSE Cambridge Paper 4.
+              2-year specialized training designed for speed, accuracy, and merit-based engineering admission.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="/programs/complete-o-level">
+              <Link href="/programs">
                 <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Complete O-Level
+                  All Programmes
                 </span>
               </Link>
-              <Link href="/programs/exam-prep">
+              <Link href="/programs/matric">
                 <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Exam Prep
+                  Matric Prep
                 </span>
               </Link>
-              <Link href="/programs/ai-diagnostic">
+              <Link href="/programs/fsc-ics">
                 <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  AI Diagnostic
+                  FSc / ICS
                 </span>
               </Link>
             </div>
@@ -91,14 +140,10 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What ATP Exams Demand and Why Students Are Often Unprepared
+              Why ECAT Is Brutal (And How EduMeUp Breaks The Code)
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Cambridge Paper 4 (Alternative to Practical) tests experimental design,
-              data analysis, error analysis, graph interpretation, and scientific
-              conclusion writing without physically performing experiments. Students
-              not trained in these specific skills often experience Paper 4 as a very
-              different exam from Papers 1, 2, and 3.
+              ECAT tests not just knowledge, but speed, decision-making, and strategic question selection under extreme time pressure. With only 120 minutes for 100+ questions, students must master advanced problem-solving and develop game plans for each exam section. Traditional FSc preparation doesn't adequately prepare for this intensity. EduMeUp's ECAT program systematically builds both conceptual strength and competitive exam mastery.
             </p>
           </div>
         </div>
@@ -108,12 +153,12 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What the ATP Courses Cover
+              What the ECAT Programme Covers
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {atpCoverage.map((item) => (
+            {ecatCoverage.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -139,7 +184,7 @@ export default function ATPCourses() {
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
-            {atpHowItWorks.map((item) => (
+            {ecatHowItWorks.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -165,7 +210,7 @@ export default function ATPCourses() {
                 Who This Is For
               </h2>
               <div className="mt-5 space-y-3">
-                {atpWhoItsFor.map((item) => (
+                {ecatWhoItsFor.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                     <span>{item}</span>
@@ -177,7 +222,7 @@ export default function ATPCourses() {
             <div className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-[#1e1b4b]">Subjects Included</h2>
               <div className="mt-5 space-y-3">
-                {atpSubjectsIncluded.map((item) => (
+                {ecatSubjectsIncluded.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#2366c9]" />
                     <span>{item}</span>
@@ -199,39 +244,26 @@ export default function ATPCourses() {
                 <thead>
                   <tr className="bg-blue-50 text-left">
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Subject
+                      Plan
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Cost (US$)
+                      Duration
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Package Price
+                      Price
+                    </th>
+                    <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
+                      What's Included
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Physics</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">149</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Pakistan ECAT â€” Engineering Entry Test</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">24 months</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">$140</td>
                     <td className="px-4 py-3 text-sm text-slate-800">
-                      ATP Physics + Chemistry: 218 (from 278)
-                    </td>
-                  </tr>
-                  <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Chemistry</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">129</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
-                  </tr>
-                  <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Biology</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">99</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
-                  </tr>
-                  <tr className="border-t border-blue-100 bg-blue-50/50">
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Total when separate</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">377</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-[#2366c9]">
-                      ATP Physics + Chemistry + Biology: 229 (save 148)
+                      All 5 subjects, past papers, mock exams, merit optimization strategy
                     </td>
                   </tr>
                 </tbody>
@@ -239,9 +271,9 @@ export default function ATPCourses() {
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <Link href="/programs/atp-courses">
+              <Link href="/programs">
                 <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Browse ATP Courses
+                  Browse All Programmes
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
@@ -258,3 +290,4 @@ export default function ATPCourses() {
     </Layout>
   );
 }
+

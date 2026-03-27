@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+﻿import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Search, ArrowRight, ChevronRight } from "lucide-react";
@@ -67,7 +67,7 @@ export default function Blog() {
     {
       id: 5,
       title: "Foundational O-Level Bridge Courses Explained: Why Starting Early Changes Everything",
-      excerpt: "How Grade 6–8 preparation creates O-Level momentum before pressure spikes.",
+      excerpt: "How Grade 6â€“8 preparation creates O-Level momentum before pressure spikes.",
       category: "Foundational O-Level Bridge Courses",
       author: "Muhammad",
       date: "26 Mar 2026",
@@ -144,7 +144,7 @@ export default function Blog() {
 
   const ctaByCategory: Record<string, { eyebrow: string; heading: string; sub: string }> = {
     All: {
-      eyebrow: "FREE — NO COMMITMENT REQUIRED",
+      eyebrow: "FREE â€” NO COMMITMENT REQUIRED",
       heading: "Discover Your O-Level Readiness Score",
       sub: "Free 10-minute diagnostic. Find your exact weak areas.",
     },
@@ -171,7 +171,7 @@ export default function Blog() {
     "Foundational O-Level Bridge Courses": {
       eyebrow: "START EARLY, BUILD ADVANTAGE",
       heading: "Cover O-Level Foundations Before Pressure Peaks",
-      sub: "Bridge strategy for Grades 6–8 and early O-Level pathways.",
+      sub: "Bridge strategy for Grades 6â€“8 and early O-Level pathways.",
     },
     "Parent Guides": {
       eyebrow: "PARENT DECISIONS, BACKED BY DATA",
@@ -273,7 +273,7 @@ export default function Blog() {
                   <h2 className="text-2xl md:text-3xl font-semibold text-[#1e1b4b] leading-tight mb-3 line-clamp-2">{featured.title}</h2>
                   <p className="text-[14px] text-black font-medium leading-relaxed mb-4 line-clamp-3">{featured.excerpt}</p>
                   <p className="text-xs text-black font-medium mb-5">
-                    {featured.author} · {featured.date} · {featured.readTime} read
+                    {featured.author} Â· {featured.date} Â· {featured.readTime} read
                   </p>
                   <Button className="w-fit bg-[#2366c9] hover:bg-blue-500 text-white font-medium rounded-lg">
                     Read Article <ArrowRight className="ml-2 h-4 w-4" />
@@ -302,10 +302,10 @@ export default function Blog() {
                   <h3 className="text-[17px] font-semibold text-[#1e1b4b] leading-snug mt-2 mb-2 line-clamp-3">{article.title}</h3>
                   <p className="text-[14px] text-black line-clamp-2 mb-3">{article.excerpt}</p>
                   <p className="text-xs text-black mt-auto mb-3">
-                    {article.author} · {article.date} · {article.readTime} read
+                    {article.author} Â· {article.date} Â· {article.readTime} read
                   </p>
                   <button className="text-[14px] font-medium text-[#1e1b4b] hover:text-[#2366c9] text-left">
-                    READ MORE →
+                    READ MORE â†’
                   </button>
                 </div>
               </article>
@@ -320,9 +320,9 @@ export default function Blog() {
                 <p className="text-[14px] text-blue-200 font-medium">{inlineCta.sub}</p>
               </div>
               <div className="flex flex-col items-start md:items-end gap-3 min-w-[220px]">
-                <Link href="/parents">
+                <Link href="/portals/parents">
                   <Button className="bg-[#2366c9] hover:bg-blue-500 text-white font-medium" data-cta="diagnostic">
-                    Take Free Diagnostic →
+                    Take Free Diagnostic â†’
                   </Button>
                 </Link>
                 <Link href="/resources" className="text-[14px] text-blue-200 underline hover:text-white" data-cta="library">
@@ -342,7 +342,7 @@ export default function Blog() {
                 Load More Articles
               </Button>
             ) : (
-              <p className="text-[14px] text-black italic">You have read everything — for now.</p>
+              <p className="text-[14px] text-black italic">You have read everything â€” for now.</p>
             )}
           </div>
         </div>
@@ -355,7 +355,7 @@ export default function Blog() {
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Not sure where to start?</p>
               <h3 className="text-xl font-semibold text-[#1e1b4b]">Find Your Starting Point</h3>
               <p className="text-[14px] text-slate-700">Sample lessons, essay frameworks, and diagnostic pathways in one place.</p>
-              <Link href="/parents">
+              <Link href="/portals/parents">
                 <Button className="bg-[#2366c9] hover:bg-blue-500 text-white font-medium">Take Diagnostic</Button>
               </Link>
             </div>
@@ -370,7 +370,7 @@ export default function Blog() {
             <div className="space-y-2">
               <p className="text-xs font-medium uppercase tracking-widest text-[#2366c9]">Talk to a real person</p>
               <h3 className="text-xl font-semibold text-[#1e1b4b]">Speak With Our Education Team</h3>
-              <p className="text-[14px] text-slate-700">9AM–9PM PKT. Guidance call, not a pressure sales call.</p>
+              <p className="text-[14px] text-slate-700">9AMâ€“9PM PKT. Guidance call, not a pressure sales call.</p>
               <Button variant="outline" className="border-2 border-[#2366c9] text-[#2366c9] hover:bg-[#2366c9] hover:text-white font-medium">WhatsApp Us</Button>
             </div>
           </div>
@@ -379,3 +379,4 @@ export default function Blog() {
     </Layout>
   );
 }
+

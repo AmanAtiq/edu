@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+﻿import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -20,13 +20,22 @@ import Cart from "@/pages/Cart";
 import Schools from "@/pages/Schools";
 import Tutors from "@/pages/Tutors";
 import Contact from "@/pages/Contact";
+import Portals from "@/pages/Portals";
 import ForSchools from "@/pages/ForSchools";
 import ForSchoolsPartnership from "@/pages/ForSchoolsPartnership";
-import ForParentsMain from "@/pages/ForParentsMain";
 import TeacherTraining from "@/pages/TeacherTraining";
 import WhyEduMeUp from "@/pages/WhyEduMeUp";
+import EightStepModel from "@/pages/EightStepModel";
 import ATPCourses from "@/pages/programs/ATPCourses";
 import TutorBooking from "@/pages/programs/TutorBooking";
+import Matric from "@/pages/programs/Matric";
+import FscIcs from "@/pages/programs/FscIcs";
+import Ecat from "@/pages/programs/Ecat";
+import BridgeCourses from "@/pages/programs/BridgeCourses";
+import EnglishMastery from "@/pages/programs/EnglishMastery";
+import PreOLevelVictory from "@/pages/programs/PreOLevelVictory";
+import CompleteOLevel from "@/pages/programs/CompleteOLevel";
+import ExamPrep from "@/pages/programs/ExamPrep";
 import ConceptualWorkbooks from "@/pages/resources/ConceptualWorkbooks";
 import TopicalWorkbooks from "@/pages/resources/TopicalWorkbooks";
 import ExamPapers from "@/pages/resources/ExamPapers";
@@ -35,6 +44,7 @@ import AllResources from "@/pages/resources/AllResources";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import Cookies from "@/pages/Cookies";
+import AIDiagnostic from "@/pages/programs/AIDiagnostic";
 
 function Router() {
   return (
@@ -42,14 +52,30 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/pricing" component={Pricing} />
       <Route path="/research" component={Research} />
-      <Route path="/parents" component={ForParents} />
-      <Route path="/students" component={ForStudents} />
+      <Route path="/portals" component={Portals} />
+      <Route path="/portals/parents" component={ForParents} />
+      <Route path="/portals/students" component={ForStudents} />
+      <Route path="/portals/teachers" component={Tutors} />
+      <Route path="/portals/schools" component={Schools} />
       <Route path="/blog" component={Blog} />
-      <Route path="/how-it-works" component={HowItWorks} />
       <Route path="/programs" component={Programs} />
-      <Route path="/programs/ai-diagnostic" component={Contact} />
+      <Route path="/programs/ai-diagnostic" component={AIDiagnostic} />
       <Route path="/programs/atp-courses" component={ATPCourses} />
       <Route path="/programs/tutor-booking" component={TutorBooking} />
+      
+      {/* Flagship Cambridge O-Level Programme Routes */}
+      <Route path="/programs/bridge-courses" component={BridgeCourses} />
+      <Route path="/programs/english-mastery" component={EnglishMastery} />
+      <Route path="/programs/pre-o-level-victory" component={PreOLevelVictory} />
+      <Route path="/programs/complete-o-level" component={CompleteOLevel} />
+      <Route path="/programs/exam-prep" component={ExamPrep} />
+      
+      {/* Pakistan Board Programmes - Routes must be before dynamic :slug route */}
+      <Route path="/programs/matric" component={Matric} />
+      <Route path="/programs/fsc-ics" component={FscIcs} />
+      <Route path="/programs/ecat" component={Ecat} />
+      
+      {/* Dynamic route - always at the end */}
       <Route path="/programs/:slug" component={ProgramDetails} />
       <Route path="/resources" component={Resources} />
       <Route path="/resources/freebies" component={Resources} />
@@ -60,17 +86,12 @@ function Router() {
       <Route path="/resources/worksheets" component={Worksheets} />
       <Route path="/about" component={About} />
       <Route path="/cart" component={Cart} />
-      <Route path="/schools" component={Schools} />
       <Route path="/for-schools" component={ForSchools} />
       <Route path="/for-schools/partnership" component={ForSchoolsPartnership} />
-      <Route path="/for-schools/consultation" component={ForSchoolsPartnership} />
-      <Route path="/for-parents" component={ForParentsMain} />
       <Route path="/teacher-training" component={TeacherTraining} />
-      <Route path="/teacher-training/individual" component={TeacherTraining} />
-      <Route path="/teacher-training/book" component={TeacherTraining} />
       <Route path="/why-edumeup" component={WhyEduMeUp} />
       <Route path="/why-edumeup/how-it-works" component={HowItWorks} />
-      <Route path="/tutors" component={Tutors} />
+      <Route path="/why-edumeup/8-step-model" component={EightStepModel} />
       <Route path="/contact" component={Contact} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
@@ -94,3 +115,4 @@ function App() {
 }
 
 export default App;
+

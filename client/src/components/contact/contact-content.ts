@@ -1,4 +1,4 @@
-import {
+﻿import {
   Building2,
   GraduationCap,
   LifeBuoy,
@@ -78,7 +78,7 @@ export const quickActions: QuickActionItem[] = [
     description:
       "Talk to our team about the EduMeUp school partnership model for your institution.",
     cta: "Book School Consultation ->",
-    href: "/for-schools/consultation",
+    href: "/for-schools/partnership",
     icon: Handshake,
   },
   {
@@ -94,7 +94,7 @@ export const quickActions: QuickActionItem[] = [
     description:
       "No call needed - start your child's free 90-minute AI diagnostic immediately.",
     cta: "Start Free Diagnostic ->",
-    href: "/diagnostic/start",
+    href: "/programs/ai-diagnostic",
     icon: Sparkles,
   },
 ];

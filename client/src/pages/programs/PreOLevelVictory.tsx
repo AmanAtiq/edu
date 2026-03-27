@@ -1,27 +1,72 @@
 ﻿import { useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, BookOpen, Zap, Target } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
-import {
-  atpCoverage,
-  atpHowItWorks,
-  atpSubjectsIncluded,
-  atpWhoItsFor,
-} from "@/components/programs/atp-courses-content";
 
-export default function ATPCourses() {
+const preOLevelCoverage = [
+  {
+    title: "Foundational O-Level Bridge Courses Content",
+    description: "Build Grade 7-8 level understanding across all subjects before progressing to O-Level topics.",
+    icon: BookOpen,
+  },
+  {
+    title: "Early O-Level Readiness",
+    description: "Introduce O-Level concepts gradually while reinforcing foundational thinking skills.",
+    icon: Zap,
+  },
+  {
+    title: "Structured Weekly Roadmap",
+    description: "Follow a 9-month progressive pathway with clear milestones and checkpoints.",
+    icon: Target,
+  },
+];
+
+const preOLevelHowItWorks = [
+  {
+    title: "1. AI Diagnostic & Remedial Mapping",
+    description: "Start with an AI-powered assessment to identify precise gaps in your foundation.",
+    icon: Target,
+  },
+  {
+    title: "2. Progressive Concept Building",
+    description: "Work through modules from Grade 7-8 foundations into early O-Level topics.",
+    icon: BookOpen,
+  },
+  {
+    title: "3. Interactive Practice & Parent Visibility",
+    description: "Solve practice problems with immediate feedback. Parents track progress in real-time.",
+    icon: Zap,
+  },
+];
+
+const preOLevelWhoItsFor = [
+  "Grade 7-8 learners preparing for O-Level transition",
+  "Students with weak foundational math or science",
+  "Those seeking structured, guided O-Level preparation",
+  "Learners wanting parental involvement and progress tracking",
+];
+
+const preOLevelSubjectsIncluded = [
+  "Mathematics (Grade 7-8 + Early O-Level)",
+  "Physics (Grade 7-8 + Early O-Level)",
+  "Chemistry (Grade 7-8 + Early O-Level)",
+  "Biology (Grade 7-8 + Early O-Level)",
+  "English Language Foundations",
+];
+
+export default function PreOLevelVictory() {
   useEffect(() => {
     const previousTitle = document.title;
     const metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription?.getAttribute("content") || "";
 
     document.title =
-      "ATP Courses - Alternative to Practicals Physics Chemistry Biology | EduMeUp";
+      "Pre-O-Level Victory Program - Confident Transition to O-Level | EduMeUp";
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "EduMeUp's ATP Courses prepare Cambridge O-Level students for Paper 4 practical exams in Physics, Chemistry, and Biology with virtual lab training and conceptual exam strategies.",
+        "Pre-O-Level Victory Program: Complete 9-month pathway for Grade 7-8 students transitioning to O-Level. AI diagnostics, structured roadmap, and parent visibility.",
       );
     }
 
@@ -44,28 +89,28 @@ export default function ATPCourses() {
             className="mx-auto max-w-5xl text-center"
           >
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-              Programme 5: ATP Courses
+              Foundation & Transition Programme
             </div>
             <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
-              Master Cambridge Paper 4, No Lab Required
+              Build Foundation & Transition Confidently to O-Level
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
-              Virtual lab training and exam strategy for Physics, Chemistry, and
-              Biology practicals.
+              Complete 9-month pathway combining Grade 7-8 repair with early O-Level readiness. AI diagnostics,
+              structured weekly roadmap, and parent progress visibility.
             </p>
             <p className="mx-auto mt-3 max-w-3xl text-sm text-slate-600">
-              ATP alternative to practical IGCSE Cambridge Paper 4.
+              Perfect for Grade 7-8 students seeking confident O-Level transition.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <Link href="/programs/bridge-courses">
+                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
+                  Bridge Courses
+                </span>
+              </Link>
               <Link href="/programs/complete-o-level">
                 <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
                   Complete O-Level
-                </span>
-              </Link>
-              <Link href="/programs/exam-prep">
-                <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Exam Prep
                 </span>
               </Link>
               <Link href="/programs/ai-diagnostic">
@@ -91,14 +136,13 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What ATP Exams Demand and Why Students Are Often Unprepared
+              Why Pre-O-Level Victory is the 3-in-1 Solution
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Cambridge Paper 4 (Alternative to Practical) tests experimental design,
-              data analysis, error analysis, graph interpretation, and scientific
-              conclusion writing without physically performing experiments. Students
-              not trained in these specific skills often experience Paper 4 as a very
-              different exam from Papers 1, 2, and 3.
+              Pre-O-Level Victory combines three essential elements: Gap repair (fixing Grade 7-8 weaknesses),
+              Foundational O-Level Bridge Courses introduction (early concepts), and O-Level readiness (confidence and study skills).
+              Unlike standalone bridge courses, Pre-O-Level Victory is a complete 9-month journey designed to move
+              students from foundational anxiety to O-Level confidence within a structured, tracked pathway.
             </p>
           </div>
         </div>
@@ -108,12 +152,12 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What the ATP Courses Cover
+              What Pre-O-Level Victory Covers
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {atpCoverage.map((item) => (
+            {preOLevelCoverage.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -138,8 +182,8 @@ export default function ATPCourses() {
               How It Works
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {atpHowItWorks.map((item) => (
+          <div className="grid gap-6 md:grid-cols-3">
+            {preOLevelHowItWorks.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -165,7 +209,7 @@ export default function ATPCourses() {
                 Who This Is For
               </h2>
               <div className="mt-5 space-y-3">
-                {atpWhoItsFor.map((item) => (
+                {preOLevelWhoItsFor.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                     <span>{item}</span>
@@ -177,7 +221,7 @@ export default function ATPCourses() {
             <div className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-[#1e1b4b]">Subjects Included</h2>
               <div className="mt-5 space-y-3">
-                {atpSubjectsIncluded.map((item) => (
+                {preOLevelSubjectsIncluded.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#2366c9]" />
                     <span>{item}</span>
@@ -199,39 +243,32 @@ export default function ATPCourses() {
                 <thead>
                   <tr className="bg-blue-50 text-left">
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Subject
+                      Plan
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Cost (US$)
+                      Duration
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Package Price
+                      Price (PKR)
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Physics</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">149</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">
-                      ATP Physics + Chemistry: 218 (from 278)
-                    </td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Full 9-Month Pathway</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">9 months access</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">36,000</td>
                   </tr>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Chemistry</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">129</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
-                  </tr>
-                  <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Biology</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">99</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Monthly Subscription</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">1 month</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">4,500</td>
                   </tr>
                   <tr className="border-t border-blue-100 bg-blue-50/50">
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Total when separate</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">377</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Best Value</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">9-month lump sum</td>
                     <td className="px-4 py-3 text-sm font-semibold text-[#2366c9]">
-                      ATP Physics + Chemistry + Biology: 229 (save 148)
+                      36,000 (Save 4,500 vs monthly)
                     </td>
                   </tr>
                 </tbody>
@@ -239,9 +276,9 @@ export default function ATPCourses() {
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <Link href="/programs/atp-courses">
+              <Link href="/programs/pre-o-level-victory">
                 <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Browse ATP Courses
+                  Browse Pre-O-Level Victory
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
@@ -258,3 +295,4 @@ export default function ATPCourses() {
     </Layout>
   );
 }
+

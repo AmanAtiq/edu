@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -131,7 +131,7 @@ export default function ConceptualWorkbooks() {
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
-              <Link href="/diagnostic/start">
+              <Link href="/programs/ai-diagnostic">
                 <span className="flex items-center justify-between rounded-xl bg-[#2366c9] px-5 py-4 text-sm font-semibold text-white hover:bg-blue-700">
                   Start Free Diagnostic First
                   <ArrowRight className="h-4 w-4" />

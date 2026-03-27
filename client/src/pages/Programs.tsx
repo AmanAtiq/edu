@@ -12,7 +12,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function Programs() {
   const { data: programs, isLoading, error } = usePrograms();
 
-  const categories = ["All", "O-Level", "Foundation", "School Charter"];
+  const categories = ["All", "O-Level", "Foundation", "Pakistan Board"];
 
   if (error) {
     return (
@@ -197,7 +197,7 @@ export default function Programs() {
                     pricing: "$65/year per subject"
                   },
                   { 
-                    title: "ATP Courses (Physics / Chemistry / Biology)", 
+                    title: "ATP Courses (Physics | Chemistry | Biology)", 
                     details: "Virtual lab demonstrations for Paper 4 (Physics, Chemistry, Biology). Build analytical skills for unseen experiments without needing a physical lab.",
                     pricing: "From $99/subject"
                   }
@@ -228,7 +228,7 @@ export default function Programs() {
                 for: "Students needing 1-on-1 guidance, accountability, human interaction",
                 priorities: [
                   { 
-                    title: "Tutor Booking - 1-to-1 Personalised Education", 
+                    title: "Tutor Booking — 1-to-1 Personalised Education", 
                     details: "Vetted, SMK-trained teachers matched to student needs. Includes 2 FREE sample lectures and full platform resource access ($360 value free).",
                     availability: "Online & Physical (Selected cities)"
                   }

@@ -1,27 +1,72 @@
 ﻿import { useEffect } from "react";
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, BookOpen, Brain, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/Layout";
-import {
-  atpCoverage,
-  atpHowItWorks,
-  atpSubjectsIncluded,
-  atpWhoItsFor,
-} from "@/components/programs/atp-courses-content";
 
-export default function ATPCourses() {
+const completeOLevelCoverage = [
+  {
+    title: "Complete Syllabus Coverage",
+    description: "Master all Cambridge O-Level topics with comprehensive content aligned to 2024 curriculum.",
+    icon: BookOpen,
+  },
+  {
+    title: "Retention-Focused Learning Design",
+    description: "Active recall, spaced review, and interleaving techniques built into every module.",
+    icon: Brain,
+  },
+  {
+    title: "Exam-Focused Question Banks",
+    description: "Thousands of Cambridge past paper questions with detailed solutions and marking schemes.",
+    icon: Zap,
+  },
+];
+
+const completeOLevelHowItWorks = [
+  {
+    title: "1. Concept Learning Modules",
+    description: "Study comprehensive content with visual explanations, real-world examples, and diagrams.",
+    icon: BookOpen,
+  },
+  {
+    title: "2. AI-Powered Spaced Repetition",
+    description: "System automatically schedules review at optimal intervals for long-term retention.",
+    icon: Brain,
+  },
+  {
+    title: "3. 24/7 AI Support",
+    description: "Ask questions anytime and get instant, detailed explanations aligned with Cambridge standards.",
+    icon: Zap,
+  },
+];
+
+const completeOLevelWhoItsFor = [
+  "O-Level students seeking comprehensive subject preparation from foundation to mastery",
+  "Students aiming for A*/9 grades with systematic syllabus coverage",
+  "Those needing flexible, self-paced learning with AI mentorship",
+  "Cambridge O-Level candidates wanting retention-focused methodology",
+];
+
+const completeOLevelSubjectsIncluded = [
+  "Mathematics (Pure + Applied)",
+  "Physics (comprehensive practical & theory)",
+  "Chemistry (all practical and theory papers)",
+  "Biology (complete organ systems & ecology)",
+  "English Language (Papers 1, 2 & extended)",
+];
+
+export default function CompleteOLevel() {
   useEffect(() => {
     const previousTitle = document.title;
     const metaDescription = document.querySelector('meta[name="description"]');
     const previousDescription = metaDescription?.getAttribute("content") || "";
 
     document.title =
-      "ATP Courses - Alternative to Practicals Physics Chemistry Biology | EduMeUp";
+      "Complete O-Level Preparation - Full Syllabus Coverage | EduMeUp";
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "EduMeUp's ATP Courses prepare Cambridge O-Level students for Paper 4 practical exams in Physics, Chemistry, and Biology with virtual lab training and conceptual exam strategies.",
+        "Complete O-Level Preparation with 100% syllabus coverage, retention-focused learning design, past papers, and 24/7 AI support. Master Cambridge O-Level subjects.",
       );
     }
 
@@ -44,23 +89,23 @@ export default function ATPCourses() {
             className="mx-auto max-w-5xl text-center"
           >
             <div className="mb-4 inline-flex rounded-full border border-blue-200 bg-blue-100 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#2366c9]">
-              Programme 5: ATP Courses
+              Flagship O-Level Programme
             </div>
             <h1 className="text-4xl font-semibold text-[#1e1b4b] md:text-6xl">
-              Master Cambridge Paper 4, No Lab Required
+              Complete O-Level Subject Preparation
             </h1>
             <p className="mx-auto mt-5 max-w-3xl text-base text-slate-700 md:text-lg">
-              Virtual lab training and exam strategy for Physics, Chemistry, and
-              Biology practicals.
+              Full Cambridge-aligned O-Level preparation with retention-focused learning design. Master the complete
+              syllabus with active recall, spaced repetition, and exam-focused question banks.
             </p>
             <p className="mx-auto mt-3 max-w-3xl text-sm text-slate-600">
-              ATP alternative to practical IGCSE Cambridge Paper 4.
+              Available for all Cambridge O-Level subjects with 24/7 AI mentorship.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <Link href="/programs/complete-o-level">
+              <Link href="/programs/atp-courses">
                 <span className="inline-flex items-center rounded-full border border-blue-200 bg-white px-4 py-2 text-sm font-medium text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Complete O-Level
+                  ATP Courses
                 </span>
               </Link>
               <Link href="/programs/exam-prep">
@@ -91,14 +136,14 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mx-auto max-w-4xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What ATP Exams Demand and Why Students Are Often Unprepared
+              Why Complete O-Level Coverage Matters More Than Quick Prep
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-              Cambridge Paper 4 (Alternative to Practical) tests experimental design,
-              data analysis, error analysis, graph interpretation, and scientific
-              conclusion writing without physically performing experiments. Students
-              not trained in these specific skills often experience Paper 4 as a very
-              different exam from Papers 1, 2, and 3.
+              Many students rush through quick topic reviews before exams, only to forget material by test day. Complete
+              O-Level Preparation uses Cambridge-aligned content with active recall and spaced repetition to build
+              durable, retrievable knowledge. Every topic connects to real exam questions, ensuring you don't just learn
+              conceptsâ€”you master them in exam contexts. With 24/7 AI support and thousands of past paper questions, you
+              develop both content mastery and exam techniques simultaneously.
             </p>
           </div>
         </div>
@@ -108,12 +153,12 @@ export default function ATPCourses() {
         <div className="container-custom">
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-semibold text-[#1e1b4b] md:text-4xl">
-              What the ATP Courses Cover
+              What Complete O-Level Covers
             </h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {atpCoverage.map((item) => (
+            {completeOLevelCoverage.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -138,8 +183,8 @@ export default function ATPCourses() {
               How It Works
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {atpHowItWorks.map((item) => (
+          <div className="grid gap-6 md:grid-cols-3">
+            {completeOLevelHowItWorks.map((item) => (
               <div
                 key={item.title}
                 className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm"
@@ -165,7 +210,7 @@ export default function ATPCourses() {
                 Who This Is For
               </h2>
               <div className="mt-5 space-y-3">
-                {atpWhoItsFor.map((item) => (
+                {completeOLevelWhoItsFor.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                     <span>{item}</span>
@@ -177,7 +222,7 @@ export default function ATPCourses() {
             <div className="rounded-2xl border border-blue-200 bg-white p-6 shadow-sm">
               <h2 className="text-2xl font-semibold text-[#1e1b4b]">Subjects Included</h2>
               <div className="mt-5 space-y-3">
-                {atpSubjectsIncluded.map((item) => (
+                {completeOLevelSubjectsIncluded.map((item) => (
                   <p key={item} className="flex items-start gap-2 text-sm text-slate-700">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-[#2366c9]" />
                     <span>{item}</span>
@@ -199,49 +244,40 @@ export default function ATPCourses() {
                 <thead>
                   <tr className="bg-blue-50 text-left">
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Subject
+                      Plan
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Cost (US$)
+                      Duration
                     </th>
                     <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#1e1b4b]">
-                      Package Price
+                      Price (USD)
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Physics</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">149</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">
-                      ATP Physics + Chemistry: 218 (from 278)
-                    </td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Monthly Subscription</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">1 month</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">$199</td>
                   </tr>
                   <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Chemistry</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">129</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
-                  </tr>
-                  <tr className="border-t border-blue-100">
-                    <td className="px-4 py-3 text-sm text-slate-800">ATP Biology</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">99</td>
-                    <td className="px-4 py-3 text-sm text-slate-800">Included in bundle option</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">Quarterly Plan</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">3 months</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">$497</td>
                   </tr>
                   <tr className="border-t border-blue-100 bg-blue-50/50">
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Total when separate</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">377</td>
-                    <td className="px-4 py-3 text-sm font-semibold text-[#2366c9]">
-                      ATP Physics + Chemistry + Biology: 229 (save 148)
-                    </td>
+                    <td className="px-4 py-3 text-sm font-semibold text-slate-900">Annual Plan (Best Value)</td>
+                    <td className="px-4 py-3 text-sm text-slate-800">12 months</td>
+                    <td className="px-4 py-3 text-sm font-semibold text-[#2366c9]">$1,599 (Save $789)</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <Link href="/programs/atp-courses">
+              <Link href="/programs/complete-o-level">
                 <span className="flex items-center justify-between rounded-xl border border-blue-200 bg-white px-5 py-4 text-sm font-semibold text-[#1e1b4b] hover:border-blue-300 hover:text-[#2366c9]">
-                  Browse ATP Courses
+                  Browse Complete O-Level
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </Link>
@@ -258,3 +294,4 @@ export default function ATPCourses() {
     </Layout>
   );
 }
+

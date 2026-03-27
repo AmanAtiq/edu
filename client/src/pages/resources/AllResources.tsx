@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+﻿import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, Search } from "lucide-react";
 import { motion } from "framer-motion";
@@ -161,7 +161,7 @@ export default function AllResources() {
         <div className="container-custom">
           <div className="mx-auto max-w-5xl rounded-2xl border border-blue-100 bg-white p-6 shadow-sm md:p-8">
             <div className="grid gap-4 sm:grid-cols-2">
-              <Link href="/diagnostic/start">
+              <Link href="/programs/ai-diagnostic">
                 <span className="flex items-center justify-between rounded-xl bg-[#2366c9] px-5 py-4 text-sm font-semibold text-white hover:bg-blue-700">
                   Start Free Diagnostic
                   <ArrowRight className="h-4 w-4" />
@@ -180,3 +180,4 @@ export default function AllResources() {
     </Layout>
   );
 }
+

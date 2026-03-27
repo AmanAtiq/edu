@@ -43,7 +43,7 @@ const fallbackPrograms: Program[] = [
   },
   {
     id: 3,
-    title: "ATP Courses (Physics / Chemistry / Biology)",
+    title: "ATP Courses (Physics | Chemistry | Biology)",
     slug: "atp-courses",
     shortDescription: "Master practical and ATP paper strategy through simulation-style guided practice.",
     fullDescription:
@@ -55,6 +55,25 @@ const fallbackPrograms: Program[] = [
       "Paper 4-focused preparation",
       "Scenario-based practical prompts",
       "Marking-scheme aligned feedback",
+    ],
+    isPopular: false,
+    createdAt: new Date(),
+  },
+  {
+    id: 3.1,
+    title: "English Language Mastery Courses",
+    slug: "english-mastery",
+    shortDescription: "Master Cambridge English Language (Papers 1 & 2) with comprehensive comprehension and composition training.",
+    fullDescription:
+      "Complete English Language preparation covering comprehension skills, composition techniques, grammar mastery, and vocabulary building aligned with Cambridge standards.",
+    category: "o_level",
+    price: 25000,
+    prices: null,
+    features: [
+      "Paper 1 & 2 comprehensive coverage",
+      "Comprehension skill building",
+      "Composition and writing technique",
+      "Vocabulary and grammar mastery",
     ],
     isPopular: false,
     createdAt: new Date(),
@@ -97,7 +116,7 @@ const fallbackPrograms: Program[] = [
   },
   {
     id: 6,
-    title: "Tutor Booking - 1-to-1 Personalised Education",
+    title: "Tutor Booking — 1-to-1 Personalised Education",
     slug: "tutor-booking",
     shortDescription: "Personalized tutor support tailored to student needs and target outcomes.",
     fullDescription:

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -76,7 +76,7 @@ export default function ForParentsMain() {
             </div>
 
             <div className="mt-10">
-              <Link href="/diagnostic/start">
+              <Link href="/programs/ai-diagnostic">
                 <span className="inline-flex items-center gap-2 rounded-lg bg-[#2366c9] px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700">
                   Start Your Child's Free Diagnostic
                   <ArrowRight className="h-4 w-4" />
@@ -179,7 +179,7 @@ export default function ForParentsMain() {
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <Link href="/diagnostic/start">
+              <Link href="/programs/ai-diagnostic">
                 <span className="flex items-center justify-between rounded-xl bg-[#2366c9] px-5 py-4 text-sm font-semibold text-white hover:bg-blue-700">
                   Start Your Child's Free Diagnostic
                   <ArrowRight className="h-4 w-4" />

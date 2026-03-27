@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+﻿import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Download, Search, FileText, CheckCircle2, Zap, LayoutDashboard, Microscope, BookOpen, Clock, Users, ShieldCheck, PieChart } from "lucide-react";
@@ -52,7 +52,7 @@ export default function Resources() {
 
             <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center bg-white/5 p-12 rounded-[4rem] border-4 border-white/10 backdrop-blur-sm text-left">
               <div>
-                <h3 className="text-2xl font-semibold mb-6 text-blue-400">Free resources – no catch</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-blue-400">Free resources â€“ no catch</h3>
                 <ul className="space-y-4">
                   {[
                     "15+ Interactive Module Samples",
@@ -94,7 +94,7 @@ export default function Resources() {
               <div>
                 <h3 className="text-2xl font-semibold mb-6 text-[#1e1b4b]">1. Experience quality before purchasing</h3>
                 <p className="text-lg text-[#1e1b4b]/60 font-medium leading-relaxed">
-                  These aren't low-quality "freebies" designed to upsell. These are actual samples from our premium courses—same quality, same standards. Try before you buy and see our research-backed methodology firsthand.
+                  These aren't low-quality "freebies" designed to upsell. These are actual samples from our premium coursesâ€”same quality, same standards. Try before you buy and see our research-backed methodology firsthand.
                 </p>
               </div>
               <div>
@@ -114,15 +114,15 @@ export default function Resources() {
                  </div>
                  <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-6">
                    <div className="text-white/40 font-semibold italic">Low-quality upsell</div>
-                   <div className="text-white font-semibold">Premium course samples ✓</div>
+                   <div className="text-white font-semibold">Premium course samples âœ“</div>
                  </div>
                  <div className="grid grid-cols-2 gap-4 border-b border-white/10 pb-6">
                    <div className="text-white/40 font-semibold italic">Generic textbook copy</div>
-                   <div className="text-white font-semibold">Purpose-built, tested ✓</div>
+                   <div className="text-white font-semibold">Purpose-built, tested âœ“</div>
                  </div>
                  <div className="grid grid-cols-2 gap-4">
                    <div className="text-white/40 font-semibold italic">Time-limited access</div>
-                   <div className="text-white font-semibold">Free forever, unlimited ✓</div>
+                   <div className="text-white font-semibold">Free forever, unlimited âœ“</div>
                  </div>
                </div>
                <Link href="/programs">
@@ -295,7 +295,7 @@ export default function Resources() {
               <div className="space-y-12">
                  <h2 className="text-4xl md:text-5xl text-white font-semibold leading-none">Schools use <span className="text-blue-400">these</span></h2>
                  <p className="text-2xl text-blue-100/60 font-medium leading-relaxed">Many partner schools distribute our parent guides during O-Level orientation programs to help families understand the system.</p>
-                 <Link href="/schools">
+                  <Link href="/for-schools">
                     <Button size="lg" className="bg-[#2366c9] hover:bg-blue-500 h-24 px-16 rounded-3xl font-semibold text-xl shadow-2xl">Explore schools</Button>
                  </Link>
               </div>
@@ -320,10 +320,10 @@ export default function Resources() {
               {[
                 { f: "Module Access", free: "15 Samples", paid: "1000+ Modules" },
                 { f: "Syllabus Coverage", free: "Topic Samples", paid: "100% Comprehensive" },
-                { f: "AI Tutor Support", free: "✕", paid: "24/7 Unlimited" },
-                { f: "Analytics Dashboards", free: "✕", paid: "Student, Parent, School" },
-                { f: "Spaced Repetition", free: "✕", paid: "Automated System" },
-                { f: "Adaptive Difficulty", free: "✕", paid: "AI-Driven" }
+                { f: "AI Tutor Support", free: "âœ•", paid: "24/7 Unlimited" },
+                { f: "Analytics Dashboards", free: "âœ•", paid: "Student, Parent, School" },
+                { f: "Spaced Repetition", free: "âœ•", paid: "Automated System" },
+                { f: "Adaptive Difficulty", free: "âœ•", paid: "AI-Driven" }
               ].map((row, i) => (
                 <div key={i} className={`grid grid-cols-3 p-10 border-b-2 border-blue-50 font-semibold uppercase text-[14px] ${i % 2 === 0 ? 'bg-white' : 'bg-blue-50/20'}`}>
                    <div className="text-[#1e1b4b]">{row.f}</div>
@@ -342,3 +342,4 @@ export default function Resources() {
     </Layout>
   );
 }
+
