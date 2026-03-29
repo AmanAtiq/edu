@@ -16,12 +16,12 @@ USER PATH NAVIGATION
 
 SECTION 1: HERO
 Main Headline:
-Among the Most Comprehensive O-Level Learning Systems Built on Research-Backed 10X Learning Leap Model™
+Among the Most Comprehensive O-Level Learning SystemsBuilt on Research-Backed 10X Learning Leap Model™
 Sub-Headline:
-Not a Content Marketplace—A Guided Learning Journey Moving Students from Confusion to Confidence Research-Validated Learning Since 2021
+Not a Content Marketplace—A Guided Learning JourneyMoving Students from Confusion to ConfidenceResearch-Validated Learning Since 2021
 
 Animated Text Rotation (4 statements, 3 seconds each):
-→ Converting Traditional 5% Retention to 50%+ Active Mastery → Overcoming the Brain's Natural Forgetting Pattern → Removing Language Barriers and Tutor Dependency → Building Self-Learning Skills and Capabilities → Empowering All Education Stakeholders → International Curriculum Mastery for Conceptual & Unseen Exams
+→ Converting Traditional 5% Retention to 50%+ Active Mastery→ Overcoming the Brain's Natural Forgetting Pattern→ Removing Language Barriers and Tutor Dependency→ Building Self-Learning Skills and Capabilities→ Empowering All Education Stakeholders→ International Curriculum Mastery for Conceptual & Unseen Exams
 
 Key Achievements (4 Stat Cards):
 ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
@@ -79,7 +79,7 @@ new revenue opportunities for your school.
 
 SECTION 2: THE CORE PROBLEM & OUR ENGINE
 Section Headline:
-Why Traditional Education Struggles: The Science of Forgetting The Forgetting Curve vs. The Edumeup Engine
+Why Traditional Education Struggles: The Science of ForgettingThe Forgetting Curve vs. The Edumeup Engine
 
 Comparison Table:
 ┌───────────────────────────────────────────────────────────────────┐
@@ -155,12 +155,12 @@ Passive vs Active Learning Comparison:
 └───────────────────────────────────────────────────────────────────┘
 
 Section CTA:
-Traditional education often relies on less effective methods, then wonders why students struggle to retain information after exams.
+Traditional education often relies on less effective methods,then wonders why students struggle to retain information after exams.
 [EXPERIENCE ACTIVE LEARNING - REGISTER →]
 
 SECTION 3: IS THIS RIGHT FOR YOUR CHILD?
 Section Headline:
-Is Edumeup Right for Your Child? Take This Quick Check (30 Seconds)
+Is Edumeup Right for Your Child?Take This Quick Check (30 Seconds)
 
 Interactive Checklist:
 ┌──────────────────────────────────────────────────────────────┐
@@ -241,7 +241,7 @@ Dynamic Results (Based on Checked Items):
 
 SECTION 4: OUR FLAGSHIP PROGRAMS
 Section Headline:
-Complete Learning Systems - Not Just Courses Built on Learning Science, Validated by Research
+Complete Learning Systems - Not Just CoursesBuilt on Learning Science, Validated by Research
 
 ⭐ CARD 1: PRE-O-LEVEL VICTORY
 ┌──────────────────────────────────────────────────────────────┐
@@ -596,7 +596,7 @@ FSc/ICS PROGRAM:
 └──────────────────────────────────────────────────────────────┘
 ECAT PREPARATION:
 ┌──────────────────────────────────────────────────────────────┐
-│ 🎯 ECAT (ENGINEERING ENTRY TEST)                             │
+│ 🎯 ECAT (Engineering Colleges Admission Test)                             │
 ├──────────────────────────────────────────────────────────────┤
 │                                                               │
 │ SUBJECTS:                                                     │
